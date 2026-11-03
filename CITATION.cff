@@ -1,11 +1,19 @@
 cff-version: 1.2.0
-message: "You may cite this reading guide using the metadata below. Please cite original papers and projects for their methods, models, and data."
-type: dataset
+message: "Citation of this reading guide is optional. Cite the original sources for methods, models, and datasets."
 title: "Voice Agent and Embodied Interaction: A Reading Guide"
 authors:
-  - name: "Chengbin-Liang and contributors"
+  - family-names: "Liang"
+    given-names: "Chengbin"
 url: "https://github.com/Chengbin-Liang/Voice-Agent-Embodied-Interaction"
 license: CC0-1.0
+preferred-citation:
+  type: generic
+  title: "Voice Agent and Embodied Interaction: A Reading Guide"
+  authors:
+    - family-names: "Liang"
+      given-names: "Chengbin"
+  year: 2026
+  url: "https://github.com/Chengbin-Liang/Voice-Agent-Embodied-Interaction"
 keywords:
   - voice agents
   - speech language models
