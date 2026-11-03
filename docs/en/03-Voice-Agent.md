@@ -4,12 +4,12 @@
 
 [Home](../../README.en.md) · [Catalog](../../resources/en/CATALOG.md) · [Surveys](../../resources/en/SURVEYS.md) · [📏 Benchmarks](05-Voice-Agent-Benchmarks.md)
 
-Move from spoken conversation to interaction policies, tool use, and task completion. Foundation models are covered in [ALM / Omni Foundations](02-Omni-Foundations.md). Coverage through **2026-11-03**, including October 2026 preprints.
+Move from spoken conversation to interaction policies, tool use, and task completion. Foundation models are covered in [ALM / Omni Foundations](02-Omni-Foundations.md). Coverage through 2026-11-03, including October 2026 preprints.
 
 [🧭 Reading routes](#route) · [🎓 Academic and joint research](#academic) · [🏭 Industry research](#industry) · [🛠️ Engineering](#engineering) · [📏 Evaluation](05-Voice-Agent-Benchmarks.md)
 
 <a id="route"></a>
-## 🧭 Read by question
+## 🧭 Research questions
 
 ⭐ marks suggested first readings. Full catalog entries retain reasons, affiliations, resource availability, and Star / Cite snapshots. Unmarked entries are not ranked.
 
@@ -18,9 +18,9 @@ Move from spoken conversation to interaction policies, tool use, and task comple
 | How can a speech model learn to call tools and use their results? | [VoxMind](../../resources/en/CATALOG.md#e37) | [MoshiRAG](../../resources/en/CATALOG.md#e48) · [Realtime-Venus](../../resources/en/CATALOG.md#e54) · [Jarvis](../../resources/en/CATALOG.md#e31) |
 | How can interruptions, backchannels, and proactive openings be controlled? | [F-Actor](../../resources/en/CATALOG.md#e38) | [BayLing-Duplex](../../resources/en/CATALOG.md#e42) · [CF-Duplex / XA-Duplex](../../resources/en/CATALOG.md#e40) |
 | Where does training data come from, and how is timing preserved? | [SOMMELIER](../../resources/en/CATALOG.md#e39) → [DuplexGen](../../resources/en/CATALOG.md#e41) | [DuplexOmni](../../resources/en/CATALOG.md#e58) · [MultiTalk / MultiTalkBench](../../resources/en/CATALOG.md#e43) |
-| What should be remembered after an interruption, and how can long conversations continue? | [Self-Listening / LoopSpeech](../../resources/en/CATALOG.md#e44) | [MultiTalk / MultiTalkBench](../../resources/en/CATALOG.md#e43) · [Jarvis](../../resources/en/CATALOG.md#e31) |
+| How are post-interruption state and long conversations modeled? | [Self-Listening / LoopSpeech](../../resources/en/CATALOG.md#e44) | [MultiTalk / MultiTalkBench](../../resources/en/CATALOG.md#e43) · [Jarvis](../../resources/en/CATALOG.md#e31) |
 | How can existing models be reused while reducing real-time cost? | [D2: Dialogue-to-Duplex](../../resources/en/CATALOG.md#e45) | [TASTE2](../../resources/en/CATALOG.md#e46) · [DiffuPlex · Rolling Masked Diffusion](../../resources/en/CATALOG.md#e50) |
-| How can better interaction and better task completion be measured? | [Full-Duplex-Bench-v3](../../resources/en/CATALOG.md#e64) → [τ-Voice](../../resources/en/CATALOG.md#e63) | [Select benchmarks by capability](05-Voice-Agent-Benchmarks.md#selection) |
+| How are interaction quality and task completion evaluated? | [Full-Duplex-Bench-v3](../../resources/en/CATALOG.md#e64) → [τ-Voice](../../resources/en/CATALOG.md#e63) | [Select benchmarks by capability](05-Voice-Agent-Benchmarks.md#selection) |
 
 <a id="academic"></a>
 ## 🎓 Academic and joint research
@@ -81,7 +81,7 @@ Move from spoken conversation to interaction policies, tool use, and task comple
 
 Voice-Light's author affiliation is unconfirmed, so no Academic / Industry label is assigned. Its limited-scale online experiments are discussed in the [scope note](../../resources/en/CATALOG.md#e52).
 
-## 📏 From model results to system results
+## 📏 System-level evaluation
 
 The [benchmark guide](05-Voice-Agent-Benchmarks.md) separates basic answers, turn decisions, multi-turn and multi-party interaction, behavioral instructions, and tool/task completion. A successful tool call, the user hearing correct information, and completion of the environment task are different events and should be evaluated separately.
 
