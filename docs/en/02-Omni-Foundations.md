@@ -9,13 +9,13 @@ Start with Audio Language Models (ALMs), then move to speech generation, real-ti
 [Reading route](#route) · [Industry and joint bases](#bases) · [Academic methods](#methods) · [Real-time and audiovisual models](#realtime) · [Data and training](#training) · [Evaluation](#evaluation)
 
 <a id="route"></a>
-## 🧭 Four concepts to establish first
+## 🧭 Four foundational concepts
 
-| Question | First readings | What to explain afterward |
+| Question | First readings | Core concepts |
 |---|---|---|
 | How does audio enter an LLM? | ⭐ [Qwen2-Audio](../../resources/en/CATALOG.md#e80) → [SALMONN](../../resources/en/CATALOG.md#e86) / [BLSP](../../resources/en/CATALOG.md#e88) | Audio encoders, adapters, continuous representations, and information lost in transcripts. |
 | How does an LLM generate speech? | ⭐ [SpeechGPT](../../resources/en/CATALOG.md#e87) → [GLM-4-Voice](../../resources/en/CATALOG.md#e81) / [LLaMA-Omni2](../../resources/en/CATALOG.md#e89) | Discrete units, codecs, text/speech prediction order, and waveform decoding. |
-| How can a model listen while speaking? | ⭐ [Moshi](../../resources/en/CATALOG.md#e07) → [PersonaPlex](../../resources/en/CATALOG.md#e90) → [Full-duplex training](03-Voice-Agent.md#academic) | Input/output audio streams, turns, time alignment, interruptions, and role control. |
+| How is full-duplex speech interaction modeled? | ⭐ [Moshi](../../resources/en/CATALOG.md#e07) → [PersonaPlex](../../resources/en/CATALOG.md#e90) → [Full-duplex training](03-Voice-Agent.md#academic) | Input/output audio streams, turns, time alignment, interruptions, and role control. |
 | How are vision and continuous video added? | ⭐ [Qwen2.5-Omni](../../resources/en/CATALOG.md#e02) → [MiniCPM-o](../../resources/en/CATALOG.md#e01) / [Qwen3-Omni](../../resources/en/CATALOG.md#e03) | Modality encoders, shared timelines, Thinker–Talker, and concurrent inference. |
 
 Components: [Whisper](https://github.com/openai/whisper) (speech encoding/recognition) · [SpeechTokenizer](https://github.com/ZhangXInFD/SpeechTokenizer) (speech tokens) · [Moshi / Mimi](https://github.com/kyutai-labs/moshi) (streaming codec) · [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) (speech generation).
@@ -67,7 +67,7 @@ Training framework: [SLAM-LLM](https://github.com/X-LANCE/SLAM-LLM) provides exa
 Further reading: [Freeze-Omni](../../resources/en/CATALOG.md#e08) · [Mini-Omni2](../../resources/en/CATALOG.md#e06) · [VITA-1.5](../../resources/en/CATALOG.md#e05) · [InteractiveOmni](../../resources/en/CATALOG.md#e04). Continue to [Voice Agents](03-Voice-Agent.md) for interaction policies, data synthesis, and tool use.
 
 <a id="training"></a>
-## 🗂️ Connecting data, models, and training
+## 🗂️ Data, models, and training objectives
 
 | Stage | Questions to answer | References |
 |---|---|---|
@@ -78,7 +78,7 @@ Further reading: [Freeze-Omni](../../resources/en/CATALOG.md#e08) · [Mini-Omni2
 | Real-time deployment | First-audio latency, sustained throughput, interruption response, and multimodal input overhead | [MiniCPM-o](../../resources/en/CATALOG.md#e01), [Moshi](../../resources/en/CATALOG.md#e07), [Edge deployment](04-Edge-Embodied-Interaction.md#evaluation) |
 
 <a id="evaluation"></a>
-## 📏 Measure capabilities and interaction separately
+## 📏 Model capabilities and interaction evaluation
 
 | Evaluation target | Entry points |
 |---|---|
