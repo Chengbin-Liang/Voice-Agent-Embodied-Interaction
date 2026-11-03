@@ -1,5 +1,7 @@
 # 05 · Voice Agent Benchmarks
 
+**中文** | [English](05-Voice-Agent-Benchmarks.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md) · [Voice Agent 论文](03-Voice-Agent.md)
 
 按“测什么、怎样测、结果能说明什么”选择评测。下列 **18 个评测入口**包含独立 benchmark、Full-Duplex-Bench 的不同任务版本和 MultiTalk 的配套测试集，不视为 18 套互不重叠的数据。核对日期：**2026-11-03**。

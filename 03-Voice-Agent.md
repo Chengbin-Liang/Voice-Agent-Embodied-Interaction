@@ -1,5 +1,7 @@
 # 03 · Voice Agent
 
+**中文** | [English](03-Voice-Agent.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md) · [📏 Benchmark 导航](05-Voice-Agent-Benchmarks.md)
 
 从语音对话能力进入交互策略、工具调用和任务完成。基础模型见 [Omni 基础](02-Omni-Foundations.md)；本页按可研究的问题组织论文，学术与校企合作工作优先展开。覆盖至 **2026-11-03**，包含 2026 年 10 月新预印本。

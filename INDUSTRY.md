@@ -1,5 +1,7 @@
 # 工业界实践
 
+**中文** | [English](INDUSTRY.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 ## 🤖 机器人与具身交互

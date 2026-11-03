@@ -1,5 +1,7 @@
 # 论文与项目索引
 
+**中文** | [English](CATALOG.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md) · [Benchmark 导航](05-Voice-Agent-Benchmarks.md)
 
 按技术主题浏览；⭐ 标注适合优先阅读的条目。计数口径见[标签说明](README.md#labels)。

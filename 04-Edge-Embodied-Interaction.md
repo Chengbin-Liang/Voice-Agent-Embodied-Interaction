@@ -1,5 +1,7 @@
 # 04 · 端侧与具身交互
 
+**中文** | [English](04-Edge-Embodied-Interaction.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 [入门教程](#tutorials) · [动作学习](#policies) · [语言与动作的连接](#bridges) · [数据与训练](#training) · [端侧与评测](#evaluation)

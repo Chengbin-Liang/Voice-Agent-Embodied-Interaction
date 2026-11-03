@@ -1,5 +1,7 @@
 # 02 · Omni 基础
 
+**中文** | [English](02-Omni-Foundations.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 | 阅读 | 文章 / 项目 | 入口与标签 | 阅读重点 |

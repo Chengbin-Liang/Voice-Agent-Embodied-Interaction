@@ -1,5 +1,9 @@
 # Voice Agent与具身交互
 
+**中文** | [English](README.en.md)
+
+![语言、声波、视觉感知与机器人动作相连接的插画](cover.png)
+
 从语言模型、Omni 与语音交互，到机器人动作、端侧部署和人机协作的阅读入口。
 
 ![LLM](https://img.shields.io/badge/LLM-475569?style=flat-square) ![Omni](https://img.shields.io/badge/Omni-2563eb?style=flat-square) ![Voice Agent](https://img.shields.io/badge/Voice%20Agent-7c3aed?style=flat-square) ![Embodied Interaction](https://img.shields.io/badge/Embodied%20Interaction-0f766e?style=flat-square)
@@ -8,7 +12,7 @@
 
 | 顺序 | 入口 | 内容 | 代表资源 |
 |---|---|---|---|
-| 01 | [LLM 基础](01-LLM-Foundations.md) | 数据、架构、训练、评测的简短阅读清单 | Illustrated Transformer · FineWeb · Smol Training Playbook |
+| 01 | [LLM 基础](01-LLM-Foundations.md) | 原理、模型使用、数据、训练与评测 | Happy-LLM · HF LLM Course · Illustrated Transformer · FineWeb |
 | 02 | [Omni 基础](02-Omni-Foundations.md) | 多模态输入、语音生成、流式与全双工 | Qwen2.5-Omni · Qwen3-Omni · MiniCPM-o · Moshi |
 | 03 | [Voice Agent](03-Voice-Agent.md) | 数据、轮次、打断、工具调用与任务协调 | VoxMind · F-Actor · DuplexGen · MoshiRAG · Jarvis |
 | 04 | [端侧与具身交互](04-Edge-Embodied-Interaction.md) | 数据采集、动作学习、语言反馈、真机评测与部署 | LeRobot · ACT · SmolVLA · Hi Robot · YAY Robot · ELLSA |
@@ -16,7 +20,7 @@
 ## 📚 资源导航
 
 - [论文与项目索引](CATALOG.md)：74 个条目，附论文、代码、发表位置、机构类型、Star 和引文计数。
-- [Survey 对照表](SURVEYS.md)：10 个综述与总结入口，按覆盖范围定位阅读位置。
+- [Survey 对照表](SURVEYS.md)：10 个综述与总结入口，按覆盖范围定位阅读位置，另附 [LLM 教学参考](SURVEYS.md#llm-learning)。
 - [Voice Agent Benchmarks](05-Voice-Agent-Benchmarks.md)：18 个评测入口，按基础能力、轮次、多轮与多人、指令控制、工具与任务完成分类。
 - [工业界实践](INDUSTRY.md)：从可运行应用到系统展示，分别列出可参考的能力与开放范围。
 - [BibTeX](references.bib) · [条目数据](catalog.json) · [计数快照](metrics.json)

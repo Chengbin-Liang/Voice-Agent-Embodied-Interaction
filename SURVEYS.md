@@ -1,8 +1,15 @@
 # Survey 与总结入口
 
+**中文** | [English](SURVEYS.en.md)
+
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 按问题选择综述，再到代表论文与代码。各综述的分类、论点和原始条目归其作者；下表仅概括覆盖范围。
+
+[语音、Omni 与 HRI 综述](#comparison) · [LLM 综述与教学参考](#llm-learning)
+
+<a id="comparison"></a>
+## 📚 Survey 对照表
 
 | 资源 | 覆盖范围 | 对应阅读阶段 |
 |---|---|---|
@@ -142,3 +149,18 @@ SpeechLM，以及更新后的双工模型、控制组件与评测清单。
 传统与现代 HRI 对话管理、情境、多模态及评价。
 
 <sub>计数快照：2026-11-02。</sub>
+
+<a id="llm-learning"></a>
+## 🎓 LLM 综述与教学参考
+
+以下资源支撑 [LLM 基础](01-LLM-Foundations.md)的阅读顺序，与上方 10 个语音、Omni 和 HRI 综述条目分开列出。
+
+| 来源 | 语言 / 定位 | 对阅读路线的作用 |
+|---|---|---|
+| [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) · [作者仓库](https://github.com/RUCAIBox/LLMSurvey) | 英文综述 | 提供预训练、适配、使用与能力评测的主题地图，可沿参考文献追溯原始论文。 |
+| [《大语言模型》](https://llmbook-zh.github.io/) | 中文教材 | 按需查阅架构、数据、训练、对齐、评测与推理。 |
+| [Happy-LLM](https://github.com/datawhalechina/happy-llm) | 中文教学材料 | 递进的概念讲解与实践，重点参考第 2–6 章。 |
+| [HF LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) · [中文版](https://huggingface.co/learn/llm-course/zh-CN/chapter1/1) | 英文课程与中文翻译 | tokenizer、模型使用、微调及动手练习；不同语言版本覆盖不完全一致。 |
+| [Stanford CS336](https://cs336.stanford.edu/) | 英文大学课程 | 从实现角度理解语言模型组件、数据、训练与对齐，选做作业作为延伸。 |
+
+本仓库的四阶段路线和各章阅读问题是面向本主题的编排，不复刻某一篇 Survey 的分类。各来源保留自己的定义与参考文献。博客用于建立直觉或理解实现，研究结论应追溯原始论文。
