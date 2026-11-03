@@ -22,7 +22,7 @@ From language models and real-time speech to perception, action, and human–rob
 | **01** | [📘 LLM & Agent Foundations](docs/en/01-LLM-Foundations.md) | Happy-LLM · Hello-Agents · Tools and task feedback |
 | **02** | [🎧 ALM / Omni Foundations](docs/en/02-Omni-Foundations.md) | Audio understanding · Speech generation · Streaming audio/video |
 | **03** | [💬 Voice Agent](docs/en/03-Voice-Agent.md) | Dialogue data · Turn-taking · Interruption · Tools and task completion |
-| **04** | [🤖 Edge & Embodied Interaction](docs/en/04-Edge-Embodied-Interaction.md) | Demonstrations · Action learning · Language feedback · Simulation and deployment |
+| **04** | [🤖 Edge & Embodied Interaction](docs/en/04-Edge-Embodied-Interaction.md) | π0 / π0.5 · Language and speech interaction · Data and evaluation |
 
 ## 📚 Quick reference
 
@@ -46,11 +46,14 @@ From language models and real-time speech to perception, action, and human–rob
 
 ## 📝 Citation
 
-When using a method, model, or dataset, cite the **original paper and project**. The [BibTeX index](data/references.bib) provides starting records; check the final publication. To cite this reading guide, use [CITATION.cff](CITATION.cff) or the entry below. Citing this guide is optional and is not a condition of CC0.
+Citations for methods, models, and datasets are available in the [original papers and BibTeX index](data/references.bib). To cite this reading guide, use [CITATION.cff](CITATION.cff) or the BibTeX below; citation of the guide is optional.
+
+<details>
+<summary>BibTeX</summary>
 
 ```bibtex
 @misc{voice_agent_embodied_interaction,
-  author       = {{Chengbin-Liang and contributors}},
+  author       = {Liang, Chengbin},
   title        = {Voice Agent and Embodied Interaction: A Reading Guide},
   year         = {2026},
   howpublished = {GitHub repository},
@@ -58,13 +61,15 @@ When using a method, model, or dataset, cite the **original paper and project**.
 }
 ```
 
+</details>
+
 ## 🤝 Acknowledgments
 
 Thanks to the original authors, open-source maintainers, and educational contributors. We acknowledge [Awesome-Voice-Agent](https://github.com/Kwwwww74/Awesome-Voice-Agent), [WavChat](https://github.com/jishengpeng/WavChat), [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey), and the works in our [survey comparison](resources/en/SURVEYS.md); and the learning resources from [Datawhale](https://github.com/datawhalechina), [Hugging Face](https://huggingface.co/learn), [Lumina](https://lumina-embodied.ai/blog/eai-guide/), and [ScaleLab](https://scalelab-sjtu.github.io/embodied_guide.html).
 
 ## 📄 License
 
-Original annotations, arrangement, and original assets in this repository are dedicated under [CC0 1.0 Universal](LICENSE), to the extent contributors hold the relevant rights. They may be copied, modified, redistributed, and used commercially. Linked or cited third-party papers, code, models, datasets, images, and marks retain their own terms; **inclusion does not relicense them under CC0**.
+Original text, arrangement, and assets for which contributors hold the relevant rights are dedicated under [CC0 1.0 Universal](LICENSE). Third-party materials are outside this scope and remain subject to their own rights notices and license terms.
 
 ---
 
