@@ -164,7 +164,7 @@
         ]
       },
       "recommended_reading": "Establish a reference for Thinker–Talker architecture, data, and staged training.",
-      "scope_note": "Streaming speech output does not imply native simultaneous listening and speaking; MNN support depends on the deployment mode."
+      "scope_note": "Streaming speech output and native full-duplex interaction are evaluated separately; MNN support depends on the deployment mode."
     },
     {
       "id": "E03",
@@ -671,7 +671,7 @@
           "https://arxiv.org/html/2605.20755"
         ]
       },
-      "scope_note": "The action channel primarily represents structured planning and tool operations, not direct joint control."
+      "scope_note": "The action channel represents structured planning and tool operations; joint control belongs to the downstream execution system."
     },
     {
       "id": "E10",
@@ -709,7 +709,7 @@
           "https://www.agibot.com/article/231/detail/122.html"
         ]
       },
-      "scope_note": "An industry demonstration does not establish that the action model, training data, or complete system is open."
+      "scope_note": "Public material primarily presents system demonstrations; availability of action models, training data, and the complete system follows official releases."
     },
     {
       "id": "E11",
@@ -751,7 +751,7 @@
           "https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition"
         ]
       },
-      "scope_note": "Primarily head/antenna expression and visual tool use, rather than an arm manipulation platform."
+      "scope_note": "The application primarily covers head and antenna expression and visual tool use."
     },
     {
       "id": "E12",
@@ -820,7 +820,7 @@
           "https://arxiv.org/pdf/2401.00374"
         ]
       },
-      "scope_note": "Targets co-speech gestures and character expression; it does not directly establish physical robot manipulation capability."
+      "scope_note": "The scope is co-speech gestures and character expression; physical robot manipulation requires separate evaluation."
     },
     {
       "id": "E13",
@@ -1245,7 +1245,7 @@
           "https://arxiv.org/html/2602.22818"
         ]
       },
-      "recommended_reading": "Connect demonstration collection, data inspection, policy training, and real-robot execution."
+      "reading_focus": "Covers demonstration collection, data inspection, policy training, and real-robot execution in one workflow."
     },
     {
       "id": "E20",
@@ -1396,8 +1396,8 @@
           "https://arxiv.org/html/2510.23763"
         ]
       },
-      "recommended_reading": "Understand how environmental sounds and implicit intent enter manipulation tasks.",
-      "scope_note": "This entry refers to OpenMOSS's RoboOmni; distinguish it from other papers with the same name."
+      "scope_note": "This entry refers to RoboOmni by the OpenMOSS team.",
+      "reading_focus": "Understand how environmental sounds and implicit intent enter manipulation tasks."
     },
     {
       "id": "E22",
@@ -1479,8 +1479,8 @@
           "https://arxiv.org/html/2510.16756"
         ]
       },
-      "recommended_reading": "Study joint speech/action modeling and experiments on concurrent speaking, acting, and interruption.",
-      "scope_note": "SALMONN is a shared repository. Its stars are not ELLSA-specific; consult official releases for weights and training resources."
+      "recommended_reading": "Provides a concrete example of joint speech/action expert training, concurrent speaking and acting, action interruption, and staged adaptation.",
+      "scope_note": "Star counts cover the entire SALMONN repository; ELLSA weights and training resources are listed in its dedicated branch and model page."
     },
     {
       "id": "E23",
@@ -1627,7 +1627,8 @@
           "https://arxiv.org/html/2502.13508"
         ]
       },
-      "scope_note": "Raw speech and speaker-based personalization are distinct from full-duplex speech/action control."
+      "scope_note": "Evaluation focuses on spoken instructions and speaker-based personalization; full-duplex speech/action interaction requires separate evaluation.",
+      "recommended_reading": "Provides a concrete example of adding a speech encoder to a visuomotor model and studying speech-instruction adaptation and speaker-conditioned manipulation."
     },
     {
       "id": "E25",
@@ -1709,8 +1710,8 @@
           "https://arxiv.org/html/2502.19417"
         ]
       },
-      "recommended_reading": "Understand the division between high-level language reasoning and low-level action policies.",
-      "scope_note": "Feedback reaches the action policy through high-level planning; this alone does not establish an advantage from raw speech information."
+      "recommended_reading": "Shows how execution feedback changes task decomposition through high-level language reasoning and a low-level action policy.",
+      "scope_note": "Language feedback reaches the action policy through high-level planning; contributions from raw speech features require a separate ablation."
     },
     {
       "id": "E26",
@@ -1784,8 +1785,8 @@
           "https://arxiv.org/html/2403.12910"
         ]
       },
-      "recommended_reading": "Understand how execution-time corrections support both current control and later learning.",
-      "scope_note": "Spoken corrections primarily enter control and learning through language representations."
+      "scope_note": "Spoken corrections primarily enter control and learning through language representations.",
+      "reading_focus": "Understand how execution-time corrections support both current control and later learning."
     },
     {
       "id": "E27",
@@ -1827,7 +1828,7 @@
           "https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/"
         ]
       },
-      "scope_note": "The Live API example and Gemini Robotics models are separate resources. The example does not provide a standardized controlled robot success-rate study."
+      "scope_note": "Provides an engineering example connecting Live API to robot interfaces; Gemini Robotics releases and controlled robot success-rate studies are separate resources."
     },
     {
       "id": "E28",
@@ -1869,7 +1870,7 @@
           "https://www.figure.ai/news/helix-02"
         ]
       },
-      "scope_note": "A company technical demonstration; public videos do not replace reproducible experiments or open training code."
+      "scope_note": "Public material is a system demonstration useful for studying hierarchical design; training code and reproducible experiments depend on official releases."
     },
     {
       "id": "E29",
@@ -2039,7 +2040,7 @@
           "https://arxiv.org/abs/2610.23804"
         ]
       },
-      "scope_note": "Research on software-agent coordination does not by itself establish gains on physical robot tasks."
+      "scope_note": "The study concerns software-agent coordination; gains on physical robot tasks require separate validation."
     },
     {
       "id": "E32",
@@ -2097,8 +2098,8 @@
           "https://arxiv.org/abs/2304.13705"
         ]
       },
-      "recommended_reading": "Build intuition for imitation learning from observations, demonstrated actions, and action-chunk prediction.",
-      "scope_note": "Standard ACT is not language-conditioned; choosing between goals requires a skill selector or additional goal conditioning."
+      "scope_note": "Standard ACT predicts actions conditioned on observations; multi-goal tasks can use a skill selector or additional goal conditioning.",
+      "reading_focus": "Introduces imitation learning through observations, demonstrations, and action-chunk prediction."
     },
     {
       "id": "E33",
@@ -2237,8 +2238,8 @@
           "https://arxiv.org/abs/2506.01844"
         ]
       },
-      "recommended_reading": "Follow the official tutorial to adapt a pretrained VLA to a robot dataset.",
-      "scope_note": "Inputs include text instructions, not native speech. Stars refer to all of LeRobot; a small model alone does not ensure real-time whole-system operation."
+      "scope_note": "The policy is conditioned on text instructions. Stars cover the entire LeRobot repository; end-to-end real-time performance includes perception and control.",
+      "reading_focus": "Provides an official tutorial and implementation for adapting a pretrained VLA to robot data."
     },
     {
       "id": "E35",
@@ -2299,7 +2300,7 @@
           "https://arxiv.org/abs/2306.03310"
         ]
       },
-      "scope_note": "Primarily evaluates language-conditioned manipulation, rather than speech interaction or collaboration with real participants."
+      "scope_note": "Evaluates language-conditioned manipulation; speech interaction and human collaboration require additional evaluations."
     },
     {
       "id": "E36",
@@ -2408,8 +2409,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Begin with AgentChat formats, training objectives, and tool-loop experiments to connect conversation with task execution.",
-      "scope_note": "Benefits from asynchronous tool management do not establish simultaneous listening/speaking under every condition; inspect the experiments separately."
+      "recommended_reading": "AgentChat formats, training objectives, and tool experiments show how speech interaction supports task execution.",
+      "scope_note": "Asynchronous tool management and simultaneous listening/speaking are evaluated in different experiments; results depend on the task and interaction conditions."
     },
     {
       "id": "E38",
@@ -2473,7 +2474,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Learn how interaction behaviors become supervised, controllable instructions alongside speech-generation quality."
+      "recommended_reading": "Represents interaction behaviors such as interruption and feedback as supervised, controllable instructions."
     },
     {
       "id": "E39",
@@ -2536,7 +2537,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Study how real recordings become full-duplex training data, especially alignment, overlap, and filtering."
+      "recommended_reading": "Shows temporal alignment, overlap handling, and filtering when converting real recordings into full-duplex training data."
     },
     {
       "id": "E40",
@@ -2658,7 +2659,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Connect data construction to target interaction behaviors and trace human preferences through synthesis and fine-tuning.",
+      "recommended_reading": "Explains the relationship between target interaction behaviors and data construction, including human preferences in synthesis and fine-tuning.",
       "resource_links": [
         {
           "label": "Project",
@@ -2853,7 +2854,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Focus on how playback-grounded history changes subsequent responses and preserves state after interruption."
+      "recommended_reading": "Analyzes post-interruption dialogue state and subsequent responses conditioned on played-back history."
     },
     {
       "id": "E45",
@@ -3169,7 +3170,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "Currently a preprint; an intention to submit to ICASSP 2027 is not an acceptance."
+      "scope_note": "Publication status is currently preprint; ICASSP 2027 is listed by the authors as a submission plan."
     },
     {
       "id": "E50",
@@ -3270,7 +3271,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "The paper announces future code and checkpoint releases; an announcement is not treated as an available release."
+      "scope_note": "The paper announces code and checkpoint releases; a downloadable version has not been verified for this entry."
     },
     {
       "id": "E52",
@@ -3324,7 +3325,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "Online evidence consists of three operator runs totaling 36 turns. Treat it as an engineering case, not a large user study. Institutional affiliation is unverified."
+      "scope_note": "The online experiment comprises three operator runs totaling 36 turns, providing an engineering case; broader user effects require further evaluation. Institutional affiliation is unverified."
     },
     {
       "id": "E53",
@@ -3380,7 +3381,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "This entry links a technical paper and does not assume that weights or a complete training pipeline are available."
+      "scope_note": "The verified resource is the technical paper; availability of model weights and the complete training pipeline remains unverified."
     },
     {
       "id": "E54",
@@ -3682,7 +3683,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "Links the paper and this version's demonstration; the StepAudio 2 repository is not treated as the complete implementation of this release.",
+      "scope_note": "This entry links the paper and demonstration for this version; availability of a complete implementation is verified separately for this release.",
       "resource_links": [
         {
           "label": "Project",
@@ -3759,7 +3760,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "qwen-audio-agent is a companion runtime; its availability does not imply release of all model weights or training code."
+      "scope_note": "qwen-audio-agent provides the companion runtime; model-weight and training-code availability are recorded separately."
     },
     {
       "id": "E58",
@@ -3889,7 +3890,7 @@
         "scope": "whole repository"
       },
       "recommended_reading": "Establish a basic voice-assistant reference before comparing interaction and task outcomes separately.",
-      "scope_note": "Primarily evaluates responses to spoken input; it does not replace continuous full-duplex or tool-task evaluation.",
+      "scope_note": "Primarily evaluates responses to spoken input; continuous full-duplex interaction and tool tasks use their respective evaluations.",
       "evaluation": {
         "group": "foundations",
         "measures": "Knowledge, instruction following, safety, and perturbations such as accents, noise, and reverberation.",
@@ -3959,7 +3960,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "Check each subset, language, and extension separately. Publication of one subset does not assign that venue to the entire benchmark.",
+      "scope_note": "Release status and venues are recorded separately for each subset, language, and extension.",
       "evaluation": {
         "group": "foundations",
         "measures": "Semantic, acoustic, dialogue, and robustness dimensions.",
@@ -4096,8 +4097,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Understand speech-conditioned function selection, arguments, and multi-step structure before interpreting real-world task success.",
-      "scope_note": "Focuses on tool structure and arguments; it does not directly establish natural timing of continuous speech output.",
+      "recommended_reading": "Defines function, argument, and multi-step structure in speech tool use as a foundation for task-level evaluation.",
+      "scope_note": "Evaluation focuses on speech-conditioned tool structure and arguments; timing naturalness in continuous speech output is a separate metric.",
       "resource_links": [
         {
           "label": "Data",
@@ -4233,7 +4234,7 @@
         "scope": "whole repository"
       },
       "recommended_reading": "Test whether spoken corrections and other interaction disturbances cause tool-task errors.",
-      "scope_note": "Shares a repository with v1, v1.5, and v2 but evaluates a different task. The v3 paper is a preprint, not the ASRU 2025 publication of v1.",
+      "scope_note": "Shares a repository with v1, v1.5, and v2 but evaluates a different task; v3 is a preprint, while v1 was published at ASRU 2025.",
       "resource_links": [
         {
           "label": "Project",
@@ -4309,7 +4310,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "Cover cumulative multi-turn problems that short isolated clips can miss.",
+      "recommended_reading": "Covers error accumulation and context dependencies across multiple interaction turns.",
       "evaluation": {
         "group": "multi",
         "measures": "Turn-by-turn interaction dynamics, answer quality, instruction following, and safety.",
@@ -4379,7 +4380,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "The paper discusses the ICASSP 2026 HumDial challenge. The event name does not establish proceedings publication of this preprint.",
+      "scope_note": "The paper discusses the ICASSP 2026 HumDial challenge; this entry records the paper as a preprint.",
       "evaluation": {
         "group": "turn",
         "measures": "Overlap, interruptions, and backchannels in real conversations.",
@@ -4800,7 +4801,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "Domain-specific to financial services; riley-agent is a reference agent implementation, not necessarily the complete benchmark grader.",
+      "scope_note": "The evaluation domain is financial services; riley-agent provides a reference agent implementation, with complete grader availability verified separately.",
       "evaluation": {
         "group": "tasks",
         "measures": "Financial-service tasks, domain facts, and tool-execution trajectories.",
@@ -4869,7 +4870,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "A different project from DanielLin94144/Full-Duplex-Bench; scores and versions are not interchangeable.",
+      "scope_note": "A separate project from DanielLin94144/Full-Duplex-Bench, with its own versions and scoring protocols.",
       "evaluation": {
         "group": "turn",
         "measures": "Multi-turn interaction, interruptions, noise, and latency.",
@@ -4953,7 +4954,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "Primarily a component-level turn-decision benchmark, not a direct test of response content, tool use, or final task completion.",
+      "scope_note": "Evaluates the turn-decision component; response content, tool use, and final task completion require additional system-level evaluation.",
       "resource_links": [
         {
           "label": "Project",
@@ -5016,7 +5017,7 @@
       },
       "repo": "https://github.com/openai/baselines",
       "first_publication_date": "2017/07/20",
-      "recommended_reading": "Learn policies, rewards, advantages, and the clipped objective before PPO for language models.",
+      "recommended_reading": "Introduces policies, rewards, advantage estimates, and the clipped objective as background for PPO in language models.",
       "stars": {
         "value": 16775,
         "source": "GitHub REST API",
@@ -6179,7 +6180,7 @@
       },
       "repo": "https://github.com/0nutation/SpeechGPT",
       "first_publication_date": "2023/05/18",
-      "recommended_reading": "Follow modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.",
+      "recommended_reading": "Organizes data and training into modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.",
       "stars": {
         "value": 1401,
         "source": "GitHub REST API",
@@ -6304,7 +6305,7 @@
       },
       "repo": "https://github.com/ictnlp/LLaMA-Omni2",
       "first_publication_date": "2025/05/05",
-      "recommended_reading": "Use the 0.5B–3B variants to study instruction data, alignment, and streaming output before scaling.",
+      "recommended_reading": "Provides 0.5B–3B variants for studying speech-instruction data, alignment, and streaming output.",
       "scope_note": "Code and models have different licenses; models are for research use.",
       "stars": {
         "value": 281,
@@ -6457,8 +6458,8 @@
       },
       "repo": "https://github.com/Physical-Intelligence/openpi",
       "first_publication_date": "2025/04/22",
-      "recommended_reading": "A direct industrial-base selection and adaptation entry point: focus on action formats, normalization, and fine-tuning.",
-      "scope_note": "The linked paper is π0.5; the original π0 paper is listed separately. LoRA uses the JAX path; the current PyTorch path does not support LoRA.",
+      "recommended_reading": "π0 introduces the VLM–action-expert interface; π0.5 extends the discussion to heterogeneous co-training and generalization to new environments.",
+      "scope_note": "Citation counts in this entry refer to π0.5; stars refer to openpi. The original π0 paper is linked separately. LoRA uses the JAX implementation; see official documentation for the PyTorch feature set.",
       "resource_links": [
         {
           "label": "π0 paper",
@@ -6509,7 +6510,6 @@
         ]
       },
       "repo": "https://github.com/NVIDIA/Isaac-GR00T",
-      "recommended_reading": "Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs.",
       "scope_note": "The current repository is N1.7; the background paper describes the earlier N1. Read configurations and results by version.",
       "resource_links": [
         {
@@ -6524,7 +6524,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs."
     },
     {
       "id": "E93",
@@ -6574,7 +6575,6 @@
       },
       "repo": "https://github.com/moojink/openvla-oft",
       "first_publication_date": "2025/02/27",
-      "recommended_reading": "A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods.",
       "resource_links": [
         {
           "label": "Project",
@@ -6588,7 +6588,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods."
     },
     {
       "id": "E94",
@@ -6660,7 +6661,6 @@
       },
       "repo": "https://github.com/PRIME-RL/SimpleVLA-RL",
       "first_publication_date": "2025/09/11",
-      "recommended_reading": "Read after SFT to examine environment rewards, rollout cost, and generalization evaluation.",
       "stars": {
         "value": 1903,
         "source": "GitHub REST API",
@@ -6668,7 +6668,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "Read after SFT to examine environment rewards, rollout cost, and generalization evaluation."
     },
     {
       "id": "E95",
@@ -6727,7 +6728,6 @@
       },
       "repo": "https://github.com/AnjieCheng/NaVILA",
       "first_publication_date": "2024/12/05",
-      "recommended_reading": "Study how language tasks reach a mobile robot through the high/low-level interface and closed-loop feedback.",
       "resource_links": [
         {
           "label": "Locomotion",
@@ -6741,7 +6741,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "Explains the relationship between language navigation goals, the high/low-level policy interface, and execution feedback."
     },
     {
       "id": "E96",
@@ -6822,7 +6823,7 @@
       },
       "repo": "https://github.com/QwenLM/Qwen-RobotNav",
       "first_publication_date": "2026/06/16",
-      "scope_note": "The official repository currently states that weights will not be released; use it as a system-design reference, not a fine-tunable base.",
+      "scope_note": "The official repository states there is no current plan to release weights; public material supports system-design and deployment reference.",
       "stars": {
         "value": 198,
         "source": "GitHub REST API",
@@ -6863,7 +6864,6 @@
         ]
       },
       "repo": "https://github.com/unitreerobotics/unitree_sdk2",
-      "recommended_reading": "Understand state, commands, and device interfaces before connecting the task layer to executable skills.",
       "scope_note": "unitree_mujoco primarily targets low-level control; check interface support for the specific robot and firmware.",
       "resource_links": [
         {
@@ -6882,7 +6882,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "BSD-3-Clause"
-      }
+      },
+      "reading_focus": "Provides state, command, and device interfaces for connecting the task layer to executable skills."
     },
     {
       "id": "E98",
@@ -6915,7 +6916,6 @@
         ]
       },
       "repo": "https://github.com/unitreerobotics/unitree_rl_mjlab",
-      "recommended_reading": "Use official configurations to understand training, simulation playback, and deployment.",
       "stars": {
         "value": 719,
         "source": "GitHub REST API",
@@ -6923,7 +6923,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "Use official configurations to understand training, simulation playback, and deployment."
     },
     {
       "id": "E99",
@@ -7148,7 +7149,6 @@
       },
       "repo": "https://github.com/RoboTwin-Platform/RoboTwin",
       "first_publication_date": "2025/06/22",
-      "recommended_reading": "Start with released data for training and evaluation, then study task generation and randomization.",
       "stars": {
         "value": 3032,
         "source": "GitHub REST API",
@@ -7156,7 +7156,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "Provides data for policy training and evaluation, with task generation and domain randomization."
     },
     {
       "id": "E102",
