@@ -1,0 +1,1052 @@
+{
+  "records": {
+    "E01": {
+      "name": "MiniCPM-o 4.5",
+      "repo": "https://github.com/OpenBMB/MiniCPM-V",
+      "paper_url": "https://arxiv.org/abs/2604.27393",
+      "stars": {
+        "value": 27047,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenBMB/MiniCPM-V",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7159670352",
+          "source_record_title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.27393",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E02": {
+      "name": "Qwen2.5-Omni",
+      "repo": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "paper_url": "https://arxiv.org/abs/2503.20215",
+      "stars": {
+        "value": 4092,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen2.5-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 14,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4409051416",
+          "source_record_title": "Qwen2.5-Omni Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2503.20215",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E03": {
+      "name": "Qwen3-Omni",
+      "repo": "https://github.com/QwenLM/Qwen3-Omni",
+      "paper_url": "https://arxiv.org/abs/2509.17765",
+      "stars": {
+        "value": 4093,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415255153",
+          "source_record_title": "Qwen3-Omni Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.17765",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E04": {
+      "name": "InteractiveOmni",
+      "repo": "https://github.com/OpenSenseNova/InteractiveOmni",
+      "paper_url": "https://arxiv.org/abs/2510.13747",
+      "stars": {
+        "value": 9,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenSenseNova/InteractiveOmni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415277372",
+          "source_record_title": "InteractiveOmni: A Unified Omni-modal Model for Audio-Visual Multi-turn Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.13747",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E05": {
+      "name": "VITA-1.5",
+      "repo": "https://github.com/VITA-MLLM/VITA",
+      "paper_url": "https://arxiv.org/abs/2501.01957",
+      "stars": {
+        "value": 2539,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/VITA-MLLM/VITA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 11,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4406093559",
+          "source_record_title": "VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction",
+          "source_record_doi": "https://doi.org/10.52202/085713-2529",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E06": {
+      "name": "Mini-Omni2",
+      "repo": "https://github.com/gpt-omni/mini-omni2",
+      "paper_url": "https://arxiv.org/abs/2410.11190",
+      "stars": {
+        "value": 1936,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/gpt-omni/mini-omni2",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403576555",
+          "source_record_title": "Mini-Omni2: Towards Open-source GPT-4o with Vision, Speech and Duplex Capabilities",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.11190",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E07": {
+      "name": "Moshi",
+      "repo": "https://github.com/kyutai-labs/moshi",
+      "paper_url": "https://arxiv.org/abs/2410.00037",
+      "stars": {
+        "value": 11361,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/kyutai-labs/moshi",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 9,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403883071",
+          "source_record_title": "Moshi: a speech-text foundation model for real-time dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.00037",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 875,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/ae4aa7b0c5a327dae63ad20e00b58bcc6176b3b8",
+          "source_record_title": "Moshi: a speech-text foundation model for real-time dialogue",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ]
+    },
+    "E08": {
+      "name": "Freeze-Omni",
+      "repo": "https://github.com/VITA-MLLM/Freeze-Omni",
+      "paper_url": "https://arxiv.org/abs/2411.00774",
+      "stars": {
+        "value": 403,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/VITA-MLLM/Freeze-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 4,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404390495",
+          "source_record_title": "Freeze-Omni: A Smart and Low Latency Speech-to-speech Dialogue Model with Frozen LLM",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2411.00774",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E09": {
+      "name": "DuplexSLA",
+      "repo": "https://github.com/hyzhang24/DuplexSLA",
+      "paper_url": "https://arxiv.org/abs/2605.20755",
+      "stars": {
+        "value": 147,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/hyzhang24/DuplexSLA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7161968102",
+          "source_record_title": "DuplexSLA: A Full-Duplex Spoken Language Model with Synchronized Speech, Language, and Action",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2605.20755",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E10": {
+      "name": "WITA-Omni",
+      "repo": null,
+      "paper_url": null,
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": []
+    },
+    "E11": {
+      "name": "Reachy Mini Conversation App",
+      "repo": "https://github.com/pollen-robotics/reachy_mini_conversation_app",
+      "paper_url": null,
+      "stars": {
+        "value": 348,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/pollen-robotics/reachy_mini_conversation_app",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": []
+    },
+    "E12": {
+      "name": "EMAGE / BEAT2",
+      "repo": "https://github.com/haiyangliu0/character-policy",
+      "paper_url": "https://arxiv.org/abs/2401.00374",
+      "stars": {
+        "value": 1312,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/haiyangliu0/character-policy",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 95,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4402727140",
+          "source_record_title": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+          "source_record_doi": "https://doi.org/10.1109/cvpr52733.2024.00115",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E13": {
+      "name": "Interactive Language / Language Table",
+      "repo": "https://github.com/google-research/language-table",
+      "paper_url": "https://arxiv.org/abs/2210.06407",
+      "stars": {
+        "value": 367,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/google-research/language-table",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 113,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4391759936",
+          "source_record_title": "Interactive Language: Talking to Robots in Real Time",
+          "source_record_doi": "https://doi.org/10.1109/lra.2023.3295255",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E14": {
+      "name": "Daily-Omni",
+      "repo": "https://github.com/Lliar-liar/Daily-Omni",
+      "paper_url": "https://arxiv.org/abs/2505.17862",
+      "stars": {
+        "value": 53,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Lliar-liar/Daily-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "GPL-3.0"
+      },
+      "citation_counts": []
+    },
+    "E15": {
+      "name": "OmniBench (m-a-p)",
+      "repo": "https://github.com/multimodal-art-projection/OmniBench",
+      "paper_url": "https://arxiv.org/abs/2409.15272",
+      "stars": {
+        "value": 62,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/multimodal-art-projection/OmniBench",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403885114",
+          "source_record_title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+          "source_record_doi": "https://doi.org/10.52202/085713-1036",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 111,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/bde43a6356341b68a675582cf964fd9725fb40fb",
+          "source_record_title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ]
+    },
+    "E16": {
+      "name": "Full-Duplex-Bench",
+      "repo": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+      "paper_url": "https://arxiv.org/abs/2503.04721",
+      "stars": {
+        "value": 336,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 8,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7148492801",
+          "source_record_title": "Full-Duplex-Bench: A Benchmark to Evaluate Full-Duplex Spoken Dialogue Models on Turn-taking Capabilities",
+          "source_record_doi": "https://doi.org/10.1109/asru65441.2025.11433838",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E17": {
+      "name": "llama.cpp ecosystem",
+      "repo": "https://github.com/ggml-org/llama.cpp",
+      "paper_url": null,
+      "stars": {
+        "value": 133116,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ggml-org/llama.cpp",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": []
+    },
+    "E18": {
+      "name": "MNN",
+      "repo": "https://github.com/alibaba/MNN",
+      "paper_url": null,
+      "stars": {
+        "value": 16336,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/alibaba/MNN",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": []
+    },
+    "E19": {
+      "name": "LeRobot",
+      "repo": "https://github.com/huggingface/lerobot",
+      "paper_url": "https://arxiv.org/abs/2602.22818",
+      "stars": {
+        "value": 28653,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/huggingface/lerobot",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7131860508",
+          "source_record_title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2602.22818",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E20": {
+      "name": "OpenVLA",
+      "repo": "https://github.com/openvla/openvla",
+      "paper_url": "https://arxiv.org/abs/2406.09246",
+      "stars": {
+        "value": 7250,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/openvla/openvla",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 62,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4399695759",
+          "source_record_title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2406.09246",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E21": {
+      "name": "RoboOmni (OpenMOSS)",
+      "repo": "https://github.com/OpenMOSS/RoboOmni",
+      "paper_url": "https://arxiv.org/abs/2510.23763",
+      "stars": {
+        "value": 124,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenMOSS/RoboOmni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/37cd1e4cbfbfdadc2a898a703ab46bc0e1c83dd3",
+          "source_record_title": "RoboOmni: Proactive Robot Manipulation in Omni-modal Context",
+          "source_record_doi": "10.48550/arXiv.2510.23763",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E22": {
+      "name": "ELLSA",
+      "repo": "https://github.com/bytedance/SALMONN",
+      "paper_url": "https://arxiv.org/abs/2510.16756",
+      "stars": {
+        "value": 1564,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/bytedance/SALMONN",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415958597",
+          "source_record_title": "End-to-end Listen, Look, Speak and Act",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.16756",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 7,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/3af611e47c30a439f8acad312f16cf7837ddbce7",
+          "source_record_title": "End-to-end Listen, Look, Speak and Act",
+          "source_record_doi": "10.48550/arXiv.2510.16756",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E23": {
+      "name": "VITA-E",
+      "repo": "https://github.com/Tencent/VITA",
+      "paper_url": "https://arxiv.org/abs/2510.21817",
+      "stars": {
+        "value": 166,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Tencent/VITA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/62d932e380f9ec7de5d43c17bc933a05887b0007",
+          "source_record_title": "VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting",
+          "source_record_doi": "10.48550/arXiv.2510.21817",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E24": {
+      "name": "VLAS",
+      "repo": "https://github.com/whichwhichgone/VLAS",
+      "paper_url": "https://arxiv.org/abs/2502.13508",
+      "stars": {
+        "value": 50,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/whichwhichgone/VLAS",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4407764312",
+          "source_record_title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.13508",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 68,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/f6075ce4db8dcc359c3ac97b85f2644dc5cadda6",
+          "source_record_title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+          "source_record_doi": "10.48550/arXiv.2502.13508",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E25": {
+      "name": "Hi Robot",
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2502.19417",
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4416045178",
+          "source_record_title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.19417",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 319,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/69afd10d387423a03617d461c3f47a5f3033cc54",
+          "source_record_title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+          "source_record_doi": "10.48550/arXiv.2502.19417",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E26": {
+      "name": "Yell At Your Robot / YAY Robot",
+      "repo": "https://github.com/yay-robot/yay_robot",
+      "paper_url": "https://arxiv.org/abs/2403.12910",
+      "stars": {
+        "value": 166,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/yay-robot/yay_robot",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 47,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4402354098",
+          "source_record_title": "Yell At Your Robot: Improving On-the-Fly from Language Corrections",
+          "source_record_doi": "https://doi.org/10.15607/rss.2024.xx.025",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 179,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/f213d0cb84b6afca9a4d5722081ba3052e7e89bc",
+          "source_record_title": "Yell At Your Robot: Improving On-the-Fly from Language Corrections",
+          "source_record_doi": "10.48550/arXiv.2403.12910",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ]
+    },
+    "E27": {
+      "name": "Gemini Live API × Robotics demo",
+      "repo": null,
+      "paper_url": null,
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": []
+    },
+    "E28": {
+      "name": "Figure Helix 02",
+      "repo": null,
+      "paper_url": null,
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": []
+    },
+    "E29": {
+      "name": "FireRedChat",
+      "repo": "https://github.com/FireRedTeam/FireRedChat",
+      "paper_url": "https://arxiv.org/abs/2509.06502",
+      "stars": {
+        "value": 597,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/FireRedTeam/FireRedChat",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414757003",
+          "source_record_title": "FireRedChat: A Pluggable, Full-Duplex Voice Interaction System with Cascaded and Semi-Cascaded Implementations",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.06502",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E30": {
+      "name": "Qwen Audio Agent",
+      "repo": "https://github.com/QwenAudio/qwen-audio-agent",
+      "paper_url": null,
+      "stars": {
+        "value": 3111,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": []
+    },
+    "E31": {
+      "name": "Jarvis",
+      "repo": "https://github.com/JensenYX/Jarvis",
+      "paper_url": "https://arxiv.org/abs/2610.23804",
+      "stars": {
+        "value": 18,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/JensenYX/Jarvis",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7222979632",
+          "source_record_title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.23804",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E32": {
+      "name": "ACT / ALOHA",
+      "repo": "https://github.com/tonyzhaozh/act",
+      "paper_url": "https://arxiv.org/abs/2304.13705",
+      "stars": {
+        "value": 2318,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/tonyzhaozh/act",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 674,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4385430674",
+          "source_record_title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+          "source_record_doi": "https://doi.org/10.15607/rss.2023.xix.016",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E33": {
+      "name": "Diffusion Policy",
+      "repo": "https://github.com/real-stanford/diffusion_policy",
+      "paper_url": "https://arxiv.org/abs/2303.04137v4",
+      "stars": {
+        "value": 4698,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/real-stanford/diffusion_policy",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4323651335",
+          "source_record_title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2303.04137",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E34": {
+      "name": "SmolVLA",
+      "repo": "https://github.com/huggingface/lerobot",
+      "paper_url": "https://arxiv.org/abs/2506.01844",
+      "stars": {
+        "value": 28653,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/huggingface/lerobot",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414898213",
+          "source_record_title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2506.01844",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E35": {
+      "name": "LIBERO",
+      "repo": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "paper_url": "https://arxiv.org/abs/2306.03310",
+      "stars": {
+        "value": 2508,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Lifelong-Robot-Learning/LIBERO",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 136,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7133220882",
+          "source_record_title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+          "source_record_doi": "https://doi.org/10.52202/075280-1939",
+          "checked_at": "2026-11-03"
+        }
+      ]
+    },
+    "E36": {
+      "name": "TEN Framework",
+      "repo": "https://github.com/TEN-framework/ten-framework",
+      "paper_url": null,
+      "stars": {
+        "value": 11219,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/TEN-framework/ten-framework",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": []
+    },
+    "S01": {
+      "name": "WavChat",
+      "repo": "https://github.com/jishengpeng/WavChat",
+      "paper_url": "https://arxiv.org/abs/2411.13577",
+      "stars": {
+        "value": 317,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/jishengpeng/WavChat",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404649925",
+          "source_record_title": "WavChat: A Survey of Spoken Dialogue Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2411.13577",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S02": {
+      "name": "Recent Advances in Speech Language Models",
+      "repo": "https://github.com/dreamtheater123/Awesome-SpeechLM-Survey",
+      "paper_url": "https://arxiv.org/abs/2410.03751",
+      "stars": {
+        "value": 226,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/dreamtheater123/Awesome-SpeechLM-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 5,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403322156",
+          "source_record_title": "Recent Advances in Speech Language Models: A Survey",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.03751",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S03": {
+      "name": "From Turn-Taking to Synchronous Dialogue",
+      "repo": "https://github.com/elpsykongloo/FD-SLMs",
+      "paper_url": "https://arxiv.org/abs/2509.14515",
+      "stars": {
+        "value": 34,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/elpsykongloo/FD-SLMs",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4417081448",
+          "source_record_title": "From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.14515",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S04": {
+      "name": "Speaking While Listening / DuplexSurvey",
+      "repo": "https://github.com/MM-Speech/DuplexSurvey",
+      "paper_url": "https://arxiv.org/abs/2606.19453",
+      "stars": {
+        "value": 109,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MM-Speech/DuplexSurvey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7165367522",
+          "source_record_title": "A Survey of Full-Duplex Spoken Dialogue Systems: Architectural Hierarchy, Interaction Ontology, and Decision State Machine",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.19453",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S05": {
+      "name": "A Survey on Audio–Visual Large Language Models",
+      "repo": "https://github.com/AiX-Lab-UWO/Audio-Visual-LLMs-Survey",
+      "paper_url": "https://doi.org/10.1016/j.knosys.2026.116569",
+      "stars": {
+        "value": 0,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/AiX-Lab-UWO/Audio-Visual-LLMs-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7166807819",
+          "source_record_title": "A survey on audio–visual large language models",
+          "source_record_doi": "https://doi.org/10.1016/j.knosys.2026.116569",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 0,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/599f04505243db7ceaca5446325182b708a7b1cb",
+          "source_record_title": "A survey on audio-visual large language models",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ]
+    },
+    "S06": {
+      "name": "Omni-Modal LLMs: Architecture, Training, Evaluation",
+      "repo": "https://github.com/Abillinaire/omni-model-survey",
+      "paper_url": null,
+      "stars": {
+        "value": 2,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Abillinaire/omni-model-survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": []
+    },
+    "S07": {
+      "name": "MLLM-HRC-Survey",
+      "repo": "https://github.com/WuDuidi/MLLM-HRC-Survey",
+      "paper_url": "https://doi.org/10.1016/j.rcim.2025.103064",
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/WuDuidi/MLLM-HRC-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 32,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4411206891",
+          "source_record_title": "Empowering natural human–robot collaboration through multimodal language models and spatial intelligence: Pathways and perspectives",
+          "source_record_doi": "https://doi.org/10.1016/j.rcim.2025.103064",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 33,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/4ddd6e44b7f1f3b349d7ea6756f39175a5b96f0e",
+          "source_record_title": "Empowering natural human-robot collaboration through multimodal language models and spatial intelligence: Pathways and perspectives",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ]
+    },
+    "S08": {
+      "name": "LLM-Based Human-Agent Collaboration and Interaction Systems",
+      "repo": "https://github.com/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems",
+      "paper_url": "https://arxiv.org/abs/2505.00753",
+      "stars": {
+        "value": 242,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415164160",
+          "source_record_title": "LLM-Based Human-Agent Collaboration and Interaction Systems: A Survey",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2505.00753",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S09": {
+      "name": "How Do We Research HRI in the Age of LLMs?",
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2602.15063",
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": [
+        {
+          "value": 6,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7130383196",
+          "source_record_title": "How Do We Research Human-Robot Interaction in the Age of Large Language Models? A Systematic Review",
+          "source_record_doi": "https://doi.org/10.1145/3772318.3790920",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "S10": {
+      "name": "Dialogue Management in HRI",
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2307.10897",
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": [
+        {
+          "value": 34,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4392386515",
+          "source_record_title": "A Survey on Dialogue Management in Human-robot Interaction",
+          "source_record_doi": "https://doi.org/10.1145/3648605",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    }
+  }
+}
