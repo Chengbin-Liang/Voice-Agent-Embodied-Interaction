@@ -1,8 +1,8 @@
 # 工业界实践
 
-**中文** | [English](INDUSTRY.en.md)
+**中文** | [English](../en/INDUSTRY.md)
 
-[返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
+[返回首页](../../README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 ## 🦾 开放机器人基座与工具
 
@@ -36,4 +36,4 @@
 | [Frontend–Backend Tool Calling](CATALOG.md#e49) | [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2609.19334) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2609.19334) | 将实时语音前端与文本工具后端分离，以流式转写、工具执行和 prefill-and-repeat 结果回传连接两者。<br>[📄 论文](https://arxiv.org/abs/2609.19334) |
 | [Diffuplex · Discrete Diffusion](CATALOG.md#e51) | [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2610.17780) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2610.17780) | 以自回归过程决定何时说话，以离散扩散并行生成内容，研究全双工生成效率。<br>[📄 论文](https://arxiv.org/abs/2610.17780) |
 
-校企合作可对照 [Realtime-Venus](CATALOG.md#e54)、[DuplexOmni](CATALOG.md#e58)、[TASTE2](CATALOG.md#e46)。更多方法见 [Voice Agent](03-Voice-Agent.md)，评测见 [Benchmark 导航](05-Voice-Agent-Benchmarks.md)。
+校企合作可对照 [Realtime-Venus](CATALOG.md#e54)、[DuplexOmni](CATALOG.md#e58)、[TASTE2](CATALOG.md#e46)。更多方法见 [Voice Agent](../../docs/zh/03-Voice-Agent.md)，评测见 [Benchmark 导航](../../docs/zh/05-Voice-Agent-Benchmarks.md)。
