@@ -4,16 +4,16 @@
 
 [Home](../../README.en.md) · [Full catalog](../../resources/en/CATALOG.md) · [Surveys & teaching resources](../../resources/en/SURVEYS.md#llm-learning)
 
-Start directly with LLMs: **Happy-LLM → agent fundamentals → ALM / Omni**. Skip topics you already know.
+Reading sequence: Happy-LLM → agent fundamentals → ALM / Omni.
 
 <a id="course"></a>
-## 📘 Core reading: Happy-LLM
+## 📘 Core course: Happy-LLM
 
 ⭐ [Happy-LLM: building language models from scratch](https://github.com/datawhalechina/happy-llm) · [Read online](https://datawhalechina.github.io/happy-llm/)
 
-Why read first: one coherent Chinese course connects architecture, data, training, and applications before moving to speech and embodied research. The chapter links below point to the Chinese edition.
+Priority rationale: a systematic introduction to architecture, data, training, and applications provides LLM foundations for speech and embodied research. The chapter links below point to the Chinese edition.
 
-| Topic | Chapters | What to understand |
+| Topic | Chapters | Core concepts |
 |---|---|---|
 | Model fundamentals | [Chapter 2](https://github.com/datawhalechina/happy-llm/blob/main/docs/chapter2/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20Transformer%E6%9E%B6%E6%9E%84.md) and Chapters 3–4 | Attention, language-model architectures, and generation objectives. |
 | Data and model construction | [Chapter 5](https://github.com/datawhalechina/happy-llm/blob/main/docs/chapter5/%E7%AC%AC%E4%BA%94%E7%AB%A0%20%E5%8A%A8%E6%89%8B%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%A8%A1%E5%9E%8B.md) | Tokenization, training examples, model components, and pretraining. |
@@ -25,15 +25,15 @@ For post-training research, consult [Chapter 8: reinforcement learning for LLMs]
 <a id="agents"></a>
 ## 🛠️ Agent fundamentals
 
-| Reading | Format / language | Focus and reason to read first |
+| Reading | Format / language | Reading focus |
 |---|---|---|
-| ⭐ [Hello-Agents](https://github.com/datawhalechina/hello-agents) | Tutorial · Chinese | Continue from Happy-LLM: connect tools and classic agent patterns into a working interaction loop. |
-| ⭐ [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) | Course · English | Start with Unit 1 fundamentals and Unit 4 construction and evaluation; choose framework lessons as needed. Turns concepts into testable task execution. |
-| ⭐ [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) | Engineering blog · English · 2024 | Distinguish predefined workflows from autonomous agents and understand tools, routing, and feedback loops. |
+| ⭐ [Hello-Agents](https://github.com/datawhalechina/hello-agents) | Tutorial · Chinese | Continues from Happy-LLM with tools, classic agent patterns, and interaction-loop implementation. |
+| [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) | Course · English | Suggested sections are Unit 1 fundamentals and Unit 4 construction and evaluation; framework lessons depend on implementation needs. |
+| [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) | Engineering blog · English · 2024 | Distinguish predefined workflows from autonomous agents and understand tools, routing, and feedback loops. |
 | [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) | Conceptual blog · English · 2023 | Organize planning, memory, and tool use; read as a conceptual introduction. |
-| [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) · [Paper](https://arxiv.org/abs/2210.03629) | Classic paper · English | Understand alternating reasoning, actions, and observations, and how environmental feedback changes subsequent actions. |
+| [ReAct: Synergizing Reasoning and Acting in Language Models](https://react-lm.github.io/) · [Paper](https://arxiv.org/abs/2210.03629) | Classic paper · English | Alternating reasoning, actions, and observations, including the effect of environmental feedback on subsequent actions. |
 
-Be able to distinguish **model responses, tool calls, environmental feedback, and task completion**. [Voice agents](03-Voice-Agent.md) add speech input/output, turn-taking, and interruption; [embodied interaction](04-Edge-Embodied-Interaction.md) adds perception, action execution, and task feedback.
+Core concepts: model responses, tool calls, environmental feedback, and task completion. [Voice agents](03-Voice-Agent.md) add speech input/output, turn-taking, and interruption; [embodied interaction](04-Edge-Embodied-Interaction.md) adds perception, action execution, and task feedback.
 
 ## 🔎 Reference shelf
 
