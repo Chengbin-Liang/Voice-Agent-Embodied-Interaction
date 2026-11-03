@@ -22,7 +22,7 @@
 
 通过限制策略更新幅度，在采样轨迹上优化奖励；理解后续 RLHF 的算法基础。
 
-📌 优先阅读理由：先理解策略、奖励、优势与 clipped objective，再阅读语言模型的 PPO。
+📌 优先阅读理由：介绍策略、奖励、优势估计与 clipped objective，作为语言模型 PPO 的算法背景。
 
 机构 / 维护方：OpenAI
 
@@ -128,7 +128,7 @@ DPO 本身不需要在线环境 rollout。
 
 📌 优先阅读理由：建立 Thinker–Talker 架构、数据与分阶段训练的基本参照。
 
-流式语音输出不等于原生同时听说；MNN 功能覆盖以对应部署模式为准。
+流式语音输出与原生全双工交互分别评估；MNN 支持范围取决于部署模式。
 
 机构 / 维护方：Qwen Team / Alibaba
 
@@ -340,7 +340,7 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 利用离散语音单元与 SpeechInstruct，将文本 LLM 扩展到语音输入输出。
 
-📌 优先阅读理由：顺着模态适配、跨模态指令与 chain-of-modality 读数据和训练。
+📌 优先阅读理由：按模态适配、跨模态指令与 chain-of-modality 阶段组织数据和训练。
 
 机构 / 维护方：Fudan University
 
@@ -372,7 +372,7 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在 Qwen2.5 上构建双语语音对话与流式语音生成，公开多种模型规模与推理代码。
 
-📌 优先阅读理由：可从 0.5B–3B 版本理解语音指令数据、对齐和流式输出，再扩大规模。
+📌 优先阅读理由：提供 0.5B–3B 版本，用于分析语音指令数据、对齐和流式输出。
 
 代码与模型使用不同许可；模型限研究用途。
 
@@ -440,7 +440,7 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在共同时间线上输出语音及结构化 action 通道，研究交谈中的规划与工具调用。
 
-论文的 action 通道主要对应结构化规划与工具操作，不能直接等同于关节控制。
+action 通道用于结构化规划与工具操作；关节控制由下游执行系统实现。
 
 机构 / 维护方：StepFun; Peking University; Nanyang Technological University; Shanghai Jiao Tong University; University of New South Wales; Imperial College London
 
@@ -456,7 +456,7 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在交互前端和后台任务之间训练协调器，管理任务切换、状态和过期结果。
 
-软件 Agent 协调研究，尚不能据此推断真实机器人任务增益。
+研究对象为软件 Agent 协调；真实机器人任务增益需独立验证。
 
 机构 / 维护方：CUHK Shenzhen; Tencent Hunyuan; Amphion Technology
 
@@ -488,9 +488,9 @@ LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管
 
 用 AgentChat 数据、Think-before-Speak 与动态工具检索学习语音 Agent 的推理—调用—反馈闭环。
 
-📌 优先阅读理由：先读 AgentChat 数据格式、训练目标与工具闭环实验，把“能聊天”推进到“能执行任务”。
+📌 优先阅读理由：AgentChat 数据格式、训练目标与工具实验共同展示语音交互如何参与任务执行。
 
-异步工具管理的效果不自动等同于所有条件下的同时听说能力；按论文各项实验分别判断。
+异步工具管理与同时听说能力对应不同实验，结果按各自任务与交互条件解释。
 
 机构 / 维护方：Zhejiang University; China University of Petroleum–Beijing at Karamay; Xiamen University
 
@@ -506,7 +506,7 @@ LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管
 
 通过指令控制音色、话题、反馈、打断和主动开场；冻结音频编码器，采用单阶段训练。
 
-📌 优先阅读理由：理解如何把交互行为写成可监督、可控制的指令，而不只改语音生成质量。
+📌 优先阅读理由：将打断、反馈等交互行为表示为可监督、可控制的指令。
 
 机构 / 维护方：Karlsruhe Institute of Technology; University of Edinburgh; NatWest
 
@@ -522,7 +522,7 @@ LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管
 
 把真实多人录音转为保留时间关系的双声道训练数据，连接分离、说话人分段、转写和质量筛选。
 
-📌 优先阅读理由：理解真实录音如何转为可训练的全双工数据，重点看时间对齐、重叠和筛选。
+📌 优先阅读理由：展示真实录音转化为全双工训练数据时的时间对齐、重叠处理与筛选。
 
 机构 / 维护方：KAIST; NAVER Cloud
 
@@ -552,7 +552,7 @@ LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管
 
 用少量人类偏好校准话轮行为预测，再合成适配不同场景的人机对话，用于全双工模型微调。
 
-📌 优先阅读理由：把数据构造与目标交互行为连起来，阅读人类偏好如何进入合成与微调流程。
+📌 优先阅读理由：说明目标交互行为与数据构造的关系，以及人类偏好在合成和微调中的作用。
 
 机构 / 维护方：University of Illinois Urbana-Champaign; Seoul National University; University of California Berkeley; Georgia Institute of Technology; Columbia University
 
@@ -598,7 +598,7 @@ NeurIPS 2026 依据作者在 arXiv 的标注；MultiTalkBench 与模型训练数
 
 把实际已播放的语音纳入历史，区分“计划说出”与“用户已经听到”，研究打断后的内容连续性。
 
-📌 优先阅读理由：打断后的状态一致性很容易遗漏；重点看已播放历史如何改变后续回答。
+📌 优先阅读理由：以已播放历史为条件，分析打断后的对话状态与后续响应。
 
 机构 / 维护方：Shenzhen Loop Area Institute; The Chinese University of Hong Kong, Shenzhen
 
@@ -676,7 +676,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 将实时语音前端与文本工具后端分离，以流式转写、工具执行和 prefill-and-repeat 结果回传连接两者。
 
-当前为预印本；计划投稿 ICASSP 2027 不表示已经接收。
+当前发表状态为预印本；作者列出的 ICASSP 2027 为投稿计划。
 
 机构 / 维护方：NVIDIA
 
@@ -708,7 +708,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 以自回归过程决定何时说话，以离散扩散并行生成内容，研究全双工生成效率。
 
-论文称代码和检查点将发布；当前条目不将预告视为已开放资源。
+论文预告代码与检查点发布；本条目尚未核实可下载版本。
 
 机构 / 维护方：NVIDIA
 
@@ -724,7 +724,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 级联系统中的因果轮次控制、推测生成和可撤销播放；用播放确认更新持久对话历史。
 
-论文在线实验为三个操作员运行、共 36 轮；适合作为工程案例，不能据此推断大规模用户效果。作者机构归属未确定。
+在线实验包含三个操作员运行、共 36 轮，可作为工程案例；更大规模用户效果需进一步评测。作者机构归属待核实。
 
 机构 / 维护方：Bertil Braun
 
@@ -740,7 +740,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 结合自适应感知窗口、非阻塞认知整合与外部推理，研究动态全双工对话及分阶段后训练。
 
-当前绑定技术论文，未据此假定模型权重或完整训练流程已经开放。
+已核实资源为技术论文；模型权重和完整训练流程的开放状态待核实。
 
 机构 / 维护方：Zuoyebang Education Technology
 
@@ -786,7 +786,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 围绕 listen、converse、think、act 组织实时语音交互，结合 Think-While-Speaking 与异步工具执行。
 
-提供论文与本版本展示入口；不把 StepAudio 2 仓库当作本版本的完整代码。
+已列出本版本论文与展示；完整代码的开放状态按本版本单独核实。
 
 机构 / 维护方：StepFun
 
@@ -802,7 +802,7 @@ ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同
 
 在可执行环境中进行 Agent GRPO，结合多模态策略蒸馏，研究任务可靠性与交互行为后训练。
 
-qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训练代码开放。
+qwen-audio-agent 提供配套运行时；模型权重和训练代码的开放范围分别记录。
 
 机构 / 维护方：Alibaba / Qwen
 
@@ -852,9 +852,9 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 高层视觉语言推理将复杂指令和执行中反馈转为下一步任务，低层 VLA 执行具体动作。
 
-📌 优先阅读理由：理解高层语言推理与低层动作策略的分工。
+📌 优先阅读理由：以高层语言推理配合低层动作策略为例，说明执行反馈如何改变任务分解。
 
-语言反馈经高层规划传给动作策略，不能据此归因为原始语音信息增益。
+语言反馈通过高层规划传递至动作策略；原始语音特征的贡献需单独消融。
 
 机构 / 维护方：Physical Intelligence; Stanford University; UC Berkeley
 
@@ -862,7 +862,7 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 <a id="e26"></a>
 
-### ⭐ Yell At Your Robot / YAY Robot
+### Yell At Your Robot / YAY Robot
 
 [![RSS 2024](https://img.shields.io/badge/RSS%202024-475569?style=flat-square)](https://roboticsproceedings.org/rss20/p025.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2403.12910)
 
@@ -870,7 +870,7 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 人在机器人执行长任务时给出口头修正，系统立即利用纠正，并将这些反馈用于后续高层策略训练。
 
-📌 优先阅读理由：理解执行中口头纠正如何用于当前控制与后续学习。
+阅读重点：理解执行中口头纠正如何用于当前控制与后续学习。
 
 口头纠正主要通过语言表示进入控制与学习。
 
@@ -880,7 +880,7 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 <a id="e24"></a>
 
-### VLAS
+### ⭐ VLAS
 
 [![ICLR 2025](https://img.shields.io/badge/ICLR%202025-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2025/hash/804a1a9de5787e3597b4bb64e1a48ec3-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.13508)
 
@@ -888,7 +888,9 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 将原始语音接入视觉动作策略，并用声纹检索个体相关信息，执行带有个人偏好的操作。
 
-原始语音与声纹个性化操作，不应与全双工说做控制混为同一能力。
+📌 优先阅读理由：以视觉动作模型接入语音编码器为例，分析语音指令适配与声纹条件操作。
+
+评测重点为语音指令与声纹个性化操作；全双工说做交互需单独评价。
 
 机构 / 维护方：Westlake University; Zhejiang University; Xi’an Jiaotong University
 
@@ -896,7 +898,7 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 <a id="e21"></a>
 
-### ⭐ RoboOmni (OpenMOSS)
+### RoboOmni (OpenMOSS)
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/33610fba262d7b6fed0810b89f55e147-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2510.23763)
 
@@ -904,9 +906,9 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 从对话、环境声音和视觉线索推断意图，经确认后生成操作动作，研究隐式情境指令下的主动协助。
 
-📌 优先阅读理由：了解环境声音与隐式意图如何进入操作任务。
+阅读重点：了解环境声音与隐式意图如何进入操作任务。
 
-此处绑定 OpenMOSS 的 RoboOmni，注意与其他同名论文区分。
+本条目对应 OpenMOSS 团队的 RoboOmni。
 
 机构 / 维护方：Fudan University; Shanghai Innovation Institute; National University of Singapore
 
@@ -922,9 +924,9 @@ qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训
 
 在统一架构中处理视觉、文本、语音和动作，支持边说边做、动作打断与基于场景的问答。
 
-📌 优先阅读理由：阅读语音与动作共同建模、边说边做及中断实验。
+📌 优先阅读理由：以语音与动作专家的联合训练为例，分析同时说做、动作打断及分阶段适配。
 
-SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具体权重与训练入口见官方发布。
+Star 数对应整个 SALMONN 仓库；ELLSA 的权重与训练资源见其专用分支和模型页面。
 
 机构 / 维护方：Tsinghua University; ByteDance
 
@@ -946,7 +948,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e95"></a>
 
-### ⭐ NaVILA
+### NaVILA
 
 [![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://navila-bot.github.io/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.04453)
 
@@ -954,7 +956,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 高层 VLA 输出空间语言指令，低层视觉运动策略执行导航，提供 Go2 等平台实验。
 
-📌 优先阅读理由：直接观察语言任务如何落到移动机器人，重点读高低层接口与闭环反馈。
+阅读重点：说明语言导航目标、高低层策略接口与执行反馈之间的关系。
 
 机构 / 维护方：UC San Diego; University of Southern California; NVIDIA
 
@@ -970,7 +972,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 把实时语音、摄像头工具和机器人运动接入同一对话应用。
 
-主要是头部、天线等身体表达和视觉工具调用，不是机械臂抓取平台。
+主要覆盖头部、天线等身体表达与视觉工具调用。
 
 机构 / 维护方：Pollen Robotics / Hugging Face
 
@@ -986,7 +988,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 从语音及文本生成全身与面部协同动作，连接 co-speech gesture 与表达数据。
 
-面向共语手势与角色表达；不直接证明真实机器人的操作能力。
+研究范围为共语手势与角色表达；真实机器人操作需独立评测。
 
 机构 / 维护方：The University of Tokyo; Keio University; Max Planck Institute for Intelligent Systems; JAIST; Tsinghua University
 
@@ -998,7 +1000,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e19"></a>
 
-### ⭐ LeRobot
+### LeRobot
 
 [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2602.22818) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2602.22818)
 
@@ -1006,7 +1008,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 机器人数据、策略训练、硬件控制与评测的开源工具入口。
 
-📌 优先阅读理由：贯通示范采集、数据查看、策略训练与真机执行。
+阅读重点：覆盖示范采集、数据检查、策略训练与真机执行的完整流程。
 
 机构 / 维护方：Hugging Face; University of Oxford
 
@@ -1014,7 +1016,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e32"></a>
 
-### ⭐ ACT / ALOHA
+### ACT / ALOHA
 
 [![RSS 2023](https://img.shields.io/badge/RSS%202023-475569?style=flat-square)](https://www.roboticsproceedings.org/rss19/p016.pdf) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2304.13705)
 
@@ -1022,9 +1024,9 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 用遥操作示范学习动作块，建立视觉运动模仿学习基线。
 
-📌 优先阅读理由：建立“观测—动作示范—动作块预测”的模仿学习直觉。
+阅读重点：通过观测、动作示范与动作块预测介绍模仿学习。
 
-标准 ACT 不是语言条件模型；多目标选择需技能选择器或另加目标条件。
+标准 ACT 采用观测条件动作预测；多目标任务可通过技能选择器或额外目标条件扩展。
 
 机构 / 维护方：Stanford University; Meta; UC Berkeley
 
@@ -1048,7 +1050,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e34"></a>
 
-### ⭐ SmolVLA
+### SmolVLA
 
 [![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2506.01844) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2506.01844)
 
@@ -1056,9 +1058,9 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 450M 视觉语言动作模型，以图像、机器人状态与文本指令为条件生成动作块。
 
-📌 优先阅读理由：沿官方教程把预训练 VLA 适配到自己的机器人数据。
+阅读重点：提供预训练 VLA 适配机器人数据的官方教程与实现。
 
-输入含文本指令，不是原生语音策略。Star 数为整个 LeRobot 仓库；模型小不自动保证整机实时。
+策略以文本指令为条件。Star 数对应整个 LeRobot 仓库；整机实时性需结合感知与控制链路测量。
 
 机构 / 维护方：Hugging Face; Sorbonne University; valeo.ai; ENS Paris-Saclay
 
@@ -1090,9 +1092,9 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 开放 π0、π0-FAST 与 π0.5 的权重、推理和适配代码，连接 VLM、连续动作与多机器人数据。
 
-📌 优先阅读理由：工业基座选型与数据适配的直接入口，重点读动作格式、归一化和微调。
+📌 优先阅读理由：π0 介绍 VLM 与动作专家的连接；π0.5 补充多来源联合训练与新环境泛化。
 
-所链论文为 π0.5；π0 原论文另列。LoRA 使用 JAX 路径，当前 PyTorch 路径不支持 LoRA。
+本条目的引文计数对应 π0.5，Star 数对应 openpi 仓库。π0 原论文见附加链接；LoRA 使用 JAX 实现，PyTorch 路径的功能范围见官方文档。
 
 机构 / 维护方：Physical Intelligence
 
@@ -1100,7 +1102,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e92"></a>
 
-### ⭐ Isaac GR00T N1.7
+### Isaac GR00T N1.7
 
 [![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
 
@@ -1108,7 +1110,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 3B 视觉语言动作基座，提供预训练权重、新本体数据适配和微调流程。
 
-📌 优先阅读理由：阅读本体配置、动作空间与自有数据微调，比较工业基座的适配成本。
+阅读重点：阅读本体配置、动作空间与自有数据微调，比较工业基座的适配成本。
 
 仓库当前版本为 N1.7；背景论文描述早期 N1，训练配置和结果需按版本读取。
 
@@ -1118,7 +1120,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e93"></a>
 
-### ⭐ OpenVLA-OFT
+### OpenVLA-OFT
 
 [![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://roboticsproceedings.org/rss21/p017.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.19645)
 
@@ -1126,7 +1128,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 基于 OpenVLA，比较并行解码、动作块、连续动作和 L1 目标，并用 FiLM 改善语言控制。
 
-📌 优先阅读理由：基座明确、训练开放、算力说明具体；适合研究基座上的适配方法。
+阅读重点：基座明确、训练开放、算力说明具体；适合研究基座上的适配方法。
 
 机构 / 维护方：Stanford University
 
@@ -1134,7 +1136,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e94"></a>
 
-### ⭐ SimpleVLA-RL
+### SimpleVLA-RL
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2509.09674)
 
@@ -1142,7 +1144,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 在 OpenVLA-OFT 等 VLA 上进行强化学习，提供 LIBERO / RoboTwin 的训练、rollout 与评测流程。
 
-📌 优先阅读理由：作为 SFT 之后的进阶阅读，分析环境奖励、rollout 成本与泛化评测。
+阅读重点：作为 SFT 之后的进阶阅读，分析环境奖励、rollout 成本与泛化评测。
 
 机构 / 维护方：Tsinghua University; Shanghai AI Lab; Shanghai Jiao Tong University; Peking University; University of Hong Kong
 
@@ -1150,7 +1152,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 <a id="e97"></a>
 
-### ⭐ Unitree SDK2 / MuJoCo
+### Unitree SDK2 / MuJoCo
 
 [![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
 
@@ -1158,7 +1160,7 @@ SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具
 
 宇树机器人通信与控制接口，并提供基于 SDK2 的 MuJoCo 仿真入口。
 
-📌 优先阅读理由：先理解状态、命令和设备接口，再把任务层接到可执行技能。
+阅读重点：提供状态、命令与设备接口，支持任务层连接可执行技能。
 
 unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支持需单独核实。
 
@@ -1168,7 +1170,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 <a id="e98"></a>
 
-### ⭐ Unitree RL mjlab
+### Unitree RL mjlab
 
 [![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
 
@@ -1176,7 +1178,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 基于 MuJoCo / mjlab 的运动策略训练与部署工具，包含 Go2 等机器人配置。
 
-📌 优先阅读理由：用官方配置理解训练、仿真回放与实机部署之间的关系。
+阅读重点：用官方配置理解训练、仿真回放与实机部署之间的关系。
 
 机构 / 维护方：Unitree Robotics
 
@@ -1214,7 +1216,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 <a id="e101"></a>
 
-### ⭐ RoboTwin 2.0
+### RoboTwin 2.0
 
 [![ICML 2026](https://img.shields.io/badge/ICML%202026-475569?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2506.18088)
 
@@ -1222,7 +1224,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 通过自动化仿真数据生成和领域随机化构建双臂操作任务，提供预采集轨迹。
 
-📌 优先阅读理由：先用现成数据训练与评测，再阅读任务生成和随机化机制。
+阅读重点：提供策略训练与评测数据，并支持任务生成和领域随机化。
 
 机构 / 维护方：Shanghai AI Lab; Shenzhen University; Nanjing University; SJTU; HKU; TeleAI; D-Robotics
 
@@ -1330,7 +1332,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 语言条件机器人操作基准，考察知识迁移与持续学习。
 
-主要评价语言条件操作能力，不直接评价语音交互和真人协作。
+评测范围为语言条件操作；语音交互和真人协作需补充专项评测。
 
 机构 / 维护方：UT Austin; Tsinghua University; Sony AI
 
@@ -1348,7 +1350,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 📌 优先阅读理由：建立基础语音助手能力参照，再与交互和任务指标分别比较。
 
-主要评价语音输入后的回答能力；不能替代连续同时听说或工具任务评测。
+主要评价语音输入后的回答能力；连续全双工交互与工具任务需使用对应评测。
 
 机构 / 维护方：National University of Singapore
 
@@ -1364,7 +1366,7 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 覆盖语义、声学、对话与鲁棒性，补充单轮和多轮语音交互能力评测。
 
-各子集、语言和后续扩展的发布状态分别核对；子集的会议发表不代表整套 benchmark 同一 venue。
+各子集、语言和扩展版本分别记录发布状态与发表位置。
 
 机构 / 维护方：Shanghai Jiao Tong University; Ant Group
 
@@ -1396,9 +1398,9 @@ unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支�
 
 将多语言语音输入连接单步、并行、顺序工具调用及多轮场景，检查函数选择和参数等代理能力。
 
-📌 优先阅读理由：先理解语音工具调用的函数、参数和多步结构，再进入真实任务成功率。
+📌 优先阅读理由：明确语音工具调用的函数、参数和多步结构，为任务级评测提供基础。
 
-强调语音条件下的工具调用结构和参数；不能直接代表连续语音输出的时序自然度。
+评测重点为语音条件下的工具结构和参数；连续语音输出的时序自然度属于独立指标。
 
 机构 / 维护方：OLA Electric / Krutrim AI
 
@@ -1434,7 +1436,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 📌 优先阅读理由：把真实口语修正与工具调用放在同一测试中，观察交互干扰是否造成任务错误。
 
-与 v1、v1.5、v2 共用仓库但任务不同；v3 论文为预印本，不沿用 v1 的 ASRU 2025 标签。
+与 v1、v1.5、v2 共用仓库，评测任务不同；v3 为预印本，v1 发表于 ASRU 2025。
 
 机构 / 维护方：National Taiwan University; NVIDIA
 
@@ -1450,7 +1452,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 按轮次分析长一些的全双工对话，联合观察交互动态、回答质量、指令遵循和安全。
 
-📌 优先阅读理由：补上单个片段测试难以覆盖的多轮累积问题。
+📌 优先阅读理由：覆盖多轮交互中的误差累积与上下文依赖。
 
 机构 / 维护方：Tsinghua University; The Chinese University of Hong Kong; Huawei
 
@@ -1466,7 +1468,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 以真实双声道人类对话评测重叠、打断和反馈，并组织 HumDial 全双工挑战与榜单。
 
-论文讨论 ICASSP 2026 HumDial 挑战；挑战名称不作为该预印本已收入会议论文集的证据。
+论文讨论 ICASSP 2026 HumDial 挑战；本条目的发表状态仍按预印本记录。
 
 机构 / 维护方：Northwestern Polytechnical University / ASLP Lab; Nanjing University; AISHELL
 
@@ -1556,7 +1558,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 在金融服务场景中运行语音代理模拟，通过完整对话、工具轨迹与领域事实检查任务执行。
 
-领域为金融服务；riley-agent 是参考代理实现，不能直接视为完整 benchmark 评分器。
+评测领域为金融服务；riley-agent 提供参考代理实现，完整评分器的可用性需单独核实。
 
 机构 / 维护方：Veris AI
 
@@ -1572,7 +1574,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 以多轮、打断和噪声条件构建全双工评测流程，观察生成质量与延迟。
 
-与 DanielLin94144/Full-Duplex-Bench 是不同项目；两者的分数与版本不能混用。
+与 DanielLin94144/Full-Duplex-Bench 为独立项目，分别使用各自版本与评分协议。
 
 机构 / 维护方：Nanyang Technological University; Alibaba
 
@@ -1588,7 +1590,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 围绕轮次结束与打断检测，在不同误报预算下比较召回和延迟，评价组件的实时决策。
 
-主要评价轮次决策组件；不直接测回复内容、工具调用或最终任务完成。
+评测重点为轮次决策组件；回复内容、工具调用和最终任务完成需补充系统级评测。
 
 机构 / 维护方：Sesame AI; Mundo AI; Oto; Carnegie Mellon University; National Taiwan University; Academia Sinica; Brno University of Technology
 
@@ -1608,7 +1610,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 智元的具身交互展示将场景理解、语音和身体表达组合在同一交互过程中。
 
-工业展示；不能由演示反推动作模型、训练数据或完整系统已经开放。
+公开材料以系统展示为主；动作模型、训练数据与完整系统的开放状态以官方发布为准。
 
 机构 / 维护方：AGIBOT / 智元
 
@@ -1622,7 +1624,7 @@ tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固
 
 Google 官方展示将语音与机器人摄像头输入交给 Live API，再以函数调用连接机器人控制接口。
 
-Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不提供统一的机器人成功率对照实验。
+提供 Live API 连接机器人接口的工程示例；Gemini Robotics 模型发布与机器人成功率实验属于独立资源。
 
 机构 / 维护方：Google / Google DeepMind
 
@@ -1636,7 +1638,7 @@ Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不
 
 Figure 以 S2 语义规划、S1 视觉运动策略和 S0 全身控制连接语言目标与移动操作。
 
-公司技术展示；公开视频不能替代可复现实验和开放训练代码。
+公开材料为系统技术展示，适合参考分层设计；训练代码与可复现实验的可用性以官方发布为准。
 
 机构 / 维护方：Figure AI
 
@@ -1650,7 +1652,7 @@ Figure 以 S2 语义规划、S1 视觉运动策略和 S0 全身控制连接语�
 
 Qwen3-VL 导航系统报告，研究任务模式、上下文与 waypoint 接口，并展示 Go2 部署。
 
-官方仓库当前明确无权重发布计划；用于阅读系统设计，不作为可微调基座。
+官方仓库说明暂无权重发布计划；公开内容适合系统设计与部署参考。
 
 机构 / 维护方：Alibaba / Qwen Team
 
