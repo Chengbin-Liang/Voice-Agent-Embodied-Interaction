@@ -4,7 +4,7 @@
 
 [返回首页](../../README.md) · [完整索引](../../resources/zh/CATALOG.md) · [Survey 对照](../../resources/zh/SURVEYS.md) · [📏 Benchmark 导航](05-Voice-Agent-Benchmarks.md)
 
-从语音对话能力进入交互策略、工具调用和任务完成。基础模型见 [ALM / Omni 基础](02-Omni-Foundations.md)。覆盖至 **2026-11-03**，包含 2026 年 10 月新预印本。
+从语音对话能力进入交互策略、工具调用和任务完成。基础模型见 [ALM / Omni 基础](02-Omni-Foundations.md)。覆盖至 2026-11-03，包含 2026 年 10 月新预印本。
 
 [🧭 选读路径](#route) · [🎓 学术与合作研究](#academic) · [🏭 工业研究](#industry) · [🛠️ 工程实现](#engineering) · [📏 评测](05-Voice-Agent-Benchmarks.md)
 
@@ -15,12 +15,12 @@
 
 | 研究问题 | 首读入口 | 继续对照 |
 |---|---|---|
-| 语音模型怎样学会调用工具并利用结果？ | [VoxMind](../../resources/zh/CATALOG.md#e37) | [MoshiRAG](../../resources/zh/CATALOG.md#e48) · [Realtime-Venus](../../resources/zh/CATALOG.md#e54) · [Jarvis](../../resources/zh/CATALOG.md#e31) |
-| 怎样控制打断、反馈、主动开场？ | [F-Actor](../../resources/zh/CATALOG.md#e38) | [BayLing-Duplex](../../resources/zh/CATALOG.md#e42) · [CF-Duplex / XA-Duplex](../../resources/zh/CATALOG.md#e40) |
+| 语音模型如何调用工具并利用执行结果？ | [VoxMind](../../resources/zh/CATALOG.md#e37) | [MoshiRAG](../../resources/zh/CATALOG.md#e48) · [Realtime-Venus](../../resources/zh/CATALOG.md#e54) · [Jarvis](../../resources/zh/CATALOG.md#e31) |
+| 如何建模打断、反馈与主动发起对话？ | [F-Actor](../../resources/zh/CATALOG.md#e38) | [BayLing-Duplex](../../resources/zh/CATALOG.md#e42) · [CF-Duplex / XA-Duplex](../../resources/zh/CATALOG.md#e40) |
 | 训练数据从哪里来，如何保留时间关系？ | [SOMMELIER](../../resources/zh/CATALOG.md#e39) → [DuplexGen](../../resources/zh/CATALOG.md#e41) | [DuplexOmni](../../resources/zh/CATALOG.md#e58) · [MultiTalk / MultiTalkBench](../../resources/zh/CATALOG.md#e43) |
-| 打断后记住什么，长对话如何继续？ | [Self-Listening / LoopSpeech](../../resources/zh/CATALOG.md#e44) | [MultiTalk / MultiTalkBench](../../resources/zh/CATALOG.md#e43) · [Jarvis](../../resources/zh/CATALOG.md#e31) |
+| 打断后的状态维护与长对话建模 | [Self-Listening / LoopSpeech](../../resources/zh/CATALOG.md#e44) | [MultiTalk / MultiTalkBench](../../resources/zh/CATALOG.md#e43) · [Jarvis](../../resources/zh/CATALOG.md#e31) |
 | 如何复用现有模型并降低实时成本？ | [D2: Dialogue-to-Duplex](../../resources/zh/CATALOG.md#e45) | [TASTE2](../../resources/zh/CATALOG.md#e46) · [DiffuPlex · Rolling Masked Diffusion](../../resources/zh/CATALOG.md#e50) |
-| 如何判断更会交互，也更能完成任务？ | [Full-Duplex-Bench-v3](../../resources/zh/CATALOG.md#e64) → [τ-Voice](../../resources/zh/CATALOG.md#e63) | [按能力选择 benchmark](05-Voice-Agent-Benchmarks.md#selection) |
+| 如何评估交互质量与任务完成率？ | [Full-Duplex-Bench-v3](../../resources/zh/CATALOG.md#e64) → [τ-Voice](../../resources/zh/CATALOG.md#e63) | [按能力选择 benchmark](05-Voice-Agent-Benchmarks.md#selection) |
 
 <a id="academic"></a>
 ## 🎓 学术与校企合作研究
@@ -81,7 +81,7 @@
 
 Voice-Light 的作者机构归属尚未确定，暂不添加 Academic / Industry 标签；其有限规模在线实验见[条目边界](../../resources/zh/CATALOG.md#e52)。
 
-## 📏 从模型结果走向系统结果
+## 📏 系统级评测
 
 [Benchmark 专页](05-Voice-Agent-Benchmarks.md)区分基础回答、轮次决策、多轮与多人、交互指令、工具与任务完成。工具调用成功、用户听到正确内容和环境任务完成是不同事件，需要分别评价。
 
