@@ -22,7 +22,7 @@
 
 Optimizes rewards on sampled trajectories while constraining policy updates; a foundation for subsequent RLHF methods.
 
-📌 Why read first: Learn policies, rewards, advantages, and the clipped objective before PPO for language models.
+📌 Priority rationale: Introduces policies, rewards, advantage estimates, and the clipped objective as background for PPO in language models.
 
 Organizations / maintainers: OpenAI
 
@@ -38,7 +38,7 @@ Organizations / maintainers: OpenAI
 
 Combines supervised demonstrations, a reward model trained on human rankings, and PPO optimization.
 
-📌 Why read first: Establish the SFT → preferences → reward model → RL pipeline.
+📌 Priority rationale: Establish the SFT → preferences → reward model → RL pipeline.
 
 Organizations / maintainers: OpenAI
 
@@ -54,7 +54,7 @@ Organizations / maintainers: OpenAI
 
 Optimizes relative response probabilities from preference pairs, providing an offline alternative to online RL.
 
-📌 Why read first: Understand how the same preference data supports different post-training methods.
+📌 Priority rationale: Understand how the same preference data supports different post-training methods.
 
 DPO itself does not require online environment rollouts.
 
@@ -72,7 +72,7 @@ Organizations / maintainers: Stanford University
 
 Introduces GRPO for mathematical reasoning, deriving relative advantages from groups of sampled answers.
 
-📌 Why read first: Study group rewards, advantage estimation, and KL regularization for verifiable-reward training.
+📌 Priority rationale: Study group rewards, advantage estimation, and KL regularization for verifiable-reward training.
 
 Organizations / maintainers: DeepSeek-AI; Tsinghua University; Peking University
 
@@ -108,7 +108,7 @@ Organizations / maintainers: DeepSeek-AI
 
 Organizes continuous audio/video input and text/speech output on a shared timeline, including proactive responses.
 
-📌 Why read first: Study continuous audiovisual input, full-duplex output, and deployment requirements.
+📌 Priority rationale: Study continuous audiovisual input, full-duplex output, and deployment requirements.
 
 Use the official requirements for each full-duplex mode; distinguish model memory from total system memory.
 
@@ -126,9 +126,9 @@ Organizations / maintainers: Tsinghua University / THUNLP; ModelBest; OpenBMB
 
 Accepts audio, video, images, and text, and jointly generates text and speech; a reference for the Thinker–Talker architecture.
 
-📌 Why read first: Establish a reference for Thinker–Talker architecture, data, and staged training.
+📌 Priority rationale: Establish a reference for Thinker–Talker architecture, data, and staged training.
 
-Streaming speech output does not imply native simultaneous listening and speaking; MNN support depends on the deployment mode.
+Streaming speech output and native full-duplex interaction are evaluated separately; MNN support depends on the deployment mode.
 
 Organizations / maintainers: Qwen Team / Alibaba
 
@@ -200,7 +200,7 @@ Organizations / maintainers: Tsinghua University; Inspirai
 
 Models two-way speech streams together with text, providing an open research foundation for continuous listening and speaking.
 
-📌 Why read first: Understand bidirectional speech streams, text assistance, and low-latency generation.
+📌 Priority rationale: Understand bidirectional speech streams, text assistance, and low-latency generation.
 
 Organizations / maintainers: Kyutai
 
@@ -230,7 +230,7 @@ Organizations / maintainers: Northwestern Polytechnical University; Nanjing Univ
 
 A 7B audio language model for speech, sound, and music understanding with text responses.
 
-📌 Why read first: Start with connecting an audio encoder to an LLM and establishing an audio-understanding baseline.
+📌 Priority rationale: Start with connecting an audio encoder to an LLM and establishing an audio-understanding baseline.
 
 Organizations / maintainers: Alibaba / Qwen Team
 
@@ -260,7 +260,7 @@ Organizations / maintainers: Tsinghua University; Zhipu.AI
 
 A 7B audio language model for speech, sound, music, and audio reasoning, with training, data, and inference resources.
 
-📌 Why read first: Read data construction and staged training alongside the released training branch.
+📌 Priority rationale: Read data construction and staged training alongside the released training branch.
 
 Check model and data licenses separately; the weights use a noncommercial research license.
 
@@ -294,7 +294,7 @@ Organizations / maintainers: NVIDIA; University of Maryland
 
 7B speech base and instruction models with an official fine-tuning toolkit for ASR, TTS, audio understanding, and spoken dialogue.
 
-📌 Why read first: Inspect task data formats and SFT scripts as an entry point to adapting an existing speech base.
+📌 Priority rationale: Inspect task data formats and SFT scripts as an entry point to adapting an existing speech base.
 
 Organizations / maintainers: Xiaomi MiMo
 
@@ -324,7 +324,7 @@ Organizations / maintainers: StepFun
 
 Combines speech and general-audio encoders with an adapter and an LLM for speech, sound, and music tasks.
 
-📌 Why read first: Understand how dual encoders, an adapter, and multitask training retain information beyond ASR.
+📌 Priority rationale: Understand how dual encoders, an adapter, and multitask training retain information beyond ASR.
 
 Organizations / maintainers: Tsinghua University; ByteDance
 
@@ -340,7 +340,7 @@ Organizations / maintainers: Tsinghua University; ByteDance
 
 Extends a text LLM to speech input/output using discrete speech units and SpeechInstruct.
 
-📌 Why read first: Follow modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.
+📌 Priority rationale: Organizes data and training into modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.
 
 Organizations / maintainers: Fudan University
 
@@ -356,7 +356,7 @@ Organizations / maintainers: Fudan University
 
 Trains a lightweight adapter between a frozen speech encoder and LLM by aligning continuations from speech and transcripts.
 
-📌 Why read first: A clear training objective and trainable module make it useful for understanding lightweight speech adaptation.
+📌 Priority rationale: A clear training objective and trainable module make it useful for understanding lightweight speech adaptation.
 
 Organizations / maintainers: CASIA; UCAS; Alibaba DAMO Academy
 
@@ -372,7 +372,7 @@ Organizations / maintainers: CASIA; UCAS; Alibaba DAMO Academy
 
 Builds bilingual spoken dialogue and streaming speech generation on Qwen2.5, with multiple model sizes and inference code.
 
-📌 Why read first: Use the 0.5B–3B variants to study instruction data, alignment, and streaming output before scaling.
+📌 Priority rationale: Provides 0.5B–3B variants for studying speech-instruction data, alignment, and streaming output.
 
 Code and models have different licenses; models are for research use.
 
@@ -410,7 +410,7 @@ Organizations / maintainers: NVIDIA
 
 A full-duplex speech system covering turn control, target-speaker interruption, dialogue management, and tool calling.
 
-📌 Why read first: Use the modular implementation to understand interruption control, dialogue state, and tool use.
+📌 Priority rationale: Use the modular implementation to understand interruption control, dialogue state, and tool use.
 
 Organizations / maintainers: Xiaohongshu / FireRed Team
 
@@ -440,7 +440,7 @@ Organizations / maintainers: Qwen / Alibaba
 
 Produces speech and a structured action channel on a shared timeline, studying planning and tool use during conversation.
 
-The action channel primarily represents structured planning and tool operations, not direct joint control.
+The action channel represents structured planning and tool operations; joint control belongs to the downstream execution system.
 
 Organizations / maintainers: StepFun; Peking University; Nanyang Technological University; Shanghai Jiao Tong University; University of New South Wales; Imperial College London
 
@@ -456,7 +456,7 @@ Organizations / maintainers: StepFun; Peking University; Nanyang Technological U
 
 Trains a coordinator between the interaction frontend and background tasks to manage switching, state, and stale results.
 
-Research on software-agent coordination does not by itself establish gains on physical robot tasks.
+The study concerns software-agent coordination; gains on physical robot tasks require separate validation.
 
 Organizations / maintainers: CUHK Shenzhen; Tencent Hunyuan; Amphion Technology
 
@@ -488,9 +488,9 @@ Organizations / maintainers: Agora; Contributor community
 
 Uses AgentChat data, Think-before-Speak, and dynamic tool retrieval to learn a reasoning–tool-call–feedback loop for spoken agents.
 
-📌 Why read first: Begin with AgentChat formats, training objectives, and tool-loop experiments to connect conversation with task execution.
+📌 Priority rationale: AgentChat formats, training objectives, and tool experiments show how speech interaction supports task execution.
 
-Benefits from asynchronous tool management do not establish simultaneous listening/speaking under every condition; inspect the experiments separately.
+Asynchronous tool management and simultaneous listening/speaking are evaluated in different experiments; results depend on the task and interaction conditions.
 
 Organizations / maintainers: Zhejiang University; China University of Petroleum–Beijing at Karamay; Xiamen University
 
@@ -506,7 +506,7 @@ Organizations / maintainers: Zhejiang University; China University of Petroleum�
 
 Controls voice, topic, backchannels, interruptions, and conversation initiation through instructions, using a frozen audio encoder and single-stage training.
 
-📌 Why read first: Learn how interaction behaviors become supervised, controllable instructions alongside speech-generation quality.
+📌 Priority rationale: Represents interaction behaviors such as interruption and feedback as supervised, controllable instructions.
 
 Organizations / maintainers: Karlsruhe Institute of Technology; University of Edinburgh; NatWest
 
@@ -522,7 +522,7 @@ Organizations / maintainers: Karlsruhe Institute of Technology; University of Ed
 
 Converts real multiparty recordings into temporally aligned two-channel training data through separation, diarization, transcription, and quality filtering.
 
-📌 Why read first: Study how real recordings become full-duplex training data, especially alignment, overlap, and filtering.
+📌 Priority rationale: Shows temporal alignment, overlap handling, and filtering when converting real recordings into full-duplex training data.
 
 Organizations / maintainers: KAIST; NAVER Cloud
 
@@ -552,7 +552,7 @@ Organizations / maintainers: The Chinese University of Hong Kong; Tsinghua Unive
 
 Calibrates turn-taking predictions with a small amount of human preference data, then synthesizes scenario-specific human–AI dialogue for full-duplex fine-tuning.
 
-📌 Why read first: Connect data construction to target interaction behaviors and trace human preferences through synthesis and fine-tuning.
+📌 Priority rationale: Explains the relationship between target interaction behaviors and data construction, including human preferences in synthesis and fine-tuning.
 
 Organizations / maintainers: University of Illinois Urbana-Champaign; Seoul National University; University of California Berkeley; Georgia Institute of Technology; Columbia University
 
@@ -598,7 +598,7 @@ Organizations / maintainers: The Chinese University of Hong Kong; Centre for Per
 
 Adds actually played speech to the history, distinguishing intended speech from what the user has heard, to study continuity after interruption.
 
-📌 Why read first: Focus on how playback-grounded history changes subsequent responses and preserves state after interruption.
+📌 Priority rationale: Analyzes post-interruption dialogue state and subsequent responses conditioned on played-back history.
 
 Organizations / maintainers: Shenzhen Loop Area Institute; The Chinese University of Hong Kong, Shenzhen
 
@@ -658,7 +658,7 @@ Organizations / maintainers: The Chinese University of Hong Kong; Huawei Leibniz
 
 Triggers retrieval asynchronously and injects knowledge into ongoing full-duplex conversation.
 
-📌 Why read first: Study the interfaces, triggers, and result injection linking continuous speech interaction with slower retrieval.
+📌 Priority rationale: Study the interfaces, triggers, and result injection linking continuous speech interaction with slower retrieval.
 
 ICML 2026 acceptance is reported by the authors on arXiv. Retrieval tasks differ in scope from general tool execution.
 
@@ -676,7 +676,7 @@ Organizations / maintainers: Toyota Technological Institute at Chicago; Kyutai; 
 
 Separates a real-time speech frontend from a text-based tool backend, connecting streaming transcription, tool execution, and prefill-and-repeat result delivery.
 
-Currently a preprint; an intention to submit to ICASSP 2027 is not an acceptance.
+Publication status is currently preprint; ICASSP 2027 is listed by the authors as a submission plan.
 
 Organizations / maintainers: NVIDIA
 
@@ -708,7 +708,7 @@ Organizations / maintainers: University of Seoul
 
 Uses autoregression to decide when to speak and discrete diffusion to generate content in parallel, studying full-duplex generation efficiency.
 
-The paper announces future code and checkpoint releases; an announcement is not treated as an available release.
+The paper announces code and checkpoint releases; a downloadable version has not been verified for this entry.
 
 Organizations / maintainers: NVIDIA
 
@@ -724,7 +724,7 @@ Organizations / maintainers: NVIDIA
 
 A cascaded system with causal turn-taking, speculative generation, and reversible playback; playback acknowledgments update durable conversation history.
 
-Online evidence consists of three operator runs totaling 36 turns. Treat it as an engineering case, not a large user study. Institutional affiliation is unverified.
+The online experiment comprises three operator runs totaling 36 turns, providing an engineering case; broader user effects require further evaluation. Institutional affiliation is unverified.
 
 Organizations / maintainers: Bertil Braun
 
@@ -740,7 +740,7 @@ Organizations / maintainers: Bertil Braun
 
 Combines adaptive perception windows, non-blocking cognitive consolidation, and external reasoning for dynamic full-duplex interaction and staged post-training.
 
-This entry links a technical paper and does not assume that weights or a complete training pipeline are available.
+The verified resource is the technical paper; availability of model weights and the complete training pipeline remains unverified.
 
 Organizations / maintainers: Zuoyebang Education Technology
 
@@ -786,7 +786,7 @@ Organizations / maintainers: NVIDIA
 
 Organizes real-time speech interaction around listening, conversing, thinking, and acting, with Think-While-Speaking and asynchronous tool execution.
 
-Links the paper and this version's demonstration; the StepAudio 2 repository is not treated as the complete implementation of this release.
+This entry links the paper and demonstration for this version; availability of a complete implementation is verified separately for this release.
 
 Organizations / maintainers: StepFun
 
@@ -802,7 +802,7 @@ Organizations / maintainers: StepFun
 
 Uses Agent GRPO in executable environments and multimodal policy distillation to study task reliability and interaction post-training.
 
-qwen-audio-agent is a companion runtime; its availability does not imply release of all model weights or training code.
+qwen-audio-agent provides the companion runtime; model-weight and training-code availability are recorded separately.
 
 Organizations / maintainers: Alibaba / Qwen
 
@@ -818,7 +818,7 @@ Organizations / maintainers: Alibaba / Qwen
 
 Coordinates real-time interaction with asynchronous reasoning, using a Writer–Director synthesis pipeline for concurrent listening, seeing, thinking, and speaking.
 
-📌 Why read first: Trace the relationship between real-time interaction, asynchronous reasoning, and synthetic data as a reference for end-to-end design.
+📌 Priority rationale: Trace the relationship between real-time interaction, asynchronous reasoning, and synthetic data as a reference for end-to-end design.
 
 Organizations / maintainers: Xi’an Jiaotong University; Peking University; Meituan
 
@@ -852,9 +852,9 @@ Organizations / maintainers: Robotics at Google
 
 High-level vision-language reasoning converts complex requests and execution-time feedback into the next task; a lower-level VLA executes actions.
 
-📌 Why read first: Understand the division between high-level language reasoning and low-level action policies.
+📌 Priority rationale: Shows how execution feedback changes task decomposition through high-level language reasoning and a low-level action policy.
 
-Feedback reaches the action policy through high-level planning; this alone does not establish an advantage from raw speech information.
+Language feedback reaches the action policy through high-level planning; contributions from raw speech features require a separate ablation.
 
 Organizations / maintainers: Physical Intelligence; Stanford University; UC Berkeley
 
@@ -862,7 +862,7 @@ Organizations / maintainers: Physical Intelligence; Stanford University; UC Berk
 
 <a id="e26"></a>
 
-### ⭐ Yell At Your Robot / YAY Robot
+### Yell At Your Robot / YAY Robot
 
 [![RSS 2024](https://img.shields.io/badge/RSS%202024-475569?style=flat-square)](https://roboticsproceedings.org/rss20/p025.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2403.12910)
 
@@ -870,7 +870,7 @@ Organizations / maintainers: Physical Intelligence; Stanford University; UC Berk
 
 Uses spoken corrections during long robot tasks for immediate adjustment and subsequent high-level policy training.
 
-📌 Why read first: Understand how execution-time corrections support both current control and later learning.
+Reading focus: Understand how execution-time corrections support both current control and later learning.
 
 Spoken corrections primarily enter control and learning through language representations.
 
@@ -880,7 +880,7 @@ Organizations / maintainers: Stanford University; UC Berkeley
 
 <a id="e24"></a>
 
-### VLAS
+### ⭐ VLAS
 
 [![ICLR 2025](https://img.shields.io/badge/ICLR%202025-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2025/hash/804a1a9de5787e3597b4bb64e1a48ec3-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.13508)
 
@@ -888,7 +888,9 @@ Organizations / maintainers: Stanford University; UC Berkeley
 
 Conditions visuomotor action on raw speech and retrieves speaker-specific information for personalized manipulation.
 
-Raw speech and speaker-based personalization are distinct from full-duplex speech/action control.
+📌 Priority rationale: Provides a concrete example of adding a speech encoder to a visuomotor model and studying speech-instruction adaptation and speaker-conditioned manipulation.
+
+Evaluation focuses on spoken instructions and speaker-based personalization; full-duplex speech/action interaction requires separate evaluation.
 
 Organizations / maintainers: Westlake University; Zhejiang University; Xi’an Jiaotong University
 
@@ -896,7 +898,7 @@ Organizations / maintainers: Westlake University; Zhejiang University; Xi’an J
 
 <a id="e21"></a>
 
-### ⭐ RoboOmni (OpenMOSS)
+### RoboOmni (OpenMOSS)
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/33610fba262d7b6fed0810b89f55e147-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2510.23763)
 
@@ -904,9 +906,9 @@ Organizations / maintainers: Westlake University; Zhejiang University; Xi’an J
 
 Infers intent from dialogue, environmental sound, and vision, then produces manipulation actions after confirmation; studies proactive assistance from implicit contextual instructions.
 
-📌 Why read first: Understand how environmental sounds and implicit intent enter manipulation tasks.
+Reading focus: Understand how environmental sounds and implicit intent enter manipulation tasks.
 
-This entry refers to OpenMOSS's RoboOmni; distinguish it from other papers with the same name.
+This entry refers to RoboOmni by the OpenMOSS team.
 
 Organizations / maintainers: Fudan University; Shanghai Innovation Institute; National University of Singapore
 
@@ -922,9 +924,9 @@ Organizations / maintainers: Fudan University; Shanghai Innovation Institute; Na
 
 Processes vision, text, speech, and action in a unified architecture, supporting concurrent speech/action, action interruption, and grounded question answering.
 
-📌 Why read first: Study joint speech/action modeling and experiments on concurrent speaking, acting, and interruption.
+📌 Priority rationale: Provides a concrete example of joint speech/action expert training, concurrent speaking and acting, action interruption, and staged adaptation.
 
-SALMONN is a shared repository. Its stars are not ELLSA-specific; consult official releases for weights and training resources.
+Star counts cover the entire SALMONN repository; ELLSA weights and training resources are listed in its dedicated branch and model page.
 
 Organizations / maintainers: Tsinghua University; ByteDance
 
@@ -946,7 +948,7 @@ Organizations / maintainers: Nanjing University; CASIA; Tencent Youtu Lab; Fouri
 
 <a id="e95"></a>
 
-### ⭐ NaVILA
+### NaVILA
 
 [![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://navila-bot.github.io/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.04453)
 
@@ -954,7 +956,7 @@ Organizations / maintainers: Nanjing University; CASIA; Tencent Youtu Lab; Fouri
 
 A high-level VLA emits spatial-language commands for a low-level visual locomotion policy, with experiments on Go2 and other platforms.
 
-📌 Why read first: Study how language tasks reach a mobile robot through the high/low-level interface and closed-loop feedback.
+Reading focus: Explains the relationship between language navigation goals, the high/low-level policy interface, and execution feedback.
 
 Organizations / maintainers: UC San Diego; University of Southern California; NVIDIA
 
@@ -970,7 +972,7 @@ Organizations / maintainers: UC San Diego; University of Southern California; NV
 
 Connects real-time speech, camera tools, and robot motion within a conversation application.
 
-Primarily head/antenna expression and visual tool use, rather than an arm manipulation platform.
+The application primarily covers head and antenna expression and visual tool use.
 
 Organizations / maintainers: Pollen Robotics / Hugging Face
 
@@ -986,7 +988,7 @@ Organizations / maintainers: Pollen Robotics / Hugging Face
 
 Generates coordinated body and facial motion from speech and text, connecting co-speech gesture methods with expressive motion data.
 
-Targets co-speech gestures and character expression; it does not directly establish physical robot manipulation capability.
+The scope is co-speech gestures and character expression; physical robot manipulation requires separate evaluation.
 
 Organizations / maintainers: The University of Tokyo; Keio University; Max Planck Institute for Intelligent Systems; JAIST; Tsinghua University
 
@@ -998,7 +1000,7 @@ Organizations / maintainers: The University of Tokyo; Keio University; Max Planc
 
 <a id="e19"></a>
 
-### ⭐ LeRobot
+### LeRobot
 
 [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2602.22818) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2602.22818)
 
@@ -1006,7 +1008,7 @@ Organizations / maintainers: The University of Tokyo; Keio University; Max Planc
 
 An open toolkit for robot datasets, policy training, hardware control, and evaluation.
 
-📌 Why read first: Connect demonstration collection, data inspection, policy training, and real-robot execution.
+Reading focus: Covers demonstration collection, data inspection, policy training, and real-robot execution in one workflow.
 
 Organizations / maintainers: Hugging Face; University of Oxford
 
@@ -1014,7 +1016,7 @@ Organizations / maintainers: Hugging Face; University of Oxford
 
 <a id="e32"></a>
 
-### ⭐ ACT / ALOHA
+### ACT / ALOHA
 
 [![RSS 2023](https://img.shields.io/badge/RSS%202023-475569?style=flat-square)](https://www.roboticsproceedings.org/rss19/p016.pdf) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2304.13705)
 
@@ -1022,9 +1024,9 @@ Organizations / maintainers: Hugging Face; University of Oxford
 
 Learns action chunks from teleoperated demonstrations, establishing a visuomotor imitation-learning baseline.
 
-📌 Why read first: Build intuition for imitation learning from observations, demonstrated actions, and action-chunk prediction.
+Reading focus: Introduces imitation learning through observations, demonstrations, and action-chunk prediction.
 
-Standard ACT is not language-conditioned; choosing between goals requires a skill selector or additional goal conditioning.
+Standard ACT predicts actions conditioned on observations; multi-goal tasks can use a skill selector or additional goal conditioning.
 
 Organizations / maintainers: Stanford University; Meta; UC Berkeley
 
@@ -1048,7 +1050,7 @@ Organizations / maintainers: Columbia University; Toyota Research Institute; MIT
 
 <a id="e34"></a>
 
-### ⭐ SmolVLA
+### SmolVLA
 
 [![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2506.01844) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2506.01844)
 
@@ -1056,9 +1058,9 @@ Organizations / maintainers: Columbia University; Toyota Research Institute; MIT
 
 An efficient pretrained VLA reference for adapting language-conditioned actions to robot demonstrations.
 
-📌 Why read first: Follow the official tutorial to adapt a pretrained VLA to a robot dataset.
+Reading focus: Provides an official tutorial and implementation for adapting a pretrained VLA to robot data.
 
-Inputs include text instructions, not native speech. Stars refer to all of LeRobot; a small model alone does not ensure real-time whole-system operation.
+The policy is conditioned on text instructions. Stars cover the entire LeRobot repository; end-to-end real-time performance includes perception and control.
 
 Organizations / maintainers: Hugging Face; Sorbonne University; valeo.ai; ENS Paris-Saclay
 
@@ -1090,9 +1092,9 @@ Organizations / maintainers: Stanford University; UC Berkeley; MIT; Toyota Resea
 
 Releases π0, π0-FAST, and π0.5 weights, inference, and adaptation code, connecting VLMs to continuous actions and multi-robot data.
 
-📌 Why read first: A direct industrial-base selection and adaptation entry point: focus on action formats, normalization, and fine-tuning.
+📌 Priority rationale: π0 introduces the VLM–action-expert interface; π0.5 extends the discussion to heterogeneous co-training and generalization to new environments.
 
-The linked paper is π0.5; the original π0 paper is listed separately. LoRA uses the JAX path; the current PyTorch path does not support LoRA.
+Citation counts in this entry refer to π0.5; stars refer to openpi. The original π0 paper is linked separately. LoRA uses the JAX implementation; see official documentation for the PyTorch feature set.
 
 Organizations / maintainers: Physical Intelligence
 
@@ -1100,7 +1102,7 @@ Organizations / maintainers: Physical Intelligence
 
 <a id="e92"></a>
 
-### ⭐ Isaac GR00T N1.7
+### Isaac GR00T N1.7
 
 [![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
 
@@ -1108,7 +1110,7 @@ Organizations / maintainers: Physical Intelligence
 
 A 3B vision-language-action base with pretrained weights, new-embodiment data adaptation, and fine-tuning workflows.
 
-📌 Why read first: Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs.
+Reading focus: Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs.
 
 The current repository is N1.7; the background paper describes the earlier N1. Read configurations and results by version.
 
@@ -1118,7 +1120,7 @@ Organizations / maintainers: NVIDIA
 
 <a id="e93"></a>
 
-### ⭐ OpenVLA-OFT
+### OpenVLA-OFT
 
 [![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://roboticsproceedings.org/rss21/p017.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.19645)
 
@@ -1126,7 +1128,7 @@ Organizations / maintainers: NVIDIA
 
 Builds on OpenVLA with parallel decoding, action chunks, continuous actions, L1 training, and FiLM for language control.
 
-📌 Why read first: A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods.
+Reading focus: A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods.
 
 Organizations / maintainers: Stanford University
 
@@ -1134,7 +1136,7 @@ Organizations / maintainers: Stanford University
 
 <a id="e94"></a>
 
-### ⭐ SimpleVLA-RL
+### SimpleVLA-RL
 
 [![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2509.09674)
 
@@ -1142,7 +1144,7 @@ Organizations / maintainers: Stanford University
 
 Applies RL to VLAs including OpenVLA-OFT, with training, rollout, and evaluation workflows for LIBERO and RoboTwin.
 
-📌 Why read first: Read after SFT to examine environment rewards, rollout cost, and generalization evaluation.
+Reading focus: Read after SFT to examine environment rewards, rollout cost, and generalization evaluation.
 
 Organizations / maintainers: Tsinghua University; Shanghai AI Lab; Shanghai Jiao Tong University; Peking University; University of Hong Kong
 
@@ -1150,7 +1152,7 @@ Organizations / maintainers: Tsinghua University; Shanghai AI Lab; Shanghai Jiao
 
 <a id="e97"></a>
 
-### ⭐ Unitree SDK2 / MuJoCo
+### Unitree SDK2 / MuJoCo
 
 [![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
 
@@ -1158,7 +1160,7 @@ Organizations / maintainers: Tsinghua University; Shanghai AI Lab; Shanghai Jiao
 
 Unitree communication/control interfaces and a MuJoCo simulation entry point based on SDK2.
 
-📌 Why read first: Understand state, commands, and device interfaces before connecting the task layer to executable skills.
+Reading focus: Provides state, command, and device interfaces for connecting the task layer to executable skills.
 
 unitree_mujoco primarily targets low-level control; check interface support for the specific robot and firmware.
 
@@ -1168,7 +1170,7 @@ Organizations / maintainers: Unitree Robotics
 
 <a id="e98"></a>
 
-### ⭐ Unitree RL mjlab
+### Unitree RL mjlab
 
 [![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
 
@@ -1176,7 +1178,7 @@ Organizations / maintainers: Unitree Robotics
 
 MuJoCo/mjlab locomotion-policy training and deployment tools, including Go2 configurations.
 
-📌 Why read first: Use official configurations to understand training, simulation playback, and deployment.
+Reading focus: Use official configurations to understand training, simulation playback, and deployment.
 
 Organizations / maintainers: Unitree Robotics
 
@@ -1214,7 +1216,7 @@ Organizations / maintainers: Amazon FAR; Stanford University; University of Sout
 
 <a id="e101"></a>
 
-### ⭐ RoboTwin 2.0
+### RoboTwin 2.0
 
 [![ICML 2026](https://img.shields.io/badge/ICML%202026-475569?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2506.18088)
 
@@ -1222,7 +1224,7 @@ Organizations / maintainers: Amazon FAR; Stanford University; University of Sout
 
 Builds bimanual tasks through automated simulation data generation and domain randomization, with pre-collected trajectories.
 
-📌 Why read first: Start with released data for training and evaluation, then study task generation and randomization.
+Reading focus: Provides data for policy training and evaluation, with task generation and domain randomization.
 
 Organizations / maintainers: Shanghai AI Lab; Shenzhen University; Nanjing University; SJTU; HKU; TeleAI; D-Robotics
 
@@ -1314,7 +1316,7 @@ Organizations / maintainers: M-A-P; University of Manchester; Queen Mary Univers
 
 Evaluates pauses, backchannels, turn transitions, and interruptions; later versions extend to overlap, dynamic multi-turn interaction, and tool use.
 
-📌 Why read first: Translate interruptions, turn transitions, and interaction timing into measurable outcomes.
+📌 Priority rationale: Translate interruptions, turn transitions, and interaction timing into measurable outcomes.
 
 Organizations / maintainers: National Taiwan University; UC Berkeley; University of Washington; MIT CSAIL
 
@@ -1330,7 +1332,7 @@ Organizations / maintainers: National Taiwan University; UC Berkeley; University
 
 A simulation benchmark for language-conditioned robot manipulation and lifelong learning.
 
-Primarily evaluates language-conditioned manipulation, rather than speech interaction or collaboration with real participants.
+Evaluates language-conditioned manipulation; speech interaction and human collaboration require additional evaluations.
 
 Organizations / maintainers: UT Austin; Tsinghua University; Sony AI
 
@@ -1346,9 +1348,9 @@ Organizations / maintainers: UT Austin; Tsinghua University; Sony AI
 
 Evaluates voice-assistant knowledge, instruction following, safety, and response robustness under accents, noise, and other perturbations.
 
-📌 Why read first: Establish a basic voice-assistant reference before comparing interaction and task outcomes separately.
+📌 Priority rationale: Establish a basic voice-assistant reference before comparing interaction and task outcomes separately.
 
-Primarily evaluates responses to spoken input; it does not replace continuous full-duplex or tool-task evaluation.
+Primarily evaluates responses to spoken input; continuous full-duplex interaction and tool tasks use their respective evaluations.
 
 Organizations / maintainers: National University of Singapore
 
@@ -1364,7 +1366,7 @@ Organizations / maintainers: National University of Singapore
 
 Covers semantic, acoustic, conversational, and robustness dimensions across single-turn and multi-turn speech interaction.
 
-Check each subset, language, and extension separately. Publication of one subset does not assign that venue to the entire benchmark.
+Release status and venues are recorded separately for each subset, language, and extension.
 
 Organizations / maintainers: Shanghai Jiao Tong University; Ant Group
 
@@ -1396,9 +1398,9 @@ Organizations / maintainers: Wuhan University; Tencent
 
 Connects multilingual speech input to single, parallel, sequential, and multi-turn tool tasks, testing function choice, arguments, and other agent capabilities.
 
-📌 Why read first: Understand speech-conditioned function selection, arguments, and multi-step structure before interpreting real-world task success.
+📌 Priority rationale: Defines function, argument, and multi-step structure in speech tool use as a foundation for task-level evaluation.
 
-Focuses on tool structure and arguments; it does not directly establish natural timing of continuous speech output.
+Evaluation focuses on speech-conditioned tool structure and arguments; timing naturalness in continuous speech output is a separate metric.
 
 Organizations / maintainers: OLA Electric / Krutrim AI
 
@@ -1414,7 +1416,7 @@ Organizations / maintainers: OLA Electric / Krutrim AI
 
 Uses domain policies and environment state to evaluate multi-turn tool use and final task completion by full-duplex voice agents.
 
-📌 Why read first: Judge completion from final environment state and compare text agents with voice agents.
+📌 Priority rationale: Judge completion from final environment state and compare text agents with voice agents.
 
 The tau2-bench repository continues to evolve, including later τ³ development. Pin the paper's version, environment, and user simulator.
 
@@ -1432,9 +1434,9 @@ Organizations / maintainers: Sierra; Princeton University
 
 Combines real spoken hesitations, repetitions, and corrections with multi-step tool use to evaluate task execution during interaction.
 
-📌 Why read first: Test whether spoken corrections and other interaction disturbances cause tool-task errors.
+📌 Priority rationale: Test whether spoken corrections and other interaction disturbances cause tool-task errors.
 
-Shares a repository with v1, v1.5, and v2 but evaluates a different task. The v3 paper is a preprint, not the ASRU 2025 publication of v1.
+Shares a repository with v1, v1.5, and v2 but evaluates a different task; v3 is a preprint, while v1 was published at ASRU 2025.
 
 Organizations / maintainers: National Taiwan University; NVIDIA
 
@@ -1450,7 +1452,7 @@ Organizations / maintainers: National Taiwan University; NVIDIA
 
 Analyzes full-duplex conversations turn by turn, combining interaction dynamics, response quality, instruction following, and safety.
 
-📌 Why read first: Cover cumulative multi-turn problems that short isolated clips can miss.
+📌 Priority rationale: Covers error accumulation and context dependencies across multiple interaction turns.
 
 Organizations / maintainers: Tsinghua University; The Chinese University of Hong Kong; Huawei
 
@@ -1466,7 +1468,7 @@ Organizations / maintainers: Tsinghua University; The Chinese University of Hong
 
 Uses real two-channel human dialogue to evaluate overlap, interruption, and backchannels, with a HumDial challenge and leaderboard.
 
-The paper discusses the ICASSP 2026 HumDial challenge. The event name does not establish proceedings publication of this preprint.
+The paper discusses the ICASSP 2026 HumDial challenge; this entry records the paper as a preprint.
 
 Organizations / maintainers: Northwestern Polytechnical University / ASLP Lab; Nanjing University; AISHELL
 
@@ -1540,7 +1542,7 @@ Organizations / maintainers: Beijing Institute for General Artificial Intelligen
 
 Uses dynamic bot-to-bot simulation to evaluate complete tasks and interaction experience, separating task/factual fidelity from timing and experience.
 
-📌 Why read first: Learn to evaluate task correctness and experience separately, and inspect the validity of the simulated user.
+📌 Priority rationale: Learn to evaluate task correctness and experience separately, and inspect the validity of the simulated user.
 
 Organizations / maintainers: ServiceNow AI Research
 
@@ -1556,7 +1558,7 @@ Organizations / maintainers: ServiceNow AI Research
 
 Simulates voice agents in financial-service scenarios, checking complete dialogues, tool traces, and domain facts.
 
-Domain-specific to financial services; riley-agent is a reference agent implementation, not necessarily the complete benchmark grader.
+The evaluation domain is financial services; riley-agent provides a reference agent implementation, with complete grader availability verified separately.
 
 Organizations / maintainers: Veris AI
 
@@ -1572,7 +1574,7 @@ Organizations / maintainers: Veris AI
 
 A full-duplex evaluation pipeline with multi-turn interaction, interruptions, and noise, measuring generation quality and latency.
 
-A different project from DanielLin94144/Full-Duplex-Bench; scores and versions are not interchangeable.
+A separate project from DanielLin94144/Full-Duplex-Bench, with its own versions and scoring protocols.
 
 Organizations / maintainers: Nanyang Technological University; Alibaba
 
@@ -1588,7 +1590,7 @@ Organizations / maintainers: Nanyang Technological University; Alibaba
 
 Evaluates end-of-turn and interruption detectors through recall and latency at specified false-positive budgets.
 
-Primarily a component-level turn-decision benchmark, not a direct test of response content, tool use, or final task completion.
+Evaluates the turn-decision component; response content, tool use, and final task completion require additional system-level evaluation.
 
 Organizations / maintainers: Sesame AI; Mundo AI; Oto; Carnegie Mellon University; National Taiwan University; Academia Sinica; Brno University of Technology
 
@@ -1608,7 +1610,7 @@ Organizations / maintainers: Sesame AI; Mundo AI; Oto; Carnegie Mellon Universit
 
 AGIBOT's embodied interaction demonstration combines scene understanding, speech, and bodily expression.
 
-An industry demonstration does not establish that the action model, training data, or complete system is open.
+Public material primarily presents system demonstrations; availability of action models, training data, and the complete system follows official releases.
 
 Organizations / maintainers: AGIBOT
 
@@ -1622,7 +1624,7 @@ Organizations / maintainers: AGIBOT
 
 An official Google example feeds speech and robot-camera input into the Live API, then connects function calls to robot control interfaces.
 
-The Live API example and Gemini Robotics models are separate resources. The example does not provide a standardized controlled robot success-rate study.
+Provides an engineering example connecting Live API to robot interfaces; Gemini Robotics releases and controlled robot success-rate studies are separate resources.
 
 Organizations / maintainers: Google / Google DeepMind
 
@@ -1636,7 +1638,7 @@ Organizations / maintainers: Google / Google DeepMind
 
 Figure connects language goals with mobile manipulation through S2 semantic planning, S1 visuomotor policies, and S0 whole-body control.
 
-A company technical demonstration; public videos do not replace reproducible experiments or open training code.
+Public material is a system demonstration useful for studying hierarchical design; training code and reproducible experiments depend on official releases.
 
 Organizations / maintainers: Figure AI
 
@@ -1650,7 +1652,7 @@ Organizations / maintainers: Figure AI
 
 A Qwen3-VL navigation-system report covering task modes, context, waypoint interfaces, and Go2 deployment.
 
-The official repository currently states that weights will not be released; use it as a system-design reference, not a fine-tunable base.
+The official repository states there is no current plan to release weights; public material supports system-design and deployment reference.
 
 Organizations / maintainers: Alibaba / Qwen Team
 
