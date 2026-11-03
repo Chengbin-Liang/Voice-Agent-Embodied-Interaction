@@ -348,12 +348,11 @@
       "repo": "https://github.com/DanielLin94144/Full-Duplex-Bench",
       "paper_url": "https://arxiv.org/abs/2503.04721",
       "stars": {
-        "value": 336,
+        "value": 335,
         "source": "GitHub REST API",
         "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
-        "checked_at": "2026-11-02",
-        "scope": "whole repository",
-        "license_spdx": "NOASSERTION"
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
       },
       "citation_counts": [
         {
@@ -677,7 +676,7 @@
       "repo": "https://github.com/QwenAudio/qwen-audio-agent",
       "paper_url": null,
       "stars": {
-        "value": 3111,
+        "value": 3112,
         "source": "GitHub REST API",
         "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
         "checked_at": "2026-11-03",
@@ -807,6 +806,790 @@
         "scope": "whole repository"
       },
       "citation_counts": []
+    },
+    "E37": {
+      "name": "VoxMind",
+      "repo": "https://github.com/MM-Speech/VoxMind",
+      "paper_url": "https://arxiv.org/abs/2604.15710",
+      "stars": {
+        "value": 46,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MM-Speech/VoxMind",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7155019877",
+          "source_record_title": "VoxMind: An End-to-End Agentic Spoken Dialogue System",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.15710",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E38": {
+      "name": "F-Actor",
+      "repo": "https://github.com/MaikeZuefle/f-actor",
+      "paper_url": "https://arxiv.org/abs/2601.11329",
+      "stars": {
+        "value": 33,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MaikeZuefle/f-actor",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7124734178",
+          "source_record_title": "F-Actor: Controllable Conversational Behaviour in Full-Duplex Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2601.11329",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E39": {
+      "name": "SOMMELIER",
+      "repo": "https://github.com/Anonymous-2001-j/Sommelier",
+      "paper_url": "https://arxiv.org/abs/2603.25750",
+      "stars": {
+        "value": 0,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Anonymous-2001-j/Sommelier",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7143443580",
+          "source_record_title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2603.25750",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E40": {
+      "name": "CF-Duplex / XA-Duplex",
+      "paper_url": "https://arxiv.org/abs/2605.10199",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7160904488",
+          "source_record_title": "How Should LLMs Listen While Speaking? A Study of User-Stream Routing in Full-Duplex Spoken Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2605.10199",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E41": {
+      "name": "DuplexGen",
+      "repo": "https://github.com/duplexgen/duplexgen-code",
+      "paper_url": "https://arxiv.org/abs/2607.26178",
+      "stars": {
+        "value": 29,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/duplexgen/duplexgen-code",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7171803236",
+          "source_record_title": "DuplexGen: Adaptive Synthesis of Human-AI Turn-Taking Dialogues",
+          "source_record_doi": "https://doi.org/10.18653/2026.emnlp-main.2618",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E42": {
+      "name": "BayLing-Duplex",
+      "repo": "https://github.com/BayLing-Models/BayLing-Duplex",
+      "paper_url": "https://arxiv.org/abs/2606.14528",
+      "stars": {
+        "value": 96,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/BayLing-Models/BayLing-Duplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7164829614",
+          "source_record_title": "BayLing-Duplex: Native Full-Duplex Speech Dialogue with a Single Autoregressive LLM",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.14528",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E43": {
+      "name": "MultiTalk / MultiTalkBench",
+      "paper_url": "https://arxiv.org/abs/2609.36903",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214898838",
+          "source_record_title": "MultiTalk: Scaling Full-Duplex Speech Models to Long, Multi-Party, Bilingual Conversation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.36903",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E44": {
+      "name": "Self-Listening / LoopSpeech",
+      "repo": "https://github.com/FreedomIntelligence/LoopSpeech",
+      "paper_url": "https://arxiv.org/abs/2609.05592",
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/FreedomIntelligence/LoopSpeech",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212059771",
+          "source_record_title": "What Did I Just Say? Self-Listening for Full-Duplex Speech Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.05592",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E45": {
+      "name": "D2: Dialogue-to-Duplex",
+      "repo": "https://github.com/penguinfish1688/D2-dialogue-to-duplex",
+      "paper_url": "https://arxiv.org/abs/2610.17124",
+      "stars": {
+        "value": 11,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/penguinfish1688/D2-dialogue-to-duplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221777691",
+          "source_record_title": "D2: High-Capability Full-Duplex Spoken Language Models from Half-Duplex Backbones",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.17124",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E46": {
+      "name": "TASTE2",
+      "repo": "https://github.com/GitYCC/TASTE-SpokenLM-2",
+      "paper_url": "https://arxiv.org/abs/2609.08956",
+      "stars": {
+        "value": 2,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/GitYCC/TASTE-SpokenLM-2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212080144",
+          "source_record_title": "TASTE2: Text-Aligned Speech Modeling and Deployment toward Full-Duplex Voice Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.08956",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E47": {
+      "name": "IRAF",
+      "paper_url": "https://arxiv.org/abs/2606.06559",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7163910264",
+          "source_record_title": "IRAF: Interference-Resilient Adaptive Fusion for Noise-Robust End-to-End Full-Duplex Spoken Dialogue Systems",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.06559",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E48": {
+      "name": "MoshiRAG",
+      "repo": "https://github.com/kyutai-labs/moshi-rag",
+      "paper_url": "https://arxiv.org/abs/2604.12928",
+      "stars": {
+        "value": 195,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/kyutai-labs/moshi-rag",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7154507545",
+          "source_record_title": "MoshiRAG: Asynchronous Knowledge Retrieval for Full-Duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.12928",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E49": {
+      "name": "Frontend–Backend Tool Calling",
+      "paper_url": "https://arxiv.org/abs/2609.19334",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213611583",
+          "source_record_title": "A frontend-backend architecture for tool calls in full-duplex speech models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.19334",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E50": {
+      "name": "DiffuPlex · Rolling Masked Diffusion",
+      "paper_url": "https://arxiv.org/abs/2610.12214",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221088445",
+          "source_record_title": "DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.12214",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E51": {
+      "name": "Diffuplex · Discrete Diffusion",
+      "paper_url": "https://arxiv.org/abs/2610.17780",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221757954",
+          "source_record_title": "Full-duplex Spoken Language Modeling with Discrete Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.17780",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E52": {
+      "name": "Voice-Light",
+      "repo": "https://github.com/BertilBraun/Voice-Light",
+      "paper_url": "https://arxiv.org/abs/2609.20995",
+      "stars": {
+        "value": 10,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/BertilBraun/Voice-Light",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213934747",
+          "source_record_title": "Voice-Light: A Full-Duplex Cascaded Voice Agent with Causal Turn-Taking and Speculative Generation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.20995",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E53": {
+      "name": "AdaptDuplex",
+      "paper_url": "https://arxiv.org/abs/2609.29217",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214079271",
+          "source_record_title": "ADAPTDUPLEX: FROM STATIC TO ADAPTIVE FULL-DUPLEX SPOKEN DIALOGUE",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.29217",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E54": {
+      "name": "Realtime-Venus",
+      "repo": "https://github.com/inclusionAI/Realtime-Venus",
+      "paper_url": "https://arxiv.org/abs/2609.13814",
+      "stars": {
+        "value": 252,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/inclusionAI/Realtime-Venus",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213284145",
+          "source_record_title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.13814",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E55": {
+      "name": "NemotronLabs VoiceChat",
+      "repo": "https://github.com/NVIDIA-NeMo/Speech/tree/nemotron-labs-voicechat",
+      "paper_url": "https://arxiv.org/abs/2609.21967",
+      "stars": {
+        "value": 18685,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA-NeMo/Speech",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213936344",
+          "source_record_title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.21967",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E56": {
+      "name": "StepAudio 3 Realtime",
+      "paper_url": "https://arxiv.org/abs/2609.14005",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213371127",
+          "source_record_title": "StepAudio 3 Realtime Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.14005",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E57": {
+      "name": "Qwen-Audio-3.1-Realtime",
+      "repo": "https://github.com/QwenAudio/qwen-audio-agent",
+      "paper_url": "https://arxiv.org/abs/2609.25176",
+      "stars": {
+        "value": 3112,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214103824",
+          "source_record_title": "Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.25176",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E58": {
+      "name": "DuplexOmni",
+      "repo": "https://github.com/MuyeHuang/DuplexOmni",
+      "paper_url": "https://arxiv.org/abs/2606.09186",
+      "stars": {
+        "value": 145,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MuyeHuang/DuplexOmni",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7164028919",
+          "source_record_title": "DuplexOmni: Real-Time Listening, Seeing, Thinking, and Speaking for Full-Duplex Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.09186",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E59": {
+      "name": "VoiceBench",
+      "repo": "https://github.com/MatthewCYM/VoiceBench",
+      "paper_url": "https://arxiv.org/abs/2410.17196",
+      "stars": {
+        "value": 407,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MatthewCYM/VoiceBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404261856",
+          "source_record_title": "VoiceBench: Benchmarking LLM-Based Voice Assistants",
+          "source_record_doi": "https://doi.org/10.1162/tacl.a.628",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E60": {
+      "name": "VocalBench",
+      "repo": "https://github.com/SJTU-OmniAgent/VocalBench",
+      "paper_url": "https://arxiv.org/abs/2505.15727",
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/SJTU-OmniAgent/VocalBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415329203",
+          "source_record_title": "VocalBench: Benchmarking the Vocal Conversational Abilities for Speech Interaction Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2505.15727",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E61": {
+      "name": "VCB Bench",
+      "repo": "https://github.com/Tencent/VCB-Bench",
+      "paper_url": "https://arxiv.org/abs/2510.11098",
+      "stars": {
+        "value": 5,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Tencent/VCB-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4417101201",
+          "source_record_title": "VCB Bench: An Evaluation Benchmark for Audio-Grounded Large Language Model Conversational Agents",
+          "source_record_doi": "https://doi.org/10.18653/v1/2026.findings-acl.1659",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E62": {
+      "name": "VoiceAgentBench",
+      "repo": "https://github.com/ola-krutrim/VoiceAgentBench",
+      "paper_url": "https://arxiv.org/abs/2510.07978",
+      "stars": {
+        "value": 6,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ola-krutrim/VoiceAgentBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415318706",
+          "source_record_title": "VoiceAgentBench: Are Voice Assistants ready for agentic tasks?",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.07978",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E63": {
+      "name": "τ-Voice",
+      "repo": "https://github.com/sierra-research/tau2-bench",
+      "paper_url": "https://arxiv.org/abs/2603.13686",
+      "stars": {
+        "value": 2382,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/sierra-research/tau2-bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7138316890",
+          "source_record_title": "$τ$-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2603.13686",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E64": {
+      "name": "Full-Duplex-Bench-v3",
+      "repo": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+      "paper_url": "https://arxiv.org/abs/2604.04847",
+      "stars": {
+        "value": 335,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7151544009",
+          "source_record_title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.04847",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E65": {
+      "name": "MTR-DuplexBench",
+      "repo": "https://github.com/ZhangHe0918/MTR-DuplexBench",
+      "paper_url": "https://arxiv.org/abs/2511.10262",
+      "stars": {
+        "value": 9,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ZhangHe0918/MTR-DuplexBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4416238789",
+          "source_record_title": "MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2511.10262",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E66": {
+      "name": "HumDial-FDBench",
+      "repo": "https://github.com/ASLP-lab/HumDial-FDBench",
+      "paper_url": "https://arxiv.org/abs/2604.21406",
+      "stars": {
+        "value": 44,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ASLP-lab/HumDial-FDBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7155525302",
+          "source_record_title": "Full-Duplex Interaction in Spoken Dialogue Systems: A Comprehensive Study from the ICASSP 2026 HumDial Challenge",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.21406",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E67": {
+      "name": "MP-Bench",
+      "repo": "https://github.com/atosystem/MP-Bench",
+      "paper_url": "https://arxiv.org/abs/2609.13076",
+      "stars": {
+        "value": 1,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/atosystem/MP-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212688662",
+          "source_record_title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+          "source_record_doi": "https://doi.org/10.18653/2026.findings-emnlp.1437",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E68": {
+      "name": "Duplex-MPE",
+      "paper_url": "https://arxiv.org/abs/2609.31948",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214781414",
+          "source_record_title": "Duplex-MPE: Benchmarking Multi-Party Interaction in Full-Duplex Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.31948",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E69": {
+      "name": "Instruct-FD",
+      "paper_url": "https://arxiv.org/abs/2607.20460",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7170334618",
+          "source_record_title": "Instruct-FD: Can Your Full-Duplex Speech System Follow Turn-Taking Instructions?",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2607.20460",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E70": {
+      "name": "DuplexAct-Bench",
+      "repo": "https://github.com/Alita-xky/DuplexAct-Bench",
+      "paper_url": "https://arxiv.org/abs/2609.39446",
+      "stars": {
+        "value": 1,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Alita-xky/DuplexAct-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": []
+    },
+    "E71": {
+      "name": "EVA-Bench",
+      "repo": "https://github.com/ServiceNow/eva",
+      "paper_url": "https://arxiv.org/abs/2605.13841",
+      "stars": {
+        "value": 235,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ServiceNow/eva",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7161175665",
+          "source_record_title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
+          "source_record_doi": "https://doi.org/10.18653/2026.findings-emnlp.2182",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E72": {
+      "name": "VAmoS Bench",
+      "repo": "https://github.com/veris-ai/riley-agent",
+      "paper_url": "https://arxiv.org/abs/2607.27453",
+      "stars": {
+        "value": 18,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/veris-ai/riley-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7172022530",
+          "source_record_title": "VAmoS Bench: Voice Agent Simulation Bench",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2607.27453",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E73": {
+      "name": "FD-Bench",
+      "repo": "https://github.com/pengyizhou/FD-Bench",
+      "paper_url": "https://arxiv.org/abs/2507.19040",
+      "stars": {
+        "value": 27,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/pengyizhou/FD-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415433582",
+          "source_record_title": "FD-Bench: A Full-Duplex Benchmarking Pipeline Designed for Full Duplex Spoken Dialogue Systems",
+          "source_record_doi": "https://doi.org/10.21437/interspeech.2025-739",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E74": {
+      "name": "TurnBench",
+      "repo": "https://github.com/SesameAILabs/turnbench",
+      "paper_url": "https://arxiv.org/abs/2608.25218",
+      "stars": {
+        "value": 57,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/SesameAILabs/turnbench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7204453739",
+          "source_record_title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2608.25218",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
     },
     "S01": {
       "name": "WavChat",
