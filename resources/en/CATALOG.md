@@ -1,10 +1,10 @@
 # Paper and Project Catalog
 
-[中文](CATALOG.md) | **English**
+[中文](../zh/CATALOG.md) | **English**
 
-[Home](README.en.md) · [Survey](SURVEYS.en.md) · [Benchmarks](05-Voice-Agent-Benchmarks.en.md)
+[Home](../../README.en.md) · [Survey](SURVEYS.md) · [Benchmarks](../../docs/en/05-Voice-Agent-Benchmarks.md)
 
-⭐ Suggested first readings include a reason. See the [label guide](README.en.md#labels).
+⭐ Suggested first readings include a reason. See the [label guide](../../README.en.md#labels).
 
 [🧠 LLM post-training and reinforcement learning](#llm) · [🎧 ALM / Omni and speech models](#omni) · [💬 Voice agents and interaction systems](#voice) · [🤖 Embodied interaction and language feedback](#embodied) · [🦾 Actions, data, and deployment](#robotics) · [📏 Evaluation](#evaluation) · [🏭 Industry demonstrations](#industry)
 
