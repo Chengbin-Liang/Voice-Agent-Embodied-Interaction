@@ -4,12 +4,12 @@
 
 [返回首页](../../README.md) · [完整索引](../../resources/zh/CATALOG.md) · [Survey 对照](../../resources/zh/SURVEYS.md) · [Voice Agent 论文](03-Voice-Agent.md)
 
-按“测什么、怎样测、结果能说明什么”选择评测。下列 **18 个评测入口**包含独立 benchmark、Full-Duplex-Bench 的不同任务版本和 MultiTalk 的配套测试集，不视为 18 套互不重叠的数据。核对日期：**2026-11-03**。
+按“评测目标、实验协议与适用范围”选择评测。下列 18 个评测入口包含独立 benchmark、Full-Duplex-Bench 的不同任务版本和 MultiTalk 的配套测试集，不视为 18 套互不重叠的数据。核对日期：2026-11-03。
 
 [🎧 基础回答、中文与声学鲁棒性](#foundations) · [⏱️ 轮次、打断与全双工行为](#turn) · [👥 多轮、长时与多人交互](#multi) · [🎛️ 交互指令与主动行为](#instructions) · [🧰 工具调用与最终任务完成](#tasks) · [🧭 选型](#selection)
 
 <a id="selection"></a>
-## 🧭 最小评测组合
+## 🧭 评测组合示例
 
 | 目标 | 建议组合 | 分开报告的结果 |
 |---|---|---|
@@ -22,7 +22,7 @@
 <a id="foundations"></a>
 ## 🎧 基础回答、中文与声学鲁棒性
 
-| Benchmark / 发表与归属 | 测什么 | 数据与交互协议 | 适用边界 |
+| Benchmark / 发表与归属 | 评测目标 | 数据与交互协议 | 适用边界 |
 |---|---|---|---|
 | ⭐ [VoiceBench](../../resources/zh/CATALOG.md#e59)<br>[![TACL 2026](https://img.shields.io/badge/TACL%202026-475569?style=flat-square)](https://aclanthology.org/2026.tacl-1.18/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2410.17196)<br>[📄 论文](https://arxiv.org/abs/2410.17196) · [💻 仓库](https://github.com/MatthewCYM/VoiceBench) | 知识、指令遵循、安全；口音、噪声、混响等扰动。 | 真实与合成口语指令；以回答能力为主。 | 不直接测连续交互时序或工具任务完成。 |
 | [VCB Bench](../../resources/zh/CATALOG.md#e61)<br>[![Findings of ACL 2026](https://img.shields.io/badge/Findings%20of%20ACL%202026-475569?style=flat-square)](https://aclanthology.org/2026.findings-acl.1659/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/pdf/2510.11098)<br>[📄 论文](https://arxiv.org/abs/2510.11098) · [💻 仓库](https://github.com/Tencent/VCB-Bench) | 真实中文语音指令、知识理解与鲁棒性。 | 真实人声为核心；区分原始中文协议与后续扩展。 | 不覆盖完整 Agent 环境终态。 |
@@ -31,7 +31,7 @@
 <a id="turn"></a>
 ## ⏱️ 轮次、打断与全双工行为
 
-| Benchmark / 发表与归属 | 测什么 | 数据与交互协议 | 适用边界 |
+| Benchmark / 发表与归属 | 评测目标 | 数据与交互协议 | 适用边界 |
 |---|---|---|---|
 | ⭐ [Full-Duplex-Bench](../../resources/zh/CATALOG.md#e16)<br>[![ASRU 2025](https://img.shields.io/badge/ASRU%202025-475569?style=flat-square)](https://arxiv.org/abs/2503.04721) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2503.04721)<br>[📄 论文](https://arxiv.org/abs/2503.04721) · [💻 仓库](https://github.com/DanielLin94144/Full-Duplex-Bench) | 停顿、反馈、交接、打断；v2 扩展多轮。 | 按 v1 / v1.5 / v2 固定协议；v3 工具任务另列。 | v1 论文 ASRU 2025；共享仓库不表示所有版本同一论文。 |
 | [FD-Bench](../../resources/zh/CATALOG.md#e73)<br>[![Interspeech 2025](https://img.shields.io/badge/Interspeech%202025-475569?style=flat-square)](https://www.isca-archive.org/interspeech_2025/peng25b_interspeech.html) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/pdf/2507.19040)<br>[📄 论文](https://arxiv.org/abs/2507.19040) · [💻 仓库](https://github.com/pengyizhou/FD-Bench) | 多轮交互、打断、噪声与延迟。 | 合成全双工对话测试流程。 | 与 Full-Duplex-Bench 为不同团队的不同项目。 |
@@ -41,7 +41,7 @@
 <a id="multi"></a>
 ## 👥 多轮、长时与多人交互
 
-| Benchmark / 发表与归属 | 测什么 | 数据与交互协议 | 适用边界 |
+| Benchmark / 发表与归属 | 评测目标 | 数据与交互协议 | 适用边界 |
 |---|---|---|---|
 | ⭐ [MTR-DuplexBench](../../resources/zh/CATALOG.md#e65)<br>[![Findings of ACL 2026](https://img.shields.io/badge/Findings%20of%20ACL%202026-475569?style=flat-square)](https://aclanthology.org/2026.findings-acl.263/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/pdf/2511.10262)<br>[📄 论文](https://arxiv.org/abs/2511.10262) · [💻 仓库](https://github.com/ZhangHe0918/MTR-DuplexBench) | 逐轮交互动态、回答质量、指令遵循与安全。 | 将较长会话分段评价，观察随轮次累积的变化。 | 会话来源与数据使用条件按官方说明。 |
 | [MultiTalk / MultiTalkBench](../../resources/zh/CATALOG.md#e43)<br>[![NeurIPS 2026 · 作者标注](https://img.shields.io/badge/NeurIPS%202026%20%C2%B7%20%E4%BD%9C%E8%80%85%E6%A0%87%E6%B3%A8-475569?style=flat-square)](https://arxiv.org/abs/2609.36903) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2609.36903)<br>[📄 论文](https://arxiv.org/abs/2609.36903) · [🔗 预训练数据](https://huggingface.co/datasets/MultiTalk/MultiTalkPT) · [🔗 微调数据](https://huggingface.co/datasets/MultiTalk/MultiTalkFT) · [🔗 Benchmark](https://huggingface.co/datasets/MultiTalk/MultiTalkBench) | 长时、多方、双语会话能力。 | MultiTalkBench 来自真实录音，平均会话约 32.6 分钟。 | 与 MultiTalkPT / FT 训练数据区分；不代表工具任务完成。 |
@@ -51,7 +51,7 @@
 <a id="instructions"></a>
 ## 🎛️ 交互指令与主动行为
 
-| Benchmark / 发表与归属 | 测什么 | 数据与交互协议 | 适用边界 |
+| Benchmark / 发表与归属 | 评测目标 | 数据与交互协议 | 适用边界 |
 |---|---|---|---|
 | [Instruct-FD](../../resources/zh/CATALOG.md#e69)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2607.20460) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2607.20460)<br>[📄 论文](https://arxiv.org/abs/2607.20460) | 按指令改变接话、打断、反馈和主动性。 | 以交互指令遵循分数及相对变化评价行为。 | 依据论文协议；不将指标判分器当作真人体验。 |
 | [DuplexAct-Bench](../../resources/zh/CATALOG.md#e70)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2609.39446) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2609.39446)<br>[📄 论文](https://arxiv.org/abs/2609.39446) · [💻 仓库](https://github.com/Alita-xky/DuplexAct-Bench) · [🔗 项目](https://alitaxky.icu/DuplexAct-Bench/) | 六类交互行为；时机与内容分别评价。 | 中英双语 1,290 个试次；含主动沉默与抵抗打断。 | 代码链接主要是项目页，完整评测器开放情况另核。 |
@@ -59,13 +59,13 @@
 <a id="tasks"></a>
 ## 🧰 工具调用与最终任务完成
 
-| Benchmark / 发表与归属 | 测什么 | 数据与交互协议 | 适用边界 |
+| Benchmark / 发表与归属 | 评测目标 | 数据与交互协议 | 适用边界 |
 |---|---|---|---|
-| ⭐ [VoiceAgentBench](../../resources/zh/CATALOG.md#e62)<br>[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2510.07978) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2510.07978)<br>[📄 论文](https://arxiv.org/abs/2510.07978) · [💻 仓库](https://github.com/ola-krutrim/VoiceAgentBench) · [🔗 数据](https://huggingface.co/datasets/krutrim-ai-labs/VoiceAgentBench) | 单步、并行、顺序工具调用，多轮和安全。 | 英语及六种印度语言的语音代理任务，检查函数和参数。 | 工具结构准确率不等于复杂环境中的终态成功率。 |
+| ⭐ [VoiceAgentBench](../../resources/zh/CATALOG.md#e62)<br>[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2510.07978) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2510.07978)<br>[📄 论文](https://arxiv.org/abs/2510.07978) · [💻 仓库](https://github.com/ola-krutrim/VoiceAgentBench) · [🔗 数据](https://huggingface.co/datasets/krutrim-ai-labs/VoiceAgentBench) | 单步、并行、顺序工具调用，多轮和安全。 | 英语及六种印度语言的语音代理任务，检查函数和参数。 | 工具结构准确率与环境终态成功率分别报告。 |
 | ⭐ [Full-Duplex-Bench-v3](../../resources/zh/CATALOG.md#e64)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2604.04847) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/pdf/2604.04847)<br>[📄 论文](https://arxiv.org/abs/2604.04847) · [💻 仓库](https://github.com/DanielLin94144/Full-Duplex-Bench) · [🔗 项目](https://daniellin94144.github.io/FDB-v3-demo/) | 真实口语不流利条件下的多步工具使用。 | 真实人声中的重复、犹豫和自我修正；小规模诊断集。 | 与原版 FDB 的交互指标分开；不沿用 ASRU 2025 标签。 |
 | ⭐ [τ-Voice](../../resources/zh/CATALOG.md#e63)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2603.13686) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/pdf/2603.13686)<br>[📄 论文](https://arxiv.org/abs/2603.13686) · [💻 仓库](https://github.com/sierra-research/tau2-bench) | 领域规则、工具执行、环境终态的任务完成。 | 动态全双工用户模拟，含噪声和口音；可对照文本 Agent。 | 固定 tau2 对应版本，不混用后续 τ³ 开发协议。 |
 | ⭐ [EVA-Bench](../../resources/zh/CATALOG.md#e71)<br>[![Findings of EMNLP 2026](https://img.shields.io/badge/Findings%20of%20EMNLP%202026-475569?style=flat-square)](https://aclanthology.org/2026.findings-emnlp.2182/) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2605.13841)<br>[📄 论文](https://arxiv.org/abs/2605.13841) · [💻 仓库](https://github.com/ServiceNow/eva) · [🔗 项目](https://servicenow.github.io/eva/) | EVA-A：任务与事实；EVA-X：时序与交互体验。 | 动态 bot-to-bot 模拟，检查用户模拟有效性和重复试验。 | 任务成功、体验评分及不同重复采样指标分别报告。 |
-| [VAmoS Bench](../../resources/zh/CATALOG.md#e72)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2607.27453) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2607.27453)<br>[📄 论文](https://arxiv.org/abs/2607.27453) · [💻 仓库](https://github.com/veris-ai/riley-agent) | 金融服务任务、领域事实与工具执行轨迹。 | 模拟完整会话，按任务轨迹和领域规则评分。 | 特定行业结果；参考代理代码不等于完整 benchmark。 |
+| [VAmoS Bench](../../resources/zh/CATALOG.md#e72)<br>[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2607.27453) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/pdf/2607.27453)<br>[📄 论文](https://arxiv.org/abs/2607.27453) · [💻 仓库](https://github.com/veris-ai/riley-agent) | 金融服务任务、领域事实与工具执行轨迹。 | 模拟完整会话，按任务轨迹和领域规则评分。 | 结果适用于指定行业；参考代理与完整评分器分别核实。 |
 
 ## 🌐 补充在线评测入口
 
