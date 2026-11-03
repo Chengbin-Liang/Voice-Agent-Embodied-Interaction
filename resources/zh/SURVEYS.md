@@ -1,8 +1,8 @@
 # Survey 与总结入口
 
-**中文** | [English](SURVEYS.en.md)
+**中文** | [English](../en/SURVEYS.md)
 
-[返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
+[返回首页](../../README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
 按问题选择综述，再到代表论文与代码。各综述的分类、论点和原始条目归其作者；下表仅概括覆盖范围。
 
@@ -153,24 +153,25 @@ SpeechLM，以及更新后的双工模型、控制组件与评测清单。
 <a id="llm-learning"></a>
 ## 🎓 LLM 综述与教学参考
 
-以下资源支撑 [LLM 基础](01-LLM-Foundations.md)的阅读顺序，与上方 10 个语音、Omni 和 HRI 综述条目分开列出。
+以下资源支撑 [LLM 基础](../../docs/zh/01-LLM-Foundations.md)的阅读顺序，与上方 10 个语音、Omni 和 HRI 综述条目分开列出。
 
 | 来源 | 语言 / 定位 | 对阅读路线的作用 |
 |---|---|---|
 | [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) · [作者仓库](https://github.com/RUCAIBox/LLMSurvey) | 英文综述 | 提供预训练、适配、使用与能力评测的主题地图，可沿参考文献追溯原始论文。 |
 | [《大语言模型》](https://llmbook-zh.github.io/) | 中文教材 | 按需查阅架构、数据、训练、对齐、评测与推理。 |
-| [Happy-LLM](https://github.com/datawhalechina/happy-llm) | 中文教学材料 | 递进的概念讲解与实践，重点参考第 2–6 章。 |
+| [Happy-LLM](https://github.com/datawhalechina/happy-llm) | 中文教学材料 | LLM 入门主线：第 2–7 章；第 8 章按后训练需求查阅。 |
 | [HF LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) · [中文版](https://huggingface.co/learn/llm-course/zh-CN/chapter1/1) | 英文课程与中文翻译 | tokenizer、模型使用、微调及动手练习；不同语言版本覆盖不完全一致。 |
 | [Stanford CS336](https://cs336.stanford.edu/) | 英文大学课程 | 从实现角度理解语言模型组件、数据、训练与对齐，选做作业作为延伸。 |
 
 
+Agent 入门：[Hello-Agents](https://github.com/datawhalechina/hello-agents)（中文）与 [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)（英文）；推荐阅读范围见 [Agent 基础](../../docs/zh/01-LLM-Foundations.md#agents)。
 
 <a id="embodied-learning"></a>
 ## 🤖 具身入门指南与教学
 
 | 来源 | 阅读范围 | 对应入口 |
 |---|---|---|
-| ⭐ [Lumina 具身智能入门指南](https://lumina-embodied.ai/blog/eai-guide/) | 控制、MPC、RL、模仿学习、VLA、导航、硬件与工具 | [基础概念](04-Edge-Embodied-Interaction.md#concepts) → 原论文与代码 |
-| ⭐ [ScaleLab 具身指南](https://scalelab-sjtu.github.io/embodied_guide.html) | VLA、仿真与数据、全身控制的代表论文和项目 | [基座](04-Edge-Embodied-Interaction.md#bases) → [学术进阶](04-Edge-Embodied-Interaction.md#research) |
+| ⭐ [Lumina 具身智能入门指南](https://lumina-embodied.ai/blog/eai-guide/) | 控制、MPC、RL、模仿学习、VLA、导航、硬件与工具 | [基础概念](../../docs/zh/04-Edge-Embodied-Interaction.md#concepts) → 原论文与代码 |
+| ⭐ [ScaleLab 具身指南](https://scalelab-sjtu.github.io/embodied_guide.html) | VLA、仿真与数据、全身控制的代表论文和项目 | [基座](../../docs/zh/04-Edge-Embodied-Interaction.md#bases) → [学术进阶](../../docs/zh/04-Edge-Embodied-Interaction.md#research) |
 | [MIT Underactuated Robotics](https://underactuated.mit.edu/) | 动力学、控制、轨迹优化与强化学习 | 按需查阅控制与 MPC，补充动作执行的原理 |
 | [LeRobot 文档](https://huggingface.co/docs/lerobot/en/il_robots) | 遥操作、数据录制、训练、评测与设备适配 | 从一个示范学习流程开始 |
