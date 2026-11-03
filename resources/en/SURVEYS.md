@@ -35,7 +35,7 @@ Choose a survey by question, then follow it to representative papers and code. T
 
 Spoken dialogue models, representations, training, streaming, and interaction.
 
-📌 Why read first: Build an overall map of spoken dialogue models, training, and interaction.
+📌 Priority rationale: Build an overall map of spoken dialogue models, training, and interaction.
 
 <sub>Count snapshot: 2026-11-02.</sub>
 
@@ -109,7 +109,7 @@ The repository's survey manuscript organizes Omni research as Build → Assess �
 
 Human–robot collaboration, spatial intelligence, and the perception–cognition–execution cycle.
 
-📌 Why read first: Connect human–robot collaboration with perception, cognition, and execution.
+📌 Priority rationale: Connect human–robot collaboration with perception, cognition, and execution.
 
 <sub>Count snapshot: 2026-11-02.</sub>
 
@@ -135,7 +135,7 @@ Feedback types, granularity, stages, collaboration, and communication.
 
 Human-centered HRI systems, experimental design, and evaluation.
 
-📌 Why read first: Understand the distinct questions answered by human studies and system evaluations.
+📌 Priority rationale: Understand the distinct questions answered by human studies and system evaluations.
 
 <sub>Count snapshot: 2026-11-02.</sub>
 
@@ -171,7 +171,7 @@ Agent introductions: [Hello-Agents](https://github.com/datawhalechina/hello-agen
 
 | Source | Coverage | Reading entry point |
 |---|---|---|
-| ⭐ [Lumina embodied AI guide](https://lumina-embodied.ai/blog/eai-guide/) · Chinese | Control, MPC, RL, imitation learning, VLAs, navigation, hardware, and tools | [Core concepts](../../docs/en/04-Edge-Embodied-Interaction.md#concepts) → original papers and code |
-| ⭐ [ScaleLab guide](https://scalelab-sjtu.github.io/embodied_guide.html) · Chinese | Representative VLAs, simulation/data systems, and whole-body control | [Bases](../../docs/en/04-Edge-Embodied-Interaction.md#bases) → [Academic follow-ups](../../docs/en/04-Edge-Embodied-Interaction.md#research) |
+| [Lumina embodied AI guide](https://lumina-embodied.ai/blog/eai-guide/) · Chinese | Control, MPC, RL, imitation learning, VLAs, navigation, hardware, and tools | [Core concepts](../../docs/en/04-Edge-Embodied-Interaction.md#concepts) → original papers and code |
+| [ScaleLab guide](https://scalelab-sjtu.github.io/embodied_guide.html) · Chinese | Representative VLAs, simulation/data systems, and whole-body control | [Bases](../../docs/en/04-Edge-Embodied-Interaction.md#bases) → [Academic follow-ups](../../docs/en/04-Edge-Embodied-Interaction.md#research) |
 | [MIT Underactuated Robotics](https://underactuated.mit.edu/) | Dynamics, control, trajectory optimization, and RL | Read control and MPC chapters as needed |
 | [LeRobot documentation](https://huggingface.co/docs/lerobot/en/il_robots) | Teleoperation, recording, training, evaluation, and hardware adaptation | Start with one demonstration-learning workflow |
