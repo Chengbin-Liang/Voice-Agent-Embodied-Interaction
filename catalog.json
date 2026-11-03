@@ -1048,12 +1048,11 @@
         "https://github.com/DanielLin94144/Full-Duplex-Bench"
       ],
       "stars": {
-        "value": 336,
+        "value": 335,
         "source": "GitHub REST API",
         "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
-        "checked_at": "2026-11-02",
-        "scope": "whole repository",
-        "license_spdx": "NOASSERTION"
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
       },
       "citation_counts": [
         {
@@ -1085,7 +1084,13 @@
           "https://arxiv.org/html/2503.04721"
         ]
       },
-      "recommended_reading": "把打断、轮次交接和交互时序转为可测指标。"
+      "recommended_reading": "把打断、轮次交接和交互时序转为可测指标。",
+      "evaluation": {
+        "group": "turn",
+        "measures": "停顿、反馈、交接、打断；v2 扩展多轮。",
+        "protocol": "按 v1 / v1.5 / v2 固定协议；v3 工具任务另列。",
+        "limits": "v1 论文 ASRU 2025；共享仓库不表示所有版本同一论文。"
+      }
     },
     {
       "id": "E17",
@@ -1948,7 +1953,7 @@
         "https://github.com/QwenAudio/qwen-audio-agent"
       ],
       "stars": {
-        "value": 3111,
+        "value": 3112,
         "source": "GitHub REST API",
         "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
         "checked_at": "2026-11-03",
@@ -2336,6 +2341,2631 @@
         ]
       },
       "scope_note": "LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管等；部署前阅读官方 LICENSE。"
+    },
+    {
+      "id": "E37",
+      "name": "VoxMind",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "用 AgentChat 数据、Think-before-Speak 与动态工具检索学习语音 Agent 的推理—调用—反馈闭环。",
+      "paper_url": "https://arxiv.org/abs/2604.15710",
+      "paper_title": "VoxMind: An End-to-End Agentic Spoken Dialogue System",
+      "authors": [
+        "Liang, Tianle",
+        "Chen, Yifu",
+        "Ji, Shengpeng",
+        "Chen, Yijun",
+        "Jia, Zhiyang",
+        "Lu, Jingyu",
+        "Zhuo, Fan",
+        "Pu, Xueyi",
+        "Li, Yangzhuo",
+        "Zhao, Zhou"
+      ],
+      "first_publication_date": "2026/04/17",
+      "sources": [
+        "https://arxiv.org/abs/2604.15710",
+        "https://aclanthology.org/2026.acl-long.459/",
+        "https://github.com/MM-Speech/VoxMind"
+      ],
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://aclanthology.org/2026.acl-long.459/",
+        "checked_at": "2026-11-03",
+        "doi": "10.18653/v1/2026.acl-long.459",
+        "pages": "10117--10139"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Zhejiang University",
+          "China University of Petroleum–Beijing at Karamay",
+          "Xiamen University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2604.15710"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7155019877",
+          "source_record_title": "VoxMind: An End-to-End Agentic Spoken Dialogue System",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.15710",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/MM-Speech/VoxMind",
+      "stars": {
+        "value": 46,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MM-Speech/VoxMind",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "先读 AgentChat 数据格式、训练目标与工具闭环实验，把“能聊天”推进到“能执行任务”。",
+      "scope_note": "异步工具管理的效果不自动等同于所有条件下的同时听说能力；按论文各项实验分别判断。"
+    },
+    {
+      "id": "E38",
+      "name": "F-Actor",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "通过指令控制音色、话题、反馈、打断和主动开场；冻结音频编码器，采用单阶段训练。",
+      "paper_url": "https://arxiv.org/abs/2601.11329",
+      "paper_title": "F-Actor: Controllable Conversational Behaviour in Full-Duplex Models",
+      "authors": [
+        "Züfle, Maike",
+        "Klejch, Ondrej",
+        "Sanders, Nicholas",
+        "Niehues, Jan",
+        "Birch, Alexandra",
+        "Lam, Tsz Kin"
+      ],
+      "first_publication_date": "2026/01/16",
+      "sources": [
+        "https://arxiv.org/abs/2601.11329",
+        "https://aclanthology.org/2026.findings-acl.242/",
+        "https://github.com/MaikeZuefle/f-actor"
+      ],
+      "publication": {
+        "venue": "Findings of ACL",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://aclanthology.org/2026.findings-acl.242/",
+        "checked_at": "2026-11-03",
+        "doi": "10.18653/v1/2026.findings-acl.242",
+        "pages": "4904--4921"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Karlsruhe Institute of Technology",
+          "University of Edinburgh",
+          "NatWest"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2601.11329"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7124734178",
+          "source_record_title": "F-Actor: Controllable Conversational Behaviour in Full-Duplex Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2601.11329",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/MaikeZuefle/f-actor",
+      "stars": {
+        "value": 33,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MaikeZuefle/f-actor",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "理解如何把交互行为写成可监督、可控制的指令，而不只改语音生成质量。"
+    },
+    {
+      "id": "E39",
+      "name": "SOMMELIER",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "把真实多人录音转为保留时间关系的双声道训练数据，连接分离、说话人分段、转写和质量筛选。",
+      "paper_url": "https://arxiv.org/abs/2603.25750",
+      "paper_title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
+      "authors": [
+        "Jung, Kyudan",
+        "Kim, Jihwan",
+        "Kim, Soyoon",
+        "Kim, Jeonghoon",
+        "Choo, Jaegul",
+        "Park, Cheonbok"
+      ],
+      "first_publication_date": "2026/03/20",
+      "sources": [
+        "https://arxiv.org/abs/2603.25750",
+        "https://aclanthology.org/2026.acl-industry.18/",
+        "https://github.com/Anonymous-2001-j/Sommelier"
+      ],
+      "publication": {
+        "venue": "ACL Industry Track",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://aclanthology.org/2026.acl-industry.18/",
+        "checked_at": "2026-11-03",
+        "doi": "10.18653/v1/2026.acl-industry.18",
+        "pages": "259--284"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "KAIST",
+          "NAVER Cloud"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2603.25750"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7143443580",
+          "source_record_title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2603.25750",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/Anonymous-2001-j/Sommelier",
+      "stars": {
+        "value": 0,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Anonymous-2001-j/Sommelier",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "理解真实录音如何转为可训练的全双工数据，重点看时间对齐、重叠和筛选。"
+    },
+    {
+      "id": "E40",
+      "name": "CF-Duplex / XA-Duplex",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "对比受控融合与交叉注意力，把用户语音流接入正在生成的模型，分析同时听说的架构选择。",
+      "paper_url": "https://arxiv.org/abs/2605.10199",
+      "paper_title": "How Should LLMs Listen While Speaking? A Study of User-Stream Routing in Full-Duplex Spoken Dialogue",
+      "authors": [
+        "Lu, Hui",
+        "Chen, Xueyuan",
+        "Wang, Huimeng",
+        "Peng, Shuhai",
+        "Kang, Shiyin",
+        "Wu, Xixin",
+        "Wu, Zhiyong"
+      ],
+      "first_publication_date": "2026/05/11",
+      "sources": [
+        "https://arxiv.org/abs/2605.10199"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2605.10199",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "The Chinese University of Hong Kong",
+          "Tsinghua University",
+          "SenseTime"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2605.10199"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7160904488",
+          "source_record_title": "How Should LLMs Listen While Speaking? A Study of User-Stream Routing in Full-Duplex Spoken Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2605.10199",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://light1726.github.io/duplex-demo/"
+        }
+      ]
+    },
+    {
+      "id": "E41",
+      "name": "DuplexGen",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "用少量人类偏好校准话轮行为预测，再合成适配不同场景的人机对话，用于全双工模型微调。",
+      "paper_url": "https://arxiv.org/abs/2607.26178",
+      "paper_title": "DuplexGen: Adaptive Synthesis of Human-AI Turn-Taking Dialogues",
+      "authors": [
+        "Kim, Takyoung",
+        "Kim, Kang-wook",
+        "Woo, Sang Hoon",
+        "Hirschberg, Julia",
+        "Kim, Gunhee",
+        "Hakkani-Tür, Dilek"
+      ],
+      "first_publication_date": "2026/07/28",
+      "sources": [
+        "https://arxiv.org/abs/2607.26178",
+        "https://aclanthology.org/2026.emnlp-main.2618/",
+        "https://github.com/duplexgen/duplexgen-code"
+      ],
+      "publication": {
+        "venue": "EMNLP",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://aclanthology.org/2026.emnlp-main.2618/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "University of Illinois Urbana-Champaign",
+          "Seoul National University",
+          "University of California Berkeley",
+          "Georgia Institute of Technology",
+          "Columbia University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2607.26178"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7171803236",
+          "source_record_title": "DuplexGen: Adaptive Synthesis of Human-AI Turn-Taking Dialogues",
+          "source_record_doi": "https://doi.org/10.18653/2026.emnlp-main.2618",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/duplexgen/duplexgen-code",
+      "stars": {
+        "value": 29,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/duplexgen/duplexgen-code",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "把数据构造与目标交互行为连起来，阅读人类偏好如何进入合成与微调流程。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://duplexgen.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "E42",
+      "name": "BayLing-Duplex",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以单个自回归 LLM 和少量状态 token 联合建模听、说、停，通过 SFT 与 DPO 学习交互。",
+      "paper_url": "https://arxiv.org/abs/2606.14528",
+      "paper_title": "BayLing-Duplex: Native Full-Duplex Speech Dialogue with a Single Autoregressive LLM",
+      "authors": [
+        "Fang, Qingkai",
+        "Guo, Shoutao",
+        "Feng, Yang"
+      ],
+      "first_publication_date": "2026/06/12",
+      "sources": [
+        "https://arxiv.org/abs/2606.14528",
+        "https://github.com/BayLing-Models/BayLing-Duplex"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2606.14528",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Institute of Computing Technology, Chinese Academy of Sciences",
+          "University of Chinese Academy of Sciences"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2606.14528"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7164829614",
+          "source_record_title": "BayLing-Duplex: Native Full-Duplex Speech Dialogue with a Single Autoregressive LLM",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.14528",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/BayLing-Models/BayLing-Duplex",
+      "stars": {
+        "value": 96,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/BayLing-Models/BayLing-Duplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      }
+    },
+    {
+      "id": "E43",
+      "name": "MultiTalk / MultiTalkBench",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "扩展到长时、多方、双语全双工对话；提供预训练、微调数据和来自真实录音的 MultiTalkBench。",
+      "paper_url": "https://arxiv.org/abs/2609.36903",
+      "paper_title": "MultiTalk: Scaling Full-Duplex Speech Models to Long, Multi-Party, Bilingual Conversation",
+      "authors": [
+        "Wang, Ke",
+        "Ren, Houxing",
+        "Lu, Zimu",
+        "Yang, Yunqiao",
+        "Zong, Zhuofan",
+        "Zhan, Mingjie",
+        "Li, Hongsheng"
+      ],
+      "first_publication_date": "2026/09/29",
+      "sources": [
+        "https://arxiv.org/abs/2609.36903"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2026,
+        "status": "accepted_author",
+        "source": "https://arxiv.org/abs/2609.36903",
+        "checked_at": "2026-11-03",
+        "evidence_note": "作者在 arXiv 标注接收，未以独立会议论文集页面复核。"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "The Chinese University of Hong Kong",
+          "Centre for Perceptual and Interactive Intelligence (InnoHK)"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.36903"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214898838",
+          "source_record_title": "MultiTalk: Scaling Full-Duplex Speech Models to Long, Multi-Party, Bilingual Conversation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.36903",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "NeurIPS 2026 依据作者在 arXiv 的标注；MultiTalkBench 与模型训练数据应分别使用。",
+      "resource_links": [
+        {
+          "label": "预训练数据",
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkPT"
+        },
+        {
+          "label": "微调数据",
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkFT"
+        },
+        {
+          "label": "Benchmark",
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench"
+        }
+      ],
+      "evaluation": {
+        "group": "multi",
+        "measures": "长时、多方、双语会话能力。",
+        "protocol": "MultiTalkBench 来自真实录音，平均会话约 32.6 分钟。",
+        "limits": "与 MultiTalkPT / FT 训练数据区分；不代表工具任务完成。"
+      }
+    },
+    {
+      "id": "E44",
+      "name": "Self-Listening / LoopSpeech",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "把实际已播放的语音纳入历史，区分“计划说出”与“用户已经听到”，研究打断后的内容连续性。",
+      "paper_url": "https://arxiv.org/abs/2609.05592",
+      "paper_title": "What Did I Just Say? Self-Listening for Full-Duplex Speech Models",
+      "authors": [
+        "Zhou, Xuanning",
+        "Ao, Junyi",
+        "Liu, Xiaotong",
+        "Ko, Tom",
+        "Wang, Benyou",
+        "Li, Haizhou"
+      ],
+      "first_publication_date": "2026/09/04",
+      "sources": [
+        "https://arxiv.org/abs/2609.05592",
+        "https://github.com/FreedomIntelligence/LoopSpeech"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.05592",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Shenzhen Loop Area Institute",
+          "The Chinese University of Hong Kong, Shenzhen"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.05592"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212059771",
+          "source_record_title": "What Did I Just Say? Self-Listening for Full-Duplex Speech Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.05592",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/FreedomIntelligence/LoopSpeech",
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/FreedomIntelligence/LoopSpeech",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "打断后的状态一致性很容易遗漏；重点看已播放历史如何改变后续回答。"
+    },
+    {
+      "id": "E45",
+      "name": "D2: Dialogue-to-Duplex",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "复用半双工语音模型进行全双工适配，分析音频块间隔对质量、时延和计算量的影响。",
+      "paper_url": "https://arxiv.org/abs/2610.17124",
+      "paper_title": "D2: High-Capability Full-Duplex Spoken Language Models from Half-Duplex Backbones",
+      "authors": [
+        "Chang, Cheng-Kuang",
+        "Liu, Alexander H.",
+        "Kingsbury, Brian",
+        "Kuehne, Hilde",
+        "Feris, Rogerio",
+        "Thomas, Samuel",
+        "Glass, James",
+        "Chang, Kai-Wei"
+      ],
+      "first_publication_date": "2026/10/12",
+      "sources": [
+        "https://arxiv.org/abs/2610.17124",
+        "https://github.com/penguinfish1688/D2-dialogue-to-duplex"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2610.17124",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "MIT CSAIL",
+          "MIT–IBM Watson AI Lab"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2610.17124"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221777691",
+          "source_record_title": "D2: High-Capability Full-Duplex Spoken Language Models from Half-Duplex Backbones",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.17124",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/penguinfish1688/D2-dialogue-to-duplex",
+      "stars": {
+        "value": 11,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/penguinfish1688/D2-dialogue-to-duplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "仓库当前提供 Qwen3-Omni 80 ms 配置检查点；论文中的声学时延不包含全部计算与服务开销。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://d2-duplex-demo.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "E46",
+      "name": "TASTE2",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以文本对齐的语音建模和部署协同组织全双工交互，补充副语言信号与实时运行的设计。",
+      "paper_url": "https://arxiv.org/abs/2609.08956",
+      "paper_title": "TASTE2: Text-Aligned Speech Modeling and Deployment toward Full-Duplex Voice Interaction",
+      "authors": [
+        "Chen, Yi-Chang",
+        "Chen, Chun Wei",
+        "Wu, Dien-Ruei",
+        "Lin, Jie",
+        "Fu, Yu-Kuan",
+        "Lin, Yang-Hsien",
+        "Huang, Eddie TC",
+        "See, Simon",
+        "Lee, Hung-yi",
+        "Shiu, Da-Shan"
+      ],
+      "first_publication_date": "2026/09/08",
+      "sources": [
+        "https://arxiv.org/abs/2609.08956",
+        "https://github.com/GitYCC/TASTE-SpokenLM-2"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.08956",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "MediaTek Research",
+          "National Taiwan University",
+          "NVIDIA AI Technology Center"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.08956"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212080144",
+          "source_record_title": "TASTE2: Text-Aligned Speech Modeling and Deployment toward Full-Duplex Voice Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.08956",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/GitYCC/TASTE-SpokenLM-2",
+      "stars": {
+        "value": 2,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/GitYCC/TASTE-SpokenLM-2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://gitycc.github.io/TASTE2-Homepage/"
+        },
+        {
+          "label": "语音应用",
+          "url": "https://github.com/GitYCC/TASTE-Voice-Bot"
+        }
+      ]
+    },
+    {
+      "id": "E47",
+      "name": "IRAF",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "按帧估计目标说话人可靠性并自适应融合音频，研究干扰说话人条件下的全双工鲁棒性。",
+      "paper_url": "https://arxiv.org/abs/2606.06559",
+      "paper_title": "IRAF: Interference-Resilient Adaptive Fusion for Noise-Robust End-to-End Full-Duplex Spoken Dialogue Systems",
+      "authors": [
+        "Zhong, Tao",
+        "Deng, Jiajun",
+        "Kuzmin, Nikita",
+        "Zhu, Yinke",
+        "Cao, Tianxiang",
+        "Tsoi, Tristan",
+        "Tan, Zhili",
+        "Lui, Simon",
+        "Liu, Xunying"
+      ],
+      "first_publication_date": "2026/06/04",
+      "sources": [
+        "https://arxiv.org/abs/2606.06559"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2606.06559",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "The Chinese University of Hong Kong",
+          "Huawei Leibniz Research Center",
+          "Nanyang Technological University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2606.06559"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7163910264",
+          "source_record_title": "IRAF: Interference-Resilient Adaptive Fusion for Noise-Robust End-to-End Full-Duplex Spoken Dialogue Systems",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.06559",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    {
+      "id": "E48",
+      "name": "MoshiRAG",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "在全双工对话中异步触发检索并注入知识，观察检索耗时与持续对话如何协调。",
+      "paper_url": "https://arxiv.org/abs/2604.12928",
+      "paper_title": "MoshiRAG: Asynchronous Knowledge Retrieval for Full-Duplex Speech Language Models",
+      "authors": [
+        "Chien, Chung-Ming",
+        "Orsini, Manu",
+        "Kharitonov, Eugene",
+        "Zeghidour, Neil",
+        "Livescu, Karen",
+        "Défossez, Alexandre"
+      ],
+      "first_publication_date": "2026/04/14",
+      "sources": [
+        "https://arxiv.org/abs/2604.12928",
+        "https://github.com/kyutai-labs/moshi-rag"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "status": "accepted_author",
+        "source": "https://arxiv.org/abs/2604.12928",
+        "checked_at": "2026-11-03",
+        "evidence_note": "作者在 arXiv 标注接收，未以独立会议论文集页面复核。"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Toyota Technological Institute at Chicago",
+          "Kyutai",
+          "Gradium"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2604.12928"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7154507545",
+          "source_record_title": "MoshiRAG: Asynchronous Knowledge Retrieval for Full-Duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.12928",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/kyutai-labs/moshi-rag",
+      "stars": {
+        "value": 195,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/kyutai-labs/moshi-rag",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "学习持续语音交互与耗时检索之间的接口、触发机制及结果注入。",
+      "scope_note": "ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同于通用工具执行。"
+    },
+    {
+      "id": "E49",
+      "name": "Frontend–Backend Tool Calling",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "将实时语音前端与文本工具后端分离，以流式转写、工具执行和 prefill-and-repeat 结果回传连接两者。",
+      "paper_url": "https://arxiv.org/abs/2609.19334",
+      "paper_title": "A frontend-backend architecture for tool calls in full-duplex speech models",
+      "authors": [
+        "Hu, Ke",
+        "Deng, Slyne",
+        "Chen, Chen",
+        "Rastorgueva, Elena",
+        "Casanova, Edresson",
+        "Kumar, Punit",
+        "Choudhary, Dharmendra",
+        "Srihari, Nikhil",
+        "Mahabaleshwarkar, Ameya Sunil",
+        "Trinh, Viet Anh",
+        "Essid, Slim",
+        "Olabiyi, Oluwatobi",
+        "Chen, Zhehuai"
+      ],
+      "first_publication_date": "2026/09/16",
+      "sources": [
+        "https://arxiv.org/abs/2609.19334"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.19334",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.19334"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213611583",
+          "source_record_title": "A frontend-backend architecture for tool calls in full-duplex speech models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.19334",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "当前为预印本；计划投稿 ICASSP 2027 不表示已经接收。"
+    },
+    {
+      "id": "E50",
+      "name": "DiffuPlex · Rolling Masked Diffusion",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "用滚动掩码扩散预测交互帧，在保留交互质量的同时减少主干模型调用。",
+      "paper_url": "https://arxiv.org/abs/2610.12214",
+      "paper_title": "DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion",
+      "authors": [
+        "Kim, Heeseung"
+      ],
+      "first_publication_date": "2026/10/08",
+      "sources": [
+        "https://arxiv.org/abs/2610.12214"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2610.12214",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "University of Seoul"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2610.12214"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221088445",
+          "source_record_title": "DiffuPlex: Accelerating Full-Duplex Spoken Dialog Models via Rolling Masked Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.12214",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "与 NVIDIA 的 Discrete Diffusion 论文为不同工作，项目同名时按完整标题区分。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://diffuplex.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "E51",
+      "name": "Diffuplex · Discrete Diffusion",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以自回归过程决定何时说话，以离散扩散并行生成内容，研究全双工生成效率。",
+      "paper_url": "https://arxiv.org/abs/2610.17780",
+      "paper_title": "Full-duplex Spoken Language Modeling with Discrete Diffusion",
+      "authors": [
+        "Chen, Chen",
+        "Ku, Pin-Jui",
+        "Pasad, Ankita",
+        "Jukić, Ante",
+        "Chen, Zhehuai",
+        "Ginsburg, Boris"
+      ],
+      "first_publication_date": "2026/10/13",
+      "sources": [
+        "https://arxiv.org/abs/2610.17780"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2610.17780",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2610.17780"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7221757954",
+          "source_record_title": "Full-duplex Spoken Language Modeling with Discrete Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.17780",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "论文称代码和检查点将发布；当前条目不将预告视为已开放资源。"
+    },
+    {
+      "id": "E52",
+      "name": "Voice-Light",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "级联系统中的因果轮次控制、推测生成和可撤销播放；用播放确认更新持久对话历史。",
+      "paper_url": "https://arxiv.org/abs/2609.20995",
+      "paper_title": "Voice-Light: A Full-Duplex Cascaded Voice Agent with Causal Turn-Taking and Speculative Generation",
+      "authors": [
+        "Braun, Bertil"
+      ],
+      "first_publication_date": "2026/09/17",
+      "sources": [
+        "https://arxiv.org/abs/2609.20995",
+        "https://github.com/BertilBraun/Voice-Light"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.20995",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "unverified",
+        "organizations": [
+          "Bertil Braun"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.20995"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213934747",
+          "source_record_title": "Voice-Light: A Full-Duplex Cascaded Voice Agent with Causal Turn-Taking and Speculative Generation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.20995",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/BertilBraun/Voice-Light",
+      "stars": {
+        "value": 10,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/BertilBraun/Voice-Light",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "论文在线实验为三个操作员运行、共 36 轮；适合作为工程案例，不能据此推断大规模用户效果。作者机构归属未确定。"
+    },
+    {
+      "id": "E53",
+      "name": "AdaptDuplex",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "结合自适应感知窗口、非阻塞认知整合与外部推理，研究动态全双工对话及分阶段后训练。",
+      "paper_url": "https://arxiv.org/abs/2609.29217",
+      "paper_title": "AdaptDuplex: From Static to Adaptive Full-Duplex Spoken Dialogue",
+      "authors": [
+        "Zhou, Zhiyang",
+        "Shang, Yingxin",
+        "Wang, Zhou",
+        "Cai, Hongwei",
+        "Wang, Weixu",
+        "Zhou, Shuran",
+        "Zhao, Shuofeng",
+        "Fan, Wenke",
+        "Guo, Qingxiang",
+        "Yang, Dawei",
+        "Yang, Lin",
+        "Song, Yang"
+      ],
+      "first_publication_date": "2026/09/24",
+      "sources": [
+        "https://arxiv.org/abs/2609.29217"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.29217",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Zuoyebang Education Technology"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.29217"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214079271",
+          "source_record_title": "ADAPTDUPLEX: FROM STATIC TO ADAPTIVE FULL-DUPLEX SPOKEN DIALOGUE",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.29217",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "当前绑定技术论文，未据此假定模型权重或完整训练流程已经开放。"
+    },
+    {
+      "id": "E54",
+      "name": "Realtime-Venus",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "实时交互层异步委托后台任务，结果返回后继续对话，连接多模态输入、训练策略与运行时。",
+      "paper_url": "https://arxiv.org/abs/2609.13814",
+      "paper_title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
+      "authors": [
+        "Ant Group"
+      ],
+      "first_publication_date": "2026/09/12",
+      "sources": [
+        "https://arxiv.org/abs/2609.13814",
+        "https://github.com/inclusionAI/Realtime-Venus"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.13814",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Ant Group",
+          "Tsinghua University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.13814"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213284145",
+          "source_record_title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.13814",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/inclusionAI/Realtime-Venus",
+      "stars": {
+        "value": 252,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/inclusionAI/Realtime-Venus",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      }
+    },
+    {
+      "id": "E55",
+      "name": "NemotronLabs VoiceChat",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "开放的全双工语音模型，以独立工具通道连接动作调用，并支持可打断语音输出。",
+      "paper_url": "https://arxiv.org/abs/2609.21967",
+      "paper_title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+      "authors": [
+        "Balam, Jagadeesh",
+        "Bartley, Travis",
+        "Casanova, Edresson",
+        "Chauhan, Sanjay",
+        "Chen, Chen",
+        "Chen, Zhehuai",
+        "Chen, Zijia",
+        "Ciannella, Francesco",
+        "De Mello, Shalini",
+        "Deng, Slyne",
+        "Desta, Mikyas",
+        "Dubey, Harishchandra",
+        "Essid, Slim",
+        "Ferchichi, Nourchene",
+        "Ginsburg, Boris",
+        "Fuenmayor, Mariana Graterol",
+        "Habibi, Negar",
+        "Hu, Kevin",
+        "Joseph, Anand",
+        "Karandikar, Viraj",
+        "Kim, Myungjong",
+        "Klimkov, Viacheslav",
+        "Narasimhan, Seelan Lakshmi",
+        "Lee, Lily",
+        "Li, Jason",
+        "Long, Eileen",
+        "Mahabaleshwarkar, Ameya",
+        "Malte, Aditya",
+        "Margolin, Adi",
+        "Mazumdar, Amrita",
+        "Meister, Sasha",
+        "Mendelev, Valentin",
+        "Nagano, Koki",
+        "Olabiyi, Oluwatobi",
+        "Seonwook",
+        "Park",
+        "Pasad, Ankita",
+        "Peng, Yifan",
+        "Rastorgueva, Elena",
+        "Ritchie, Jayda",
+        "Roche, Jason",
+        "Roy, Rajarshi",
+        "Srihari, Nikhil",
+        "Su, Yuanhang",
+        "Suhara, Yoshi",
+        "Trinh, Viet Anh",
+        "Wang, Jinhan",
+        "Zelasko, Piotr",
+        "Wang, Hui",
+        "Meng, Puhui",
+        "Zhang, Chaosen",
+        "Liu, Yunsheng",
+        "Wang, Shawn",
+        "Li, Wenjing",
+        "He, Zhonglei"
+      ],
+      "first_publication_date": "2026/09/18",
+      "sources": [
+        "https://arxiv.org/abs/2609.21967",
+        "https://github.com/NVIDIA-NeMo/Speech/tree/nemotron-labs-voicechat"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.21967",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.21967"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213936344",
+          "source_record_title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.21967",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/NVIDIA-NeMo/Speech/tree/nemotron-labs-voicechat",
+      "stars": {
+        "value": 18685,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA-NeMo/Speech",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "代码入口为 NVIDIA-NeMo/Speech 的 nemotron-labs-voicechat 分支；Star 计整个 Speech 仓库。",
+      "resource_links": [
+        {
+          "label": "模型",
+          "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B"
+        }
+      ]
+    },
+    {
+      "id": "E56",
+      "name": "StepAudio 3 Realtime",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "围绕 listen、converse、think、act 组织实时语音交互，结合 Think-While-Speaking 与异步工具执行。",
+      "paper_url": "https://arxiv.org/abs/2609.14005",
+      "paper_title": "StepAudio 3 Realtime Technical Report",
+      "authors": [
+        "Lin, Bin",
+        "Zhao, Bo",
+        "Zhang, Boyang",
+        "Wu, Boyong",
+        "Yan, Chao",
+        "Geng, Chen",
+        "Wu, Chen",
+        "Yi, Cheng",
+        "Feng, Chengli",
+        "Zhu, Chenglin",
+        "Feng, Chengting",
+        "Yao, Chengyuan",
+        "Liu, Daijiao",
+        "Wan, DanNi",
+        "Jiang, Daxin",
+        "Li, Dongjian",
+        "Pang, Dongqing",
+        "Tian, Fei",
+        "Tian, Feng",
+        "Li, Future",
+        "Yu, Gang",
+        "Yang, Guanglong",
+        "Zhang, Haoyang",
+        "Wang, Hongyuan",
+        "Peng, Jia",
+        "Song, Jiahao",
+        "Xue, Jialong",
+        "Fan, Jiamin",
+        "Zhen, Jiangjie",
+        "Gao, Jianzheng",
+        "Wen, Jincheng",
+        "Liang, Jinghua",
+        "Gong, Jinglan",
+        "Chen, Jun",
+        "Xie, Li",
+        "Zhao, Liang",
+        "Zhang, Lifang",
+        "Ji, Lingli",
+        "Cai, Lun",
+        "Xu, Min",
+        "Li, Peilin",
+        "Yang, Peng",
+        "Tan, Pengfei",
+        "Lin, Qingjian",
+        "Du, Qinxin",
+        "Xiong, Ruijie",
+        "Li, Runze",
+        "Hu, Shenghua",
+        "Qin, Shengqian",
+        "Qiu, Shi",
+        "Tu, Siqi",
+        "Zhou, Siyi",
+        "Deng, Tianjiao",
+        "Lu, Wanying",
+        "Niu, Weiming",
+        "Sun, Wen",
+        "Qu, WenWen",
+        "Zhang, Xiangyu",
+        "Zhang, Xianwei",
+        "Su, Xiaosu",
+        "Chen, Xing",
+        "Liu, Xinyu",
+        "Yang, Xuerui",
+        "Wu, Yan",
+        "Li, Yang",
+        "Yang, Yang",
+        "Huang, Yechang",
+        "Zhu, Yibo",
+        "Zhang, Yifan",
+        "Yan, Yinuo",
+        "Chen, Youjun",
+        "Fu, Yu",
+        "Luo, Yu",
+        "Zhou, Yu",
+        "Chen, Yujie",
+        "Wang, Yumang",
+        "Ju, Yunzhou",
+        "Yang, Yuxiang",
+        "Li, Yuxin",
+        "Zhang, Yuxin",
+        "Liu, Zekai",
+        "Yao, Zengwei",
+        "Yuan, Zhaoxin",
+        "Mou, Zhenwei",
+        "Zhang, Zhiquan",
+        "Wu, Zhiyue",
+        "Li, Zichao",
+        "Zhou, Zichao",
+        "Ren, Ziqi",
+        "Wang, Zixuan"
+      ],
+      "first_publication_date": "2026/09/12",
+      "sources": [
+        "https://arxiv.org/abs/2609.14005"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.14005",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "StepFun"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.14005"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7213371127",
+          "source_record_title": "StepAudio 3 Realtime Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.14005",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "scope_note": "提供论文与本版本展示入口；不把 StepAudio 2 仓库当作本版本的完整代码。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://stepaudiollm.github.io/step-audio-3-realtime/"
+        }
+      ]
+    },
+    {
+      "id": "E57",
+      "name": "Qwen-Audio-3.1-Realtime",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "在可执行环境中进行 Agent GRPO，结合多模态策略蒸馏，研究任务可靠性与交互行为后训练。",
+      "paper_url": "https://arxiv.org/abs/2609.25176",
+      "paper_title": "Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction",
+      "authors": [
+        "Bao, Lujia",
+        "Chen, Qian",
+        "Cheng, Luyao",
+        "Deng, Chong",
+        "Kong, Yuxiang",
+        "Li, Xiangang",
+        "Li, Xu",
+        "Liu, Jiaqing",
+        "Tan, Chao-Hong",
+        "Wang, Haoyu",
+        "Wang, Wen",
+        "Wang, Xilou",
+        "Xu, Haoxiang",
+        "Xu, Junhao",
+        "Yi, Liang",
+        "Zhang, Binbin",
+        "Zhang, Qinglin",
+        "Zhang, Qiquan"
+      ],
+      "first_publication_date": "2026/09/21",
+      "sources": [
+        "https://arxiv.org/abs/2609.25176",
+        "https://github.com/QwenAudio/qwen-audio-agent"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.25176",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Alibaba / Qwen"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.25176"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214103824",
+          "source_record_title": "Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.25176",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/QwenAudio/qwen-audio-agent",
+      "stars": {
+        "value": 3112,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训练代码开放。"
+    },
+    {
+      "id": "E58",
+      "name": "DuplexOmni",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "实时交互层与异步思考层协同，配合 Writer–Director 数据合成组织边听、边看、边想、边说。",
+      "paper_url": "https://arxiv.org/abs/2606.09186",
+      "paper_title": "DuplexOmni: Real-Time Listening, Seeing, Thinking, and Speaking for Full-Duplex Interaction",
+      "authors": [
+        "Huang, Muye",
+        "Zhang, Lingling",
+        "Yu, Xingyu",
+        "Shi, Lei",
+        "Ma, Zhanyu",
+        "Xu, Jun",
+        "Gao, Jiuchong",
+        "Hao, Jinghua",
+        "He, Renqing",
+        "Liu, Jun"
+      ],
+      "first_publication_date": "2026/06/08",
+      "sources": [
+        "https://arxiv.org/abs/2606.09186",
+        "https://github.com/MuyeHuang/DuplexOmni"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2606.09186",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Xi’an Jiaotong University",
+          "Peking University",
+          "Meituan"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2606.09186"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7164028919",
+          "source_record_title": "DuplexOmni: Real-Time Listening, Seeing, Thinking, and Speaking for Full-Duplex Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.09186",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/MuyeHuang/DuplexOmni",
+      "stars": {
+        "value": 145,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MuyeHuang/DuplexOmni",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "阅读实时层、异步思考层与合成数据之间的对应关系，作为端到端系统设计参照。"
+    },
+    {
+      "id": "E59",
+      "name": "VoiceBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2024,
+      "summary": "评价语音助手的知识、指令遵循、安全及口音、噪声等扰动下的回答能力。",
+      "paper_url": "https://arxiv.org/abs/2410.17196",
+      "paper_title": "VoiceBench: Benchmarking LLM-Based Voice Assistants",
+      "authors": [
+        "Chen, Yiming",
+        "Yue, Xianghu",
+        "Zhang, Chen",
+        "Gao, Xiaoxue",
+        "Tan, Robby T.",
+        "Li, Haizhou"
+      ],
+      "first_publication_date": "2024/10/22",
+      "sources": [
+        "https://arxiv.org/abs/2410.17196",
+        "https://aclanthology.org/2026.tacl-1.18/",
+        "https://github.com/MatthewCYM/VoiceBench"
+      ],
+      "publication": {
+        "venue": "TACL",
+        "year": 2026,
+        "status": "journal",
+        "source": "https://aclanthology.org/2026.tacl-1.18/",
+        "checked_at": "2026-11-03",
+        "doi": "10.1162/tacl.a.628",
+        "pages": "378--398",
+        "journal": "Transactions of the Association for Computational Linguistics",
+        "volume": "14"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "National University of Singapore"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2410.17196"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404261856",
+          "source_record_title": "VoiceBench: Benchmarking LLM-Based Voice Assistants",
+          "source_record_doi": "https://doi.org/10.1162/tacl.a.628",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/MatthewCYM/VoiceBench",
+      "stars": {
+        "value": 407,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MatthewCYM/VoiceBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "建立基础语音助手能力参照，再与交互和任务指标分别比较。",
+      "scope_note": "主要评价语音输入后的回答能力；不能替代连续同时听说或工具任务评测。",
+      "evaluation": {
+        "group": "foundations",
+        "measures": "知识、指令遵循、安全；口音、噪声、混响等扰动。",
+        "protocol": "真实与合成口语指令；以回答能力为主。",
+        "limits": "不直接测连续交互时序或工具任务完成。"
+      }
+    },
+    {
+      "id": "E60",
+      "name": "VocalBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "覆盖语义、声学、对话与鲁棒性，补充单轮和多轮语音交互能力评测。",
+      "paper_url": "https://arxiv.org/abs/2505.15727",
+      "paper_title": "VocalBench: Benchmarking the Vocal Conversational Abilities for Speech Interaction Models",
+      "authors": [
+        "Liu, Heyang",
+        "Wang, Yuhao",
+        "Cheng, Ziyang",
+        "Liu, Hongcheng",
+        "Li, Yiqi",
+        "Hou, Yixuan",
+        "Wu, Ronghua",
+        "Gu, Qunshan",
+        "Wang, Yanfeng",
+        "Wang, Yu"
+      ],
+      "first_publication_date": "2025/05/21",
+      "sources": [
+        "https://arxiv.org/abs/2505.15727",
+        "https://github.com/SJTU-OmniAgent/VocalBench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2505.15727",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Shanghai Jiao Tong University",
+          "Ant Group"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2505.15727"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415329203",
+          "source_record_title": "VocalBench: Benchmarking the Vocal Conversational Abilities for Speech Interaction Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2505.15727",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/SJTU-OmniAgent/VocalBench",
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/SJTU-OmniAgent/VocalBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "各子集、语言和后续扩展的发布状态分别核对；子集的会议发表不代表整套 benchmark 同一 venue。",
+      "evaluation": {
+        "group": "foundations",
+        "measures": "语义、声学、对话、鲁棒性多个维度。",
+        "protocol": "含单轮和多轮任务；各子集与语言分别报告。",
+        "limits": "高分不自动说明全双工自然或工具调用可靠。"
+      }
+    },
+    {
+      "id": "E61",
+      "name": "VCB Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "以真实中文语音为核心，评价指令遵循、知识理解与声学和内容扰动下的鲁棒性。",
+      "paper_url": "https://arxiv.org/abs/2510.11098",
+      "paper_title": "VCB Bench: An Evaluation Benchmark for Audio-Grounded Large Language Model Conversational Agents",
+      "authors": [
+        "Hu, Jiliang",
+        "Wang, Wenfu",
+        "Li, Zuchao",
+        "Li, Chenxing",
+        "Zhao, Yiyang",
+        "Li, Hanzhao",
+        "Zhang, Liqiang",
+        "Yu, Meng",
+        "Yu, Dong"
+      ],
+      "first_publication_date": "2025/10/13",
+      "sources": [
+        "https://arxiv.org/abs/2510.11098",
+        "https://aclanthology.org/2026.findings-acl.1659/",
+        "https://github.com/Tencent/VCB-Bench"
+      ],
+      "publication": {
+        "venue": "Findings of ACL",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://aclanthology.org/2026.findings-acl.1659/",
+        "checked_at": "2026-11-03",
+        "doi": "10.18653/v1/2026.findings-acl.1659",
+        "pages": "33176--33200"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Wuhan University",
+          "Tencent"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2510.11098"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4417101201",
+          "source_record_title": "VCB Bench: An Evaluation Benchmark for Audio-Grounded Large Language Model Conversational Agents",
+          "source_record_doi": "https://doi.org/10.18653/v1/2026.findings-acl.1659",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/Tencent/VCB-Bench",
+      "stars": {
+        "value": 5,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Tencent/VCB-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "核心贡献为真实中文语音；后续语言扩展与论文原始协议应分开报告。",
+      "evaluation": {
+        "group": "foundations",
+        "measures": "真实中文语音指令、知识理解与鲁棒性。",
+        "protocol": "真实人声为核心；区分原始中文协议与后续扩展。",
+        "limits": "不覆盖完整 Agent 环境终态。"
+      }
+    },
+    {
+      "id": "E62",
+      "name": "VoiceAgentBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "将多语言语音输入连接单步、并行、顺序工具调用及多轮场景，检查函数选择和参数等代理能力。",
+      "paper_url": "https://arxiv.org/abs/2510.07978",
+      "paper_title": "VoiceAgentBench: Are Voice Assistants ready for agentic tasks?",
+      "authors": [
+        "Jain, Dhruv",
+        "Shukla, Harshit",
+        "Rajeev, Gautam",
+        "Kulkarni, Ashish",
+        "Khatri, Chandra",
+        "Agarwal, Shubham"
+      ],
+      "first_publication_date": "2025/10/09",
+      "sources": [
+        "https://arxiv.org/abs/2510.07978",
+        "https://github.com/ola-krutrim/VoiceAgentBench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2510.07978",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "OLA Electric / Krutrim AI"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2510.07978"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415318706",
+          "source_record_title": "VoiceAgentBench: Are Voice Assistants ready for agentic tasks?",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.07978",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/ola-krutrim/VoiceAgentBench",
+      "stars": {
+        "value": 6,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ola-krutrim/VoiceAgentBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "先理解语音工具调用的函数、参数和多步结构，再进入真实任务成功率。",
+      "scope_note": "强调语音条件下的工具调用结构和参数；不能直接代表连续语音输出的时序自然度。",
+      "resource_links": [
+        {
+          "label": "数据",
+          "url": "https://huggingface.co/datasets/krutrim-ai-labs/VoiceAgentBench"
+        }
+      ],
+      "evaluation": {
+        "group": "tasks",
+        "measures": "单步、并行、顺序工具调用，多轮和安全。",
+        "protocol": "英语及六种印度语言的语音代理任务，检查函数和参数。",
+        "limits": "工具结构准确率不等于复杂环境中的终态成功率。"
+      }
+    },
+    {
+      "id": "E63",
+      "name": "τ-Voice",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以领域规则和环境状态评价全双工语音 Agent 的多轮工具使用及最终任务完成。",
+      "paper_url": "https://arxiv.org/abs/2603.13686",
+      "paper_title": "$\\tau$-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains",
+      "authors": [
+        "Ray, Soham",
+        "Dhandhania, Keshav",
+        "Barres, Victor",
+        "Narasimhan, Karthik"
+      ],
+      "first_publication_date": "2026/03/14",
+      "sources": [
+        "https://arxiv.org/abs/2603.13686",
+        "https://github.com/sierra-research/tau2-bench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2603.13686",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Sierra",
+          "Princeton University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2603.13686"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7138316890",
+          "source_record_title": "$τ$-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2603.13686",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/sierra-research/tau2-bench",
+      "stars": {
+        "value": 2382,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/sierra-research/tau2-bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "从环境终态判断任务是否完成，适合对照文本 Agent 与语音 Agent 的差距。",
+      "scope_note": "tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固定其对应版本、环境和用户模拟器。",
+      "evaluation": {
+        "group": "tasks",
+        "measures": "领域规则、工具执行、环境终态的任务完成。",
+        "protocol": "动态全双工用户模拟，含噪声和口音；可对照文本 Agent。",
+        "limits": "固定 tau2 对应版本，不混用后续 τ³ 开发协议。"
+      }
+    },
+    {
+      "id": "E64",
+      "name": "Full-Duplex-Bench-v3",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "把真人语音中的犹豫、重复、修正等不流利现象与多步工具调用结合，评价交互中的任务执行。",
+      "paper_url": "https://arxiv.org/abs/2604.04847",
+      "paper_title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "authors": [
+        "Lin, Guan-Ting",
+        "Chen, Chen",
+        "Chen, Zhehuai",
+        "Lee, Hung-yi"
+      ],
+      "first_publication_date": "2026/04/06",
+      "sources": [
+        "https://arxiv.org/abs/2604.04847",
+        "https://github.com/DanielLin94144/Full-Duplex-Bench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2604.04847",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "National Taiwan University",
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2604.04847"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7151544009",
+          "source_record_title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.04847",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+      "stars": {
+        "value": 335,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "把真实口语修正与工具调用放在同一测试中，观察交互干扰是否造成任务错误。",
+      "scope_note": "与 v1、v1.5、v2 共用仓库但任务不同；v3 论文为预印本，不沿用 v1 的 ASRU 2025 标签。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://daniellin94144.github.io/FDB-v3-demo/"
+        }
+      ],
+      "evaluation": {
+        "group": "tasks",
+        "measures": "真实口语不流利条件下的多步工具使用。",
+        "protocol": "真实人声中的重复、犹豫和自我修正；小规模诊断集。",
+        "limits": "与原版 FDB 的交互指标分开；不沿用 ASRU 2025 标签。"
+      }
+    },
+    {
+      "id": "E65",
+      "name": "MTR-DuplexBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "按轮次分析长一些的全双工对话，联合观察交互动态、回答质量、指令遵循和安全。",
+      "paper_url": "https://arxiv.org/abs/2511.10262",
+      "paper_title": "MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models",
+      "authors": [
+        "Zhang, He",
+        "Cui, Wenqian",
+        "Xu, Haoning",
+        "Li, Xiaohui",
+        "Zhu, Lei",
+        "Bai, Haoli",
+        "Ma, Shaohua",
+        "King, Irwin"
+      ],
+      "first_publication_date": "2025/11/13",
+      "sources": [
+        "https://arxiv.org/abs/2511.10262",
+        "https://aclanthology.org/2026.findings-acl.263/",
+        "https://github.com/ZhangHe0918/MTR-DuplexBench"
+      ],
+      "publication": {
+        "venue": "Findings of ACL",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://aclanthology.org/2026.findings-acl.263/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University",
+          "The Chinese University of Hong Kong",
+          "Huawei"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2511.10262"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4416238789",
+          "source_record_title": "MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2511.10262",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/ZhangHe0918/MTR-DuplexBench",
+      "stars": {
+        "value": 9,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ZhangHe0918/MTR-DuplexBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "补上单个片段测试难以覆盖的多轮累积问题。",
+      "evaluation": {
+        "group": "multi",
+        "measures": "逐轮交互动态、回答质量、指令遵循与安全。",
+        "protocol": "将较长会话分段评价，观察随轮次累积的变化。",
+        "limits": "会话来源与数据使用条件按官方说明。"
+      }
+    },
+    {
+      "id": "E66",
+      "name": "HumDial-FDBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以真实双声道人类对话评测重叠、打断和反馈，并组织 HumDial 全双工挑战与榜单。",
+      "paper_url": "https://arxiv.org/abs/2604.21406",
+      "paper_title": "Full-Duplex Interaction in Spoken Dialogue Systems: A Comprehensive Study from the ICASSP 2026 HumDial Challenge",
+      "authors": [
+        "Wang, Chengyou",
+        "Xue, Hongfei",
+        "Li, Guojian",
+        "Zhao, Zhixian",
+        "Wang, Shuiyuan",
+        "Wang, Shuai",
+        "Xu, Xin",
+        "Bu, Hui",
+        "Xie, Lei"
+      ],
+      "first_publication_date": "2026/04/23",
+      "sources": [
+        "https://arxiv.org/abs/2604.21406",
+        "https://github.com/ASLP-lab/HumDial-FDBench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2604.21406",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Northwestern Polytechnical University / ASLP Lab",
+          "Nanjing University",
+          "AISHELL"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2604.21406"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7155525302",
+          "source_record_title": "Full-Duplex Interaction in Spoken Dialogue Systems: A Comprehensive Study from the ICASSP 2026 HumDial Challenge",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.21406",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/ASLP-lab/HumDial-FDBench",
+      "stars": {
+        "value": 44,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ASLP-lab/HumDial-FDBench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "论文讨论 ICASSP 2026 HumDial 挑战；挑战名称不作为该预印本已收入会议论文集的证据。",
+      "evaluation": {
+        "group": "turn",
+        "measures": "真实对话中的重叠、打断与反馈。",
+        "protocol": "真实双声道人类会话；HumDial 挑战与公开榜单。",
+        "limits": "挑战名称与论文正式发表状态分开记录。"
+      }
+    },
+    {
+      "id": "E67",
+      "name": "MP-Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "把语音 Agent 作为多人对话的参与者，评价理解、接话时机与回应适切性。",
+      "paper_url": "https://arxiv.org/abs/2609.13076",
+      "paper_title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+      "authors": [
+        "Shih, Yi-Jen",
+        "Kuan, Shih-Yun Shan",
+        "Lin, Guan-Ting",
+        "Chang, Kai-Wei",
+        "Arora, Siddhant",
+        "Yang, Shu-wen",
+        "Mohamed, Abdelrahman",
+        "Watanabe, Shinji",
+        "Lee, Hung-yi",
+        "Harwath, David"
+      ],
+      "first_publication_date": "2026/09/11",
+      "sources": [
+        "https://arxiv.org/abs/2609.13076",
+        "https://aclanthology.org/2026.findings-emnlp.1437/",
+        "https://github.com/atosystem/MP-Bench"
+      ],
+      "publication": {
+        "venue": "Findings of EMNLP",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://aclanthology.org/2026.findings-emnlp.1437/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "The University of Texas at Austin",
+          "National Taiwan University",
+          "MIT",
+          "Carnegie Mellon University",
+          "Meta AI"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.13076"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7212688662",
+          "source_record_title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+          "source_record_doi": "https://doi.org/10.18653/2026.findings-emnlp.1437",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/atosystem/MP-Bench",
+      "stars": {
+        "value": 1,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/atosystem/MP-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "evaluation": {
+        "group": "multi",
+        "measures": "作为多人参与者理解上下文、适时接话、合理回应。",
+        "protocol": "多人会话参与协议。",
+        "limits": "本条为 atosystem/MP-Bench，勿与同名其他 benchmark 混淆。"
+      }
+    },
+    {
+      "id": "E68",
+      "name": "Duplex-MPE",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "在多人场景中区分被明确点名、隐含求助、主动参与与应保持沉默，测试参与决策。",
+      "paper_url": "https://arxiv.org/abs/2609.31948",
+      "paper_title": "Duplex-MPE: Benchmarking Multi-Party Interaction in Full-Duplex Dialogue",
+      "authors": [
+        "Ma, Chengqian",
+        "Feng, Wenhao",
+        "Jin, Weixuan",
+        "Dai, Gaole",
+        "Xie, Tianyu",
+        "Ma, Yuexiao",
+        "Kang, Zhaolu",
+        "Zhao, Xiangyu",
+        "Zheng, Xiawu",
+        "Chao, Fei"
+      ],
+      "first_publication_date": "2026/09/25",
+      "sources": [
+        "https://arxiv.org/abs/2609.31948"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.31948",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Peking University",
+          "Renmin University of China",
+          "Tsinghua University",
+          "National Taiwan University",
+          "Xiamen University",
+          "Fudan University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.31948"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7214781414",
+          "source_record_title": "Duplex-MPE: Benchmarking Multi-Party Interaction in Full-Duplex Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2609.31948",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://step-out.github.io/Duplex-MPE-Page/"
+        }
+      ],
+      "evaluation": {
+        "group": "multi",
+        "measures": "明确点名、隐含求助、主动回应与保持沉默。",
+        "protocol": "3–4 位人类与助手的场景，强调“是否应该参与”。",
+        "limits": "版本可能调整场景和基线，固定论文与数据版本。"
+      }
+    },
+    {
+      "id": "E69",
+      "name": "Instruct-FD",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "检验全双工系统能否按指令调整接话、打断、反馈及主动性，报告交互指令遵循程度。",
+      "paper_url": "https://arxiv.org/abs/2607.20460",
+      "paper_title": "Instruct-FD: Can Your Full-Duplex Speech System Follow Turn-Taking Instructions?",
+      "authors": [
+        "Tang, Yuzhi",
+        "Ma, Wentao",
+        "Zhao, Xiling",
+        "Salimi, Ahmad",
+        "Moridani, Sepehr Harfi",
+        "Shen, Dongming",
+        "Wang, Jixuan",
+        "Abdulrazzag, Abdulrahman",
+        "Aubry, Murdock",
+        "Chen, Yu-Hua",
+        "Lee, Daniel",
+        "Lee, Jaewon",
+        "Mackey, Jonah",
+        "Meng, Silin",
+        "Stranges, Nicholas",
+        "Xiong, Chenxu",
+        "Yu, Hao",
+        "Zhu, Yi",
+        "Li, Mu",
+        "Smola, Alex"
+      ],
+      "first_publication_date": "2026/05/15",
+      "sources": [
+        "https://arxiv.org/abs/2607.20460"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2607.20460",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Boson AI"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2607.20460"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7170334618",
+          "source_record_title": "Instruct-FD: Can Your Full-Duplex Speech System Follow Turn-Taking Instructions?",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2607.20460",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "evaluation": {
+        "group": "instructions",
+        "measures": "按指令改变接话、打断、反馈和主动性。",
+        "protocol": "以交互指令遵循分数及相对变化评价行为。",
+        "limits": "依据论文协议；不将指标判分器当作真人体验。"
+      }
+    },
+    {
+      "id": "E70",
+      "name": "DuplexAct-Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "覆盖打断、让出话轮、抵抗打断、主动沉默、主动开场、反馈六类行为，分别检查时机与内容。",
+      "paper_url": "https://arxiv.org/abs/2609.39446",
+      "paper_title": "DuplexAct-Bench: Broadening Full-Duplex Speech Evaluation toward Proactive Interaction across Diverse Behavioral Requirements",
+      "authors": [
+        "Xing, Keyue",
+        "Ding, Wentao",
+        "Wang, Mengmeng",
+        "Tu, Wenming",
+        "Zheng, Zilong",
+        "Kang, Yipeng"
+      ],
+      "first_publication_date": "2026/09/30",
+      "sources": [
+        "https://arxiv.org/abs/2609.39446",
+        "https://github.com/Alita-xky/DuplexAct-Bench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2609.39446",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Beijing Institute for General Artificial Intelligence",
+          "Peking University",
+          "Shanghai Jiao Tong University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2609.39446"
+        ]
+      },
+      "citation_counts": [],
+      "repo": "https://github.com/Alita-xky/DuplexAct-Bench",
+      "stars": {
+        "value": 1,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Alita-xky/DuplexAct-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "链接仓库主要提供项目页面；完整评测器和数据的可用性以项目发布为准。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://alitaxky.icu/DuplexAct-Bench/"
+        }
+      ],
+      "evaluation": {
+        "group": "instructions",
+        "measures": "六类交互行为；时机与内容分别评价。",
+        "protocol": "中英双语 1,290 个试次；含主动沉默与抵抗打断。",
+        "limits": "代码链接主要是项目页，完整评测器开放情况另核。"
+      }
+    },
+    {
+      "id": "E71",
+      "name": "EVA-Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "以动态 bot-to-bot 对话模拟评价完整任务和交互体验，分别报告任务与事实忠实度、时序与体验。",
+      "paper_url": "https://arxiv.org/abs/2605.13841",
+      "paper_title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
+      "authors": [
+        "Bogavelli, Tara",
+        "Melançon, Gabrielle Gauthier",
+        "Stankiewicz, Katrina",
+        "Bamgbose, Oluwanifemi",
+        "Riols, Fanny",
+        "Nguyen, Hoang H.",
+        "Mehndiratta, Raghav",
+        "Brin, Lindsay Devon",
+        "Marinier, Joseph",
+        "Subramani, Hari",
+        "Madamala, Anil",
+        "Nemala, Sridhar Krishna",
+        "Sunkara, Srinivas"
+      ],
+      "first_publication_date": "2026/05/13",
+      "sources": [
+        "https://arxiv.org/abs/2605.13841",
+        "https://aclanthology.org/2026.findings-emnlp.2182/",
+        "https://github.com/ServiceNow/eva"
+      ],
+      "publication": {
+        "venue": "Findings of EMNLP",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://aclanthology.org/2026.findings-emnlp.2182/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "ServiceNow AI Research"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2605.13841"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7161175665",
+          "source_record_title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
+          "source_record_doi": "https://doi.org/10.18653/2026.findings-emnlp.2182",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/ServiceNow/eva",
+      "stars": {
+        "value": 235,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ServiceNow/eva",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "recommended_reading": "学习将任务正确性与体验分开评估，并检查动态用户模拟器的可信度。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://servicenow.github.io/eva/"
+        }
+      ],
+      "evaluation": {
+        "group": "tasks",
+        "measures": "EVA-A：任务与事实；EVA-X：时序与交互体验。",
+        "protocol": "动态 bot-to-bot 模拟，检查用户模拟有效性和重复试验。",
+        "limits": "任务成功、体验评分及不同重复采样指标分别报告。"
+      }
+    },
+    {
+      "id": "E72",
+      "name": "VAmoS Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "在金融服务场景中运行语音代理模拟，通过完整对话、工具轨迹与领域事实检查任务执行。",
+      "paper_url": "https://arxiv.org/abs/2607.27453",
+      "paper_title": "VAmoS Bench: Voice Agent Simulation Bench",
+      "authors": [
+        "Meyer, Joshua",
+        "Shayegan, Sahar",
+        "Tambi, Ritiz",
+        "Khan, Ali",
+        "Kim, Sun",
+        "Shih, Victor",
+        "Jamei, Mehdi",
+        "Partovi, Andi"
+      ],
+      "first_publication_date": "2026/07/29",
+      "sources": [
+        "https://arxiv.org/abs/2607.27453",
+        "https://github.com/veris-ai/riley-agent"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2607.27453",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Veris AI"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2607.27453"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7172022530",
+          "source_record_title": "VAmoS Bench: Voice Agent Simulation Bench",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2607.27453",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/veris-ai/riley-agent",
+      "stars": {
+        "value": 18,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/veris-ai/riley-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "领域为金融服务；riley-agent 是参考代理实现，不能直接视为完整 benchmark 评分器。",
+      "evaluation": {
+        "group": "tasks",
+        "measures": "金融服务任务、领域事实与工具执行轨迹。",
+        "protocol": "模拟完整会话，按任务轨迹和领域规则评分。",
+        "limits": "特定行业结果；参考代理代码不等于完整 benchmark。"
+      }
+    },
+    {
+      "id": "E73",
+      "name": "FD-Bench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "以多轮、打断和噪声条件构建全双工评测流程，观察生成质量与延迟。",
+      "paper_url": "https://arxiv.org/abs/2507.19040",
+      "paper_title": "FD-Bench: A Full-Duplex Benchmarking Pipeline Designed for Full Duplex Spoken Dialogue Systems",
+      "authors": [
+        "Peng, Yizhou",
+        "Chao, Yi-Wen",
+        "Ng, Dianwen",
+        "Ma, Yukun",
+        "Ni, Chongjia",
+        "Ma, Bin",
+        "Chng, Eng Siong"
+      ],
+      "first_publication_date": "2025/07/25",
+      "sources": [
+        "https://arxiv.org/abs/2507.19040",
+        "https://www.isca-archive.org/interspeech_2025/peng25b_interspeech.html",
+        "https://github.com/pengyizhou/FD-Bench"
+      ],
+      "publication": {
+        "venue": "Interspeech",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://www.isca-archive.org/interspeech_2025/peng25b_interspeech.html",
+        "checked_at": "2026-11-03",
+        "doi": "10.21437/Interspeech.2025-739"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Nanyang Technological University",
+          "Alibaba"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2507.19040"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415433582",
+          "source_record_title": "FD-Bench: A Full-Duplex Benchmarking Pipeline Designed for Full Duplex Spoken Dialogue Systems",
+          "source_record_doi": "https://doi.org/10.21437/interspeech.2025-739",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/pengyizhou/FD-Bench",
+      "stars": {
+        "value": 27,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/pengyizhou/FD-Bench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "与 DanielLin94144/Full-Duplex-Bench 是不同项目；两者的分数与版本不能混用。",
+      "evaluation": {
+        "group": "turn",
+        "measures": "多轮交互、打断、噪声与延迟。",
+        "protocol": "合成全双工对话测试流程。",
+        "limits": "与 Full-Duplex-Bench 为不同团队的不同项目。"
+      }
+    },
+    {
+      "id": "E74",
+      "name": "TurnBench",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "围绕轮次结束与打断检测，在不同误报预算下比较召回和延迟，评价组件的实时决策。",
+      "paper_url": "https://arxiv.org/abs/2608.25218",
+      "paper_title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
+      "authors": [
+        "Jiang, Freeman",
+        "Sanabria, Ramon",
+        "Deshmukh, Soham",
+        "Veluri, Bandhav",
+        "Williams, Simon Michael Vuch",
+        "Suen, Elliott K.",
+        "Lee, Garreth",
+        "Choi, Kevin Yoonho",
+        "Umeki, Takuya",
+        "Kubo, Riku",
+        "Udupa, Sathvik",
+        "Huang, Chien-yu",
+        "Kuan, Shih-Yun Shan",
+        "Tao, Zhuoyan",
+        "Krishna, Satyapriya",
+        "Eskimez, Sefik Emre",
+        "Tsao, Yu",
+        "Lee, Hung-yi",
+        "Watanabe, Shinji"
+      ],
+      "first_publication_date": "2026/08/25",
+      "sources": [
+        "https://arxiv.org/abs/2608.25218",
+        "https://github.com/SesameAILabs/turnbench"
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2608.25218",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Sesame AI",
+          "Mundo AI",
+          "Oto",
+          "Carnegie Mellon University",
+          "National Taiwan University",
+          "Academia Sinica",
+          "Brno University of Technology"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2608.25218"
+        ]
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7204453739",
+          "source_record_title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2608.25218",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "repo": "https://github.com/SesameAILabs/turnbench",
+      "stars": {
+        "value": 57,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/SesameAILabs/turnbench",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "scope_note": "主要评价轮次决策组件；不直接测回复内容、工具调用或最终任务完成。",
+      "resource_links": [
+        {
+          "label": "项目",
+          "url": "https://turnbench.sesame.com/"
+        }
+      ],
+      "evaluation": {
+        "group": "turn",
+        "measures": "轮次结束与打断检测的召回、误报、决策延迟。",
+        "protocol": "人类标注的双声道多域对话；固定误报预算。",
+        "limits": "组件级评价，不直接测生成内容与任务成功。"
+      }
     }
   ],
   "surveys": [
@@ -2536,7 +5166,7 @@
       "year": 2026,
       "repo": "https://github.com/MM-Speech/DuplexSurvey",
       "paper_url": "https://arxiv.org/abs/2606.19453",
-      "paper_title": "A Survey of Full-Duplex Spoken Dialogue Systems: Architectural Hierarchy, Interaction Ontology, and Decision State Machine",
+      "paper_title": "Speaking While Listening: A Survey and Empirical Audit of Full-Duplex Spoken Dialogue Systems",
       "authors": [
         "Lu, Jingyu",
         "Wang, Yuhan",
@@ -2586,7 +5216,7 @@
         "year": 2026,
         "status": "conference",
         "source": "https://aclanthology.org/2026.emnlp-main.1126/",
-        "checked_at": "2026-11-02",
+        "checked_at": "2026-11-03",
         "title": "Speaking While Listening: A Survey and Empirical Audit of Full-Duplex Spoken Dialogue Systems"
       },
       "origin": {
