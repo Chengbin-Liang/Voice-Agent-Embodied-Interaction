@@ -1,0 +1,2965 @@
+{
+  "schema_version": 1,
+  "title": "Voice Agent与具身交互",
+  "entries": [
+    {
+      "id": "E01",
+      "name": "MiniCPM-o 4.5",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2026,
+      "summary": "以共享时间轴组织持续音视频输入与文本、语音输出，并研究主动回应。",
+      "repo": "https://github.com/OpenBMB/MiniCPM-V",
+      "paper_url": "https://arxiv.org/abs/2604.27393",
+      "paper_title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+      "authors": [
+        "Cui, Junbo",
+        "Xu, Bokai",
+        "Wang, Chongyi",
+        "Yu, Tianyu",
+        "Sun, Weiyue",
+        "Xu, Yingjing",
+        "Wang, Tianran",
+        "He, Zhihui",
+        "Ma, Wenshuo",
+        "Cai, Tianchi",
+        "Gui, Jiancheng",
+        "Zhang, Luoyuan",
+        "Sun, Xian",
+        "Huang, Fuwei",
+        "Chen, Moye",
+        "Lin, Zhuo",
+        "Liu, Hanyu",
+        "Gui, Qingxin",
+        "Han, Qingzhe",
+        "Wen, Yuyang",
+        "Liu, Huiping",
+        "Wang, Rongkang",
+        "Zhang, Yaqi",
+        "Wei, Hongliang",
+        "Chen, Chi",
+        "Li, You",
+        "Fang, Kechen",
+        "Zhou, Jie",
+        "Li, Yuxuan",
+        "Zeng, Guoyang",
+        "Xiao, Chaojun",
+        "Lin, Yankai",
+        "Han, Xu",
+        "Sun, Maosong",
+        "Liu, Zhiyuan",
+        "Yao, Yuan"
+      ],
+      "first_publication_date": "2026/04/30",
+      "sources": [
+        "https://arxiv.org/abs/2604.27393",
+        "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_o4dot5_en.md",
+        "https://github.com/OpenBMB/MiniCPM-V"
+      ],
+      "stars": {
+        "value": 27047,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenBMB/MiniCPM-V",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7159670352",
+          "source_record_title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.27393",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2604.27393",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University / THUNLP",
+          "ModelBest",
+          "OpenBMB"
+        ],
+        "sources": [
+          "https://github.com/OpenBMB/MiniCPM-V"
+        ]
+      },
+      "recommended_reading": "阅读持续音视频输入、全双工输出及其部署条件。",
+      "scope_note": "全双工模式的硬件要求以官方部署文档为准；模型内存与完整系统内存应分开记录。"
+    },
+    {
+      "id": "E02",
+      "name": "Qwen2.5-Omni",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2025,
+      "summary": "音视频、图像和文本输入，联合生成文本与语音；提供 Thinker–Talker 架构参照。",
+      "repo": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "paper_url": "https://arxiv.org/abs/2503.20215",
+      "paper_title": "Qwen2.5-Omni Technical Report",
+      "authors": [
+        "Xu, Jin",
+        "Guo, Zhifang",
+        "He, Jinzheng",
+        "Hu, Hangrui",
+        "He, Ting",
+        "Bai, Shuai",
+        "Chen, Keqin",
+        "Wang, Jialin",
+        "Fan, Yang",
+        "Dang, Kai",
+        "Zhang, Bin",
+        "Wang, Xiong",
+        "Chu, Yunfei",
+        "Lin, Junyang"
+      ],
+      "first_publication_date": "2025/03/26",
+      "sources": [
+        "https://arxiv.org/abs/2503.20215",
+        "https://github.com/QwenLM/Qwen2.5-Omni#deployment-with-mnn",
+        "https://github.com/QwenLM/Qwen2.5-Omni"
+      ],
+      "stars": {
+        "value": 4092,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen2.5-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 14,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4409051416",
+          "source_record_title": "Qwen2.5-Omni Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2503.20215",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2503.20215",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Qwen Team / Alibaba"
+        ],
+        "sources": [
+          "https://github.com/QwenLM/Qwen2.5-Omni"
+        ]
+      },
+      "recommended_reading": "建立 Thinker–Talker 架构、数据与分阶段训练的基本参照。",
+      "scope_note": "流式语音输出不等于原生同时听说；MNN 功能覆盖以对应部署模式为准。"
+    },
+    {
+      "id": "E03",
+      "name": "Qwen3-Omni",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2025,
+      "summary": "MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。",
+      "repo": "https://github.com/QwenLM/Qwen3-Omni",
+      "paper_url": "https://arxiv.org/abs/2509.17765",
+      "paper_title": "Qwen3-Omni Technical Report",
+      "authors": [
+        "Xu, Jin",
+        "Guo, Zhifang",
+        "Hu, Hangrui",
+        "Chu, Yunfei",
+        "Wang, Xiong",
+        "He, Jinzheng",
+        "Wang, Yuxuan",
+        "Shi, Xian",
+        "He, Ting",
+        "Zhu, Xinfa",
+        "Lv, Yuanjun",
+        "Wang, Yongqi",
+        "Guo, Dake",
+        "Wang, He",
+        "Ma, Linhan",
+        "Zhang, Pei",
+        "Zhang, Xinyu",
+        "Hao, Hongkun",
+        "Guo, Zishan",
+        "Yang, Baosong",
+        "Zhang, Bin",
+        "Ma, Ziyang",
+        "Wei, Xipin",
+        "Bai, Shuai",
+        "Chen, Keqin",
+        "Liu, Xuejing",
+        "Wang, Peng",
+        "Yang, Mingkun",
+        "Liu, Dayiheng",
+        "Ren, Xingzhang",
+        "Zheng, Bo",
+        "Men, Rui",
+        "Zhou, Fan",
+        "Yu, Bowen",
+        "Yang, Jianxin",
+        "Yu, Le",
+        "Zhou, Jingren",
+        "Lin, Junyang"
+      ],
+      "first_publication_date": "2025/09/22",
+      "sources": [
+        "https://arxiv.org/abs/2509.17765",
+        "https://github.com/QwenLM/Qwen3-Omni"
+      ],
+      "stars": {
+        "value": 4093,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415255153",
+          "source_record_title": "Qwen3-Omni Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.17765",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2509.17765",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Qwen Team / Alibaba"
+        ],
+        "sources": [
+          "https://github.com/QwenLM/Qwen3-Omni"
+        ]
+      }
+    },
+    {
+      "id": "E04",
+      "name": "InteractiveOmni",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2025,
+      "summary": "以音视频多轮交互为目标，提供 4B 与 8B 模型及多轮评价。",
+      "repo": "https://github.com/OpenSenseNova/InteractiveOmni",
+      "paper_url": "https://arxiv.org/abs/2510.13747",
+      "paper_title": "InteractiveOmni: A Unified Omni-modal Model for Audio-Visual Multi-turn Dialogue",
+      "authors": [
+        "Tong, Wenwen",
+        "Guo, Hewei",
+        "Ran, Dongchuan",
+        "Chen, Jiangnan",
+        "Lu, Jiefan",
+        "Wang, Kaibin",
+        "Li, Keqiang",
+        "Zhu, Xiaoxu",
+        "Li, Jiakui",
+        "Li, Kehan",
+        "Li, Xueheng",
+        "Li, Lumin",
+        "Guo, Chenxu",
+        "Zhou, Jiasheng",
+        "Chen, Jiandong",
+        "Wu, Xianye",
+        "Wang, Jiahao",
+        "Wu, Silei",
+        "Chen, Lei",
+        "Deng, Hanming",
+        "Song, Yuxuan",
+        "Zhou, Dinghao",
+        "Zhong, Guiping",
+        "Zheng, Ken",
+        "Kang, Shiyin",
+        "Lu, Lewei"
+      ],
+      "first_publication_date": "2025/10/15",
+      "sources": [
+        "https://arxiv.org/abs/2510.13747",
+        "https://github.com/OpenSenseNova/InteractiveOmni"
+      ],
+      "stars": {
+        "value": 9,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenSenseNova/InteractiveOmni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415277372",
+          "source_record_title": "InteractiveOmni: A Unified Omni-modal Model for Audio-Visual Multi-turn Dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.13747",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2510.13747",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "SenseTime Research"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2510.13747"
+        ]
+      }
+    },
+    {
+      "id": "E05",
+      "name": "VITA-1.5",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2025,
+      "summary": "面向实时视觉和语音交互的多模态模型，提供训练与推理流程。",
+      "repo": "https://github.com/VITA-MLLM/VITA",
+      "paper_url": "https://arxiv.org/abs/2501.01957",
+      "paper_title": "VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction",
+      "authors": [
+        "Fu, Chaoyou",
+        "Lin, Haojia",
+        "Wang, Xiong",
+        "Zhang, Yi-Fan",
+        "Shen, Yunhang",
+        "Liu, Xiaoyu",
+        "Cao, Haoyu",
+        "Long, Zuwei",
+        "Gao, Heting",
+        "Li, Ke",
+        "Ma, Long",
+        "Zheng, Xiawu",
+        "Ji, Rongrong",
+        "Sun, Xing",
+        "Shan, Caifeng",
+        "He, Ran"
+      ],
+      "first_publication_date": "2025/01/03",
+      "sources": [
+        "https://arxiv.org/abs/2501.01957",
+        "https://github.com/VITA-MLLM/VITA"
+      ],
+      "stars": {
+        "value": 2539,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/VITA-MLLM/VITA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 11,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4406093559",
+          "source_record_title": "VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction",
+          "source_record_doi": "https://doi.org/10.52202/085713-2529",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://arxiv.org/abs/2501.01957",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Nanjing University",
+          "Xiamen University",
+          "CASIA",
+          "Tencent Youtu Lab"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2501.01957"
+        ]
+      }
+    },
+    {
+      "id": "E06",
+      "name": "Mini-Omni2",
+      "category": "omni",
+      "kind": "模型",
+      "year": 2024,
+      "summary": "较早开放图像、语音、文本输入与实时语音输出的实验系统。",
+      "repo": "https://github.com/gpt-omni/mini-omni2",
+      "paper_url": "https://arxiv.org/abs/2410.11190",
+      "paper_title": "Mini-Omni2: Towards Open-source GPT-4o with Vision, Speech and Duplex Capabilities",
+      "authors": [
+        "Xie, Zhifei",
+        "Wu, Changqiao"
+      ],
+      "first_publication_date": "2024/10/15",
+      "sources": [
+        "https://arxiv.org/abs/2410.11190",
+        "https://github.com/gpt-omni/mini-omni2"
+      ],
+      "stars": {
+        "value": 1936,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/gpt-omni/mini-omni2",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403576555",
+          "source_record_title": "Mini-Omni2: Towards Open-source GPT-4o with Vision, Speech and Duplex Capabilities",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.11190",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2410.11190",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University",
+          "Inspirai"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2410.11190"
+        ]
+      }
+    },
+    {
+      "id": "E07",
+      "name": "Moshi",
+      "category": "duplex",
+      "kind": "模型",
+      "year": 2024,
+      "summary": "双向语音流与文本协同建模，为连续听说提供开源研究基础。",
+      "repo": "https://github.com/kyutai-labs/moshi",
+      "paper_url": "https://arxiv.org/abs/2410.00037",
+      "paper_title": "Moshi: a speech-text foundation model for real-time dialogue",
+      "authors": [
+        "Défossez, Alexandre",
+        "Mazaré, Laurent",
+        "Orsini, Manu",
+        "Royer, Amélie",
+        "Pérez, Patrick",
+        "Jégou, Hervé",
+        "Grave, Edouard",
+        "Zeghidour, Neil"
+      ],
+      "first_publication_date": "2024/09/17",
+      "sources": [
+        "https://arxiv.org/abs/2410.00037",
+        "https://github.com/kyutai-labs/moshi"
+      ],
+      "stars": {
+        "value": 11361,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/kyutai-labs/moshi",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 9,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403883071",
+          "source_record_title": "Moshi: a speech-text foundation model for real-time dialogue",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.00037",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 875,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/ae4aa7b0c5a327dae63ad20e00b58bcc6176b3b8",
+          "source_record_title": "Moshi: a speech-text foundation model for real-time dialogue",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2410.00037",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "independent_lab",
+        "organizations": [
+          "Kyutai"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2410.00037",
+          "https://kyutai.org/"
+        ]
+      },
+      "recommended_reading": "理解双向语音流、文本辅助及低延迟生成。"
+    },
+    {
+      "id": "E08",
+      "name": "Freeze-Omni",
+      "category": "duplex",
+      "kind": "模型",
+      "year": 2024,
+      "summary": "冻结语言模型，结合流式语音编码解码和块级状态预测。",
+      "repo": "https://github.com/VITA-MLLM/Freeze-Omni",
+      "paper_url": "https://arxiv.org/abs/2411.00774",
+      "paper_title": "Freeze-Omni: A Smart and Low Latency Speech-to-speech Dialogue Model with Frozen LLM",
+      "authors": [
+        "Wang, Xiong",
+        "Li, Yangze",
+        "Fu, Chaoyou",
+        "Shen, Yunhang",
+        "Xie, Lei",
+        "Li, Ke",
+        "Sun, Xing",
+        "Ma, Long"
+      ],
+      "first_publication_date": "2024/11/01",
+      "sources": [
+        "https://arxiv.org/abs/2411.00774",
+        "https://github.com/VITA-MLLM/Freeze-Omni"
+      ],
+      "stars": {
+        "value": 403,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/VITA-MLLM/Freeze-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 4,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404390495",
+          "source_record_title": "Freeze-Omni: A Smart and Low Latency Speech-to-speech Dialogue Model with Frozen LLM",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2411.00774",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2411.00774",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Northwestern Polytechnical University",
+          "Nanjing University",
+          "Tencent Youtu Lab"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2411.00774"
+        ]
+      }
+    },
+    {
+      "id": "E09",
+      "name": "DuplexSLA",
+      "category": "action",
+      "kind": "模型",
+      "year": 2026,
+      "summary": "在共同时间线上输出语音及结构化 action 通道，研究交谈中的规划与工具调用。",
+      "repo": "https://github.com/hyzhang24/DuplexSLA",
+      "paper_url": "https://arxiv.org/abs/2605.20755",
+      "paper_title": "DuplexSLA: A Full-Duplex Spoken Language Model with Synchronized Speech, Language, and Action",
+      "authors": [
+        "Zhang, Haoyang",
+        "Chen, Jun",
+        "Wu, Donghang",
+        "Li, Yuxin",
+        "Zhang, Yuxin",
+        "Zhang, Xiangyu Tony",
+        "Liu, Che",
+        "Lin, Qingjian",
+        "Peng, Yizhou",
+        "Liu, Hexin",
+        "Chng, Eng Siong",
+        "Yan, Chao",
+        "Wu, Boyong",
+        "Huang, Yechang",
+        "Yang, Xuerui",
+        "Tian, Fei"
+      ],
+      "first_publication_date": "2026/05/20",
+      "sources": [
+        "https://arxiv.org/abs/2605.20755",
+        "https://github.com/hyzhang24/DuplexSLA"
+      ],
+      "stars": {
+        "value": 147,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/hyzhang24/DuplexSLA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7161968102",
+          "source_record_title": "DuplexSLA: A Full-Duplex Spoken Language Model with Synchronized Speech, Language, and Action",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2605.20755",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2605.20755",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "StepFun",
+          "Peking University",
+          "Nanyang Technological University",
+          "Shanghai Jiao Tong University",
+          "University of New South Wales",
+          "Imperial College London"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2605.20755"
+        ]
+      },
+      "scope_note": "论文的 action 通道主要对应结构化规划与工具操作，不能直接等同于关节控制。"
+    },
+    {
+      "id": "E10",
+      "name": "WITA-Omni",
+      "category": "embodied",
+      "kind": "产业系统展示",
+      "year": 2026,
+      "summary": "智元的具身交互展示将场景理解、语音和身体表达组合在同一交互过程中。",
+      "repo": null,
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://www.agibot.com/article/231/detail/122.html"
+      ],
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://www.agibot.com/article/231/detail/122.html",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "AGIBOT / 智元"
+        ],
+        "sources": [
+          "https://www.agibot.com/article/231/detail/122.html"
+        ]
+      },
+      "scope_note": "工业展示；不能由演示反推动作模型、训练数据或完整系统已经开放。"
+    },
+    {
+      "id": "E11",
+      "name": "Reachy Mini Conversation App",
+      "category": "embodied",
+      "kind": "机器人应用",
+      "year": 2026,
+      "summary": "把实时语音、摄像头工具和机器人运动接入同一对话应用。",
+      "repo": "https://github.com/pollen-robotics/reachy_mini_conversation_app",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/pollen-robotics/reachy_mini_conversation_app"
+      ],
+      "stars": {
+        "value": 348,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/pollen-robotics/reachy_mini_conversation_app",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/pollen-robotics/reachy_mini_conversation_app",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Pollen Robotics / Hugging Face"
+        ],
+        "sources": [
+          "https://github.com/pollen-robotics/reachy_mini_conversation_app",
+          "https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition"
+        ]
+      },
+      "scope_note": "主要是头部、天线等身体表达和视觉工具调用，不是机械臂抓取平台。"
+    },
+    {
+      "id": "E12",
+      "name": "EMAGE / BEAT2",
+      "category": "embodied",
+      "kind": "身体表达方法",
+      "year": 2024,
+      "summary": "从语音及文本生成全身与面部协同动作，连接 co-speech gesture 与表达数据。",
+      "repo": "https://github.com/haiyangliu0/character-policy",
+      "paper_url": "https://arxiv.org/abs/2401.00374",
+      "paper_title": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+      "authors": [
+        "Liu, Haiyang",
+        "Zhu, Zihao",
+        "Becherini, Giorgio",
+        "Peng, Yichen",
+        "Su, Mingyang",
+        "Zhou, You",
+        "Zhe, Xuefei",
+        "Iwamoto, Naoya",
+        "Zheng, Bo",
+        "Black, Michael J."
+      ],
+      "first_publication_date": "2023/12/31",
+      "sources": [
+        "https://arxiv.org/abs/2401.00374",
+        "https://pantomatrix.github.io/EMAGE/",
+        "https://github.com/haiyangliu0/character-policy"
+      ],
+      "stars": {
+        "value": 1312,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/haiyangliu0/character-policy",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 95,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4402727140",
+          "source_record_title": "EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling",
+          "source_record_doi": "https://doi.org/10.1109/cvpr52733.2024.00115",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "CVPR",
+        "year": 2024,
+        "status": "conference",
+        "source": "https://pantomatrix.github.io/EMAGE/",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "The University of Tokyo",
+          "Keio University",
+          "Max Planck Institute for Intelligent Systems",
+          "JAIST",
+          "Tsinghua University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2401.00374"
+        ]
+      },
+      "scope_note": "面向共语手势与角色表达；不直接证明真实机器人的操作能力。"
+    },
+    {
+      "id": "E13",
+      "name": "Interactive Language / Language Table",
+      "category": "action",
+      "kind": "交互控制基础",
+      "year": 2023,
+      "summary": "通过实时语言指导视觉运动策略，允许人逐步调整机器人完成目标。",
+      "repo": "https://github.com/google-research/language-table",
+      "paper_url": "https://arxiv.org/abs/2210.06407",
+      "paper_title": "Interactive Language: Talking to Robots in Real Time",
+      "authors": [
+        "Lynch, Corey",
+        "Wahid, Ayzaan",
+        "Tompson, Jonathan",
+        "Ding, Tianli",
+        "Betker, James",
+        "Baruch, Robert",
+        "Armstrong, Travis",
+        "Florence, Pete"
+      ],
+      "first_publication_date": "2022/10/12",
+      "sources": [
+        "https://arxiv.org/abs/2210.06407",
+        "https://interactive-language.github.io/",
+        "https://github.com/google-research/language-table"
+      ],
+      "stars": {
+        "value": 367,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/google-research/language-table",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 113,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4391759936",
+          "source_record_title": "Interactive Language: Talking to Robots in Real Time",
+          "source_record_doi": "https://doi.org/10.1109/lra.2023.3295255",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "IEEE RA-L",
+        "year": 2024,
+        "status": "journal",
+        "source": "https://doi.org/10.1109/LRA.2023.3295255",
+        "checked_at": "2026-11-02",
+        "doi": "10.1109/LRA.2023.3295255",
+        "journal": "IEEE Robotics and Automation Letters"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Robotics at Google"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2210.06407"
+        ]
+      }
+    },
+    {
+      "id": "E14",
+      "name": "Daily-Omni",
+      "category": "evaluation",
+      "kind": "基准",
+      "year": 2025,
+      "summary": "日常视频音画联合推理基准，强调跨模态时间对齐。",
+      "repo": "https://github.com/Lliar-liar/Daily-Omni",
+      "paper_url": "https://arxiv.org/abs/2505.17862",
+      "paper_title": "Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities",
+      "authors": [
+        "Zhou, Ziwei",
+        "Wang, Rui",
+        "Wu, Zuxuan",
+        "Jiang, Yu-Gang"
+      ],
+      "first_publication_date": "2025/05/23",
+      "sources": [
+        "https://arxiv.org/abs/2505.17862",
+        "https://github.com/Lliar-liar/Daily-Omni"
+      ],
+      "stars": {
+        "value": 53,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Lliar-liar/Daily-Omni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "GPL-3.0"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2505.17862",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Fudan University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2505.17862"
+        ]
+      }
+    },
+    {
+      "id": "E15",
+      "name": "OmniBench (m-a-p)",
+      "category": "evaluation",
+      "kind": "基准",
+      "year": 2024,
+      "summary": "针对图像、音频、文本联合理解的三模态基准，并提供 OmniInstruct。",
+      "repo": "https://github.com/multimodal-art-projection/OmniBench",
+      "paper_url": "https://arxiv.org/abs/2409.15272",
+      "paper_title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+      "authors": [
+        "Li, Yizhi",
+        "Ma, Yinghao",
+        "Zhang, Ge",
+        "Yuan, Ruibin",
+        "Zhu, Kang",
+        "Guo, Hangyu",
+        "Liang, Yiming",
+        "Liu, Jiaheng",
+        "Wang, Zekun",
+        "Yang, Jian",
+        "Wu, Siwei",
+        "Qu, Xingwei",
+        "Shi, Jinjie",
+        "Zhang, Xinyue",
+        "Yang, Zhenzhu",
+        "Wen, Yidan",
+        "Wang, Yanghai",
+        "Li, Shihao",
+        "Zhang, Zhaoxiang",
+        "Liu, Zachary",
+        "Benetos, Emmanouil",
+        "Huang, Wenhao",
+        "Lin, Chenghua"
+      ],
+      "first_publication_date": "2024/09/23",
+      "sources": [
+        "https://arxiv.org/abs/2409.15272",
+        "https://github.com/multimodal-art-projection/OmniBench"
+      ],
+      "stars": {
+        "value": 62,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/multimodal-art-projection/OmniBench",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403885114",
+          "source_record_title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+          "source_record_doi": "https://doi.org/10.52202/085713-1036",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 111,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/bde43a6356341b68a675582cf964fd9725fb40fb",
+          "source_record_title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://arxiv.org/abs/2409.15272",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "M-A-P",
+          "University of Manchester",
+          "Queen Mary University of London",
+          "01.ai",
+          "HKUST",
+          "Nanjing University",
+          "Dartmouth College"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2409.15272"
+        ]
+      }
+    },
+    {
+      "id": "E16",
+      "name": "Full-Duplex-Bench",
+      "category": "evaluation",
+      "kind": "基准",
+      "year": 2025,
+      "summary": "覆盖停顿、反馈、轮次交接和打断；后续版本扩展重叠、动态多轮与工具使用。",
+      "repo": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+      "paper_url": "https://arxiv.org/abs/2503.04721",
+      "paper_title": "Full-Duplex-Bench: A Benchmark to Evaluate Full-duplex Spoken Dialogue Models on Turn-taking Capabilities",
+      "authors": [
+        "Lin, Guan-Ting",
+        "Lian, Jiachen",
+        "Li, Tingle",
+        "Wang, Qirui",
+        "Anumanchipalli, Gopala",
+        "Liu, Alexander H.",
+        "Lee, Hung-yi"
+      ],
+      "first_publication_date": "2025/03/06",
+      "sources": [
+        "https://arxiv.org/abs/2503.04721",
+        "https://github.com/DanielLin94144/Full-Duplex-Bench"
+      ],
+      "stars": {
+        "value": 336,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/DanielLin94144/Full-Duplex-Bench",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "NOASSERTION"
+      },
+      "citation_counts": [
+        {
+          "value": 8,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7148492801",
+          "source_record_title": "Full-Duplex-Bench: A Benchmark to Evaluate Full-Duplex Spoken Dialogue Models on Turn-taking Capabilities",
+          "source_record_doi": "https://doi.org/10.1109/asru65441.2025.11433838",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ASRU",
+        "year": 2025,
+        "status": "workshop",
+        "source": "https://arxiv.org/abs/2503.04721",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "National Taiwan University",
+          "UC Berkeley",
+          "University of Washington",
+          "MIT CSAIL"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2503.04721"
+        ]
+      },
+      "recommended_reading": "把打断、轮次交接和交互时序转为可测指标。"
+    },
+    {
+      "id": "E17",
+      "name": "llama.cpp ecosystem",
+      "category": "deployment",
+      "kind": "推理工具",
+      "year": 2023,
+      "summary": "本地推理工具链基础，提供量化与多平台运行入口。",
+      "repo": "https://github.com/ggml-org/llama.cpp",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/OpenBMB/llama.cpp-omni",
+        "https://github.com/ggml-org/llama.cpp"
+      ],
+      "stars": {
+        "value": 133116,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ggml-org/llama.cpp",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/OpenBMB/llama.cpp-omni",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "ggml.ai / Hugging Face",
+          "llama.cpp contributor community"
+        ],
+        "sources": [
+          "https://github.com/ggml-org/llama.cpp/discussions/19759"
+        ]
+      },
+      "scope_note": "完整 Omni 模式可能依赖专用分支，例如 OpenBMB/llama.cpp-omni。"
+    },
+    {
+      "id": "E18",
+      "name": "MNN",
+      "category": "deployment",
+      "kind": "推理工具",
+      "year": 2019,
+      "summary": "面向移动与边缘设备的推理框架；Qwen2.5-Omni 提供官方接入入口。",
+      "repo": "https://github.com/alibaba/MNN",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/QwenLM/Qwen2.5-Omni#deployment-with-mnn",
+        "https://github.com/alibaba/MNN"
+      ],
+      "stars": {
+        "value": 16336,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/alibaba/MNN",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/QwenLM/Qwen2.5-Omni#deployment-with-mnn",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Alibaba"
+        ],
+        "sources": [
+          "https://github.com/alibaba/MNN"
+        ]
+      }
+    },
+    {
+      "id": "E19",
+      "name": "LeRobot",
+      "category": "foundation",
+      "kind": "机器人基础工具",
+      "year": 2026,
+      "summary": "机器人数据、策略训练、硬件控制与评测的开源工具入口。",
+      "repo": "https://github.com/huggingface/lerobot",
+      "paper_url": "https://arxiv.org/abs/2602.22818",
+      "paper_title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+      "authors": [
+        "Cadene, Remi",
+        "Aliberts, Simon",
+        "Capuano, Francesco",
+        "Aractingi, Michel",
+        "Zouitine, Adil",
+        "Kooijmans, Pepijn",
+        "Choghari, Jade",
+        "Russi, Martino",
+        "Pascal, Caroline",
+        "Palma, Steven",
+        "Shukor, Mustafa",
+        "Moss, Jess",
+        "Soare, Alexander",
+        "Aubakirova, Dana",
+        "Lhoest, Quentin",
+        "Gallouédec, Quentin",
+        "Wolf, Thomas"
+      ],
+      "first_publication_date": "2026/02/26",
+      "sources": [
+        "https://arxiv.org/abs/2602.22818",
+        "https://github.com/huggingface/lerobot"
+      ],
+      "stars": {
+        "value": 28653,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/huggingface/lerobot",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7131860508",
+          "source_record_title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2602.22818",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2602.22818",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Hugging Face",
+          "University of Oxford"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2602.22818"
+        ]
+      },
+      "recommended_reading": "贯通示范采集、数据查看、策略训练与真机执行。"
+    },
+    {
+      "id": "E20",
+      "name": "OpenVLA",
+      "category": "foundation",
+      "kind": "动作模型基础",
+      "year": 2024,
+      "summary": "视觉与语言条件下的机器人动作模型，作为交互层连接动作策略的基础参照。",
+      "repo": "https://github.com/openvla/openvla",
+      "paper_url": "https://arxiv.org/abs/2406.09246",
+      "paper_title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "authors": [
+        "Kim, Moo Jin",
+        "Pertsch, Karl",
+        "Karamcheti, Siddharth",
+        "Xiao, Ted",
+        "Balakrishna, Ashwin",
+        "Nair, Suraj",
+        "Rafailov, Rafael",
+        "Foster, Ethan",
+        "Lam, Grace",
+        "Sanketi, Pannag",
+        "Vuong, Quan",
+        "Kollar, Thomas",
+        "Burchfiel, Benjamin",
+        "Tedrake, Russ",
+        "Sadigh, Dorsa",
+        "Levine, Sergey",
+        "Liang, Percy",
+        "Finn, Chelsea"
+      ],
+      "first_publication_date": "2024/06/13",
+      "sources": [
+        "https://arxiv.org/abs/2406.09246",
+        "https://github.com/openvla/openvla"
+      ],
+      "stars": {
+        "value": 7250,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/openvla/openvla",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 62,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4399695759",
+          "source_record_title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2406.09246",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "CoRL",
+        "year": 2024,
+        "status": "conference",
+        "source": "https://proceedings.mlr.press/v270/kim25c.html",
+        "checked_at": "2026-11-02",
+        "bibliography_year": 2025,
+        "volume": "270",
+        "pages": "2679--2713"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Stanford University",
+          "UC Berkeley",
+          "MIT",
+          "Toyota Research Institute",
+          "Google DeepMind",
+          "Physical Intelligence"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2406.09246"
+        ]
+      },
+      "scope_note": "视觉、语言到动作的基础；原生语音与实时打断需要额外系统设计。"
+    },
+    {
+      "id": "E21",
+      "name": "RoboOmni (OpenMOSS)",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2025,
+      "summary": "从对话、环境声音和视觉线索推断意图，经确认后生成操作动作，研究隐式情境指令下的主动协助。",
+      "repo": "https://github.com/OpenMOSS/RoboOmni",
+      "paper_url": "https://arxiv.org/abs/2510.23763",
+      "paper_title": "RoboOmni: Proactive Robot Manipulation in Omni-modal Context",
+      "authors": [
+        "Wang, Siyin",
+        "Fu, Jinlan",
+        "Liu, Feihong",
+        "He, Xinzhe",
+        "Wu, Huangxuan",
+        "Shi, Junhao",
+        "Huang, Kexin",
+        "Fei, Zhaoye",
+        "Gong, Jingjing",
+        "Wu, Zuxuan",
+        "Jiang, Yu-Gang",
+        "Ng, See-Kiong",
+        "Chua, Tat-Seng",
+        "Qiu, Xipeng"
+      ],
+      "first_publication_date": "2025/10/27",
+      "sources": [
+        "https://arxiv.org/abs/2510.23763",
+        "https://github.com/OpenMOSS/RoboOmni",
+        "https://OpenMOSS.github.io/RoboOmni"
+      ],
+      "stars": {
+        "value": 124,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/OpenMOSS/RoboOmni",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/37cd1e4cbfbfdadc2a898a703ab46bc0e1c83dd3",
+          "source_record_title": "RoboOmni: Proactive Robot Manipulation in Omni-modal Context",
+          "source_record_doi": "10.48550/arXiv.2510.23763",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/33610fba262d7b6fed0810b89f55e147-Abstract-Conference.html",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Fudan University",
+          "Shanghai Innovation Institute",
+          "National University of Singapore"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2510.23763"
+        ]
+      },
+      "recommended_reading": "了解环境声音与隐式意图如何进入操作任务。",
+      "scope_note": "此处绑定 OpenMOSS 的 RoboOmni，注意与其他同名论文区分。"
+    },
+    {
+      "id": "E22",
+      "name": "ELLSA",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2025,
+      "summary": "在统一架构中处理视觉、文本、语音和动作，支持边说边做、动作打断与基于场景的问答。",
+      "repo": "https://github.com/bytedance/SALMONN",
+      "paper_url": "https://arxiv.org/abs/2510.16756",
+      "paper_title": "End-to-end Listen, Look, Speak and Act",
+      "authors": [
+        "Wang, Siyin",
+        "Yu, Wenyi",
+        "Chen, Xianzhao",
+        "Tian, Xiaohai",
+        "Zhang, Jun",
+        "Lu, Lu",
+        "Zhang, Chao"
+      ],
+      "first_publication_date": "2025/10/19",
+      "sources": [
+        "https://arxiv.org/abs/2510.16756",
+        "https://github.com/bytedance/SALMONN/tree/ELLSA",
+        "https://huggingface.co/tsinghua-ee/ELLSA"
+      ],
+      "stars": {
+        "value": 1564,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/bytedance/SALMONN",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415958597",
+          "source_record_title": "End-to-end Listen, Look, Speak and Act",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2510.16756",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 7,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/3af611e47c30a439f8acad312f16cf7837ddbce7",
+          "source_record_title": "End-to-end Listen, Look, Speak and Act",
+          "source_record_doi": "10.48550/arXiv.2510.16756",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/6d8af672c0bca7a4be6f0cd0d229c05c-Abstract-Conference.html",
+        "checked_at": "2026-11-02",
+        "authors": [
+          "Siyin Wang",
+          "Wenyi Yu",
+          "Xianzhao Chen",
+          "Xiaohai Tian",
+          "Jun Zhang",
+          "Lu Lu",
+          "Yuxuan Wang",
+          "Chao Zhang"
+        ]
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University",
+          "ByteDance"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2510.16756"
+        ]
+      },
+      "recommended_reading": "阅读语音与动作共同建模、边说边做及中断实验。",
+      "scope_note": "SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具体权重与训练入口见官方发布。"
+    },
+    {
+      "id": "E23",
+      "name": "VITA-E",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2025,
+      "summary": "以并行的活动/监听模型和控制 token 调度语音与动作，支持中断、任务切换和边说边做。",
+      "repo": "https://github.com/Tencent/VITA",
+      "paper_url": "https://arxiv.org/abs/2510.21817",
+      "paper_title": "VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting",
+      "authors": [
+        "Liu, Xiaoyu",
+        "Fu, Chaoyou",
+        "Yan, Chi",
+        "Wu, Chu",
+        "Gao, Haihan",
+        "Zhang, Yi-Fan",
+        "Dong, Shaoqi",
+        "Qian, Cheng",
+        "Luo, Bin",
+        "Yang, Xiuyong",
+        "Li, Guanwu",
+        "Cai, Yusheng",
+        "Shen, Yunhang",
+        "Jiang, Deqiang",
+        "Cao, Haoyu",
+        "Sun, Xing",
+        "Shan, Caifeng",
+        "He, Ran"
+      ],
+      "first_publication_date": "2025/10/21",
+      "sources": [
+        "https://arxiv.org/abs/2510.21817",
+        "https://github.com/Tencent/VITA/tree/VITA-E",
+        "https://lxysl.github.io/VITA-E/"
+      ],
+      "stars": {
+        "value": 166,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Tencent/VITA",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/62d932e380f9ec7de5d43c17bc933a05887b0007",
+          "source_record_title": "VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting",
+          "source_record_doi": "10.48550/arXiv.2510.21817",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2510.21817",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Nanjing University",
+          "CASIA",
+          "Tencent Youtu Lab",
+          "Fourier Intelligence"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2510.21817"
+        ]
+      }
+    },
+    {
+      "id": "E24",
+      "name": "VLAS",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2025,
+      "summary": "将原始语音接入视觉动作策略，并用声纹检索个体相关信息，执行带有个人偏好的操作。",
+      "repo": "https://github.com/whichwhichgone/VLAS",
+      "paper_url": "https://arxiv.org/abs/2502.13508",
+      "paper_title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+      "authors": [
+        "Zhao, Wei",
+        "Ding, Pengxiang",
+        "Zhang, Min",
+        "Gong, Zhefei",
+        "Bai, Shuanghao",
+        "Zhao, Han",
+        "Wang, Donglin"
+      ],
+      "first_publication_date": "2025/02/19",
+      "sources": [
+        "https://arxiv.org/abs/2502.13508",
+        "https://github.com/whichwhichgone/VLAS"
+      ],
+      "stars": {
+        "value": 50,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/whichwhichgone/VLAS",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4407764312",
+          "source_record_title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.13508",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 68,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/f6075ce4db8dcc359c3ac97b85f2644dc5cadda6",
+          "source_record_title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+          "source_record_doi": "10.48550/arXiv.2502.13508",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/804a1a9de5787e3597b4bb64e1a48ec3-Abstract-Conference.html",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Westlake University",
+          "Zhejiang University",
+          "Xi’an Jiaotong University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2502.13508"
+        ]
+      },
+      "scope_note": "原始语音与声纹个性化操作，不应与全双工说做控制混为同一能力。"
+    },
+    {
+      "id": "E25",
+      "name": "Hi Robot",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2025,
+      "summary": "高层视觉语言推理将复杂指令和执行中反馈转为下一步任务，低层 VLA 执行具体动作。",
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2502.19417",
+      "paper_title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+      "authors": [
+        "Shi, Lucy Xiaoyang",
+        "Ichter, Brian",
+        "Equi, Michael",
+        "Ke, Liyiming",
+        "Pertsch, Karl",
+        "Vuong, Quan",
+        "Tanner, James",
+        "Walling, Anna",
+        "Wang, Haohuan",
+        "Fusai, Niccolo",
+        "Li-Bell, Adrian",
+        "Driess, Danny",
+        "Groom, Lachy",
+        "Levine, Sergey",
+        "Finn, Chelsea"
+      ],
+      "first_publication_date": "2025/02/26",
+      "sources": [
+        "https://arxiv.org/abs/2502.19417",
+        "https://www.pi.website/research/hirobot"
+      ],
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4416045178",
+          "source_record_title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.19417",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 319,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/69afd10d387423a03617d461c3f47a5f3033cc54",
+          "source_record_title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+          "source_record_doi": "10.48550/arXiv.2502.19417",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://proceedings.mlr.press/v267/shi25d.html",
+        "checked_at": "2026-11-02",
+        "volume": "267",
+        "pages": "54919--54933"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Physical Intelligence",
+          "Stanford University",
+          "UC Berkeley"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2502.19417"
+        ]
+      },
+      "recommended_reading": "理解高层语言推理与低层动作策略的分工。",
+      "scope_note": "语言反馈经高层规划传给动作策略，不能据此归因为原始语音信息增益。"
+    },
+    {
+      "id": "E26",
+      "name": "Yell At Your Robot / YAY Robot",
+      "category": "bridge",
+      "kind": "交互—动作连接论文",
+      "year": 2024,
+      "summary": "人在机器人执行长任务时给出口头修正，系统立即利用纠正，并将这些反馈用于后续高层策略训练。",
+      "repo": "https://github.com/yay-robot/yay_robot",
+      "paper_url": "https://arxiv.org/abs/2403.12910",
+      "paper_title": "Yell At Your Robot: Improving On-the-Fly from Language Corrections",
+      "authors": [
+        "Shi, Lucy Xiaoyang",
+        "Hu, Zheyuan",
+        "Zhao, Tony Z.",
+        "Sharma, Archit",
+        "Pertsch, Karl",
+        "Luo, Jianlan",
+        "Levine, Sergey",
+        "Finn, Chelsea"
+      ],
+      "first_publication_date": "2024/03/19",
+      "sources": [
+        "https://arxiv.org/abs/2403.12910",
+        "https://github.com/yay-robot/yay_robot",
+        "https://yay-robot.github.io/"
+      ],
+      "stars": {
+        "value": 166,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/yay-robot/yay_robot",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 47,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4402354098",
+          "source_record_title": "Yell At Your Robot: Improving On-the-Fly from Language Corrections",
+          "source_record_doi": "https://doi.org/10.15607/rss.2024.xx.025",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 179,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/f213d0cb84b6afca9a4d5722081ba3052e7e89bc",
+          "source_record_title": "Yell At Your Robot: Improving On-the-Fly from Language Corrections",
+          "source_record_doi": "10.48550/arXiv.2403.12910",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID / exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2024,
+        "status": "conference",
+        "source": "https://roboticsproceedings.org/rss20/p025.html",
+        "checked_at": "2026-11-02",
+        "doi": "10.15607/RSS.2024.XX.025"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Stanford University",
+          "UC Berkeley"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2403.12910"
+        ]
+      },
+      "recommended_reading": "理解执行中口头纠正如何用于当前控制与后续学习。",
+      "scope_note": "口头纠正主要通过语言表示进入控制与学习。"
+    },
+    {
+      "id": "E27",
+      "name": "Gemini Live API × Robotics demo",
+      "category": "action",
+      "kind": "工业界技术说明与演示",
+      "year": 2025,
+      "summary": "Google 官方展示将语音与机器人摄像头输入交给 Live API，再以函数调用连接机器人控制接口。",
+      "repo": null,
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "first_publication_date": "2025-06-24",
+      "sources": [
+        "https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/"
+      ],
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Technical Demo",
+        "year": 2025,
+        "status": "resource",
+        "source": "https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Google / Google DeepMind"
+        ],
+        "sources": [
+          "https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/"
+        ]
+      },
+      "scope_note": "Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不提供统一的机器人成功率对照实验。"
+    },
+    {
+      "id": "E28",
+      "name": "Figure Helix 02",
+      "category": "foundation",
+      "kind": "工业界技术说明与演示",
+      "year": 2026,
+      "summary": "Figure 以 S2 语义规划、S1 视觉运动策略和 S0 全身控制连接语言目标与移动操作。",
+      "repo": null,
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "first_publication_date": "2026-01-27",
+      "sources": [
+        "https://www.figure.ai/news/helix-02"
+      ],
+      "stars": {
+        "value": null,
+        "source": null,
+        "url": null,
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Technical Demo",
+        "year": 2026,
+        "status": "resource",
+        "source": "https://www.figure.ai/news/helix-02",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Figure AI"
+        ],
+        "sources": [
+          "https://www.figure.ai/news/helix-02"
+        ]
+      },
+      "scope_note": "公司技术展示；公开视频不能替代可复现实验和开放训练代码。"
+    },
+    {
+      "id": "E29",
+      "name": "FireRedChat",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "全双工语音系统：轮次控制、主说话人打断、对话管理和工具调用。",
+      "repo": "https://github.com/FireRedTeam/FireRedChat",
+      "paper_url": "https://arxiv.org/abs/2509.06502",
+      "paper_title": "FireRedChat: A Pluggable, Full-Duplex Voice Interaction System with Cascaded and Semi-Cascaded Implementations",
+      "authors": [
+        "Chen, Junjie",
+        "Hu, Yao",
+        "Li, Junjie",
+        "Li, Kangyue",
+        "Liu, Kun",
+        "Li, Wenpeng",
+        "Li, Xu",
+        "Li, Ziyuan",
+        "Shen, Feiyu",
+        "Tang, Xu",
+        "Wei, Manzhen",
+        "Wu, Yichen",
+        "Xie, Fenglong",
+        "Xu, Kaituo",
+        "Xie, Kun"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2509.06502",
+        "https://github.com/FireRedTeam/FireRedChat",
+        "https://arxiv.org/abs/2509.06502"
+      ],
+      "stars": {
+        "value": 597,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/FireRedTeam/FireRedChat",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414757003",
+          "source_record_title": "FireRedChat: A Pluggable, Full-Duplex Voice Interaction System with Cascaded and Semi-Cascaded Implementations",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.06502",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2509.06502",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Xiaohongshu / FireRed Team"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2509.06502"
+        ]
+      },
+      "recommended_reading": "以模块化实现理解打断控制、对话状态和工具调用。"
+    },
+    {
+      "id": "E30",
+      "name": "Qwen Audio Agent",
+      "category": "voice",
+      "kind": "项目",
+      "year": null,
+      "summary": "语音前端与后台 Agent 分工，提供异步任务协作和取消机制的工程入口。",
+      "repo": "https://github.com/QwenAudio/qwen-audio-agent",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/QwenAudio/qwen-audio-agent"
+      ],
+      "stars": {
+        "value": 3111,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenAudio/qwen-audio-agent",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/QwenAudio/qwen-audio-agent",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Qwen / Alibaba"
+        ],
+        "sources": [
+          "https://github.com/QwenAudio/qwen-audio-agent"
+        ]
+      }
+    },
+    {
+      "id": "E31",
+      "name": "Jarvis",
+      "category": "voice",
+      "kind": "论文",
+      "year": 2026,
+      "summary": "在交互前端和后台任务之间训练协调器，管理任务切换、状态和过期结果。",
+      "repo": "https://github.com/JensenYX/Jarvis",
+      "paper_url": "https://arxiv.org/abs/2610.23804",
+      "paper_title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+      "authors": [
+        "Wang, Yuxiang",
+        "Cai, Shengbo",
+        "Zhao, Zhixian",
+        "Shen, Yingda",
+        "Wang, Yuancheng",
+        "Zhang, Xueyao",
+        "Zhang, Liqiang",
+        "Sun, Teddy",
+        "Yves, Steve",
+        "Wu, Zhizheng"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.23804",
+        "https://github.com/JensenYX/Jarvis",
+        "https://arxiv.org/abs/2610.23804"
+      ],
+      "stars": {
+        "value": 18,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/JensenYX/Jarvis",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7222979632",
+          "source_record_title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2610.23804",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2610.23804",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "CUHK Shenzhen",
+          "Tencent Hunyuan",
+          "Amphion Technology"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2610.23804"
+        ]
+      },
+      "scope_note": "软件 Agent 协调研究，尚不能据此推断真实机器人任务增益。"
+    },
+    {
+      "id": "E32",
+      "name": "ACT / ALOHA",
+      "category": "robotics",
+      "kind": "论文",
+      "year": 2023,
+      "summary": "用遥操作示范学习动作块，建立视觉运动模仿学习基线。",
+      "repo": "https://github.com/tonyzhaozh/act",
+      "paper_url": "https://arxiv.org/abs/2304.13705",
+      "paper_title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "authors": [
+        "Zhao, Tony Z.",
+        "Kumar, Vikash",
+        "Levine, Sergey",
+        "Finn, Chelsea"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2304.13705",
+        "https://github.com/tonyzhaozh/act",
+        "https://www.roboticsproceedings.org/rss19/p016.pdf"
+      ],
+      "stars": {
+        "value": 2318,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/tonyzhaozh/act",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 674,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4385430674",
+          "source_record_title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+          "source_record_doi": "https://doi.org/10.15607/rss.2023.xix.016",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2023,
+        "status": "conference",
+        "source": "https://www.roboticsproceedings.org/rss19/p016.pdf",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Stanford University",
+          "Meta",
+          "UC Berkeley"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2304.13705"
+        ]
+      },
+      "recommended_reading": "建立“观测—动作示范—动作块预测”的模仿学习直觉。",
+      "scope_note": "标准 ACT 不是语言条件模型；多目标选择需技能选择器或另加目标条件。"
+    },
+    {
+      "id": "E33",
+      "name": "Diffusion Policy",
+      "category": "robotics",
+      "kind": "论文",
+      "year": 2023,
+      "summary": "将条件动作分布建模为去噪过程，生成连续动作序列。",
+      "repo": "https://github.com/real-stanford/diffusion_policy",
+      "paper_url": "https://arxiv.org/abs/2303.04137v4",
+      "paper_title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "authors": [
+        "Cheng Chi",
+        "Siyuan Feng",
+        "Yilun Du",
+        "Zhenjia Xu",
+        "Eric Cousineau",
+        "Benjamin Burchfiel",
+        "Shuran Song"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2303.04137",
+        "https://github.com/real-stanford/diffusion_policy",
+        "https://diffusion-policy.cs.columbia.edu/",
+        "https://arxiv.org/abs/2303.04137v4"
+      ],
+      "stars": {
+        "value": 4698,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/real-stanford/diffusion_policy",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 12,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4323651335",
+          "source_record_title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2303.04137",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2023,
+        "status": "conference",
+        "source": "https://diffusion-policy.cs.columbia.edu/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Columbia University",
+          "Toyota Research Institute",
+          "MIT"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2303.04137"
+        ]
+      },
+      "additional_publications": [
+        {
+          "venue": "IJRR",
+          "year": 2024,
+          "status": "journal",
+          "source": "https://diffusion-policy.cs.columbia.edu/"
+        }
+      ],
+      "scope_note": "论文链接为 RSS 2023 版本；IJRR 2024 为扩展版。引文数量绑定所链接的数据库记录。"
+    },
+    {
+      "id": "E34",
+      "name": "SmolVLA",
+      "category": "robotics",
+      "kind": "论文",
+      "year": 2025,
+      "summary": "450M 视觉语言动作模型，以图像、机器人状态与文本指令为条件生成动作块。",
+      "repo": "https://github.com/huggingface/lerobot",
+      "paper_url": "https://arxiv.org/abs/2506.01844",
+      "paper_title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+      "authors": [
+        "Shukor, Mustafa",
+        "Aubakirova, Dana",
+        "Capuano, Francesco",
+        "Kooijmans, Pepijn",
+        "Palma, Steven",
+        "Zouitine, Adil",
+        "Aractingi, Michel",
+        "Pascal, Caroline",
+        "Russi, Martino",
+        "Marafioti, Andres",
+        "Alibert, Simon",
+        "Cord, Matthieu",
+        "Wolf, Thomas",
+        "Cadene, Remi"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2506.01844",
+        "https://github.com/huggingface/lerobot",
+        "https://arxiv.org/abs/2506.01844"
+      ],
+      "stars": {
+        "value": 28653,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/huggingface/lerobot",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414898213",
+          "source_record_title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2506.01844",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2506.01844",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Hugging Face",
+          "Sorbonne University",
+          "valeo.ai",
+          "ENS Paris-Saclay"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2506.01844"
+        ]
+      },
+      "recommended_reading": "沿官方教程把预训练 VLA 适配到自己的机器人数据。",
+      "scope_note": "输入含文本指令，不是原生语音策略。Star 数为整个 LeRobot 仓库；模型小不自动保证整机实时。"
+    },
+    {
+      "id": "E35",
+      "name": "LIBERO",
+      "category": "evaluation",
+      "kind": "论文",
+      "year": 2023,
+      "summary": "语言条件机器人操作基准，考察知识迁移与持续学习。",
+      "repo": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "paper_url": "https://arxiv.org/abs/2306.03310",
+      "paper_title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+      "authors": [
+        "Liu, Bo",
+        "Zhu, Yifeng",
+        "Gao, Chongkai",
+        "Feng, Yihao",
+        "Liu, Qiang",
+        "Zhu, Yuke",
+        "Stone, Peter"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2306.03310",
+        "https://github.com/Lifelong-Robot-Learning/LIBERO",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html"
+      ],
+      "stars": {
+        "value": 2508,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Lifelong-Robot-Learning/LIBERO",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [
+        {
+          "value": 136,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7133220882",
+          "source_record_title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+          "source_record_doi": "https://doi.org/10.52202/075280-1939",
+          "checked_at": "2026-11-03"
+        }
+      ],
+      "publication": {
+        "venue": "NeurIPS Datasets and Benchmarks",
+        "year": 2023,
+        "status": "conference",
+        "source": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "UT Austin",
+          "Tsinghua University",
+          "Sony AI"
+        ],
+        "sources": [
+          "https://arxiv.org/abs/2306.03310"
+        ]
+      },
+      "scope_note": "主要评价语言条件操作能力，不直接评价语音交互和真人协作。"
+    },
+    {
+      "id": "E36",
+      "name": "TEN Framework",
+      "category": "voice",
+      "kind": "项目",
+      "year": null,
+      "summary": "实时音视频 Agent 框架，提供可组合扩展与多模态应用示例。",
+      "repo": "https://github.com/TEN-framework/ten-framework",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/TEN-framework/ten-framework"
+      ],
+      "stars": {
+        "value": 11219,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/TEN-framework/ten-framework",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository"
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/TEN-framework/ten-framework",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Agora",
+          "Contributor community"
+        ],
+        "sources": [
+          "https://github.com/TEN-framework/ten-framework"
+        ]
+      },
+      "scope_note": "LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管等；部署前阅读官方 LICENSE。"
+    }
+  ],
+  "surveys": [
+    {
+      "id": "S01",
+      "name": "WavChat",
+      "year": 2024,
+      "repo": "https://github.com/jishengpeng/WavChat",
+      "paper_url": "https://arxiv.org/abs/2411.13577",
+      "paper_title": "WavChat: A Survey of Spoken Dialogue Models",
+      "authors": [
+        "Ji, Shengpeng",
+        "Chen, Yifu",
+        "Fang, Minghui",
+        "Zuo, Jialong",
+        "Lu, Jingyu",
+        "Wang, Hanting",
+        "Jiang, Ziyue",
+        "Zhou, Long",
+        "Liu, Shujie",
+        "Cheng, Xize",
+        "Yang, Xiaoda",
+        "Wang, Zehan",
+        "Yang, Qian",
+        "Li, Jian",
+        "Jiang, Yidi",
+        "He, Jingzhen",
+        "Chu, Yunfei",
+        "Xu, Jin",
+        "Zhao, Zhou"
+      ],
+      "first_publication_date": "2024/11/15",
+      "sources": [
+        "https://arxiv.org/abs/2411.13577",
+        "https://github.com/jishengpeng/WavChat"
+      ],
+      "stars": {
+        "value": 317,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/jishengpeng/WavChat",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4404649925",
+          "source_record_title": "WavChat: A Survey of Spoken Dialogue Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2411.13577",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2411.13577",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Zhejiang University",
+          "Microsoft",
+          "Alibaba",
+          "Tencent Youtu Lab"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2411.13577"
+        ]
+      },
+      "focus": "语音对话模型、表征、训练、流式与交互。",
+      "recommended_reading": "先建立语音对话模型、训练与交互的整体分类。"
+    },
+    {
+      "id": "S02",
+      "name": "Recent Advances in Speech Language Models",
+      "year": 2024,
+      "repo": "https://github.com/dreamtheater123/Awesome-SpeechLM-Survey",
+      "paper_url": "https://arxiv.org/abs/2410.03751",
+      "paper_title": "Recent Advances in Speech Language Models: A Survey",
+      "authors": [
+        "Cui, Wenqian",
+        "Yu, Dianzhi",
+        "Jiao, Xiaoqi",
+        "Meng, Ziqiao",
+        "Zhang, Guangyan",
+        "Wang, Qichao",
+        "Guo, Yiwen",
+        "King, Irwin"
+      ],
+      "first_publication_date": "2024/10/01",
+      "sources": [
+        "https://arxiv.org/abs/2410.03751",
+        "https://github.com/dreamtheater123/Awesome-SpeechLM-Survey"
+      ],
+      "stars": {
+        "value": 226,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/dreamtheater123/Awesome-SpeechLM-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 5,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403322156",
+          "source_record_title": "Recent Advances in Speech Language Models: A Survey",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.03751",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ACL",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://aclanthology.org/2025.acl-long.682/",
+        "checked_at": "2026-11-02",
+        "doi": "10.18653/v1/2025.acl-long.682"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "The Chinese University of Hong Kong",
+          "National University of Singapore",
+          "LIGHTSPEED STUDIOS / Tencent",
+          "Independent Researcher"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2410.03751"
+        ]
+      },
+      "focus": "SpeechLM，以及更新后的双工模型、控制组件与评测清单。"
+    },
+    {
+      "id": "S03",
+      "name": "From Turn-Taking to Synchronous Dialogue",
+      "year": 2025,
+      "repo": "https://github.com/elpsykongloo/FD-SLMs",
+      "paper_url": "https://arxiv.org/abs/2509.14515",
+      "paper_title": "From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models",
+      "authors": [
+        "Chen, Yuxuan",
+        "Yu, Haoyuan"
+      ],
+      "first_publication_date": "2025/09/18",
+      "sources": [
+        "https://arxiv.org/abs/2509.14515",
+        "https://github.com/elpsykongloo/FD-SLMs"
+      ],
+      "stars": {
+        "value": 34,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/elpsykongloo/FD-SLMs",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4417081448",
+          "source_record_title": "From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.14515",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2509.14515",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Jilin University",
+          "Hunan University"
+        ],
+        "sources": [
+          "https://arxiv.org/pdf/2509.14515"
+        ]
+      },
+      "focus": "全双工模型、同步机制与评价。"
+    },
+    {
+      "id": "S04",
+      "name": "Speaking While Listening / DuplexSurvey",
+      "year": 2026,
+      "repo": "https://github.com/MM-Speech/DuplexSurvey",
+      "paper_url": "https://arxiv.org/abs/2606.19453",
+      "paper_title": "A Survey of Full-Duplex Spoken Dialogue Systems: Architectural Hierarchy, Interaction Ontology, and Decision State Machine",
+      "authors": [
+        "Lu, Jingyu",
+        "Wang, Yuhan",
+        "Luo, Jianming",
+        "Chen, Yifu",
+        "Liang, Tianle",
+        "Ji, Shengpeng",
+        "Jiang, Ziyue",
+        "Yang, Xiaoda",
+        "Zhang, Yu",
+        "Cheng, Xize",
+        "Wen, Chenyuhao",
+        "Pan, Changhao",
+        "Wang, Haoxiao",
+        "Ye, Chen",
+        "Wu, Jian",
+        "Jiang, Xiaoxi",
+        "Jiang, Guanjun",
+        "Zhao, Zhou"
+      ],
+      "first_publication_date": "2026/06/17",
+      "sources": [
+        "https://arxiv.org/abs/2606.19453",
+        "https://github.com/MM-Speech/DuplexSurvey"
+      ],
+      "stars": {
+        "value": 109,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/MM-Speech/DuplexSurvey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7165367522",
+          "source_record_title": "A Survey of Full-Duplex Spoken Dialogue Systems: Architectural Hierarchy, Interaction Ontology, and Decision State Machine",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.19453",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "EMNLP",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://aclanthology.org/2026.emnlp-main.1126/",
+        "checked_at": "2026-11-02",
+        "title": "Speaking While Listening: A Survey and Empirical Audit of Full-Duplex Spoken Dialogue Systems"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Zhejiang University",
+          "Alibaba Qwen",
+          "Tencent Hunyuan",
+          "ByteDance"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2606.19453"
+        ]
+      },
+      "focus": "架构层次、时间关系×用户意图×系统回应，以及对话决策状态。"
+    },
+    {
+      "id": "S05",
+      "name": "A Survey on Audio–Visual Large Language Models",
+      "year": 2026,
+      "repo": "https://github.com/AiX-Lab-UWO/Audio-Visual-LLMs-Survey",
+      "paper_url": "https://doi.org/10.1016/j.knosys.2026.116569",
+      "paper_title": "A survey on audio-visual large language models",
+      "authors": [
+        "Wenyi Yao",
+        "Roksana Yahyaabadi",
+        "Hossein Hassani",
+        "Soodeh Nikan"
+      ],
+      "sources": [
+        "https://doi.org/10.1016/j.knosys.2026.116569",
+        "https://github.com/AiX-Lab-UWO/Audio-Visual-LLMs-Survey"
+      ],
+      "stars": {
+        "value": 0,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/AiX-Lab-UWO/Audio-Visual-LLMs-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7166807819",
+          "source_record_title": "A survey on audio–visual large language models",
+          "source_record_doi": "https://doi.org/10.1016/j.knosys.2026.116569",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 0,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/599f04505243db7ceaca5446325182b708a7b1cb",
+          "source_record_title": "A survey on audio-visual large language models",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ],
+      "publication": {
+        "venue": "Knowledge-Based Systems",
+        "year": 2026,
+        "status": "journal",
+        "source": "https://doi.org/10.1016/j.knosys.2026.116569",
+        "checked_at": "2026-11-02",
+        "doi": "10.1016/j.knosys.2026.116569",
+        "journal": "Knowledge-Based Systems"
+      },
+      "origin": {
+        "kind": "unverified",
+        "organizations": [],
+        "sources": [
+          "https://doi.org/10.1016/j.knosys.2026.116569"
+        ]
+      },
+      "focus": "模态范围、骨干来源、生成目标、数据与应用。"
+    },
+    {
+      "id": "S06",
+      "name": "Omni-Modal LLMs: Architecture, Training, Evaluation",
+      "repo": "https://github.com/Abillinaire/omni-model-survey",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/Abillinaire/omni-model-survey"
+      ],
+      "stars": {
+        "value": 2,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Abillinaire/omni-model-survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/Abillinaire/omni-model-survey",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "unverified",
+        "organizations": [],
+        "sources": [
+          "https://github.com/Abillinaire/omni-model-survey"
+        ]
+      },
+      "focus": "仓库中的综述稿以 Build → Assess → Apply 组织 Omni 研究。"
+    },
+    {
+      "id": "S07",
+      "name": "MLLM-HRC-Survey",
+      "year": 2026,
+      "repo": "https://github.com/WuDuidi/MLLM-HRC-Survey",
+      "paper_url": "https://doi.org/10.1016/j.rcim.2025.103064",
+      "paper_title": "Empowering natural human-robot collaboration through multimodal language models and spatial intelligence: Pathways and perspectives",
+      "authors": [
+        "Duidi Wu",
+        "Pai Zheng",
+        "Qianyou Zhao",
+        "Shuo Zhang",
+        "Jin Qi",
+        "Jie Hu",
+        "Guo‐Niu Zhu",
+        "Lihui Wang"
+      ],
+      "sources": [
+        "https://doi.org/10.1016/j.rcim.2025.103064",
+        "https://github.com/WuDuidi/MLLM-HRC-Survey"
+      ],
+      "stars": {
+        "value": 8,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/WuDuidi/MLLM-HRC-Survey",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 32,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4411206891",
+          "source_record_title": "Empowering natural human–robot collaboration through multimodal language models and spatial intelligence: Pathways and perspectives",
+          "source_record_doi": "https://doi.org/10.1016/j.rcim.2025.103064",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        },
+        {
+          "value": 33,
+          "source": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/paper/4ddd6e44b7f1f3b349d7ea6756f39175a5b96f0e",
+          "source_record_title": "Empowering natural human-robot collaboration through multimodal language models and spatial intelligence: Pathways and perspectives",
+          "checked_at": "2026-11-02",
+          "match": "arXiv ID or DOI"
+        }
+      ],
+      "publication": {
+        "venue": "RCIM",
+        "year": 2026,
+        "status": "journal",
+        "source": "https://doi.org/10.1016/j.rcim.2025.103064",
+        "checked_at": "2026-11-02",
+        "doi": "10.1016/j.rcim.2025.103064",
+        "journal": "Robotics and Computer-Integrated Manufacturing"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Shanghai Jiao Tong University",
+          "The Hong Kong Polytechnic University",
+          "Fudan University",
+          "KTH"
+        ],
+        "sources": [
+          "https://github.com/WuDuidi/MLLM-HRC-Survey"
+        ]
+      },
+      "focus": "人机协作、空间智能与感知—认知—执行循环。",
+      "recommended_reading": "补齐人机协作与感知、认知、执行之间的关系。"
+    },
+    {
+      "id": "S08",
+      "name": "LLM-Based Human-Agent Collaboration and Interaction Systems",
+      "year": 2025,
+      "repo": "https://github.com/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems",
+      "paper_url": "https://arxiv.org/abs/2505.00753",
+      "paper_title": "LLM-Based Human-Agent Collaboration and Interaction Systems: A Survey",
+      "authors": [
+        "Zou, Henry Peng",
+        "Huang, Wei-Chieh",
+        "Wu, Yaozu",
+        "Guo, Jizhou",
+        "Chen, Yankai",
+        "Miao, Chunyu",
+        "Nguyen, Hoang",
+        "Zhou, Yue",
+        "Zhang, Weizhi",
+        "Fang, Liancheng",
+        "Zhang, Hanrong",
+        "Wang, Fangxin",
+        "Zhang, Pengfei",
+        "Wang, Huacan",
+        "He, Langzhou",
+        "Li, Yangning",
+        "Li, Dongyuan",
+        "Jiang, Renhe",
+        "Liu, Xue",
+        "Yu, Philip S."
+      ],
+      "first_publication_date": "2025/05/01",
+      "sources": [
+        "https://arxiv.org/abs/2505.00753",
+        "https://github.com/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems"
+      ],
+      "stars": {
+        "value": 242,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems",
+        "checked_at": "2026-11-02",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415164160",
+          "source_record_title": "LLM-Based Human-Agent Collaboration and Interaction Systems: A Survey",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2505.00753",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ACL Findings",
+        "year": 2026,
+        "status": "findings",
+        "source": "https://arxiv.org/abs/2505.00753",
+        "checked_at": "2026-11-02"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "University of Illinois Chicago",
+          "University of Tokyo",
+          "MBZUAI",
+          "McGill University",
+          "University of California Irvine",
+          "Tsinghua University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2505.00753"
+        ]
+      },
+      "focus": "反馈类型、粒度、阶段、协作与通信。"
+    },
+    {
+      "id": "S09",
+      "name": "How Do We Research HRI in the Age of LLMs?",
+      "year": 2026,
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2602.15063",
+      "paper_title": "How Do We Research Human-Robot Interaction in the Age of Large Language Models? A Systematic Review",
+      "authors": [
+        "Wang, Yufeng",
+        "Xu, Yuan",
+        "Nikolova, Anastasia",
+        "Wang, Yuxuan",
+        "Wang, Jianyu",
+        "Wang, Chongyang",
+        "Tong, Xin"
+      ],
+      "first_publication_date": "2026/02/13",
+      "sources": [
+        "https://arxiv.org/abs/2602.15063"
+      ],
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": [
+        {
+          "value": 6,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7130383196",
+          "source_record_title": "How Do We Research Human-Robot Interaction in the Age of Large Language Models? A Systematic Review",
+          "source_record_doi": "https://doi.org/10.1145/3772318.3790920",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "CHI",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://doi.org/10.1145/3772318.3790920",
+        "checked_at": "2026-11-02",
+        "doi": "10.1145/3772318.3790920"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "HKUST (Guangzhou)",
+          "Zhejiang University",
+          "Savannah College of Art and Design",
+          "Sichuan University",
+          "HKUST"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2602.15063"
+        ]
+      },
+      "focus": "以人为中心的 HRI 系统、实验设计与评价。",
+      "recommended_reading": "了解真人实验与系统评测分别回答什么问题。"
+    },
+    {
+      "id": "S10",
+      "name": "Dialogue Management in HRI",
+      "year": 2023,
+      "repo": null,
+      "paper_url": "https://arxiv.org/abs/2307.10897",
+      "paper_title": "A Survey on Dialogue Management in Human-Robot Interaction",
+      "authors": [
+        "Reimann, Merle M.",
+        "Kunneman, Florian A.",
+        "Oertel, Catharine",
+        "Hindriks, Koen V."
+      ],
+      "first_publication_date": "2023/07/20",
+      "sources": [
+        "https://arxiv.org/abs/2307.10897"
+      ],
+      "stars": {
+        "value": null,
+        "status": "not_applicable",
+        "checked_at": "2026-11-02"
+      },
+      "citation_counts": [
+        {
+          "value": 34,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4392386515",
+          "source_record_title": "A Survey on Dialogue Management in Human-robot Interaction",
+          "source_record_doi": "https://doi.org/10.1145/3648605",
+          "checked_at": "2026-11-02",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ACM THRI",
+        "year": 2024,
+        "status": "journal",
+        "source": "https://arxiv.org/abs/2307.10897",
+        "checked_at": "2026-11-02",
+        "journal": "ACM Transactions on Human-Robot Interaction"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Vrije Universiteit Amsterdam",
+          "Delft University of Technology"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2307.10897"
+        ]
+      },
+      "focus": "传统与现代 HRI 对话管理、情境、多模态及评价。"
+    }
+  ]
+}
