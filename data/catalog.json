@@ -164,7 +164,7 @@
         ]
       },
       "recommended_reading": "建立 Thinker–Talker 架构、数据与分阶段训练的基本参照。",
-      "scope_note": "流式语音输出不等于原生同时听说；MNN 功能覆盖以对应部署模式为准。"
+      "scope_note": "流式语音输出与原生全双工交互分别评估；MNN 支持范围取决于部署模式。"
     },
     {
       "id": "E03",
@@ -671,7 +671,7 @@
           "https://arxiv.org/html/2605.20755"
         ]
       },
-      "scope_note": "论文的 action 通道主要对应结构化规划与工具操作，不能直接等同于关节控制。"
+      "scope_note": "action 通道用于结构化规划与工具操作；关节控制由下游执行系统实现。"
     },
     {
       "id": "E10",
@@ -709,7 +709,7 @@
           "https://www.agibot.com/article/231/detail/122.html"
         ]
       },
-      "scope_note": "工业展示；不能由演示反推动作模型、训练数据或完整系统已经开放。"
+      "scope_note": "公开材料以系统展示为主；动作模型、训练数据与完整系统的开放状态以官方发布为准。"
     },
     {
       "id": "E11",
@@ -751,7 +751,7 @@
           "https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition"
         ]
       },
-      "scope_note": "主要是头部、天线等身体表达和视觉工具调用，不是机械臂抓取平台。"
+      "scope_note": "主要覆盖头部、天线等身体表达与视觉工具调用。"
     },
     {
       "id": "E12",
@@ -820,7 +820,7 @@
           "https://arxiv.org/pdf/2401.00374"
         ]
       },
-      "scope_note": "面向共语手势与角色表达；不直接证明真实机器人的操作能力。"
+      "scope_note": "研究范围为共语手势与角色表达；真实机器人操作需独立评测。"
     },
     {
       "id": "E13",
@@ -1245,7 +1245,7 @@
           "https://arxiv.org/html/2602.22818"
         ]
       },
-      "recommended_reading": "贯通示范采集、数据查看、策略训练与真机执行。"
+      "reading_focus": "覆盖示范采集、数据检查、策略训练与真机执行的完整流程。"
     },
     {
       "id": "E20",
@@ -1396,8 +1396,8 @@
           "https://arxiv.org/html/2510.23763"
         ]
       },
-      "recommended_reading": "了解环境声音与隐式意图如何进入操作任务。",
-      "scope_note": "此处绑定 OpenMOSS 的 RoboOmni，注意与其他同名论文区分。"
+      "scope_note": "本条目对应 OpenMOSS 团队的 RoboOmni。",
+      "reading_focus": "了解环境声音与隐式意图如何进入操作任务。"
     },
     {
       "id": "E22",
@@ -1479,8 +1479,8 @@
           "https://arxiv.org/html/2510.16756"
         ]
       },
-      "recommended_reading": "阅读语音与动作共同建模、边说边做及中断实验。",
-      "scope_note": "SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具体权重与训练入口见官方发布。"
+      "recommended_reading": "以语音与动作专家的联合训练为例，分析同时说做、动作打断及分阶段适配。",
+      "scope_note": "Star 数对应整个 SALMONN 仓库；ELLSA 的权重与训练资源见其专用分支和模型页面。"
     },
     {
       "id": "E23",
@@ -1627,7 +1627,8 @@
           "https://arxiv.org/html/2502.13508"
         ]
       },
-      "scope_note": "原始语音与声纹个性化操作，不应与全双工说做控制混为同一能力。"
+      "scope_note": "评测重点为语音指令与声纹个性化操作；全双工说做交互需单独评价。",
+      "recommended_reading": "以视觉动作模型接入语音编码器为例，分析语音指令适配与声纹条件操作。"
     },
     {
       "id": "E25",
@@ -1709,8 +1710,8 @@
           "https://arxiv.org/html/2502.19417"
         ]
       },
-      "recommended_reading": "理解高层语言推理与低层动作策略的分工。",
-      "scope_note": "语言反馈经高层规划传给动作策略，不能据此归因为原始语音信息增益。"
+      "recommended_reading": "以高层语言推理配合低层动作策略为例，说明执行反馈如何改变任务分解。",
+      "scope_note": "语言反馈通过高层规划传递至动作策略；原始语音特征的贡献需单独消融。"
     },
     {
       "id": "E26",
@@ -1784,8 +1785,8 @@
           "https://arxiv.org/html/2403.12910"
         ]
       },
-      "recommended_reading": "理解执行中口头纠正如何用于当前控制与后续学习。",
-      "scope_note": "口头纠正主要通过语言表示进入控制与学习。"
+      "scope_note": "口头纠正主要通过语言表示进入控制与学习。",
+      "reading_focus": "理解执行中口头纠正如何用于当前控制与后续学习。"
     },
     {
       "id": "E27",
@@ -1827,7 +1828,7 @@
           "https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/"
         ]
       },
-      "scope_note": "Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不提供统一的机器人成功率对照实验。"
+      "scope_note": "提供 Live API 连接机器人接口的工程示例；Gemini Robotics 模型发布与机器人成功率实验属于独立资源。"
     },
     {
       "id": "E28",
@@ -1869,7 +1870,7 @@
           "https://www.figure.ai/news/helix-02"
         ]
       },
-      "scope_note": "公司技术展示；公开视频不能替代可复现实验和开放训练代码。"
+      "scope_note": "公开材料为系统技术展示，适合参考分层设计；训练代码与可复现实验的可用性以官方发布为准。"
     },
     {
       "id": "E29",
@@ -2039,7 +2040,7 @@
           "https://arxiv.org/abs/2610.23804"
         ]
       },
-      "scope_note": "软件 Agent 协调研究，尚不能据此推断真实机器人任务增益。"
+      "scope_note": "研究对象为软件 Agent 协调；真实机器人任务增益需独立验证。"
     },
     {
       "id": "E32",
@@ -2097,8 +2098,8 @@
           "https://arxiv.org/abs/2304.13705"
         ]
       },
-      "recommended_reading": "建立“观测—动作示范—动作块预测”的模仿学习直觉。",
-      "scope_note": "标准 ACT 不是语言条件模型；多目标选择需技能选择器或另加目标条件。"
+      "scope_note": "标准 ACT 采用观测条件动作预测；多目标任务可通过技能选择器或额外目标条件扩展。",
+      "reading_focus": "通过观测、动作示范与动作块预测介绍模仿学习。"
     },
     {
       "id": "E33",
@@ -2237,8 +2238,8 @@
           "https://arxiv.org/abs/2506.01844"
         ]
       },
-      "recommended_reading": "沿官方教程把预训练 VLA 适配到自己的机器人数据。",
-      "scope_note": "输入含文本指令，不是原生语音策略。Star 数为整个 LeRobot 仓库；模型小不自动保证整机实时。"
+      "scope_note": "策略以文本指令为条件。Star 数对应整个 LeRobot 仓库；整机实时性需结合感知与控制链路测量。",
+      "reading_focus": "提供预训练 VLA 适配机器人数据的官方教程与实现。"
     },
     {
       "id": "E35",
@@ -2299,7 +2300,7 @@
           "https://arxiv.org/abs/2306.03310"
         ]
       },
-      "scope_note": "主要评价语言条件操作能力，不直接评价语音交互和真人协作。"
+      "scope_note": "评测范围为语言条件操作；语音交互和真人协作需补充专项评测。"
     },
     {
       "id": "E36",
@@ -2408,8 +2409,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "先读 AgentChat 数据格式、训练目标与工具闭环实验，把“能聊天”推进到“能执行任务”。",
-      "scope_note": "异步工具管理的效果不自动等同于所有条件下的同时听说能力；按论文各项实验分别判断。"
+      "recommended_reading": "AgentChat 数据格式、训练目标与工具实验共同展示语音交互如何参与任务执行。",
+      "scope_note": "异步工具管理与同时听说能力对应不同实验，结果按各自任务与交互条件解释。"
     },
     {
       "id": "E38",
@@ -2473,7 +2474,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "理解如何把交互行为写成可监督、可控制的指令，而不只改语音生成质量。"
+      "recommended_reading": "将打断、反馈等交互行为表示为可监督、可控制的指令。"
     },
     {
       "id": "E39",
@@ -2536,7 +2537,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "理解真实录音如何转为可训练的全双工数据，重点看时间对齐、重叠和筛选。"
+      "recommended_reading": "展示真实录音转化为全双工训练数据时的时间对齐、重叠处理与筛选。"
     },
     {
       "id": "E40",
@@ -2658,7 +2659,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "把数据构造与目标交互行为连起来，阅读人类偏好如何进入合成与微调流程。",
+      "recommended_reading": "说明目标交互行为与数据构造的关系，以及人类偏好在合成和微调中的作用。",
       "resource_links": [
         {
           "label": "项目",
@@ -2853,7 +2854,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "打断后的状态一致性很容易遗漏；重点看已播放历史如何改变后续回答。"
+      "recommended_reading": "以已播放历史为条件，分析打断后的对话状态与后续响应。"
     },
     {
       "id": "E45",
@@ -3169,7 +3170,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "当前为预印本；计划投稿 ICASSP 2027 不表示已经接收。"
+      "scope_note": "当前发表状态为预印本；作者列出的 ICASSP 2027 为投稿计划。"
     },
     {
       "id": "E50",
@@ -3270,7 +3271,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "论文称代码和检查点将发布；当前条目不将预告视为已开放资源。"
+      "scope_note": "论文预告代码与检查点发布；本条目尚未核实可下载版本。"
     },
     {
       "id": "E52",
@@ -3324,7 +3325,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "论文在线实验为三个操作员运行、共 36 轮；适合作为工程案例，不能据此推断大规模用户效果。作者机构归属未确定。"
+      "scope_note": "在线实验包含三个操作员运行、共 36 轮，可作为工程案例；更大规模用户效果需进一步评测。作者机构归属待核实。"
     },
     {
       "id": "E53",
@@ -3380,7 +3381,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "当前绑定技术论文，未据此假定模型权重或完整训练流程已经开放。"
+      "scope_note": "已核实资源为技术论文；模型权重和完整训练流程的开放状态待核实。"
     },
     {
       "id": "E54",
@@ -3682,7 +3683,7 @@
           "match": "DOI or exact normalized title"
         }
       ],
-      "scope_note": "提供论文与本版本展示入口；不把 StepAudio 2 仓库当作本版本的完整代码。",
+      "scope_note": "已列出本版本论文与展示；完整代码的开放状态按本版本单独核实。",
       "resource_links": [
         {
           "label": "项目",
@@ -3759,7 +3760,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训练代码开放。"
+      "scope_note": "qwen-audio-agent 提供配套运行时；模型权重和训练代码的开放范围分别记录。"
     },
     {
       "id": "E58",
@@ -3889,7 +3890,7 @@
         "scope": "whole repository"
       },
       "recommended_reading": "建立基础语音助手能力参照，再与交互和任务指标分别比较。",
-      "scope_note": "主要评价语音输入后的回答能力；不能替代连续同时听说或工具任务评测。",
+      "scope_note": "主要评价语音输入后的回答能力；连续全双工交互与工具任务需使用对应评测。",
       "evaluation": {
         "group": "foundations",
         "measures": "知识、指令遵循、安全；口音、噪声、混响等扰动。",
@@ -3959,7 +3960,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "各子集、语言和后续扩展的发布状态分别核对；子集的会议发表不代表整套 benchmark 同一 venue。",
+      "scope_note": "各子集、语言和扩展版本分别记录发布状态与发表位置。",
       "evaluation": {
         "group": "foundations",
         "measures": "语义、声学、对话、鲁棒性多个维度。",
@@ -4096,8 +4097,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "先理解语音工具调用的函数、参数和多步结构，再进入真实任务成功率。",
-      "scope_note": "强调语音条件下的工具调用结构和参数；不能直接代表连续语音输出的时序自然度。",
+      "recommended_reading": "明确语音工具调用的函数、参数和多步结构，为任务级评测提供基础。",
+      "scope_note": "评测重点为语音条件下的工具结构和参数；连续语音输出的时序自然度属于独立指标。",
       "resource_links": [
         {
           "label": "数据",
@@ -4233,7 +4234,7 @@
         "scope": "whole repository"
       },
       "recommended_reading": "把真实口语修正与工具调用放在同一测试中，观察交互干扰是否造成任务错误。",
-      "scope_note": "与 v1、v1.5、v2 共用仓库但任务不同；v3 论文为预印本，不沿用 v1 的 ASRU 2025 标签。",
+      "scope_note": "与 v1、v1.5、v2 共用仓库，评测任务不同；v3 为预印本，v1 发表于 ASRU 2025。",
       "resource_links": [
         {
           "label": "项目",
@@ -4309,7 +4310,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "recommended_reading": "补上单个片段测试难以覆盖的多轮累积问题。",
+      "recommended_reading": "覆盖多轮交互中的误差累积与上下文依赖。",
       "evaluation": {
         "group": "multi",
         "measures": "逐轮交互动态、回答质量、指令遵循与安全。",
@@ -4379,7 +4380,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "论文讨论 ICASSP 2026 HumDial 挑战；挑战名称不作为该预印本已收入会议论文集的证据。",
+      "scope_note": "论文讨论 ICASSP 2026 HumDial 挑战；本条目的发表状态仍按预印本记录。",
       "evaluation": {
         "group": "turn",
         "measures": "真实对话中的重叠、打断与反馈。",
@@ -4800,7 +4801,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "领域为金融服务；riley-agent 是参考代理实现，不能直接视为完整 benchmark 评分器。",
+      "scope_note": "评测领域为金融服务；riley-agent 提供参考代理实现，完整评分器的可用性需单独核实。",
       "evaluation": {
         "group": "tasks",
         "measures": "金融服务任务、领域事实与工具执行轨迹。",
@@ -4869,7 +4870,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "与 DanielLin94144/Full-Duplex-Bench 是不同项目；两者的分数与版本不能混用。",
+      "scope_note": "与 DanielLin94144/Full-Duplex-Bench 为独立项目，分别使用各自版本与评分协议。",
       "evaluation": {
         "group": "turn",
         "measures": "多轮交互、打断、噪声与延迟。",
@@ -4953,7 +4954,7 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository"
       },
-      "scope_note": "主要评价轮次决策组件；不直接测回复内容、工具调用或最终任务完成。",
+      "scope_note": "评测重点为轮次决策组件；回复内容、工具调用和最终任务完成需补充系统级评测。",
       "resource_links": [
         {
           "label": "项目",
@@ -5016,7 +5017,7 @@
       },
       "repo": "https://github.com/openai/baselines",
       "first_publication_date": "2017/07/20",
-      "recommended_reading": "先理解策略、奖励、优势与 clipped objective，再阅读语言模型的 PPO。",
+      "recommended_reading": "介绍策略、奖励、优势估计与 clipped objective，作为语言模型 PPO 的算法背景。",
       "stars": {
         "value": 16775,
         "source": "GitHub REST API",
@@ -6179,7 +6180,7 @@
       },
       "repo": "https://github.com/0nutation/SpeechGPT",
       "first_publication_date": "2023/05/18",
-      "recommended_reading": "顺着模态适配、跨模态指令与 chain-of-modality 读数据和训练。",
+      "recommended_reading": "按模态适配、跨模态指令与 chain-of-modality 阶段组织数据和训练。",
       "stars": {
         "value": 1401,
         "source": "GitHub REST API",
@@ -6304,7 +6305,7 @@
       },
       "repo": "https://github.com/ictnlp/LLaMA-Omni2",
       "first_publication_date": "2025/05/05",
-      "recommended_reading": "可从 0.5B–3B 版本理解语音指令数据、对齐和流式输出，再扩大规模。",
+      "recommended_reading": "提供 0.5B–3B 版本，用于分析语音指令数据、对齐和流式输出。",
       "scope_note": "代码与模型使用不同许可；模型限研究用途。",
       "stars": {
         "value": 281,
@@ -6457,8 +6458,8 @@
       },
       "repo": "https://github.com/Physical-Intelligence/openpi",
       "first_publication_date": "2025/04/22",
-      "recommended_reading": "工业基座选型与数据适配的直接入口，重点读动作格式、归一化和微调。",
-      "scope_note": "所链论文为 π0.5；π0 原论文另列。LoRA 使用 JAX 路径，当前 PyTorch 路径不支持 LoRA。",
+      "recommended_reading": "π0 介绍 VLM 与动作专家的连接；π0.5 补充多来源联合训练与新环境泛化。",
+      "scope_note": "本条目的引文计数对应 π0.5，Star 数对应 openpi 仓库。π0 原论文见附加链接；LoRA 使用 JAX 实现，PyTorch 路径的功能范围见官方文档。",
       "resource_links": [
         {
           "label": "π0 paper",
@@ -6509,7 +6510,6 @@
         ]
       },
       "repo": "https://github.com/NVIDIA/Isaac-GR00T",
-      "recommended_reading": "阅读本体配置、动作空间与自有数据微调，比较工业基座的适配成本。",
       "scope_note": "仓库当前版本为 N1.7；背景论文描述早期 N1，训练配置和结果需按版本读取。",
       "resource_links": [
         {
@@ -6524,7 +6524,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "阅读本体配置、动作空间与自有数据微调，比较工业基座的适配成本。"
     },
     {
       "id": "E93",
@@ -6574,7 +6575,6 @@
       },
       "repo": "https://github.com/moojink/openvla-oft",
       "first_publication_date": "2025/02/27",
-      "recommended_reading": "基座明确、训练开放、算力说明具体；适合研究基座上的适配方法。",
       "resource_links": [
         {
           "label": "Project / 项目",
@@ -6588,7 +6588,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "基座明确、训练开放、算力说明具体；适合研究基座上的适配方法。"
     },
     {
       "id": "E94",
@@ -6660,7 +6661,6 @@
       },
       "repo": "https://github.com/PRIME-RL/SimpleVLA-RL",
       "first_publication_date": "2025/09/11",
-      "recommended_reading": "作为 SFT 之后的进阶阅读，分析环境奖励、rollout 成本与泛化评测。",
       "stars": {
         "value": 1903,
         "source": "GitHub REST API",
@@ -6668,7 +6668,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "作为 SFT 之后的进阶阅读，分析环境奖励、rollout 成本与泛化评测。"
     },
     {
       "id": "E95",
@@ -6727,7 +6728,6 @@
       },
       "repo": "https://github.com/AnjieCheng/NaVILA",
       "first_publication_date": "2024/12/05",
-      "recommended_reading": "直接观察语言任务如何落到移动机器人，重点读高低层接口与闭环反馈。",
       "resource_links": [
         {
           "label": "Locomotion / 运动策略",
@@ -6741,7 +6741,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "说明语言导航目标、高低层策略接口与执行反馈之间的关系。"
     },
     {
       "id": "E96",
@@ -6822,7 +6823,7 @@
       },
       "repo": "https://github.com/QwenLM/Qwen-RobotNav",
       "first_publication_date": "2026/06/16",
-      "scope_note": "官方仓库当前明确无权重发布计划；用于阅读系统设计，不作为可微调基座。",
+      "scope_note": "官方仓库说明暂无权重发布计划；公开内容适合系统设计与部署参考。",
       "stars": {
         "value": 198,
         "source": "GitHub REST API",
@@ -6863,7 +6864,6 @@
         ]
       },
       "repo": "https://github.com/unitreerobotics/unitree_sdk2",
-      "recommended_reading": "先理解状态、命令和设备接口，再把任务层接到可执行技能。",
       "scope_note": "unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支持需单独核实。",
       "resource_links": [
         {
@@ -6882,7 +6882,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "BSD-3-Clause"
-      }
+      },
+      "reading_focus": "提供状态、命令与设备接口，支持任务层连接可执行技能。"
     },
     {
       "id": "E98",
@@ -6915,7 +6916,6 @@
         ]
       },
       "repo": "https://github.com/unitreerobotics/unitree_rl_mjlab",
-      "recommended_reading": "用官方配置理解训练、仿真回放与实机部署之间的关系。",
       "stars": {
         "value": 719,
         "source": "GitHub REST API",
@@ -6923,7 +6923,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "Apache-2.0"
-      }
+      },
+      "reading_focus": "用官方配置理解训练、仿真回放与实机部署之间的关系。"
     },
     {
       "id": "E99",
@@ -7148,7 +7149,6 @@
       },
       "repo": "https://github.com/RoboTwin-Platform/RoboTwin",
       "first_publication_date": "2025/06/22",
-      "recommended_reading": "先用现成数据训练与评测，再阅读任务生成和随机化机制。",
       "stars": {
         "value": 3032,
         "source": "GitHub REST API",
@@ -7156,7 +7156,8 @@
         "checked_at": "2026-11-03",
         "scope": "whole repository",
         "license_spdx": "MIT"
-      }
+      },
+      "reading_focus": "提供策略训练与评测数据，并支持任务生成和领域随机化。"
     },
     {
       "id": "E102",
@@ -7653,7 +7654,7 @@
         ]
       },
       "focus": "人机协作、空间智能与感知—认知—执行循环。",
-      "recommended_reading": "补齐人机协作与感知、认知、执行之间的关系。"
+      "recommended_reading": "梳理人机协作中感知、认知与执行之间的关系。"
     },
     {
       "id": "S08",
