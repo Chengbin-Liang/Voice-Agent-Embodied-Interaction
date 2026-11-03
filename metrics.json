@@ -1830,6 +1830,620 @@
           "match": "DOI or exact normalized title"
         }
       ]
+    },
+    "E75": {
+      "name": "PPO",
+      "repo": "https://github.com/openai/baselines",
+      "paper_url": "https://arxiv.org/abs/1707.06347",
+      "stars": {
+        "value": 16775,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/openai/baselines",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 10618,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W2736601468",
+          "source_record_title": "Proximal Policy Optimization Algorithms",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.1707.06347",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E76": {
+      "name": "InstructGPT / RLHF",
+      "paper_url": "https://arxiv.org/abs/2203.02155",
+      "citation_counts": [
+        {
+          "value": 4208,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4226278401",
+          "source_record_title": "Training language models to follow instructions with human feedback",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2203.02155",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E77": {
+      "name": "DPO",
+      "repo": "https://github.com/eric-mitchell/direct-preference-optimization",
+      "paper_url": "https://arxiv.org/abs/2305.18290",
+      "stars": {
+        "value": 2922,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/eric-mitchell/direct-preference-optimization",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": []
+    },
+    "E78": {
+      "name": "DeepSeekMath / GRPO",
+      "repo": "https://github.com/deepseek-ai/DeepSeek-Math",
+      "paper_url": "https://arxiv.org/abs/2402.03300",
+      "stars": {
+        "value": 3478,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/deepseek-ai/DeepSeek-Math",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 101,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4391631327",
+          "source_record_title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2402.03300",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E79": {
+      "name": "DeepSeek-R1",
+      "repo": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "paper_url": "https://arxiv.org/abs/2501.12948",
+      "stars": {
+        "value": 91995,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/deepseek-ai/DeepSeek-R1",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 1701,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414281281",
+          "source_record_title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+          "source_record_doi": "https://doi.org/10.1038/s41586-025-09422-z",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E80": {
+      "name": "Qwen2-Audio",
+      "repo": "https://github.com/QwenLM/Qwen2-Audio",
+      "paper_url": "https://arxiv.org/abs/2407.10759",
+      "stars": {
+        "value": 2101,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen2-Audio",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 8,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4400717319",
+          "source_record_title": "Qwen2-Audio Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2407.10759",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E81": {
+      "name": "GLM-4-Voice",
+      "repo": "https://github.com/zai-org/GLM-4-Voice",
+      "paper_url": "https://arxiv.org/abs/2412.02612",
+      "stars": {
+        "value": 3243,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/zai-org/GLM-4-Voice",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 4,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4405057125",
+          "source_record_title": "GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2412.02612",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E82": {
+      "name": "Audio Flamingo 3",
+      "repo": "https://github.com/NVIDIA/audio-flamingo",
+      "paper_url": "https://arxiv.org/abs/2507.08128",
+      "stars": {
+        "value": 1219,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/audio-flamingo",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6929354950",
+          "source_record_title": "Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2507.08128",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E83": {
+      "name": "Audio Flamingo Next",
+      "paper_url": "https://arxiv.org/abs/2604.10905",
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7154207876",
+          "source_record_title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.10905",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E84": {
+      "name": "MiMo-Audio",
+      "repo": "https://github.com/XiaomiMiMo/MiMo-Audio",
+      "paper_url": "https://arxiv.org/abs/2512.23808",
+      "stars": {
+        "value": 1088,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/XiaomiMiMo/MiMo-Audio",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7117988839",
+          "source_record_title": "MiMo-Audio: Audio Language Models are Few-Shot Learners",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2512.23808",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E85": {
+      "name": "Step-Audio 2",
+      "repo": "https://github.com/stepfun-ai/Step-Audio2",
+      "paper_url": "https://arxiv.org/abs/2507.16632",
+      "stars": {
+        "value": 1526,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/stepfun-ai/Step-Audio2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415202956",
+          "source_record_title": "Step-Audio 2 Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2507.16632",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E86": {
+      "name": "SALMONN",
+      "repo": "https://github.com/bytedance/SALMONN",
+      "paper_url": "https://arxiv.org/abs/2310.13289",
+      "stars": {
+        "value": 1564,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/bytedance/SALMONN",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 67,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4387891768",
+          "source_record_title": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2310.13289",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E87": {
+      "name": "SpeechGPT",
+      "repo": "https://github.com/0nutation/SpeechGPT",
+      "paper_url": "https://arxiv.org/abs/2305.11000",
+      "stars": {
+        "value": 1401,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/0nutation/SpeechGPT",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 189,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4389524500",
+          "source_record_title": "SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities",
+          "source_record_doi": "https://doi.org/10.18653/v1/2023.findings-emnlp.1055",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E88": {
+      "name": "BLSP",
+      "repo": "https://github.com/cwang621/blsp",
+      "paper_url": "https://arxiv.org/abs/2309.00916",
+      "stars": {
+        "value": 59,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/cwang621/blsp",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 9,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4386552581",
+          "source_record_title": "BLSP: Bootstrapping Language-Speech Pre-training via Behavior Alignment of Continuation Writing",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2309.00916",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E89": {
+      "name": "LLaMA-Omni2",
+      "repo": "https://github.com/ictnlp/LLaMA-Omni2",
+      "paper_url": "https://arxiv.org/abs/2505.02625",
+      "stars": {
+        "value": 281,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ictnlp/LLaMA-Omni2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 11,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4412944968",
+          "source_record_title": "LLaMA-Omni 2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis",
+          "source_record_doi": "https://doi.org/10.18653/v1/2025.acl-long.912",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E90": {
+      "name": "PersonaPlex",
+      "repo": "https://github.com/NVIDIA/personaplex",
+      "paper_url": "https://arxiv.org/abs/2602.06053",
+      "stars": {
+        "value": 12018,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/personaplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7128377012",
+          "source_record_title": "PersonaPlex: Voice and Role Control for Full Duplex Conversational Speech Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2602.06053",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E91": {
+      "name": "openpi / π0 · π0.5",
+      "repo": "https://github.com/Physical-Intelligence/openpi",
+      "paper_url": "https://arxiv.org/abs/2504.16054",
+      "stars": {
+        "value": 14510,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Physical-Intelligence/openpi",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414674749",
+          "source_record_title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2504.16054",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E92": {
+      "name": "Isaac GR00T N1.7",
+      "repo": "https://github.com/NVIDIA/Isaac-GR00T",
+      "paper_url": null,
+      "stars": {
+        "value": 8308,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/Isaac-GR00T",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": []
+    },
+    "E93": {
+      "name": "OpenVLA-OFT",
+      "repo": "https://github.com/moojink/openvla-oft",
+      "paper_url": "https://arxiv.org/abs/2502.19645",
+      "stars": {
+        "value": 1440,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/moojink/openvla-oft",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6948104436",
+          "source_record_title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.19645",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E94": {
+      "name": "SimpleVLA-RL",
+      "repo": "https://github.com/PRIME-RL/SimpleVLA-RL",
+      "paper_url": "https://arxiv.org/abs/2509.09674",
+      "stars": {
+        "value": 1903,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/PRIME-RL/SimpleVLA-RL",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7081569152",
+          "source_record_title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.09674",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E95": {
+      "name": "NaVILA",
+      "repo": "https://github.com/AnjieCheng/NaVILA",
+      "paper_url": "https://arxiv.org/abs/2412.04453",
+      "stars": {
+        "value": 731,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/AnjieCheng/NaVILA",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": [
+        {
+          "value": 55,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414050442",
+          "source_record_title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+          "source_record_doi": "https://doi.org/10.15607/rss.2025.xxi.018",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E96": {
+      "name": "Qwen-RobotNav",
+      "repo": "https://github.com/QwenLM/Qwen-RobotNav",
+      "paper_url": "https://arxiv.org/abs/2606.18112",
+      "stars": {
+        "value": 198,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen-RobotNav",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7165037828",
+          "source_record_title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.18112",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E97": {
+      "name": "Unitree SDK2 / MuJoCo",
+      "repo": "https://github.com/unitreerobotics/unitree_sdk2",
+      "paper_url": null,
+      "stars": {
+        "value": 1431,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/unitreerobotics/unitree_sdk2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "BSD-3-Clause"
+      },
+      "citation_counts": []
+    },
+    "E98": {
+      "name": "Unitree RL mjlab",
+      "repo": "https://github.com/unitreerobotics/unitree_rl_mjlab",
+      "paper_url": null,
+      "stars": {
+        "value": 719,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/unitreerobotics/unitree_rl_mjlab",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      },
+      "citation_counts": []
+    },
+    "E99": {
+      "name": "ASAP",
+      "repo": "https://github.com/LeCAR-Lab/ASAP",
+      "paper_url": "https://arxiv.org/abs/2502.01143",
+      "stars": {
+        "value": 2138,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/LeCAR-Lab/ASAP",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 58,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414051111",
+          "source_record_title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+          "source_record_doi": "https://doi.org/10.15607/rss.2025.xxi.066",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E100": {
+      "name": "TWIST2",
+      "repo": "https://github.com/amazon-far/TWIST2",
+      "paper_url": "https://arxiv.org/abs/2511.02832",
+      "stars": {
+        "value": 894,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/amazon-far/TWIST2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7103984447",
+          "source_record_title": "Twist2 : Scalable, Portable, and Holistic Humanoid Data Collection System",
+          "source_record_doi": "https://doi.org/10.1109/icra57385.2026.11696896",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E101": {
+      "name": "RoboTwin 2.0",
+      "repo": "https://github.com/RoboTwin-Platform/RoboTwin",
+      "paper_url": "https://arxiv.org/abs/2506.18088",
+      "stars": {
+        "value": 3032,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/RoboTwin-Platform/RoboTwin",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6929480010",
+          "source_record_title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2506.18088",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
+    },
+    "E102": {
+      "name": "RDT-1B",
+      "repo": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+      "paper_url": "https://arxiv.org/abs/2410.07864",
+      "stars": {
+        "value": 1816,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/thu-ml/RoboticsDiffusionTransformer",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      },
+      "citation_counts": [
+        {
+          "value": 5,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403364995",
+          "source_record_title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.07864",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ]
     }
   }
 }

@@ -4,7 +4,7 @@
 
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md) · [📏 Benchmark 导航](05-Voice-Agent-Benchmarks.md)
 
-从语音对话能力进入交互策略、工具调用和任务完成。基础模型见 [Omni 基础](02-Omni-Foundations.md)；本页按可研究的问题组织论文，学术与校企合作工作优先展开。覆盖至 **2026-11-03**，包含 2026 年 10 月新预印本。
+从语音对话能力进入交互策略、工具调用和任务完成。基础模型见 [ALM / Omni 基础](02-Omni-Foundations.md)。覆盖至 **2026-11-03**，包含 2026 年 10 月新预印本。
 
 [🧭 选读路径](#route) · [🎓 学术与合作研究](#academic) · [🏭 工业研究](#industry) · [🛠️ 工程实现](#engineering) · [📏 评测](05-Voice-Agent-Benchmarks.md)
 
@@ -59,8 +59,6 @@
 
 <a id="industry"></a>
 ## 🏭 工业研究与技术报告
-
-论文、权重、训练代码与运行时的开放范围分别记录；校企共同署名的 Realtime-Venus、DuplexOmni 等列于上方并保留联合标签。
 
 | 文章 / 项目 | 发表与归属 | 阅读重点与资源 |
 |---|---|---|

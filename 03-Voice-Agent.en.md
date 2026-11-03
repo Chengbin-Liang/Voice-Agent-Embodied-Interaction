@@ -4,7 +4,7 @@
 
 [Home](README.en.md) · [Catalog](CATALOG.en.md) · [Surveys](SURVEYS.en.md) · [📏 Benchmarks](05-Voice-Agent-Benchmarks.en.md)
 
-Move from spoken conversation to interaction policies, tool use, and task completion. Foundation models are covered in [Omni Foundations](02-Omni-Foundations.en.md). This page organizes papers by research question, expanding academic and joint academic–industry work first. Coverage through **2026-11-03**, including October 2026 preprints.
+Move from spoken conversation to interaction policies, tool use, and task completion. Foundation models are covered in [ALM / Omni Foundations](02-Omni-Foundations.en.md). Coverage through **2026-11-03**, including October 2026 preprints.
 
 [🧭 Reading routes](#route) · [🎓 Academic and joint research](#academic) · [🏭 Industry research](#industry) · [🛠️ Engineering](#engineering) · [📏 Evaluation](05-Voice-Agent-Benchmarks.en.md)
 
@@ -59,8 +59,6 @@ Move from spoken conversation to interaction policies, tool use, and task comple
 
 <a id="industry"></a>
 ## 🏭 Industry research and technical reports
-
-Availability of papers, weights, training code, and runtimes is recorded separately. Jointly affiliated work such as Realtime-Venus and DuplexOmni appears above with a joint label.
 
 | Paper / project | Publication and affiliation | Reading focus and resources |
 |---|---|---|

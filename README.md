@@ -12,15 +12,15 @@
 
 | 顺序 | 入口 | 内容 | 代表资源 |
 |---|---|---|---|
-| 01 | [LLM 基础](01-LLM-Foundations.md) | 原理、模型使用、数据、训练与评测 | Happy-LLM · HF LLM Course · Illustrated Transformer · FineWeb |
-| 02 | [Omni 基础](02-Omni-Foundations.md) | 多模态输入、语音生成、流式与全双工 | Qwen2.5-Omni · Qwen3-Omni · MiniCPM-o · Moshi |
+| 01 | [LLM 基础](01-LLM-Foundations.md) | 原理、数据、训练、强化学习与评测 | Happy-LLM · HF LLM Course · PPO · DPO · GRPO |
+| 02 | [ALM / Omni 基础](02-Omni-Foundations.md) | 音频理解、语音生成、流式与音视频 | Qwen2-Audio · MiMo-Audio · SALMONN · Moshi |
 | 03 | [Voice Agent](03-Voice-Agent.md) | 数据、轮次、打断、工具调用与任务协调 | VoxMind · F-Actor · DuplexGen · MoshiRAG · Jarvis |
-| 04 | [端侧与具身交互](04-Edge-Embodied-Interaction.md) | 数据采集、动作学习、语言反馈、真机评测与部署 | LeRobot · ACT · SmolVLA · Hi Robot · YAY Robot · ELLSA |
+| 04 | [端侧与具身交互](04-Edge-Embodied-Interaction.md) | 数据采集、动作学习、语言反馈、真机评测与部署 | LeRobot · openpi · OpenVLA-OFT · NaVILA · ELLSA |
 
 ## 📚 资源导航
 
-- [论文与项目索引](CATALOG.md)：74 个条目，附论文、代码、发表位置、机构类型、Star 和引文计数。
-- [Survey 对照表](SURVEYS.md)：10 个综述与总结入口，按覆盖范围定位阅读位置，另附 [LLM 教学参考](SURVEYS.md#llm-learning)。
+- [论文与项目索引](CATALOG.md)：102 个条目，附论文、代码、发表位置、机构类型、Star 和引文计数。
+- [Survey 对照表](SURVEYS.md)：10 个综述与总结入口，按覆盖范围定位阅读位置，另附 [LLM 教学参考](SURVEYS.md#llm-learning) 与 [具身指南](SURVEYS.md#embodied-learning)。
 - [Voice Agent Benchmarks](05-Voice-Agent-Benchmarks.md)：18 个评测入口，按基础能力、轮次、多轮与多人、指令控制、工具与任务完成分类。
 - [工业界实践](INDUSTRY.md)：从可运行应用到系统展示，分别列出可参考的能力与开放范围。
 - [BibTeX](references.bib) · [条目数据](catalog.json) · [计数快照](metrics.json)

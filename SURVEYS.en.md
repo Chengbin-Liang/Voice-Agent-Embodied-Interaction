@@ -164,4 +164,13 @@ These resources support [LLM Foundations](01-LLM-Foundations.en.md) and are sepa
 | [HF LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) · [Chinese edition](https://huggingface.co/learn/llm-course/zh-CN/chapter1/1) | English course and Chinese translation | Tokenizers, model use, fine-tuning, and hands-on exercises. Coverage differs across language versions. |
 | [Stanford CS336](https://cs336.stanford.edu/) | English university course | An implementation-based view of language-model components, data, training, and alignment. Use selected assignments as extensions. |
 
-The repository's four-stage route and chapter-level reading questions are editorial choices for this topic, not a reproduction of a single survey's taxonomy. Each source retains its own definitions and bibliography. Blog posts provide intuition or implementation examples; original papers provide the evidence for research claims.
+
+<a id="embodied-learning"></a>
+## 🤖 Embodied AI guides and teaching resources
+
+| Source | Coverage | Reading entry point |
+|---|---|---|
+| ⭐ [Lumina embodied AI guide](https://lumina-embodied.ai/blog/eai-guide/) · Chinese | Control, MPC, RL, imitation learning, VLAs, navigation, hardware, and tools | [Core concepts](04-Edge-Embodied-Interaction.en.md#concepts) → original papers and code |
+| ⭐ [ScaleLab guide](https://scalelab-sjtu.github.io/embodied_guide.html) · Chinese | Representative VLAs, simulation/data systems, and whole-body control | [Bases](04-Edge-Embodied-Interaction.en.md#bases) → [Academic follow-ups](04-Edge-Embodied-Interaction.en.md#research) |
+| [MIT Underactuated Robotics](https://underactuated.mit.edu/) | Dynamics, control, trajectory optimization, and RL | Read control and MPC chapters as needed |
+| [LeRobot documentation](https://huggingface.co/docs/lerobot/en/il_robots) | Teleoperation, recording, training, evaluation, and hardware adaptation | Start with one demonstration-learning workflow |

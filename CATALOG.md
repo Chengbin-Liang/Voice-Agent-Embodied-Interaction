@@ -2,15 +2,101 @@
 
 **中文** | [English](CATALOG.en.md)
 
-[返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md) · [Benchmark 导航](05-Voice-Agent-Benchmarks.md)
+[返回首页](README.md) · [Survey](SURVEYS.md) · [Benchmarks](05-Voice-Agent-Benchmarks.md)
 
-按技术主题浏览；⭐ 标注适合优先阅读的条目。计数口径见[标签说明](README.md#labels)。
+⭐ 优先阅读条目附具体理由。计数口径见[标签说明](README.md#labels)。
 
-[🎧 Omni 与语音模型](#omni) · [💬 Voice Agent 与交互系统](#voice) · [🤖 具身交互与语言反馈](#embodied) · [🦾 动作、数据与部署](#robotics) · [📏 评测](#evaluation) · [🏭 工业展示](#industry)
+[🧠 LLM 后训练与强化学习](#llm) · [🎧 ALM / Omni 与语音模型](#omni) · [💬 Voice Agent 与交互系统](#voice) · [🤖 具身交互与语言反馈](#embodied) · [🦾 动作、数据与部署](#robotics) · [📏 评测](#evaluation) · [🏭 工业展示](#industry)
+
+<a id="llm"></a>
+
+## 🧠 LLM 后训练与强化学习
+
+<a id="e75"></a>
+
+### ⭐ PPO
+
+[![arXiv 2017](https://img.shields.io/badge/arXiv%202017-475569?style=flat-square)](https://arxiv.org/abs/1707.06347) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/1707.06347)
+
+[📄 论文](https://arxiv.org/abs/1707.06347) · [💻 仓库](https://github.com/openai/baselines) · [![★ 16,775](https://img.shields.io/badge/%E2%98%85%2016%2C775-eab308?style=flat-square)](https://github.com/openai/baselines) [![Cite OA 10,618](https://img.shields.io/badge/Cite%20OA%2010%2C618-0284c7?style=flat-square)](https://openalex.org/W2736601468)
+
+通过限制策略更新幅度，在采样轨迹上优化奖励；理解后续 RLHF 的算法基础。
+
+📌 优先阅读理由：先理解策略、奖励、优势与 clipped objective，再阅读语言模型的 PPO。
+
+机构 / 维护方：OpenAI
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e76"></a>
+
+### ⭐ InstructGPT / RLHF
+
+[![NeurIPS 2022](https://img.shields.io/badge/NeurIPS%202022-475569?style=flat-square)](https://arxiv.org/abs/2203.02155) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2203.02155)
+
+[📄 论文](https://arxiv.org/abs/2203.02155) · [![Cite OA 4,208](https://img.shields.io/badge/Cite%20OA%204%2C208-0284c7?style=flat-square)](https://openalex.org/W4226278401)
+
+用示范进行 SFT、用人类排序训练奖励模型，再用 PPO 优化语言模型。
+
+📌 优先阅读理由：建立 SFT → 偏好数据 → 奖励模型 → RL 的完整参照。
+
+机构 / 维护方：OpenAI
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e77"></a>
+
+### ⭐ DPO
+
+[![NeurIPS 2023](https://img.shields.io/badge/NeurIPS%202023-475569?style=flat-square)](https://arxiv.org/abs/2305.18290) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2305.18290)
+
+[📄 论文](https://arxiv.org/abs/2305.18290) · [💻 仓库](https://github.com/eric-mitchell/direct-preference-optimization) · [![★ 2,922](https://img.shields.io/badge/%E2%98%85%202%2C922-eab308?style=flat-square)](https://github.com/eric-mitchell/direct-preference-optimization) Cite —
+
+直接从优选与劣选回答优化相对概率，理解离线偏好优化与在线 RL 的差别。
+
+📌 优先阅读理由：理解同一份偏好数据如何用于不同的后训练方法。
+
+DPO 本身不需要在线环境 rollout。
+
+机构 / 维护方：Stanford University
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e78"></a>
+
+### ⭐ DeepSeekMath / GRPO
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2402.03300) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2402.03300)
+
+[📄 论文](https://arxiv.org/abs/2402.03300) · [💻 仓库](https://github.com/deepseek-ai/DeepSeek-Math) · [![★ 3,478](https://img.shields.io/badge/%E2%98%85%203%2C478-eab308?style=flat-square)](https://github.com/deepseek-ai/DeepSeek-Math) [![Cite OA 101](https://img.shields.io/badge/Cite%20OA%20101-0284c7?style=flat-square)](https://openalex.org/W4391631327)
+
+在数学推理中提出 GRPO，以同一问题的多条采样回答构造相对优势。
+
+📌 优先阅读理由：阅读组内奖励、优势估计和 KL 约束，连接可验证奖励实践。
+
+机构 / 维护方：DeepSeek-AI; Tsinghua University; Peking University
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e79"></a>
+
+### DeepSeek-R1
+
+[![Nature 2025](https://img.shields.io/badge/Nature%202025-475569?style=flat-square)](https://www.nature.com/articles/s41586-025-09422-z) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2501.12948)
+
+[📄 论文](https://arxiv.org/abs/2501.12948) · [💻 仓库](https://github.com/deepseek-ai/DeepSeek-R1) · [![★ 91,995](https://img.shields.io/badge/%E2%98%85%2091%2C995-eab308?style=flat-square)](https://github.com/deepseek-ai/DeepSeek-R1) [![Cite OA 1,701](https://img.shields.io/badge/Cite%20OA%201%2C701-0284c7?style=flat-square)](https://openalex.org/W4414281281)
+
+研究推理强化学习、冷启动、多阶段后训练与小模型蒸馏。
+
+可从蒸馏模型开展适配；仓库的权重发布与完整原始 RL 训练配方是不同资源。
+
+机构 / 维护方：DeepSeek-AI
+
+<sub>计数快照：2026-11-03</sub>
 
 <a id="omni"></a>
 
-## 🎧 Omni 与语音模型
+## 🎧 ALM / Omni 与语音模型
 
 <a id="e01"></a>
 
@@ -24,11 +110,11 @@
 
 📌 优先阅读理由：阅读持续音视频输入、全双工输出及其部署条件。
 
-范围说明：全双工模式的硬件要求以官方部署文档为准；模型内存与完整系统内存应分开记录。
+全双工模式的硬件要求以官方部署文档为准；模型内存与完整系统内存应分开记录。
 
-机构 / 维护方：Tsinghua University / THUNLP；ModelBest；OpenBMB。
+机构 / 维护方：Tsinghua University / THUNLP; ModelBest; OpenBMB
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e02"></a>
 
@@ -42,11 +128,11 @@
 
 📌 优先阅读理由：建立 Thinker–Talker 架构、数据与分阶段训练的基本参照。
 
-范围说明：流式语音输出不等于原生同时听说；MNN 功能覆盖以对应部署模式为准。
+流式语音输出不等于原生同时听说；MNN 功能覆盖以对应部署模式为准。
 
-机构 / 维护方：Qwen Team / Alibaba。
+机构 / 维护方：Qwen Team / Alibaba
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e03"></a>
 
@@ -58,9 +144,9 @@
 
 MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
-机构 / 维护方：Qwen Team / Alibaba。
+机构 / 维护方：Qwen Team / Alibaba
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e04"></a>
 
@@ -72,9 +158,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以音视频多轮交互为目标，提供 4B 与 8B 模型及多轮评价。
 
-机构 / 维护方：SenseTime Research。
+机构 / 维护方：SenseTime Research
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e05"></a>
 
@@ -86,9 +172,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 面向实时视觉和语音交互的多模态模型，提供训练与推理流程。
 
-机构 / 维护方：Nanjing University；Xiamen University；CASIA；Tencent Youtu Lab。
+机构 / 维护方：Nanjing University; Xiamen University; CASIA; Tencent Youtu Lab
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e06"></a>
 
@@ -100,9 +186,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 较早开放图像、语音、文本输入与实时语音输出的实验系统。
 
-机构 / 维护方：Tsinghua University；Inspirai。
+机构 / 维护方：Tsinghua University; Inspirai
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e07"></a>
 
@@ -116,9 +202,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：理解双向语音流、文本辅助及低延迟生成。
 
-机构 / 维护方：Kyutai。
+机构 / 维护方：Kyutai
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e08"></a>
 
@@ -130,9 +216,185 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 冻结语言模型，结合流式语音编码解码和块级状态预测。
 
-机构 / 维护方：Northwestern Polytechnical University；Nanjing University；Tencent Youtu Lab。
+机构 / 维护方：Northwestern Polytechnical University; Nanjing University; Tencent Youtu Lab
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
+
+<a id="e80"></a>
+
+### ⭐ Qwen2-Audio
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2407.10759) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2407.10759)
+
+[📄 论文](https://arxiv.org/abs/2407.10759) · [💻 仓库](https://github.com/QwenLM/Qwen2-Audio) · [![★ 2,101](https://img.shields.io/badge/%E2%98%85%202%2C101-eab308?style=flat-square)](https://github.com/QwenLM/Qwen2-Audio) [![Cite OA 8](https://img.shields.io/badge/Cite%20OA%208-0284c7?style=flat-square)](https://openalex.org/W4400717319)
+
+7B 音频语言模型，以音频理解和文本回答为主，覆盖语音、声音与音乐。
+
+📌 优先阅读理由：从音频编码器接入 LLM 入门，建立音频理解基线。
+
+机构 / 维护方：Alibaba / Qwen Team
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e81"></a>
+
+### GLM-4-Voice
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2412.02612) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.02612)
+
+[📄 论文](https://arxiv.org/abs/2412.02612) · [💻 仓库](https://github.com/zai-org/GLM-4-Voice) · [![★ 3,243](https://img.shields.io/badge/%E2%98%85%203%2C243-eab308?style=flat-square)](https://github.com/zai-org/GLM-4-Voice) [![Cite OA 4](https://img.shields.io/badge/Cite%20OA%204-0284c7?style=flat-square)](https://openalex.org/W4405057125)
+
+9B 语音对话模型，结合离散语音 token、语音文本交错建模与流式解码。
+
+机构 / 维护方：Tsinghua University; Zhipu.AI
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e82"></a>
+
+### ⭐ Audio Flamingo 3
+
+[![NeurIPS Spotlight 2025](https://img.shields.io/badge/NeurIPS%20Spotlight%202025-475569?style=flat-square)](https://openreview.net/forum?id=FjByDpDVIO) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2507.08128)
+
+[📄 论文](https://arxiv.org/abs/2507.08128) · [💻 仓库](https://github.com/NVIDIA/audio-flamingo) · [🔗 Training / 训练](https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_3) · [![★ 1,219](https://img.shields.io/badge/%E2%98%85%201%2C219-eab308?style=flat-square)](https://github.com/NVIDIA/audio-flamingo) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W6929354950)
+
+7B 音频语言模型，研究语音、声音、音乐理解与音频推理，提供训练、数据和推理入口。
+
+📌 优先阅读理由：结合公开训练分支阅读数据构造与分阶段训练。
+
+模型与数据许可需分别查看；权重采用非商业研究许可。
+
+机构 / 维护方：NVIDIA; University of Maryland
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e83"></a>
+
+### Audio Flamingo Next
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2604.10905) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2604.10905)
+
+[📄 论文](https://arxiv.org/abs/2604.10905) · [🔗 Weights / 权重](https://huggingface.co/nvidia/audio-flamingo-next-hf) · [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7154207876)
+
+扩展长音频、时间定位、说话人归属和多说话人推理。
+
+已发布的 HF 检查点为音频/文本输入、文本输出；流式语音输出不包含在该检查点中。
+
+机构 / 维护方：NVIDIA; University of Maryland
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e84"></a>
+
+### ⭐ MiMo-Audio
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2512.23808) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2512.23808)
+
+[📄 论文](https://arxiv.org/abs/2512.23808) · [💻 仓库](https://github.com/XiaomiMiMo/MiMo-Audio) · [🔗 Training / 训练](https://github.com/XiaomiMiMo/MiMo-Audio-Training) · [![★ 1,088](https://img.shields.io/badge/%E2%98%85%201%2C088-eab308?style=flat-square)](https://github.com/XiaomiMiMo/MiMo-Audio) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W7117988839)
+
+7B 语音基座与指令模型；官方微调工具支持识别、合成、音频理解和口语对话。
+
+📌 优先阅读理由：直接阅读任务数据格式与 SFT 脚本，适合作为现有语音基座适配入口。
+
+机构 / 维护方：Xiaomi MiMo
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e85"></a>
+
+### Step-Audio 2
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2507.16632) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2507.16632)
+
+[📄 论文](https://arxiv.org/abs/2507.16632) · [💻 仓库](https://github.com/stepfun-ai/Step-Audio2) · [![★ 1,526](https://img.shields.io/badge/%E2%98%85%201%2C526-eab308?style=flat-square)](https://github.com/stepfun-ai/Step-Audio2) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W4415202956)
+
+面向多模态语音交互、音频推理与工具使用；提供 Mini 系列检查点和推理实现。
+
+机构 / 维护方：StepFun
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e86"></a>
+
+### ⭐ SALMONN
+
+[![ICLR 2024](https://img.shields.io/badge/ICLR%202024-475569?style=flat-square)](https://github.com/bytedance/SALMONN/tree/salmonn) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2310.13289)
+
+[📄 论文](https://arxiv.org/abs/2310.13289) · [💻 仓库](https://github.com/bytedance/SALMONN) · [🔗 Training / 训练](https://github.com/bytedance/SALMONN/tree/salmonn) · [![★ 1,564](https://img.shields.io/badge/%E2%98%85%201%2C564-eab308?style=flat-square)](https://github.com/bytedance/SALMONN) [![Cite OA 67](https://img.shields.io/badge/Cite%20OA%2067-0284c7?style=flat-square)](https://openalex.org/W4387891768)
+
+融合语音与通用音频编码器，通过适配器与 LLM 连接语音、声音和音乐任务。
+
+📌 优先阅读理由：理解双编码器、适配器与多任务训练如何补足纯 ASR 信息。
+
+机构 / 维护方：Tsinghua University; ByteDance
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e87"></a>
+
+### ⭐ SpeechGPT
+
+[![EMNLP Findings 2023](https://img.shields.io/badge/EMNLP%20Findings%202023-475569?style=flat-square)](https://aclanthology.org/2023.findings-emnlp.1055/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2305.11000)
+
+[📄 论文](https://arxiv.org/abs/2305.11000) · [💻 仓库](https://github.com/0nutation/SpeechGPT) · [![★ 1,401](https://img.shields.io/badge/%E2%98%85%201%2C401-eab308?style=flat-square)](https://github.com/0nutation/SpeechGPT) [![Cite OA 189](https://img.shields.io/badge/Cite%20OA%20189-0284c7?style=flat-square)](https://openalex.org/W4389524500)
+
+利用离散语音单元与 SpeechInstruct，将文本 LLM 扩展到语音输入输出。
+
+📌 优先阅读理由：顺着模态适配、跨模态指令与 chain-of-modality 读数据和训练。
+
+机构 / 维护方：Fudan University
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e88"></a>
+
+### ⭐ BLSP
+
+[![arXiv 2023](https://img.shields.io/badge/arXiv%202023-475569?style=flat-square)](https://arxiv.org/abs/2309.00916) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2309.00916)
+
+[📄 论文](https://arxiv.org/abs/2309.00916) · [💻 仓库](https://github.com/cwang621/blsp) · [![★ 59](https://img.shields.io/badge/%E2%98%85%2059-eab308?style=flat-square)](https://github.com/cwang621/blsp) [![Cite OA 9](https://img.shields.io/badge/Cite%20OA%209-0284c7?style=flat-square)](https://openalex.org/W4386552581)
+
+通过语音和转写的续写行为对齐，训练冻结语音编码器与 LLM 之间的轻量适配器。
+
+📌 优先阅读理由：目标和可训练模块清晰，适合理解低成本的语音接入方式。
+
+机构 / 维护方：CASIA; UCAS; Alibaba DAMO Academy
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e89"></a>
+
+### ⭐ LLaMA-Omni2
+
+[![ACL 2025](https://img.shields.io/badge/ACL%202025-475569?style=flat-square)](https://aclanthology.org/2025.acl-long.912/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.02625)
+
+[📄 论文](https://arxiv.org/abs/2505.02625) · [💻 仓库](https://github.com/ictnlp/LLaMA-Omni2) · [![★ 281](https://img.shields.io/badge/%E2%98%85%20281-eab308?style=flat-square)](https://github.com/ictnlp/LLaMA-Omni2) [![Cite OA 11](https://img.shields.io/badge/Cite%20OA%2011-0284c7?style=flat-square)](https://openalex.org/W4412944968)
+
+在 Qwen2.5 上构建双语语音对话与流式语音生成，公开多种模型规模与推理代码。
+
+📌 优先阅读理由：可从 0.5B–3B 版本理解语音指令数据、对齐和流式输出，再扩大规模。
+
+代码与模型使用不同许可；模型限研究用途。
+
+机构 / 维护方：Institute of Computing Technology, CAS; UCAS
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e90"></a>
+
+### PersonaPlex
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2602.06053) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2602.06053)
+
+[📄 论文](https://arxiv.org/abs/2602.06053) · [💻 仓库](https://github.com/NVIDIA/personaplex) · [![★ 12,018](https://img.shields.io/badge/%E2%98%85%2012%2C018-eab308?style=flat-square)](https://github.com/NVIDIA/personaplex) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W7128377012)
+
+基于 Moshi 的 7B 全双工对话模型，通过声音与文本提示控制说话人和角色。
+
+官方仓库提供权重与推理入口；训练实践可结合 DuplexGen 阅读。
+
+机构 / 维护方：NVIDIA
+
+<sub>计数快照：2026-11-03</sub>
 
 <a id="voice"></a>
 
@@ -150,9 +412,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：以模块化实现理解打断控制、对话状态和工具调用。
 
-机构 / 维护方：Xiaohongshu / FireRed Team。
+机构 / 维护方：Xiaohongshu / FireRed Team
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e30"></a>
 
@@ -164,9 +426,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 语音前端与后台 Agent 分工，提供异步任务协作和取消机制的工程入口。
 
-机构 / 维护方：Qwen / Alibaba。
+机构 / 维护方：Qwen / Alibaba
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e09"></a>
 
@@ -178,11 +440,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在共同时间线上输出语音及结构化 action 通道，研究交谈中的规划与工具调用。
 
-范围说明：论文的 action 通道主要对应结构化规划与工具操作，不能直接等同于关节控制。
+论文的 action 通道主要对应结构化规划与工具操作，不能直接等同于关节控制。
 
-机构 / 维护方：StepFun；Peking University；Nanyang Technological University；Shanghai Jiao Tong University；University of New South Wales；Imperial College London。
+机构 / 维护方：StepFun; Peking University; Nanyang Technological University; Shanghai Jiao Tong University; University of New South Wales; Imperial College London
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e31"></a>
 
@@ -194,11 +456,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在交互前端和后台任务之间训练协调器，管理任务切换、状态和过期结果。
 
-范围说明：软件 Agent 协调研究，尚不能据此推断真实机器人任务增益。
+软件 Agent 协调研究，尚不能据此推断真实机器人任务增益。
 
-机构 / 维护方：CUHK Shenzhen；Tencent Hunyuan；Amphion Technology。
+机构 / 维护方：CUHK Shenzhen; Tencent Hunyuan; Amphion Technology
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e36"></a>
 
@@ -210,13 +472,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 实时音视频 Agent 框架，提供可组合扩展与多模态应用示例。
 
-范围说明：LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管等；部署前阅读官方 LICENSE。
+LICENSE 包含 Apache-2.0 之外的附加使用条件，涉及终端设备托管等；部署前阅读官方 LICENSE。
 
-机构 / 维护方：Agora；Contributor community。
+机构 / 维护方：Agora; Contributor community
 
-<sub>计数快照：2026-11-03。</sub>
-
-[官方 LICENSE](https://github.com/TEN-framework/ten-framework/blob/main/LICENSE)
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e37"></a>
 
@@ -230,11 +490,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：先读 AgentChat 数据格式、训练目标与工具闭环实验，把“能聊天”推进到“能执行任务”。
 
-范围说明：异步工具管理的效果不自动等同于所有条件下的同时听说能力；按论文各项实验分别判断。
+异步工具管理的效果不自动等同于所有条件下的同时听说能力；按论文各项实验分别判断。
 
-机构 / 维护方：Zhejiang University；China University of Petroleum–Beijing at Karamay；Xiamen University。
+机构 / 维护方：Zhejiang University; China University of Petroleum–Beijing at Karamay; Xiamen University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e38"></a>
 
@@ -248,9 +508,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：理解如何把交互行为写成可监督、可控制的指令，而不只改语音生成质量。
 
-机构 / 维护方：Karlsruhe Institute of Technology；University of Edinburgh；NatWest。
+机构 / 维护方：Karlsruhe Institute of Technology; University of Edinburgh; NatWest
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e39"></a>
 
@@ -264,9 +524,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：理解真实录音如何转为可训练的全双工数据，重点看时间对齐、重叠和筛选。
 
-机构 / 维护方：KAIST；NAVER Cloud。
+机构 / 维护方：KAIST; NAVER Cloud
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e40"></a>
 
@@ -278,9 +538,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 对比受控融合与交叉注意力，把用户语音流接入正在生成的模型，分析同时听说的架构选择。
 
-机构 / 维护方：The Chinese University of Hong Kong；Tsinghua University；SenseTime。
+机构 / 维护方：The Chinese University of Hong Kong; Tsinghua University; SenseTime
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e41"></a>
 
@@ -294,9 +554,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：把数据构造与目标交互行为连起来，阅读人类偏好如何进入合成与微调流程。
 
-机构 / 维护方：University of Illinois Urbana-Champaign；Seoul National University；University of California Berkeley；Georgia Institute of Technology；Columbia University。
+机构 / 维护方：University of Illinois Urbana-Champaign; Seoul National University; University of California Berkeley; Georgia Institute of Technology; Columbia University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e42"></a>
 
@@ -308,9 +568,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以单个自回归 LLM 和少量状态 token 联合建模听、说、停，通过 SFT 与 DPO 学习交互。
 
-机构 / 维护方：Institute of Computing Technology, Chinese Academy of Sciences；University of Chinese Academy of Sciences。
+机构 / 维护方：Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e43"></a>
 
@@ -322,11 +582,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 扩展到长时、多方、双语全双工对话；提供预训练、微调数据和来自真实录音的 MultiTalkBench。
 
-范围说明：NeurIPS 2026 依据作者在 arXiv 的标注；MultiTalkBench 与模型训练数据应分别使用。
+NeurIPS 2026 依据作者在 arXiv 的标注；MultiTalkBench 与模型训练数据应分别使用。
 
-机构 / 维护方：The Chinese University of Hong Kong；Centre for Perceptual and Interactive Intelligence (InnoHK)。
+机构 / 维护方：The Chinese University of Hong Kong; Centre for Perceptual and Interactive Intelligence (InnoHK)
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e44"></a>
 
@@ -340,9 +600,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：打断后的状态一致性很容易遗漏；重点看已播放历史如何改变后续回答。
 
-机构 / 维护方：Shenzhen Loop Area Institute；The Chinese University of Hong Kong, Shenzhen。
+机构 / 维护方：Shenzhen Loop Area Institute; The Chinese University of Hong Kong, Shenzhen
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e45"></a>
 
@@ -354,11 +614,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 复用半双工语音模型进行全双工适配，分析音频块间隔对质量、时延和计算量的影响。
 
-范围说明：仓库当前提供 Qwen3-Omni 80 ms 配置检查点；论文中的声学时延不包含全部计算与服务开销。
+仓库当前提供 Qwen3-Omni 80 ms 配置检查点；论文中的声学时延不包含全部计算与服务开销。
 
-机构 / 维护方：MIT CSAIL；MIT–IBM Watson AI Lab。
+机构 / 维护方：MIT CSAIL; MIT–IBM Watson AI Lab
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e46"></a>
 
@@ -370,9 +630,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以文本对齐的语音建模和部署协同组织全双工交互，补充副语言信号与实时运行的设计。
 
-机构 / 维护方：MediaTek Research；National Taiwan University；NVIDIA AI Technology Center。
+机构 / 维护方：MediaTek Research; National Taiwan University; NVIDIA AI Technology Center
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e47"></a>
 
@@ -384,9 +644,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 按帧估计目标说话人可靠性并自适应融合音频，研究干扰说话人条件下的全双工鲁棒性。
 
-机构 / 维护方：The Chinese University of Hong Kong；Huawei Leibniz Research Center；Nanyang Technological University。
+机构 / 维护方：The Chinese University of Hong Kong; Huawei Leibniz Research Center; Nanyang Technological University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e48"></a>
 
@@ -400,11 +660,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：学习持续语音交互与耗时检索之间的接口、触发机制及结果注入。
 
-范围说明：ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同于通用工具执行。
+ICML 2026 接收状态依据作者在 arXiv 的说明；检索任务范围不同于通用工具执行。
 
-机构 / 维护方：Toyota Technological Institute at Chicago；Kyutai；Gradium。
+机构 / 维护方：Toyota Technological Institute at Chicago; Kyutai; Gradium
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e49"></a>
 
@@ -416,11 +676,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 将实时语音前端与文本工具后端分离，以流式转写、工具执行和 prefill-and-repeat 结果回传连接两者。
 
-范围说明：当前为预印本；计划投稿 ICASSP 2027 不表示已经接收。
+当前为预印本；计划投稿 ICASSP 2027 不表示已经接收。
 
-机构 / 维护方：NVIDIA。
+机构 / 维护方：NVIDIA
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e50"></a>
 
@@ -432,11 +692,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 用滚动掩码扩散预测交互帧，在保留交互质量的同时减少主干模型调用。
 
-范围说明：与 NVIDIA 的 Discrete Diffusion 论文为不同工作，项目同名时按完整标题区分。
+与 NVIDIA 的 Discrete Diffusion 论文为不同工作，项目同名时按完整标题区分。
 
-机构 / 维护方：University of Seoul。
+机构 / 维护方：University of Seoul
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e51"></a>
 
@@ -448,11 +708,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以自回归过程决定何时说话，以离散扩散并行生成内容，研究全双工生成效率。
 
-范围说明：论文称代码和检查点将发布；当前条目不将预告视为已开放资源。
+论文称代码和检查点将发布；当前条目不将预告视为已开放资源。
 
-机构 / 维护方：NVIDIA。
+机构 / 维护方：NVIDIA
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e52"></a>
 
@@ -464,11 +724,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 级联系统中的因果轮次控制、推测生成和可撤销播放；用播放确认更新持久对话历史。
 
-范围说明：论文在线实验为三个操作员运行、共 36 轮；适合作为工程案例，不能据此推断大规模用户效果。作者机构归属未确定。
+论文在线实验为三个操作员运行、共 36 轮；适合作为工程案例，不能据此推断大规模用户效果。作者机构归属未确定。
 
-机构 / 维护方：Bertil Braun。
+机构 / 维护方：Bertil Braun
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e53"></a>
 
@@ -480,11 +740,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 结合自适应感知窗口、非阻塞认知整合与外部推理，研究动态全双工对话及分阶段后训练。
 
-范围说明：当前绑定技术论文，未据此假定模型权重或完整训练流程已经开放。
+当前绑定技术论文，未据此假定模型权重或完整训练流程已经开放。
 
-机构 / 维护方：Zuoyebang Education Technology。
+机构 / 维护方：Zuoyebang Education Technology
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e54"></a>
 
@@ -496,9 +756,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 实时交互层异步委托后台任务，结果返回后继续对话，连接多模态输入、训练策略与运行时。
 
-机构 / 维护方：Ant Group；Tsinghua University。
+机构 / 维护方：Ant Group; Tsinghua University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e55"></a>
 
@@ -510,11 +770,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 开放的全双工语音模型，以独立工具通道连接动作调用，并支持可打断语音输出。
 
-范围说明：代码入口为 NVIDIA-NeMo/Speech 的 nemotron-labs-voicechat 分支；Star 计整个 Speech 仓库。
+代码入口为 NVIDIA-NeMo/Speech 的 nemotron-labs-voicechat 分支；Star 计整个 Speech 仓库。
 
-机构 / 维护方：NVIDIA。
+机构 / 维护方：NVIDIA
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e56"></a>
 
@@ -526,11 +786,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 围绕 listen、converse、think、act 组织实时语音交互，结合 Think-While-Speaking 与异步工具执行。
 
-范围说明：提供论文与本版本展示入口；不把 StepAudio 2 仓库当作本版本的完整代码。
+提供论文与本版本展示入口；不把 StepAudio 2 仓库当作本版本的完整代码。
 
-机构 / 维护方：StepFun。
+机构 / 维护方：StepFun
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e57"></a>
 
@@ -542,11 +802,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在可执行环境中进行 Agent GRPO，结合多模态策略蒸馏，研究任务可靠性与交互行为后训练。
 
-范围说明：qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训练代码开放。
+qwen-audio-agent 是配套运行时；其开放不等于全部模型权重和训练代码开放。
 
-机构 / 维护方：Alibaba / Qwen。
+机构 / 维护方：Alibaba / Qwen
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e58"></a>
 
@@ -560,9 +820,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：阅读实时层、异步思考层与合成数据之间的对应关系，作为端到端系统设计参照。
 
-机构 / 维护方：Xi’an Jiaotong University；Peking University；Meituan。
+机构 / 维护方：Xi’an Jiaotong University; Peking University; Meituan
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="embodied"></a>
 
@@ -578,9 +838,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 通过实时语言指导视觉运动策略，允许人逐步调整机器人完成目标。
 
-机构 / 维护方：Robotics at Google。
+机构 / 维护方：Robotics at Google
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e25"></a>
 
@@ -594,11 +854,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：理解高层语言推理与低层动作策略的分工。
 
-范围说明：语言反馈经高层规划传给动作策略，不能据此归因为原始语音信息增益。
+语言反馈经高层规划传给动作策略，不能据此归因为原始语音信息增益。
 
-机构 / 维护方：Physical Intelligence；Stanford University；UC Berkeley。
+机构 / 维护方：Physical Intelligence; Stanford University; UC Berkeley
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e26"></a>
 
@@ -612,11 +872,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：理解执行中口头纠正如何用于当前控制与后续学习。
 
-范围说明：口头纠正主要通过语言表示进入控制与学习。
+口头纠正主要通过语言表示进入控制与学习。
 
-机构 / 维护方：Stanford University；UC Berkeley。
+机构 / 维护方：Stanford University; UC Berkeley
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e24"></a>
 
@@ -628,11 +888,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 将原始语音接入视觉动作策略，并用声纹检索个体相关信息，执行带有个人偏好的操作。
 
-范围说明：原始语音与声纹个性化操作，不应与全双工说做控制混为同一能力。
+原始语音与声纹个性化操作，不应与全双工说做控制混为同一能力。
 
-机构 / 维护方：Westlake University；Zhejiang University；Xi’an Jiaotong University。
+机构 / 维护方：Westlake University; Zhejiang University; Xi’an Jiaotong University
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e21"></a>
 
@@ -646,11 +906,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：了解环境声音与隐式意图如何进入操作任务。
 
-范围说明：此处绑定 OpenMOSS 的 RoboOmni，注意与其他同名论文区分。
+此处绑定 OpenMOSS 的 RoboOmni，注意与其他同名论文区分。
 
-机构 / 维护方：Fudan University；Shanghai Innovation Institute；National University of Singapore。
+机构 / 维护方：Fudan University; Shanghai Innovation Institute; National University of Singapore
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e22"></a>
 
@@ -664,11 +924,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：阅读语音与动作共同建模、边说边做及中断实验。
 
-范围说明：SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具体权重与训练入口见官方发布。
+SALMONN 是共享仓库；Star 数不等于 ELLSA 子项目独立关注量，具体权重与训练入口见官方发布。
 
-机构 / 维护方：Tsinghua University；ByteDance。
+机构 / 维护方：Tsinghua University; ByteDance
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e23"></a>
 
@@ -680,9 +940,25 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以并行的活动/监听模型和控制 token 调度语音与动作，支持中断、任务切换和边说边做。
 
-机构 / 维护方：Nanjing University；CASIA；Tencent Youtu Lab；Fourier Intelligence。
+机构 / 维护方：Nanjing University; CASIA; Tencent Youtu Lab; Fourier Intelligence
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
+
+<a id="e95"></a>
+
+### ⭐ NaVILA
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://navila-bot.github.io/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.04453)
+
+[📄 论文](https://arxiv.org/abs/2412.04453) · [💻 仓库](https://github.com/AnjieCheng/NaVILA) · [🔗 Locomotion / 运动策略](https://github.com/yang-zj1026/legged-loco) · [![★ 731](https://img.shields.io/badge/%E2%98%85%20731-eab308?style=flat-square)](https://github.com/AnjieCheng/NaVILA) [![Cite OA 55](https://img.shields.io/badge/Cite%20OA%2055-0284c7?style=flat-square)](https://openalex.org/W4414050442)
+
+高层 VLA 输出空间语言指令，低层视觉运动策略执行导航，提供 Go2 等平台实验。
+
+📌 优先阅读理由：直接观察语言任务如何落到移动机器人，重点读高低层接口与闭环反馈。
+
+机构 / 维护方：UC San Diego; University of Southern California; NVIDIA
+
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e11"></a>
 
@@ -694,11 +970,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 把实时语音、摄像头工具和机器人运动接入同一对话应用。
 
-范围说明：主要是头部、天线等身体表达和视觉工具调用，不是机械臂抓取平台。
+主要是头部、天线等身体表达和视觉工具调用，不是机械臂抓取平台。
 
-机构 / 维护方：Pollen Robotics / Hugging Face。
+机构 / 维护方：Pollen Robotics / Hugging Face
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e12"></a>
 
@@ -710,11 +986,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 从语音及文本生成全身与面部协同动作，连接 co-speech gesture 与表达数据。
 
-范围说明：面向共语手势与角色表达；不直接证明真实机器人的操作能力。
+面向共语手势与角色表达；不直接证明真实机器人的操作能力。
 
-机构 / 维护方：The University of Tokyo；Keio University；Max Planck Institute for Intelligent Systems；JAIST；Tsinghua University。
+机构 / 维护方：The University of Tokyo; Keio University; Max Planck Institute for Intelligent Systems; JAIST; Tsinghua University
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="robotics"></a>
 
@@ -732,9 +1008,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：贯通示范采集、数据查看、策略训练与真机执行。
 
-机构 / 维护方：Hugging Face；University of Oxford。
+机构 / 维护方：Hugging Face; University of Oxford
 
-<sub>计数快照：2026-11-02 / 2026-11-03。</sub>
+<sub>计数快照：2026-11-02 / 2026-11-03</sub>
 
 <a id="e32"></a>
 
@@ -748,27 +1024,27 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：建立“观测—动作示范—动作块预测”的模仿学习直觉。
 
-范围说明：标准 ACT 不是语言条件模型；多目标选择需技能选择器或另加目标条件。
+标准 ACT 不是语言条件模型；多目标选择需技能选择器或另加目标条件。
 
-机构 / 维护方：Stanford University；Meta；UC Berkeley。
+机构 / 维护方：Stanford University; Meta; UC Berkeley
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e33"></a>
 
 ### Diffusion Policy
 
-[![RSS 2023](https://img.shields.io/badge/RSS%202023-475569?style=flat-square)](https://diffusion-policy.cs.columbia.edu/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2303.04137) [![IJRR 2024](https://img.shields.io/badge/IJRR%202024-475569?style=flat-square)](https://diffusion-policy.cs.columbia.edu/)
+[![RSS 2023](https://img.shields.io/badge/RSS%202023-475569?style=flat-square)](https://diffusion-policy.cs.columbia.edu/) [![IJRR 2024](https://img.shields.io/badge/IJRR%202024-475569?style=flat-square)](https://diffusion-policy.cs.columbia.edu/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/abs/2303.04137)
 
 [📄 论文](https://arxiv.org/abs/2303.04137v4) · [💻 仓库](https://github.com/real-stanford/diffusion_policy) · [![★ 4,698](https://img.shields.io/badge/%E2%98%85%204%2C698-eab308?style=flat-square)](https://github.com/real-stanford/diffusion_policy) [![Cite OA 12](https://img.shields.io/badge/Cite%20OA%2012-0284c7?style=flat-square)](https://openalex.org/W4323651335)
 
 将条件动作分布建模为去噪过程，生成连续动作序列。
 
-范围说明：论文链接为 RSS 2023 版本；IJRR 2024 为扩展版。引文数量绑定所链接的数据库记录。
+论文链接为 RSS 2023 版本；IJRR 2024 为扩展版。引文数量绑定所链接的数据库记录。
 
-机构 / 维护方：Columbia University；Toyota Research Institute；MIT。
+机构 / 维护方：Columbia University; Toyota Research Institute; MIT
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e34"></a>
 
@@ -782,11 +1058,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：沿官方教程把预训练 VLA 适配到自己的机器人数据。
 
-范围说明：输入含文本指令，不是原生语音策略。Star 数为整个 LeRobot 仓库；模型小不自动保证整机实时。
+输入含文本指令，不是原生语音策略。Star 数为整个 LeRobot 仓库；模型小不自动保证整机实时。
 
-机构 / 维护方：Hugging Face；Sorbonne University；valeo.ai；ENS Paris-Saclay。
+机构 / 维护方：Hugging Face; Sorbonne University; valeo.ai; ENS Paris-Saclay
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e20"></a>
 
@@ -798,11 +1074,173 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 视觉与语言条件下的机器人动作模型，作为交互层连接动作策略的基础参照。
 
-范围说明：视觉、语言到动作的基础；原生语音与实时打断需要额外系统设计。
+视觉、语言到动作的基础；原生语音与实时打断需要额外系统设计。
 
-机构 / 维护方：Stanford University；UC Berkeley；MIT；Toyota Research Institute；Google DeepMind；Physical Intelligence。
+机构 / 维护方：Stanford University; UC Berkeley; MIT; Toyota Research Institute; Google DeepMind; Physical Intelligence
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
+
+<a id="e91"></a>
+
+### ⭐ openpi / π0 · π0.5
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2504.16054) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2504.16054)
+
+[📄 论文](https://arxiv.org/abs/2504.16054) · [💻 仓库](https://github.com/Physical-Intelligence/openpi) · [🔗 π0 paper](https://arxiv.org/abs/2410.24164) · [🔗 π0.5 blog](https://www.physicalintelligence.company/blog/pi05) · [![★ 14,510](https://img.shields.io/badge/%E2%98%85%2014%2C510-eab308?style=flat-square)](https://github.com/Physical-Intelligence/openpi) [![Cite OA 3](https://img.shields.io/badge/Cite%20OA%203-0284c7?style=flat-square)](https://openalex.org/W4414674749)
+
+开放 π0、π0-FAST 与 π0.5 的权重、推理和适配代码，连接 VLM、连续动作与多机器人数据。
+
+📌 优先阅读理由：工业基座选型与数据适配的直接入口，重点读动作格式、归一化和微调。
+
+所链论文为 π0.5；π0 原论文另列。LoRA 使用 JAX 路径，当前 PyTorch 路径不支持 LoRA。
+
+机构 / 维护方：Physical Intelligence
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e92"></a>
+
+### ⭐ Isaac GR00T N1.7
+
+[![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
+
+[💻 仓库](https://github.com/NVIDIA/Isaac-GR00T) · [🔗 N1 background paper](https://arxiv.org/abs/2503.14734) · [![★ 8,308](https://img.shields.io/badge/%E2%98%85%208%2C308-eab308?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
+
+3B 视觉语言动作基座，提供预训练权重、新本体数据适配和微调流程。
+
+📌 优先阅读理由：阅读本体配置、动作空间与自有数据微调，比较工业基座的适配成本。
+
+仓库当前版本为 N1.7；背景论文描述早期 N1，训练配置和结果需按版本读取。
+
+机构 / 维护方：NVIDIA
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e93"></a>
+
+### ⭐ OpenVLA-OFT
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://roboticsproceedings.org/rss21/p017.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.19645)
+
+[📄 论文](https://arxiv.org/abs/2502.19645) · [💻 仓库](https://github.com/moojink/openvla-oft) · [🔗 Project / 项目](https://openvla-oft.github.io/) · [![★ 1,440](https://img.shields.io/badge/%E2%98%85%201%2C440-eab308?style=flat-square)](https://github.com/moojink/openvla-oft) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W6948104436)
+
+基于 OpenVLA，比较并行解码、动作块、连续动作和 L1 目标，并用 FiLM 改善语言控制。
+
+📌 优先阅读理由：基座明确、训练开放、算力说明具体；适合研究基座上的适配方法。
+
+机构 / 维护方：Stanford University
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e94"></a>
+
+### ⭐ SimpleVLA-RL
+
+[![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2509.09674)
+
+[📄 论文](https://arxiv.org/abs/2509.09674) · [💻 仓库](https://github.com/PRIME-RL/SimpleVLA-RL) · [![★ 1,903](https://img.shields.io/badge/%E2%98%85%201%2C903-eab308?style=flat-square)](https://github.com/PRIME-RL/SimpleVLA-RL) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W7081569152)
+
+在 OpenVLA-OFT 等 VLA 上进行强化学习，提供 LIBERO / RoboTwin 的训练、rollout 与评测流程。
+
+📌 优先阅读理由：作为 SFT 之后的进阶阅读，分析环境奖励、rollout 成本与泛化评测。
+
+机构 / 维护方：Tsinghua University; Shanghai AI Lab; Shanghai Jiao Tong University; Peking University; University of Hong Kong
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e97"></a>
+
+### ⭐ Unitree SDK2 / MuJoCo
+
+[![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
+
+[💻 仓库](https://github.com/unitreerobotics/unitree_sdk2) · [🔗 Python SDK](https://github.com/unitreerobotics/unitree_sdk2_python) · [🔗 MuJoCo](https://github.com/unitreerobotics/unitree_mujoco) · [![★ 1,431](https://img.shields.io/badge/%E2%98%85%201%2C431-eab308?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
+
+宇树机器人通信与控制接口，并提供基于 SDK2 的 MuJoCo 仿真入口。
+
+📌 优先阅读理由：先理解状态、命令和设备接口，再把任务层接到可执行技能。
+
+unitree_mujoco 主要对接底层控制；具体机器人与固件的接口支持需单独核实。
+
+机构 / 维护方：Unitree Robotics
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e98"></a>
+
+### ⭐ Unitree RL mjlab
+
+[![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
+
+[💻 仓库](https://github.com/unitreerobotics/unitree_rl_mjlab) · [![★ 719](https://img.shields.io/badge/%E2%98%85%20719-eab308?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
+
+基于 MuJoCo / mjlab 的运动策略训练与部署工具，包含 Go2 等机器人配置。
+
+📌 优先阅读理由：用官方配置理解训练、仿真回放与实机部署之间的关系。
+
+机构 / 维护方：Unitree Robotics
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e99"></a>
+
+### ASAP
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://agile.human2humanoid.com/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2502.01143)
+
+[📄 论文](https://arxiv.org/abs/2502.01143) · [💻 仓库](https://github.com/LeCAR-Lab/ASAP) · [![★ 2,138](https://img.shields.io/badge/%E2%98%85%202%2C138-eab308?style=flat-square)](https://github.com/LeCAR-Lab/ASAP) [![Cite OA 58](https://img.shields.io/badge/Cite%20OA%2058-0284c7?style=flat-square)](https://openalex.org/W4414051111)
+
+用真实机器人数据学习仿真与真实动力学差异，再适配全身动作策略。
+
+机构 / 维护方：Carnegie Mellon University; NVIDIA
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e100"></a>
+
+### TWIST2
+
+[![ICRA 2026](https://img.shields.io/badge/ICRA%202026-475569?style=flat-square)](https://yanjieze.com/projects/TWIST2/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2511.02832)
+
+[📄 论文](https://arxiv.org/abs/2511.02832) · [💻 仓库](https://github.com/amazon-far/TWIST2) · [🔗 TWIST / CoRL 2025](https://yanjieze.com/projects/TWIST/) · [![★ 894](https://img.shields.io/badge/%E2%98%85%20894-eab308?style=flat-square)](https://github.com/amazon-far/TWIST2) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7103984447)
+
+全身遥操作与运动跟踪系统，为人形机器人收集复杂接触和双手协作数据。
+
+已发布控制器、训练及遥操作入口；高层视觉运动策略代码需查看独立发布状态。
+
+机构 / 维护方：Amazon FAR; Stanford University; University of Southern California; UC Berkeley; Carnegie Mellon University
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e101"></a>
+
+### ⭐ RoboTwin 2.0
+
+[![ICML 2026](https://img.shields.io/badge/ICML%202026-475569?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2506.18088)
+
+[📄 论文](https://arxiv.org/abs/2506.18088) · [💻 仓库](https://github.com/RoboTwin-Platform/RoboTwin) · [![★ 3,032](https://img.shields.io/badge/%E2%98%85%203%2C032-eab308?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W6929480010)
+
+通过自动化仿真数据生成和领域随机化构建双臂操作任务，提供预采集轨迹。
+
+📌 优先阅读理由：先用现成数据训练与评测，再阅读任务生成和随机化机制。
+
+机构 / 维护方：Shanghai AI Lab; Shenzhen University; Nanjing University; SJTU; HKU; TeleAI; D-Robotics
+
+<sub>计数快照：2026-11-03</sub>
+
+<a id="e102"></a>
+
+### RDT-1B
+
+[![ICLR 2025](https://img.shields.io/badge/ICLR%202025-475569?style=flat-square)](https://github.com/thu-ml/RoboticsDiffusionTransformer) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2410.07864)
+
+[📄 论文](https://arxiv.org/abs/2410.07864) · [💻 仓库](https://github.com/thu-ml/RoboticsDiffusionTransformer) · [![★ 1,816](https://img.shields.io/badge/%E2%98%85%201%2C816-eab308?style=flat-square)](https://github.com/thu-ml/RoboticsDiffusionTransformer) [![Cite OA 5](https://img.shields.io/badge/Cite%20OA%205-0284c7?style=flat-square)](https://openalex.org/W4403364995)
+
+双臂操作的扩散基座，以统一动作表示处理多本体数据，并提供 170M 轻量版本。
+
+机构 / 维护方：Tsinghua University
+
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e17"></a>
 
@@ -814,11 +1252,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 本地推理工具链基础，提供量化与多平台运行入口。
 
-范围说明：完整 Omni 模式可能依赖专用分支，例如 OpenBMB/llama.cpp-omni。
+完整 Omni 模式可能依赖专用分支，例如 OpenBMB/llama.cpp-omni。
 
-机构 / 维护方：ggml.ai / Hugging Face；llama.cpp contributor community。
+机构 / 维护方：ggml.ai / Hugging Face; llama.cpp contributor community
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e18"></a>
 
@@ -830,9 +1268,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 面向移动与边缘设备的推理框架；Qwen2.5-Omni 提供官方接入入口。
 
-机构 / 维护方：Alibaba。
+机构 / 维护方：Alibaba
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="evaluation"></a>
 
@@ -844,13 +1282,13 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 [![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2505.17862) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.17862)
 
-[📄 论文](https://arxiv.org/abs/2505.17862) · [💻 仓库](https://github.com/Lliar-liar/Daily-Omni) · [![★ 53](https://img.shields.io/badge/%E2%98%85%2053-eab308?style=flat-square)](https://github.com/Lliar-liar/Daily-Omni) 引文计数 —
+[📄 论文](https://arxiv.org/abs/2505.17862) · [💻 仓库](https://github.com/Lliar-liar/Daily-Omni) · [![★ 53](https://img.shields.io/badge/%E2%98%85%2053-eab308?style=flat-square)](https://github.com/Lliar-liar/Daily-Omni) Cite —
 
 日常视频音画联合推理基准，强调跨模态时间对齐。
 
-机构 / 维护方：Fudan University。
+机构 / 维护方：Fudan University
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e15"></a>
 
@@ -862,9 +1300,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 针对图像、音频、文本联合理解的三模态基准，并提供 OmniInstruct。
 
-机构 / 维护方：M-A-P；University of Manchester；Queen Mary University of London；01.ai；HKUST；Nanjing University；Dartmouth College。
+机构 / 维护方：M-A-P; University of Manchester; Queen Mary University of London; 01.ai; HKUST; Nanjing University; Dartmouth College
 
-<sub>计数快照：2026-11-02。</sub>
+<sub>计数快照：2026-11-02</sub>
 
 <a id="e16"></a>
 
@@ -878,9 +1316,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：把打断、轮次交接和交互时序转为可测指标。
 
-机构 / 维护方：National Taiwan University；UC Berkeley；University of Washington；MIT CSAIL。
+机构 / 维护方：National Taiwan University; UC Berkeley; University of Washington; MIT CSAIL
 
-<sub>计数快照：2026-11-02 / 2026-11-03。</sub>
+<sub>计数快照：2026-11-02 / 2026-11-03</sub>
 
 <a id="e35"></a>
 
@@ -892,11 +1330,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 语言条件机器人操作基准，考察知识迁移与持续学习。
 
-范围说明：主要评价语言条件操作能力，不直接评价语音交互和真人协作。
+主要评价语言条件操作能力，不直接评价语音交互和真人协作。
 
-机构 / 维护方：UT Austin；Tsinghua University；Sony AI。
+机构 / 维护方：UT Austin; Tsinghua University; Sony AI
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e59"></a>
 
@@ -910,11 +1348,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：建立基础语音助手能力参照，再与交互和任务指标分别比较。
 
-范围说明：主要评价语音输入后的回答能力；不能替代连续同时听说或工具任务评测。
+主要评价语音输入后的回答能力；不能替代连续同时听说或工具任务评测。
 
-机构 / 维护方：National University of Singapore。
+机构 / 维护方：National University of Singapore
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e60"></a>
 
@@ -926,11 +1364,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 覆盖语义、声学、对话与鲁棒性，补充单轮和多轮语音交互能力评测。
 
-范围说明：各子集、语言和后续扩展的发布状态分别核对；子集的会议发表不代表整套 benchmark 同一 venue。
+各子集、语言和后续扩展的发布状态分别核对；子集的会议发表不代表整套 benchmark 同一 venue。
 
-机构 / 维护方：Shanghai Jiao Tong University；Ant Group。
+机构 / 维护方：Shanghai Jiao Tong University; Ant Group
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e61"></a>
 
@@ -942,11 +1380,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以真实中文语音为核心，评价指令遵循、知识理解与声学和内容扰动下的鲁棒性。
 
-范围说明：核心贡献为真实中文语音；后续语言扩展与论文原始协议应分开报告。
+核心贡献为真实中文语音；后续语言扩展与论文原始协议应分开报告。
 
-机构 / 维护方：Wuhan University；Tencent。
+机构 / 维护方：Wuhan University; Tencent
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e62"></a>
 
@@ -960,11 +1398,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：先理解语音工具调用的函数、参数和多步结构，再进入真实任务成功率。
 
-范围说明：强调语音条件下的工具调用结构和参数；不能直接代表连续语音输出的时序自然度。
+强调语音条件下的工具调用结构和参数；不能直接代表连续语音输出的时序自然度。
 
-机构 / 维护方：OLA Electric / Krutrim AI。
+机构 / 维护方：OLA Electric / Krutrim AI
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e63"></a>
 
@@ -978,11 +1416,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：从环境终态判断任务是否完成，适合对照文本 Agent 与语音 Agent 的差距。
 
-范围说明：tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固定其对应版本、环境和用户模拟器。
+tau2-bench 仓库持续演进并包含后续 τ³ 开发；复现本论文时固定其对应版本、环境和用户模拟器。
 
-机构 / 维护方：Sierra；Princeton University。
+机构 / 维护方：Sierra; Princeton University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e64"></a>
 
@@ -996,11 +1434,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：把真实口语修正与工具调用放在同一测试中，观察交互干扰是否造成任务错误。
 
-范围说明：与 v1、v1.5、v2 共用仓库但任务不同；v3 论文为预印本，不沿用 v1 的 ASRU 2025 标签。
+与 v1、v1.5、v2 共用仓库但任务不同；v3 论文为预印本，不沿用 v1 的 ASRU 2025 标签。
 
-机构 / 维护方：National Taiwan University；NVIDIA。
+机构 / 维护方：National Taiwan University; NVIDIA
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e65"></a>
 
@@ -1014,9 +1452,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：补上单个片段测试难以覆盖的多轮累积问题。
 
-机构 / 维护方：Tsinghua University；The Chinese University of Hong Kong；Huawei。
+机构 / 维护方：Tsinghua University; The Chinese University of Hong Kong; Huawei
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e66"></a>
 
@@ -1028,11 +1466,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以真实双声道人类对话评测重叠、打断和反馈，并组织 HumDial 全双工挑战与榜单。
 
-范围说明：论文讨论 ICASSP 2026 HumDial 挑战；挑战名称不作为该预印本已收入会议论文集的证据。
+论文讨论 ICASSP 2026 HumDial 挑战；挑战名称不作为该预印本已收入会议论文集的证据。
 
-机构 / 维护方：Northwestern Polytechnical University / ASLP Lab；Nanjing University；AISHELL。
+机构 / 维护方：Northwestern Polytechnical University / ASLP Lab; Nanjing University; AISHELL
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e67"></a>
 
@@ -1044,9 +1482,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 把语音 Agent 作为多人对话的参与者，评价理解、接话时机与回应适切性。
 
-机构 / 维护方：The University of Texas at Austin；National Taiwan University；MIT；Carnegie Mellon University；Meta AI。
+机构 / 维护方：The University of Texas at Austin; National Taiwan University; MIT; Carnegie Mellon University; Meta AI
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e68"></a>
 
@@ -1058,9 +1496,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在多人场景中区分被明确点名、隐含求助、主动参与与应保持沉默，测试参与决策。
 
-机构 / 维护方：Peking University；Renmin University of China；Tsinghua University；National Taiwan University；Xiamen University；Fudan University。
+机构 / 维护方：Peking University; Renmin University of China; Tsinghua University; National Taiwan University; Xiamen University; Fudan University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e69"></a>
 
@@ -1072,9 +1510,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 检验全双工系统能否按指令调整接话、打断、反馈及主动性，报告交互指令遵循程度。
 
-机构 / 维护方：Boson AI。
+机构 / 维护方：Boson AI
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e70"></a>
 
@@ -1082,15 +1520,15 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2609.39446) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2609.39446)
 
-[📄 论文](https://arxiv.org/abs/2609.39446) · [💻 仓库](https://github.com/Alita-xky/DuplexAct-Bench) · [🔗 项目](https://alitaxky.icu/DuplexAct-Bench/) · [![★ 1](https://img.shields.io/badge/%E2%98%85%201-eab308?style=flat-square)](https://github.com/Alita-xky/DuplexAct-Bench) 引文计数 —
+[📄 论文](https://arxiv.org/abs/2609.39446) · [💻 仓库](https://github.com/Alita-xky/DuplexAct-Bench) · [🔗 项目](https://alitaxky.icu/DuplexAct-Bench/) · [![★ 1](https://img.shields.io/badge/%E2%98%85%201-eab308?style=flat-square)](https://github.com/Alita-xky/DuplexAct-Bench) Cite —
 
 覆盖打断、让出话轮、抵抗打断、主动沉默、主动开场、反馈六类行为，分别检查时机与内容。
 
-范围说明：链接仓库主要提供项目页面；完整评测器和数据的可用性以项目发布为准。
+链接仓库主要提供项目页面；完整评测器和数据的可用性以项目发布为准。
 
-机构 / 维护方：Beijing Institute for General Artificial Intelligence；Peking University；Shanghai Jiao Tong University。
+机构 / 维护方：Beijing Institute for General Artificial Intelligence; Peking University; Shanghai Jiao Tong University
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e71"></a>
 
@@ -1104,9 +1542,9 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 📌 优先阅读理由：学习将任务正确性与体验分开评估，并检查动态用户模拟器的可信度。
 
-机构 / 维护方：ServiceNow AI Research。
+机构 / 维护方：ServiceNow AI Research
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e72"></a>
 
@@ -1118,11 +1556,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 在金融服务场景中运行语音代理模拟，通过完整对话、工具轨迹与领域事实检查任务执行。
 
-范围说明：领域为金融服务；riley-agent 是参考代理实现，不能直接视为完整 benchmark 评分器。
+领域为金融服务；riley-agent 是参考代理实现，不能直接视为完整 benchmark 评分器。
 
-机构 / 维护方：Veris AI。
+机构 / 维护方：Veris AI
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e73"></a>
 
@@ -1134,11 +1572,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 以多轮、打断和噪声条件构建全双工评测流程，观察生成质量与延迟。
 
-范围说明：与 DanielLin94144/Full-Duplex-Bench 是不同项目；两者的分数与版本不能混用。
+与 DanielLin94144/Full-Duplex-Bench 是不同项目；两者的分数与版本不能混用。
 
-机构 / 维护方：Nanyang Technological University；Alibaba。
+机构 / 维护方：Nanyang Technological University; Alibaba
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="e74"></a>
 
@@ -1150,11 +1588,11 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 围绕轮次结束与打断检测，在不同误报预算下比较召回和延迟，评价组件的实时决策。
 
-范围说明：主要评价轮次决策组件；不直接测回复内容、工具调用或最终任务完成。
+主要评价轮次决策组件；不直接测回复内容、工具调用或最终任务完成。
 
-机构 / 维护方：Sesame AI；Mundo AI；Oto；Carnegie Mellon University；National Taiwan University；Academia Sinica；Brno University of Technology。
+机构 / 维护方：Sesame AI; Mundo AI; Oto; Carnegie Mellon University; National Taiwan University; Academia Sinica; Brno University of Technology
 
-<sub>计数快照：2026-11-03。</sub>
+<sub>计数快照：2026-11-03</sub>
 
 <a id="industry"></a>
 
@@ -1166,15 +1604,13 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 [![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://www.agibot.com/article/231/detail/122.html) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://www.agibot.com/article/231/detail/122.html)
 
-[🔗 官方页面](https://www.agibot.com/article/231/detail/122.html) · —
+[🔗 官网](https://www.agibot.com/article/231/detail/122.html) · —
 
 智元的具身交互展示将场景理解、语音和身体表达组合在同一交互过程中。
 
-范围说明：工业展示；不能由演示反推动作模型、训练数据或完整系统已经开放。
+工业展示；不能由演示反推动作模型、训练数据或完整系统已经开放。
 
-机构 / 维护方：AGIBOT / 智元。
-
-<sub>计数快照：2026-11-02。</sub>
+机构 / 维护方：AGIBOT / 智元
 
 <a id="e27"></a>
 
@@ -1182,15 +1618,13 @@ MoE Thinker–Talker 路线，覆盖多模态理解和实时语音生成。
 
 [![Technical Demo 2025](https://img.shields.io/badge/Technical%20Demo%202025-475569?style=flat-square)](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/)
 
-[🔗 官方页面](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/) · —
+[🔗 官网](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/) · —
 
 Google 官方展示将语音与机器人摄像头输入交给 Live API，再以函数调用连接机器人控制接口。
 
-范围说明：Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不提供统一的机器人成功率对照实验。
+Live API 工程示例与 Gemini Robotics 模型是不同入口；示例本身不提供统一的机器人成功率对照实验。
 
-机构 / 维护方：Google / Google DeepMind。
-
-<sub>计数快照：2026-11-02。</sub>
+机构 / 维护方：Google / Google DeepMind
 
 <a id="e28"></a>
 
@@ -1198,12 +1632,26 @@ Google 官方展示将语音与机器人摄像头输入交给 Live API，再以�
 
 [![Technical Demo 2026](https://img.shields.io/badge/Technical%20Demo%202026-475569?style=flat-square)](https://www.figure.ai/news/helix-02) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://www.figure.ai/news/helix-02)
 
-[🔗 官方页面](https://www.figure.ai/news/helix-02) · —
+[🔗 官网](https://www.figure.ai/news/helix-02) · —
 
 Figure 以 S2 语义规划、S1 视觉运动策略和 S0 全身控制连接语言目标与移动操作。
 
-范围说明：公司技术展示；公开视频不能替代可复现实验和开放训练代码。
+公司技术展示；公开视频不能替代可复现实验和开放训练代码。
 
-机构 / 维护方：Figure AI。
+机构 / 维护方：Figure AI
 
-<sub>计数快照：2026-11-02。</sub>
+<a id="e96"></a>
+
+### Qwen-RobotNav
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2606.18112) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2606.18112)
+
+[📄 论文](https://arxiv.org/abs/2606.18112) · [💻 仓库](https://github.com/QwenLM/Qwen-RobotNav) · [![★ 198](https://img.shields.io/badge/%E2%98%85%20198-eab308?style=flat-square)](https://github.com/QwenLM/Qwen-RobotNav) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7165037828)
+
+Qwen3-VL 导航系统报告，研究任务模式、上下文与 waypoint 接口，并展示 Go2 部署。
+
+官方仓库当前明确无权重发布计划；用于阅读系统设计，不作为可微调基座。
+
+机构 / 维护方：Alibaba / Qwen Team
+
+<sub>计数快照：2026-11-03</sub>

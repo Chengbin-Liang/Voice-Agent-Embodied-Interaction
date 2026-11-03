@@ -4,6 +4,15 @@
 
 [返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
 
+## 🦾 开放机器人基座与工具
+
+| 项目 | 类型 | 适合阅读与使用的部分 |
+|---|---|---|
+| ⭐ [openpi / π0 · π0.5](CATALOG.md#e91) | Industry · 权重与训练代码 | 自有机器人数据适配、动作空间与微调。 |
+| ⭐ [Isaac GR00T N1.7](CATALOG.md#e92) | Industry · 权重与训练代码 | 新本体配置、数据规范与预训练策略适配。 |
+| ⭐ [Unitree SDK2 / MuJoCo](CATALOG.md#e97) · [RL mjlab](CATALOG.md#e98) | Industry · 接口与训练工具 | 通信、状态、仿真、运动策略与部署。 |
+| [Qwen-RobotNav](CATALOG.md#e96) | Industry · 技术报告与展示 | 导航系统与 waypoint 接口；当前未开放权重。 |
+
 ## 🤖 机器人与具身交互
 
 | 项目 | 主体与类型 | 可参考的能力 | 开放范围与适用边界 |

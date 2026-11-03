@@ -163,4 +163,14 @@ SpeechLM，以及更新后的双工模型、控制组件与评测清单。
 | [HF LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) · [中文版](https://huggingface.co/learn/llm-course/zh-CN/chapter1/1) | 英文课程与中文翻译 | tokenizer、模型使用、微调及动手练习；不同语言版本覆盖不完全一致。 |
 | [Stanford CS336](https://cs336.stanford.edu/) | 英文大学课程 | 从实现角度理解语言模型组件、数据、训练与对齐，选做作业作为延伸。 |
 
-本仓库的四阶段路线和各章阅读问题是面向本主题的编排，不复刻某一篇 Survey 的分类。各来源保留自己的定义与参考文献。博客用于建立直觉或理解实现，研究结论应追溯原始论文。
+
+
+<a id="embodied-learning"></a>
+## 🤖 具身入门指南与教学
+
+| 来源 | 阅读范围 | 对应入口 |
+|---|---|---|
+| ⭐ [Lumina 具身智能入门指南](https://lumina-embodied.ai/blog/eai-guide/) | 控制、MPC、RL、模仿学习、VLA、导航、硬件与工具 | [基础概念](04-Edge-Embodied-Interaction.md#concepts) → 原论文与代码 |
+| ⭐ [ScaleLab 具身指南](https://scalelab-sjtu.github.io/embodied_guide.html) | VLA、仿真与数据、全身控制的代表论文和项目 | [基座](04-Edge-Embodied-Interaction.md#bases) → [学术进阶](04-Edge-Embodied-Interaction.md#research) |
+| [MIT Underactuated Robotics](https://underactuated.mit.edu/) | 动力学、控制、轨迹优化与强化学习 | 按需查阅控制与 MPC，补充动作执行的原理 |
+| [LeRobot 文档](https://huggingface.co/docs/lerobot/en/il_robots) | 遥操作、数据录制、训练、评测与设备适配 | 从一个示范学习流程开始 |

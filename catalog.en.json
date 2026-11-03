@@ -4966,6 +4966,2259 @@
         "protocol": "Human-annotated, two-channel conversations across domains, with a fixed false-alarm budget.",
         "limits": "Component-level evaluation; does not directly measure generated content or task success."
       }
+    },
+    {
+      "id": "E75",
+      "name": "PPO",
+      "category": "llm",
+      "kind": "Paper",
+      "year": 2017,
+      "summary": "Optimizes rewards on sampled trajectories while constraining policy updates; a foundation for subsequent RLHF methods.",
+      "paper_url": "https://arxiv.org/abs/1707.06347",
+      "paper_title": "Proximal Policy Optimization Algorithms",
+      "authors": [
+        "Schulman, John",
+        "Wolski, Filip",
+        "Dhariwal, Prafulla",
+        "Radford, Alec",
+        "Klimov, Oleg"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1707.06347",
+        "https://github.com/openai/baselines"
+      ],
+      "citation_counts": [
+        {
+          "value": 10618,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W2736601468",
+          "source_record_title": "Proximal Policy Optimization Algorithms",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.1707.06347",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2017,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/1707.06347",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "OpenAI"
+        ],
+        "sources": [
+          "https://arxiv.org/html/1707.06347"
+        ]
+      },
+      "repo": "https://github.com/openai/baselines",
+      "first_publication_date": "2017/07/20",
+      "recommended_reading": "Learn policies, rewards, advantages, and the clipped objective before PPO for language models.",
+      "stars": {
+        "value": 16775,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/openai/baselines",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E76",
+      "name": "InstructGPT / RLHF",
+      "category": "llm",
+      "kind": "Paper",
+      "year": 2022,
+      "summary": "Combines supervised demonstrations, a reward model trained on human rankings, and PPO optimization.",
+      "paper_url": "https://arxiv.org/abs/2203.02155",
+      "paper_title": "Training language models to follow instructions with human feedback",
+      "authors": [
+        "Ouyang, Long",
+        "Wu, Jeff",
+        "Jiang, Xu",
+        "Almeida, Diogo",
+        "Wainwright, Carroll L.",
+        "Mishkin, Pamela",
+        "Zhang, Chong",
+        "Agarwal, Sandhini",
+        "Slama, Katarina",
+        "Ray, Alex",
+        "Schulman, John",
+        "Hilton, Jacob",
+        "Kelton, Fraser",
+        "Miller, Luke",
+        "Simens, Maddie",
+        "Askell, Amanda",
+        "Welinder, Peter",
+        "Christiano, Paul",
+        "Leike, Jan",
+        "Lowe, Ryan"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2203.02155"
+      ],
+      "citation_counts": [
+        {
+          "value": 4208,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4226278401",
+          "source_record_title": "Training language models to follow instructions with human feedback",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2203.02155",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2022,
+        "status": "conference",
+        "source": "https://arxiv.org/abs/2203.02155",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "OpenAI"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2203.02155"
+        ]
+      },
+      "first_publication_date": "2022/03/04",
+      "recommended_reading": "Establish the SFT → preferences → reward model → RL pipeline."
+    },
+    {
+      "id": "E77",
+      "name": "DPO",
+      "category": "llm",
+      "kind": "Paper",
+      "year": 2023,
+      "summary": "Optimizes relative response probabilities from preference pairs, providing an offline alternative to online RL.",
+      "paper_url": "https://arxiv.org/abs/2305.18290",
+      "paper_title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "authors": [
+        "Rafailov, Rafael",
+        "Sharma, Archit",
+        "Mitchell, Eric",
+        "Ermon, Stefano",
+        "Manning, Christopher D.",
+        "Finn, Chelsea"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2305.18290",
+        "https://github.com/eric-mitchell/direct-preference-optimization"
+      ],
+      "citation_counts": [],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2023,
+        "status": "conference",
+        "source": "https://arxiv.org/abs/2305.18290",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Stanford University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2305.18290"
+        ]
+      },
+      "repo": "https://github.com/eric-mitchell/direct-preference-optimization",
+      "first_publication_date": "2023/05/29",
+      "recommended_reading": "Understand how the same preference data supports different post-training methods.",
+      "scope_note": "DPO itself does not require online environment rollouts.",
+      "stars": {
+        "value": 2922,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/eric-mitchell/direct-preference-optimization",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E78",
+      "name": "DeepSeekMath / GRPO",
+      "category": "llm",
+      "kind": "Paper",
+      "year": 2024,
+      "summary": "Introduces GRPO for mathematical reasoning, deriving relative advantages from groups of sampled answers.",
+      "paper_url": "https://arxiv.org/abs/2402.03300",
+      "paper_title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "authors": [
+        "Shao, Zhihong",
+        "Wang, Peiyi",
+        "Zhu, Qihao",
+        "Xu, Runxin",
+        "Song, Junxiao",
+        "Bi, Xiao",
+        "Zhang, Haowei",
+        "Zhang, Mingchuan",
+        "Li, Y. K.",
+        "Wu, Y.",
+        "Guo, Daya"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2402.03300",
+        "https://github.com/deepseek-ai/DeepSeek-Math"
+      ],
+      "citation_counts": [
+        {
+          "value": 101,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4391631327",
+          "source_record_title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2402.03300",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2402.03300",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "DeepSeek-AI",
+          "Tsinghua University",
+          "Peking University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2402.03300"
+        ]
+      },
+      "repo": "https://github.com/deepseek-ai/DeepSeek-Math",
+      "first_publication_date": "2024/02/05",
+      "recommended_reading": "Study group rewards, advantage estimation, and KL regularization for verifiable-reward training.",
+      "stars": {
+        "value": 3478,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/deepseek-ai/DeepSeek-Math",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E79",
+      "name": "DeepSeek-R1",
+      "category": "llm",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Studies reasoning RL, cold starts, multistage post-training, and distillation into smaller models.",
+      "paper_url": "https://arxiv.org/abs/2501.12948",
+      "paper_title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "authors": [
+        "DeepSeek-AI",
+        "Guo, Daya",
+        "Yang, Dejian",
+        "Zhang, Haowei",
+        "Song, Junxiao",
+        "Wang, Peiyi",
+        "Zhu, Qihao",
+        "Xu, Runxin",
+        "Zhang, Ruoyu",
+        "Ma, Shirong",
+        "Bi, Xiao",
+        "Zhang, Xiaokang",
+        "Yu, Xingkai",
+        "Wu, Yu",
+        "Wu, Z. F.",
+        "Gou, Zhibin",
+        "Shao, Zhihong",
+        "Li, Zhuoshu",
+        "Gao, Ziyi",
+        "Liu, Aixin",
+        "Xue, Bing",
+        "Wang, Bingxuan",
+        "Wu, Bochao",
+        "Feng, Bei",
+        "Lu, Chengda",
+        "Zhao, Chenggang",
+        "Deng, Chengqi",
+        "Zhang, Chenyu",
+        "Ruan, Chong",
+        "Dai, Damai",
+        "Chen, Deli",
+        "Ji, Dongjie",
+        "Li, Erhang",
+        "Lin, Fangyun",
+        "Dai, Fucong",
+        "Luo, Fuli",
+        "Hao, Guangbo",
+        "Chen, Guanting",
+        "Li, Guowei",
+        "Zhang, H.",
+        "Bao, Han",
+        "Xu, Hanwei",
+        "Wang, Haocheng",
+        "Ding, Honghui",
+        "Xin, Huajian",
+        "Gao, Huazuo",
+        "Qu, Hui",
+        "Li, Hui",
+        "Guo, Jianzhong",
+        "Li, Jiashi",
+        "Wang, Jiawei",
+        "Chen, Jingchang",
+        "Yuan, Jingyang",
+        "Qiu, Junjie",
+        "Li, Junlong",
+        "Cai, J. L.",
+        "Ni, Jiaqi",
+        "Liang, Jian",
+        "Chen, Jin",
+        "Dong, Kai",
+        "Hu, Kai",
+        "Gao, Kaige",
+        "Guan, Kang",
+        "Huang, Kexin",
+        "Yu, Kuai",
+        "Wang, Lean",
+        "Zhang, Lecong",
+        "Zhao, Liang",
+        "Wang, Litong",
+        "Zhang, Liyue",
+        "Xu, Lei",
+        "Xia, Leyi",
+        "Zhang, Mingchuan",
+        "Zhang, Minghua",
+        "Tang, Minghui",
+        "Li, Meng",
+        "Wang, Miaojun",
+        "Li, Mingming",
+        "Tian, Ning",
+        "Huang, Panpan",
+        "Zhang, Peng",
+        "Wang, Qiancheng",
+        "Chen, Qinyu",
+        "Du, Qiushi",
+        "Ge, Ruiqi",
+        "Zhang, Ruisong",
+        "Pan, Ruizhe",
+        "Wang, Runji",
+        "Chen, R. J.",
+        "Jin, R. L.",
+        "Chen, Ruyi",
+        "Lu, Shanghao",
+        "Zhou, Shangyan",
+        "Chen, Shanhuang",
+        "Ye, Shengfeng",
+        "Wang, Shiyu",
+        "Yu, Shuiping",
+        "Zhou, Shunfeng",
+        "Pan, Shuting",
+        "Li, S. S.",
+        "Zhou, Shuang",
+        "Wu, Shaoqing",
+        "Ye, Shengfeng",
+        "Yun, Tao",
+        "Pei, Tian",
+        "Sun, Tianyu",
+        "Wang, T.",
+        "Zeng, Wangding",
+        "Zhao, Wanjia",
+        "Liu, Wen",
+        "Liang, Wenfeng",
+        "Gao, Wenjun",
+        "Yu, Wenqin",
+        "Zhang, Wentao",
+        "Xiao, W. L.",
+        "An, Wei",
+        "Liu, Xiaodong",
+        "Wang, Xiaohan",
+        "Chen, Xiaokang",
+        "Nie, Xiaotao",
+        "Cheng, Xin",
+        "Liu, Xin",
+        "Xie, Xin",
+        "Liu, Xingchao",
+        "Yang, Xinyu",
+        "Li, Xinyuan",
+        "Su, Xuecheng",
+        "Lin, Xuheng",
+        "Li, X. Q.",
+        "Jin, Xiangyue",
+        "Shen, Xiaojin",
+        "Chen, Xiaosha",
+        "Sun, Xiaowen",
+        "Wang, Xiaoxiang",
+        "Song, Xinnan",
+        "Zhou, Xinyi",
+        "Wang, Xianzu",
+        "Shan, Xinxia",
+        "Li, Y. K.",
+        "Wang, Y. Q.",
+        "Wei, Y. X.",
+        "Zhang, Yang",
+        "Xu, Yanhong",
+        "Li, Yao",
+        "Zhao, Yao",
+        "Sun, Yaofeng",
+        "Wang, Yaohui",
+        "Yu, Yi",
+        "Zhang, Yichao",
+        "Shi, Yifan",
+        "Xiong, Yiliang",
+        "He, Ying",
+        "Piao, Yishi",
+        "Wang, Yisong",
+        "Tan, Yixuan",
+        "Ma, Yiyang",
+        "Liu, Yiyuan",
+        "Guo, Yongqiang",
+        "Ou, Yuan",
+        "Wang, Yuduan",
+        "Gong, Yue",
+        "Zou, Yuheng",
+        "He, Yujia",
+        "Xiong, Yunfan",
+        "Luo, Yuxiang",
+        "You, Yuxiang",
+        "Liu, Yuxuan",
+        "Zhou, Yuyang",
+        "Zhu, Y. X.",
+        "Xu, Yanhong",
+        "Huang, Yanping",
+        "Li, Yaohui",
+        "Zheng, Yi",
+        "Zhu, Yuchen",
+        "Ma, Yunxian",
+        "Tang, Ying",
+        "Zha, Yukun",
+        "Yan, Yuting",
+        "Ren, Z. Z.",
+        "Ren, Zehui",
+        "Sha, Zhangli",
+        "Fu, Zhe",
+        "Xu, Zhean",
+        "Xie, Zhenda",
+        "Zhang, Zhengyan",
+        "Hao, Zhewen",
+        "Ma, Zhicheng",
+        "Yan, Zhigang",
+        "Wu, Zhiyu",
+        "Gu, Zihui",
+        "Zhu, Zijia",
+        "Liu, Zijun",
+        "Li, Zilin",
+        "Xie, Ziwei",
+        "Song, Ziyang",
+        "Pan, Zizheng",
+        "Huang, Zhen",
+        "Xu, Zhipeng",
+        "Zhang, Zhongyu",
+        "Zhang, Zhen"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2501.12948",
+        "https://github.com/deepseek-ai/DeepSeek-R1",
+        "https://www.nature.com/articles/s41586-025-09422-z"
+      ],
+      "citation_counts": [
+        {
+          "value": 1701,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414281281",
+          "source_record_title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+          "source_record_doi": "https://doi.org/10.1038/s41586-025-09422-z",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "Nature",
+        "year": 2025,
+        "status": "journal",
+        "source": "https://www.nature.com/articles/s41586-025-09422-z",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "DeepSeek-AI"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2501.12948"
+        ]
+      },
+      "repo": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "first_publication_date": "2025/01/22",
+      "scope_note": "Distilled checkpoints support adaptation; released weights and the complete original RL training pipeline are distinct resources.",
+      "stars": {
+        "value": 91995,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/deepseek-ai/DeepSeek-R1",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E80",
+      "name": "Qwen2-Audio",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2024,
+      "summary": "A 7B audio language model for speech, sound, and music understanding with text responses.",
+      "paper_url": "https://arxiv.org/abs/2407.10759",
+      "paper_title": "Qwen2-Audio Technical Report",
+      "authors": [
+        "Chu, Yunfei",
+        "Xu, Jin",
+        "Yang, Qian",
+        "Wei, Haojie",
+        "Wei, Xipin",
+        "Guo, Zhifang",
+        "Leng, Yichong",
+        "Lv, Yuanjun",
+        "He, Jinzheng",
+        "Lin, Junyang",
+        "Zhou, Chang",
+        "Zhou, Jingren"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2407.10759",
+        "https://github.com/QwenLM/Qwen2-Audio"
+      ],
+      "citation_counts": [
+        {
+          "value": 8,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4400717319",
+          "source_record_title": "Qwen2-Audio Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2407.10759",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2407.10759",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Alibaba / Qwen Team"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2407.10759"
+        ]
+      },
+      "repo": "https://github.com/QwenLM/Qwen2-Audio",
+      "first_publication_date": "2024/07/15",
+      "recommended_reading": "Start with connecting an audio encoder to an LLM and establishing an audio-understanding baseline.",
+      "stars": {
+        "value": 2101,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen2-Audio",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      }
+    },
+    {
+      "id": "E81",
+      "name": "GLM-4-Voice",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2024,
+      "summary": "A 9B spoken-dialogue model with discrete speech tokens, interleaved speech/text modeling, and streaming decoding.",
+      "paper_url": "https://arxiv.org/abs/2412.02612",
+      "paper_title": "GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot",
+      "authors": [
+        "Zeng, Aohan",
+        "Du, Zhengxiao",
+        "Liu, Mingdao",
+        "Wang, Kedong",
+        "Jiang, Shengmin",
+        "Zhao, Lei",
+        "Dong, Yuxiao",
+        "Tang, Jie"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2412.02612",
+        "https://github.com/zai-org/GLM-4-Voice"
+      ],
+      "citation_counts": [
+        {
+          "value": 4,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4405057125",
+          "source_record_title": "GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2412.02612",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2024,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2412.02612",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University",
+          "Zhipu.AI"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2412.02612"
+        ]
+      },
+      "repo": "https://github.com/zai-org/GLM-4-Voice",
+      "first_publication_date": "2024/12/03",
+      "stars": {
+        "value": 3243,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/zai-org/GLM-4-Voice",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E82",
+      "name": "Audio Flamingo 3",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "A 7B audio language model for speech, sound, music, and audio reasoning, with training, data, and inference resources.",
+      "paper_url": "https://arxiv.org/abs/2507.08128",
+      "paper_title": "Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models",
+      "authors": [
+        "Goel, Arushi",
+        "Ghosh, Sreyan",
+        "Kim, Jaehyeon",
+        "Kumar, Sonal",
+        "Kong, Zhifeng",
+        "Lee, Sang-gil",
+        "Yang, Chao-Han Huck",
+        "Duraiswami, Ramani",
+        "Manocha, Dinesh",
+        "Valle, Rafael",
+        "Catanzaro, Bryan"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2507.08128",
+        "https://github.com/NVIDIA/audio-flamingo",
+        "https://openreview.net/forum?id=FjByDpDVIO"
+      ],
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6929354950",
+          "source_record_title": "Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2507.08128",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "NeurIPS Spotlight",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://openreview.net/forum?id=FjByDpDVIO",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "NVIDIA",
+          "University of Maryland"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2507.08128"
+        ]
+      },
+      "repo": "https://github.com/NVIDIA/audio-flamingo",
+      "first_publication_date": "2025/07/10",
+      "recommended_reading": "Read data construction and staged training alongside the released training branch.",
+      "scope_note": "Check model and data licenses separately; the weights use a noncommercial research license.",
+      "resource_links": [
+        {
+          "label": "Training",
+          "url": "https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_3"
+        }
+      ],
+      "stars": {
+        "value": 1219,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/audio-flamingo",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      }
+    },
+    {
+      "id": "E83",
+      "name": "Audio Flamingo Next",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2026,
+      "summary": "Extends long-audio understanding, temporal grounding, speaker attribution, and multi-speaker reasoning.",
+      "paper_url": "https://arxiv.org/abs/2604.10905",
+      "paper_title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+      "authors": [
+        "Ghosh, Sreyan",
+        "Goel, Arushi",
+        "Jayakumar, Kaousheik",
+        "Koroshinadze, Lasha",
+        "Anand, Nishit",
+        "Kong, Zhifeng",
+        "Gururani, Siddharth",
+        "Lee, Sang-gil",
+        "Kim, Jaehyeon",
+        "Aljafari, Aya",
+        "Yang, Chao-Han Huck",
+        "Kim, Sungwon",
+        "Duraiswami, Ramani",
+        "Manocha, Dinesh",
+        "Shoeybi, Mohammad",
+        "Catanzaro, Bryan",
+        "Liu, Ming-Yu",
+        "Ping, Wei"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2604.10905"
+      ],
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7154207876",
+          "source_record_title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2604.10905",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2604.10905",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "NVIDIA",
+          "University of Maryland"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2604.10905"
+        ]
+      },
+      "first_publication_date": "2026/04/13",
+      "scope_note": "The released HF checkpoint takes audio/text and outputs text; streaming speech generation is not part of that checkpoint.",
+      "resource_links": [
+        {
+          "label": "Weights",
+          "url": "https://huggingface.co/nvidia/audio-flamingo-next-hf"
+        }
+      ]
+    },
+    {
+      "id": "E84",
+      "name": "MiMo-Audio",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "7B speech base and instruction models with an official fine-tuning toolkit for ASR, TTS, audio understanding, and spoken dialogue.",
+      "paper_url": "https://arxiv.org/abs/2512.23808",
+      "paper_title": "MiMo-Audio: Audio Language Models are Few-Shot Learners",
+      "authors": [
+        "Core Team",
+        "Zhang, Dong",
+        "Wang, Gang",
+        "Xue, Jinlong",
+        "Fang, Kai",
+        "Zhao, Liang",
+        "Ma, Rui",
+        "Ren, Shuhuai",
+        "Liu, Shuo",
+        "Guo, Tao",
+        "Zhuang, Weiji",
+        "Zhang, Xin",
+        "Song, Xingchen",
+        "Yan, Yihan",
+        "He, Yongzhe",
+        "Cici",
+        "Shen, Bowen",
+        "Zhu, Chengxuan",
+        "Ma, Chong",
+        "Chen, Chun",
+        "Chen, Heyu",
+        "Li, Jiawei",
+        "Li, Lei",
+        "Zhu, Menghang",
+        "Li, Peidian",
+        "Wang, Qiying",
+        "Deng, Sirui",
+        "Xiong, Weimin",
+        "Huang, Wenshan",
+        "Yang, Wenyu",
+        "Jiang, Yilin",
+        "Yang, Yixin",
+        "Tian, Yuanyuan",
+        "Ma, Yue",
+        "Yu, Yue",
+        "Zhang, Zihan",
+        "Yue, Zihao",
+        "Xiao, Bangjun",
+        "Xia, Bingquan",
+        "Gao, Bofei",
+        "Ye, Bowen",
+        "Cai, Can",
+        "Liu, Chang",
+        "He, Chenhong",
+        "Li, Chunan",
+        "Zhu, Dawei",
+        "Zhang, Duo",
+        "Shi, Fengyuan",
+        "Wang, Guoan",
+        "Zhang, Hailin",
+        "Lv, Hanglong",
+        "Li, Hanyu",
+        "Tian, Hao",
+        "Qu, Heng",
+        "Xu, Hongshen",
+        "Zhang, Houbin",
+        "Liu, Huaqiu",
+        "Duo, Jiangshan",
+        "Zuo, Jianguang",
+        "Wei, Jianyu",
+        "Xiao, Jiebao",
+        "Dong, Jinhao",
+        "Shi, Jun",
+        "Hu, Junhao",
+        "Bao, Kainan",
+        "Zhou, Kang",
+        "Zhang, Linghao",
+        "Chen, Meng",
+        "Chen, Nuo",
+        "Zhang, Peng",
+        "Chen, Qianli",
+        "Wang, Qiantong",
+        "Li, Rang",
+        "Liu, Shaohui",
+        "Wang, Shengfan",
+        "Li, Shicheng",
+        "Yu, Shihua",
+        "Cao, Shijie",
+        "Chen, Shimao",
+        "Gu, Shuhao",
+        "Wang, Weikun",
+        "Ma, Wenhan",
+        "Deng, Xiangwei",
+        "Yong, Xing",
+        "Zhang, Xing",
+        "Wang, Xu",
+        "Song, Yifan",
+        "Zhao, Yihao",
+        "Zhao, Yingbo",
+        "Gao, Yizhao",
+        "Cheng, Yu",
+        "Tu, Yu",
+        "Wang, Yudong",
+        "Huang, Zhaojun",
+        "Tang, Zhengju",
+        "Lin, Zhenru",
+        "Song, Zhichao",
+        "Xu, Zhipeng",
+        "Zheng, Zhixian",
+        "Jiang, Zihan"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2512.23808",
+        "https://github.com/XiaomiMiMo/MiMo-Audio"
+      ],
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7117988839",
+          "source_record_title": "MiMo-Audio: Audio Language Models are Few-Shot Learners",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2512.23808",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2512.23808",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Xiaomi MiMo"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2512.23808"
+        ]
+      },
+      "repo": "https://github.com/XiaomiMiMo/MiMo-Audio",
+      "first_publication_date": "2025/12/29",
+      "recommended_reading": "Inspect task data formats and SFT scripts as an entry point to adapting an existing speech base.",
+      "resource_links": [
+        {
+          "label": "Training",
+          "url": "https://github.com/XiaomiMiMo/MiMo-Audio-Training"
+        }
+      ],
+      "stars": {
+        "value": 1088,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/XiaomiMiMo/MiMo-Audio",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E85",
+      "name": "Step-Audio 2",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Targets multimodal speech interaction, audio reasoning, and tool use, with Mini-series checkpoints and inference code.",
+      "paper_url": "https://arxiv.org/abs/2507.16632",
+      "paper_title": "Step-Audio 2 Technical Report",
+      "authors": [
+        "Wu, Boyong",
+        "Yan, Chao",
+        "Hu, Chen",
+        "Yi, Cheng",
+        "Feng, Chengli",
+        "Tian, Fei",
+        "Shen, Feiyu",
+        "Yu, Gang",
+        "Zhang, Haoyang",
+        "Li, Jingbei",
+        "Chen, Mingrui",
+        "Liu, Peng",
+        "You, Wang",
+        "Zhang, Xiangyu Tony",
+        "Li, Xingyuan",
+        "Yang, Xuerui",
+        "Deng, Yayue",
+        "Huang, Yechang",
+        "Li, Yuxin",
+        "Zhang, Yuxin",
+        "You, Zhao",
+        "Li, Brian",
+        "Wan, Changyi",
+        "Hu, Hanpeng",
+        "Zhen, Jiangjie",
+        "Chen, Siyu",
+        "Yuan, Song",
+        "Zhang, Xuelin",
+        "Jiang, Yimin",
+        "Zhou, Yu",
+        "Yang, Yuxiang",
+        "Li, Bingxin",
+        "Ma, Buyun",
+        "Song, Changhe",
+        "Pang, Dongqing",
+        "Hu, Guoqiang",
+        "Sun, Haiyang",
+        "An, Kang",
+        "Wang, Na",
+        "Gao, Shuli",
+        "Ji, Wei",
+        "Li, Wen",
+        "Sun, Wen",
+        "Wen, Xuan",
+        "Ren, Yong",
+        "Ma, Yuankai",
+        "Lu, Yufan",
+        "Wang, Bin",
+        "Li, Bo",
+        "Miao, Changxin",
+        "Liu, Che",
+        "Xu, Chen",
+        "Shi, Dapeng",
+        "Hu, Dingyuan",
+        "Wu, Donghang",
+        "Liu, Enle",
+        "Huang, Guanzhe",
+        "Yan, Gulin",
+        "Zhang, Han",
+        "Nie, Hao",
+        "Jia, Haonan",
+        "Zhou, Hongyu",
+        "Sun, Jianjian",
+        "Wu, Jiaoren",
+        "Wu, Jie",
+        "Yang, Jie",
+        "Yang, Jin",
+        "Lin, Junzhe",
+        "Li, Kaixiang",
+        "Yang, Lei",
+        "Shi, Liying",
+        "Zhou, Li",
+        "Gu, Longlong",
+        "Li, Ming",
+        "Li, Mingliang",
+        "Li, Mingxiao",
+        "Wu, Nan",
+        "Han, Qi",
+        "Tan, Qinyuan",
+        "Pang, Shaoliang",
+        "Fan, Shengjie",
+        "Liu, Siqi",
+        "Cao, Tiancheng",
+        "Lu, Wanying",
+        "He, Wenqing",
+        "Xie, Wuxun",
+        "Zhao, Xu",
+        "Li, Xueqi",
+        "Yu, Yanbo",
+        "Yang, Yang",
+        "Liu, Yi",
+        "Lu, Yifan",
+        "Wang, Yilei",
+        "Ding, Yuanhao",
+        "Liang, Yuanwei",
+        "Lu, Yuanwei",
+        "Luo, Yuchu",
+        "Yin, Yuhe",
+        "Zhan, Yumeng",
+        "Zhang, Yuxiang",
+        "Yang, Zidong",
+        "Zhang, Zixin",
+        "Jiao, Binxing",
+        "Jiang, Daxin",
+        "Shum, Heung-Yeung",
+        "Chen, Jiansheng",
+        "Li, Jing",
+        "Zhang, Xiangyu",
+        "Zhu, Yibo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2507.16632",
+        "https://github.com/stepfun-ai/Step-Audio2"
+      ],
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4415202956",
+          "source_record_title": "Step-Audio 2 Technical Report",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2507.16632",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2507.16632",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "StepFun"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2507.16632"
+        ]
+      },
+      "repo": "https://github.com/stepfun-ai/Step-Audio2",
+      "first_publication_date": "2025/07/22",
+      "stars": {
+        "value": 1526,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/stepfun-ai/Step-Audio2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E86",
+      "name": "SALMONN",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2023,
+      "summary": "Combines speech and general-audio encoders with an adapter and an LLM for speech, sound, and music tasks.",
+      "paper_url": "https://arxiv.org/abs/2310.13289",
+      "paper_title": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "authors": [
+        "Tang, Changli",
+        "Yu, Wenyi",
+        "Sun, Guangzhi",
+        "Chen, Xianzhao",
+        "Tan, Tian",
+        "Li, Wei",
+        "Lu, Lu",
+        "Ma, Zejun",
+        "Zhang, Chao"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2310.13289",
+        "https://github.com/bytedance/SALMONN",
+        "https://github.com/bytedance/SALMONN/tree/salmonn"
+      ],
+      "citation_counts": [
+        {
+          "value": 67,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4387891768",
+          "source_record_title": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2310.13289",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2024,
+        "status": "conference",
+        "source": "https://github.com/bytedance/SALMONN/tree/salmonn",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Tsinghua University",
+          "ByteDance"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2310.13289"
+        ]
+      },
+      "repo": "https://github.com/bytedance/SALMONN",
+      "first_publication_date": "2023/10/20",
+      "recommended_reading": "Understand how dual encoders, an adapter, and multitask training retain information beyond ASR.",
+      "resource_links": [
+        {
+          "label": "Training",
+          "url": "https://github.com/bytedance/SALMONN/tree/salmonn"
+        }
+      ],
+      "stars": {
+        "value": 1564,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/bytedance/SALMONN",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E87",
+      "name": "SpeechGPT",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2023,
+      "summary": "Extends a text LLM to speech input/output using discrete speech units and SpeechInstruct.",
+      "paper_url": "https://arxiv.org/abs/2305.11000",
+      "paper_title": "SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities",
+      "authors": [
+        "Zhang, Dong",
+        "Li, Shimin",
+        "Zhang, Xin",
+        "Zhan, Jun",
+        "Wang, Pengyu",
+        "Zhou, Yaqian",
+        "Qiu, Xipeng"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2305.11000",
+        "https://github.com/0nutation/SpeechGPT",
+        "https://aclanthology.org/2023.findings-emnlp.1055/"
+      ],
+      "citation_counts": [
+        {
+          "value": 189,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4389524500",
+          "source_record_title": "SpeechGPT: Empowering Large Language Models with Intrinsic Cross-Modal Conversational Abilities",
+          "source_record_doi": "https://doi.org/10.18653/v1/2023.findings-emnlp.1055",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "EMNLP Findings",
+        "year": 2023,
+        "status": "conference",
+        "source": "https://aclanthology.org/2023.findings-emnlp.1055/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Fudan University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2305.11000"
+        ]
+      },
+      "repo": "https://github.com/0nutation/SpeechGPT",
+      "first_publication_date": "2023/05/18",
+      "recommended_reading": "Follow modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.",
+      "stars": {
+        "value": 1401,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/0nutation/SpeechGPT",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E88",
+      "name": "BLSP",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2023,
+      "summary": "Trains a lightweight adapter between a frozen speech encoder and LLM by aligning continuations from speech and transcripts.",
+      "paper_url": "https://arxiv.org/abs/2309.00916",
+      "paper_title": "BLSP: Bootstrapping Language-Speech Pre-training via Behavior Alignment of Continuation Writing",
+      "authors": [
+        "Wang, Chen",
+        "Liao, Minpeng",
+        "Huang, Zhongqiang",
+        "Lu, Jinliang",
+        "Wu, Junhong",
+        "Liu, Yuchen",
+        "Zong, Chengqing",
+        "Zhang, Jiajun"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2309.00916",
+        "https://github.com/cwang621/blsp"
+      ],
+      "citation_counts": [
+        {
+          "value": 9,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4386552581",
+          "source_record_title": "BLSP: Bootstrapping Language-Speech Pre-training via Behavior Alignment of Continuation Writing",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2309.00916",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2023,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2309.00916",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "CASIA",
+          "UCAS",
+          "Alibaba DAMO Academy"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2309.00916"
+        ]
+      },
+      "repo": "https://github.com/cwang621/blsp",
+      "first_publication_date": "2023/09/02",
+      "recommended_reading": "A clear training objective and trainable module make it useful for understanding lightweight speech adaptation.",
+      "stars": {
+        "value": 59,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/cwang621/blsp",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E89",
+      "name": "LLaMA-Omni2",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Builds bilingual spoken dialogue and streaming speech generation on Qwen2.5, with multiple model sizes and inference code.",
+      "paper_url": "https://arxiv.org/abs/2505.02625",
+      "paper_title": "LLaMA-Omni2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis",
+      "authors": [
+        "Fang, Qingkai",
+        "Zhou, Yan",
+        "Guo, Shoutao",
+        "Zhang, Shaolei",
+        "Feng, Yang"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2505.02625",
+        "https://github.com/ictnlp/LLaMA-Omni2",
+        "https://aclanthology.org/2025.acl-long.912/"
+      ],
+      "citation_counts": [
+        {
+          "value": 11,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4412944968",
+          "source_record_title": "LLaMA-Omni 2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis",
+          "source_record_doi": "https://doi.org/10.18653/v1/2025.acl-long.912",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ACL",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://aclanthology.org/2025.acl-long.912/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Institute of Computing Technology, CAS",
+          "UCAS"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2505.02625"
+        ]
+      },
+      "repo": "https://github.com/ictnlp/LLaMA-Omni2",
+      "first_publication_date": "2025/05/05",
+      "recommended_reading": "Use the 0.5B–3B variants to study instruction data, alignment, and streaming output before scaling.",
+      "scope_note": "Code and models have different licenses; models are for research use.",
+      "stars": {
+        "value": 281,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/ictnlp/LLaMA-Omni2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      }
+    },
+    {
+      "id": "E90",
+      "name": "PersonaPlex",
+      "category": "omni",
+      "kind": "Paper",
+      "year": 2026,
+      "summary": "A Moshi-based 7B full-duplex model with voice and text prompts for speaker and role control.",
+      "paper_url": "https://arxiv.org/abs/2602.06053",
+      "paper_title": "PersonaPlex: Voice and Role Control for Full Duplex Conversational Speech Models",
+      "authors": [
+        "Roy, Rajarshi",
+        "Raiman, Jonathan",
+        "Lee, Sang-gil",
+        "Ene, Teodor-Dumitru",
+        "Kirby, Robert",
+        "Kim, Sungwon",
+        "Kim, Jaehyeon",
+        "Catanzaro, Bryan"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2602.06053",
+        "https://github.com/NVIDIA/personaplex"
+      ],
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7128377012",
+          "source_record_title": "PersonaPlex: Voice and Role Control for Full Duplex Conversational Speech Models",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2602.06053",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2602.06053",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2602.06053"
+        ]
+      },
+      "repo": "https://github.com/NVIDIA/personaplex",
+      "first_publication_date": "2026/01/14",
+      "scope_note": "The official release provides weights and inference; read DuplexGen for a related training workflow.",
+      "stars": {
+        "value": 12018,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/personaplex",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E91",
+      "name": "openpi / π0 · π0.5",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Releases π0, π0-FAST, and π0.5 weights, inference, and adaptation code, connecting VLMs to continuous actions and multi-robot data.",
+      "paper_url": "https://arxiv.org/abs/2504.16054",
+      "paper_title": "$\\pi_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+      "authors": [
+        "Intelligence, Physical",
+        "Black, Kevin",
+        "Brown, Noah",
+        "Darpinian, James",
+        "Dhabalia, Karan",
+        "Driess, Danny",
+        "Esmail, Adnan",
+        "Equi, Michael",
+        "Finn, Chelsea",
+        "Fusai, Niccolo",
+        "Galliker, Manuel Y.",
+        "Ghosh, Dibya",
+        "Groom, Lachy",
+        "Hausman, Karol",
+        "Ichter, Brian",
+        "Jakubczak, Szymon",
+        "Jones, Tim",
+        "Ke, Liyiming",
+        "LeBlanc, Devin",
+        "Levine, Sergey",
+        "Li-Bell, Adrian",
+        "Mothukuri, Mohith",
+        "Nair, Suraj",
+        "Pertsch, Karl",
+        "Ren, Allen Z.",
+        "Shi, Lucy Xiaoyang",
+        "Smith, Laura",
+        "Springenberg, Jost Tobias",
+        "Stachowicz, Kyle",
+        "Tanner, James",
+        "Vuong, Quan",
+        "Walke, Homer",
+        "Walling, Anna",
+        "Wang, Haohuan",
+        "Yu, Lili",
+        "Zhilinsky, Ury"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2504.16054",
+        "https://github.com/Physical-Intelligence/openpi"
+      ],
+      "citation_counts": [
+        {
+          "value": 3,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414674749",
+          "source_record_title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2504.16054",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2025,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2504.16054",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Physical Intelligence"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2504.16054"
+        ]
+      },
+      "repo": "https://github.com/Physical-Intelligence/openpi",
+      "first_publication_date": "2025/04/22",
+      "recommended_reading": "A direct industrial-base selection and adaptation entry point: focus on action formats, normalization, and fine-tuning.",
+      "scope_note": "The linked paper is π0.5; the original π0 paper is listed separately. LoRA uses the JAX path; the current PyTorch path does not support LoRA.",
+      "resource_links": [
+        {
+          "label": "π0 paper",
+          "url": "https://arxiv.org/abs/2410.24164"
+        },
+        {
+          "label": "π0.5 blog",
+          "url": "https://www.physicalintelligence.company/blog/pi05"
+        }
+      ],
+      "stars": {
+        "value": 14510,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/Physical-Intelligence/openpi",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E92",
+      "name": "Isaac GR00T N1.7",
+      "category": "robotics",
+      "kind": "Project",
+      "year": 2026,
+      "summary": "A 3B vision-language-action base with pretrained weights, new-embodiment data adaptation, and fine-tuning workflows.",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/NVIDIA/Isaac-GR00T"
+      ],
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": 2026,
+        "status": "resource",
+        "source": "https://github.com/NVIDIA/Isaac-GR00T",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://github.com/NVIDIA/Isaac-GR00T"
+        ]
+      },
+      "repo": "https://github.com/NVIDIA/Isaac-GR00T",
+      "recommended_reading": "Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs.",
+      "scope_note": "The current repository is N1.7; the background paper describes the earlier N1. Read configurations and results by version.",
+      "resource_links": [
+        {
+          "label": "N1 background paper",
+          "url": "https://arxiv.org/abs/2503.14734"
+        }
+      ],
+      "stars": {
+        "value": 8308,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/NVIDIA/Isaac-GR00T",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E93",
+      "name": "OpenVLA-OFT",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Builds on OpenVLA with parallel decoding, action chunks, continuous actions, L1 training, and FiLM for language control.",
+      "paper_url": "https://arxiv.org/abs/2502.19645",
+      "paper_title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+      "authors": [
+        "Kim, Moo Jin",
+        "Finn, Chelsea",
+        "Liang, Percy"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2502.19645",
+        "https://github.com/moojink/openvla-oft",
+        "https://roboticsproceedings.org/rss21/p017.html"
+      ],
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6948104436",
+          "source_record_title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2502.19645",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://roboticsproceedings.org/rss21/p017.html",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Stanford University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2502.19645"
+        ]
+      },
+      "repo": "https://github.com/moojink/openvla-oft",
+      "first_publication_date": "2025/02/27",
+      "recommended_reading": "A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods.",
+      "resource_links": [
+        {
+          "label": "Project",
+          "url": "https://openvla-oft.github.io/"
+        }
+      ],
+      "stars": {
+        "value": 1440,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/moojink/openvla-oft",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E94",
+      "name": "SimpleVLA-RL",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Applies RL to VLAs including OpenVLA-OFT, with training, rollout, and evaluation workflows for LIBERO and RoboTwin.",
+      "paper_url": "https://arxiv.org/abs/2509.09674",
+      "paper_title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+      "authors": [
+        "Li, Haozhan",
+        "Zuo, Yuxin",
+        "Yu, Jiale",
+        "Zhang, Yuhao",
+        "Yang, Zhaohui",
+        "Zhang, Kaiyan",
+        "Zhu, Xuekai",
+        "Zhang, Yuchen",
+        "Chen, Tianxing",
+        "Cui, Ganqu",
+        "Wang, Dehui",
+        "Luo, Dingxiang",
+        "Fan, Yuchen",
+        "Sun, Youbang",
+        "Zeng, Jia",
+        "Pang, Jiangmiao",
+        "Zhang, Shanghang",
+        "Wang, Yu",
+        "Mu, Yao",
+        "Zhou, Bowen",
+        "Ding, Ning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2509.09674",
+        "https://github.com/PRIME-RL/SimpleVLA-RL",
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html"
+      ],
+      "citation_counts": [
+        {
+          "value": 1,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7081569152",
+          "source_record_title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2509.09674",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Tsinghua University",
+          "Shanghai AI Lab",
+          "Shanghai Jiao Tong University",
+          "Peking University",
+          "University of Hong Kong"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2509.09674"
+        ]
+      },
+      "repo": "https://github.com/PRIME-RL/SimpleVLA-RL",
+      "first_publication_date": "2025/09/11",
+      "recommended_reading": "Read after SFT to examine environment rewards, rollout cost, and generalization evaluation.",
+      "stars": {
+        "value": 1903,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/PRIME-RL/SimpleVLA-RL",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E95",
+      "name": "NaVILA",
+      "category": "embodied",
+      "kind": "Paper",
+      "year": 2024,
+      "summary": "A high-level VLA emits spatial-language commands for a low-level visual locomotion policy, with experiments on Go2 and other platforms.",
+      "paper_url": "https://arxiv.org/abs/2412.04453",
+      "paper_title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+      "authors": [
+        "Cheng, An-Chieh",
+        "Ji, Yandong",
+        "Yang, Zhaojing",
+        "Gongye, Zaitian",
+        "Zou, Xueyan",
+        "Kautz, Jan",
+        "Bıyık, Erdem",
+        "Yin, Hongxu",
+        "Liu, Sifei",
+        "Wang, Xiaolong"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2412.04453",
+        "https://github.com/AnjieCheng/NaVILA",
+        "https://navila-bot.github.io/"
+      ],
+      "citation_counts": [
+        {
+          "value": 55,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414050442",
+          "source_record_title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+          "source_record_doi": "https://doi.org/10.15607/rss.2025.xxi.018",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://navila-bot.github.io/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "UC San Diego",
+          "University of Southern California",
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2412.04453"
+        ]
+      },
+      "repo": "https://github.com/AnjieCheng/NaVILA",
+      "first_publication_date": "2024/12/05",
+      "recommended_reading": "Study how language tasks reach a mobile robot through the high/low-level interface and closed-loop feedback.",
+      "resource_links": [
+        {
+          "label": "Locomotion",
+          "url": "https://github.com/yang-zj1026/legged-loco"
+        }
+      ],
+      "stars": {
+        "value": 731,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/AnjieCheng/NaVILA",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E96",
+      "name": "Qwen-RobotNav",
+      "category": "industry",
+      "kind": "Paper",
+      "year": 2026,
+      "summary": "A Qwen3-VL navigation-system report covering task modes, context, waypoint interfaces, and Go2 deployment.",
+      "paper_url": "https://arxiv.org/abs/2606.18112",
+      "paper_title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+      "authors": [
+        "Zhang, Jiazhao",
+        "Zhou, Gengze",
+        "Yin, Hale",
+        "Huang, Yiyang",
+        "Lei, Zixing",
+        "Peng, Qihang",
+        "Yuan, Haoqi",
+        "Zhang, Jie",
+        "Guo, Xudong",
+        "Chen, Xiaoyue",
+        "Yang, An",
+        "Huang, Fei",
+        "Yang, Zhibo",
+        "Lin, Junyang",
+        "Liu, Dayiheng",
+        "Zhou, Jingren",
+        "Yu, Zhuoyuan",
+        "Fan, Jingyang",
+        "Liang, Zhixuan",
+        "Lin, Pei",
+        "Wang, Ye",
+        "Li, Haoyang",
+        "Chen, Anzhe",
+        "Yan, Kun",
+        "Xu, Xiao",
+        "Li, Jiahao",
+        "Hu, Lulu",
+        "Zhang, Minying",
+        "Li, Shurui",
+        "Xiao, Wenhu",
+        "Bai, Shuai",
+        "Ren, Xuancheng",
+        "Lv, Chenxu",
+        "Wu, Chenfei",
+        "Chen, Xiong-Hui"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2606.18112",
+        "https://github.com/QwenLM/Qwen-RobotNav"
+      ],
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7165037828",
+          "source_record_title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2606.18112",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "arXiv",
+        "year": 2026,
+        "status": "preprint",
+        "source": "https://arxiv.org/abs/2606.18112",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Alibaba / Qwen Team"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2606.18112"
+        ]
+      },
+      "repo": "https://github.com/QwenLM/Qwen-RobotNav",
+      "first_publication_date": "2026/06/16",
+      "scope_note": "The official repository currently states that weights will not be released; use it as a system-design reference, not a fine-tunable base.",
+      "stars": {
+        "value": 198,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/QwenLM/Qwen-RobotNav",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": null
+      }
+    },
+    {
+      "id": "E97",
+      "name": "Unitree SDK2 / MuJoCo",
+      "category": "robotics",
+      "kind": "Project",
+      "year": 2026,
+      "summary": "Unitree communication/control interfaces and a MuJoCo simulation entry point based on SDK2.",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/unitreerobotics/unitree_sdk2"
+      ],
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": null,
+        "status": "resource",
+        "source": "https://github.com/unitreerobotics/unitree_sdk2",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Unitree Robotics"
+        ],
+        "sources": [
+          "https://github.com/unitreerobotics/unitree_sdk2"
+        ]
+      },
+      "repo": "https://github.com/unitreerobotics/unitree_sdk2",
+      "recommended_reading": "Understand state, commands, and device interfaces before connecting the task layer to executable skills.",
+      "scope_note": "unitree_mujoco primarily targets low-level control; check interface support for the specific robot and firmware.",
+      "resource_links": [
+        {
+          "label": "Python SDK",
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python"
+        },
+        {
+          "label": "MuJoCo",
+          "url": "https://github.com/unitreerobotics/unitree_mujoco"
+        }
+      ],
+      "stars": {
+        "value": 1431,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/unitreerobotics/unitree_sdk2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "BSD-3-Clause"
+      }
+    },
+    {
+      "id": "E98",
+      "name": "Unitree RL mjlab",
+      "category": "robotics",
+      "kind": "Project",
+      "year": 2026,
+      "summary": "MuJoCo/mjlab locomotion-policy training and deployment tools, including Go2 configurations.",
+      "paper_url": null,
+      "paper_title": null,
+      "authors": [],
+      "sources": [
+        "https://github.com/unitreerobotics/unitree_rl_mjlab"
+      ],
+      "citation_counts": [],
+      "publication": {
+        "venue": "Project",
+        "year": 2026,
+        "status": "resource",
+        "source": "https://github.com/unitreerobotics/unitree_rl_mjlab",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "industry",
+        "organizations": [
+          "Unitree Robotics"
+        ],
+        "sources": [
+          "https://github.com/unitreerobotics/unitree_rl_mjlab"
+        ]
+      },
+      "repo": "https://github.com/unitreerobotics/unitree_rl_mjlab",
+      "recommended_reading": "Use official configurations to understand training, simulation playback, and deployment.",
+      "stars": {
+        "value": 719,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/unitreerobotics/unitree_rl_mjlab",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "Apache-2.0"
+      }
+    },
+    {
+      "id": "E99",
+      "name": "ASAP",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Learns discrepancies between simulated and real dynamics from robot data to adapt whole-body motion policies.",
+      "paper_url": "https://arxiv.org/abs/2502.01143",
+      "paper_title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+      "authors": [
+        "He, Tairan",
+        "Gao, Jiawei",
+        "Xiao, Wenli",
+        "Zhang, Yuanhang",
+        "Wang, Zi",
+        "Wang, Jiashun",
+        "Luo, Zhengyi",
+        "He, Guanqi",
+        "Sobanbab, Nikhil",
+        "Pan, Chaoyi",
+        "Yi, Zeji",
+        "Qu, Guannan",
+        "Kitani, Kris",
+        "Hodgins, Jessica",
+        "Fan, Linxi \"Jim\"",
+        "Zhu, Yuke",
+        "Liu, Changliu",
+        "Shi, Guanya"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2502.01143",
+        "https://github.com/LeCAR-Lab/ASAP",
+        "https://agile.human2humanoid.com/"
+      ],
+      "citation_counts": [
+        {
+          "value": 58,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4414051111",
+          "source_record_title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+          "source_record_doi": "https://doi.org/10.15607/rss.2025.xxi.066",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "RSS",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://agile.human2humanoid.com/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Carnegie Mellon University",
+          "NVIDIA"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2502.01143"
+        ]
+      },
+      "repo": "https://github.com/LeCAR-Lab/ASAP",
+      "first_publication_date": "2025/02/03",
+      "stars": {
+        "value": 2138,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/LeCAR-Lab/ASAP",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E100",
+      "name": "TWIST2",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Whole-body teleoperation and motion tracking for collecting humanoid data with contact and bimanual coordination.",
+      "paper_url": "https://arxiv.org/abs/2511.02832",
+      "paper_title": "TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System",
+      "authors": [
+        "Ze, Yanjie",
+        "Zhao, Siheng",
+        "Wang, Weizhuo",
+        "Kanazawa, Angjoo",
+        "Duan, Rocky",
+        "Abbeel, Pieter",
+        "Shi, Guanya",
+        "Wu, Jiajun",
+        "Liu, C. Karen"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2511.02832",
+        "https://github.com/amazon-far/TWIST2",
+        "https://yanjieze.com/projects/TWIST2/"
+      ],
+      "citation_counts": [
+        {
+          "value": 0,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W7103984447",
+          "source_record_title": "Twist2 : Scalable, Portable, and Holistic Humanoid Data Collection System",
+          "source_record_doi": "https://doi.org/10.1109/icra57385.2026.11696896",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICRA",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://yanjieze.com/projects/TWIST2/",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Amazon FAR",
+          "Stanford University",
+          "University of Southern California",
+          "UC Berkeley",
+          "Carnegie Mellon University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2511.02832"
+        ]
+      },
+      "repo": "https://github.com/amazon-far/TWIST2",
+      "first_publication_date": "2025/11/04",
+      "scope_note": "Controller training and teleoperation are released; check the separate release status of the high-level visuomotor policy.",
+      "resource_links": [
+        {
+          "label": "TWIST",
+          "url": "https://yanjieze.com/projects/TWIST/"
+        }
+      ],
+      "stars": {
+        "value": 894,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/amazon-far/TWIST2",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E101",
+      "name": "RoboTwin 2.0",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2025,
+      "summary": "Builds bimanual tasks through automated simulation data generation and domain randomization, with pre-collected trajectories.",
+      "paper_url": "https://arxiv.org/abs/2506.18088",
+      "paper_title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+      "authors": [
+        "Chen, Tianxing",
+        "Chen, Zanxin",
+        "Chen, Baijun",
+        "Cai, Zijian",
+        "Liu, Yibin",
+        "Li, Zixuan",
+        "Liang, Qiwei",
+        "Lin, Xianliang",
+        "Ge, Yiheng",
+        "Gu, Zhenyu",
+        "Deng, Weiliang",
+        "Guo, Yubin",
+        "Nian, Tian",
+        "Xie, Xuanbing",
+        "Chen, Qiangyu",
+        "Su, Kailun",
+        "Xu, Tianling",
+        "Liu, Guodong",
+        "Hu, Mengkang",
+        "Gao, Huan-ang",
+        "Wang, Kaixuan",
+        "Liang, Zhixuan",
+        "Qin, Yusen",
+        "Yang, Xiaokang",
+        "Luo, Ping",
+        "Mu, Yao"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2506.18088",
+        "https://github.com/RoboTwin-Platform/RoboTwin"
+      ],
+      "citation_counts": [
+        {
+          "value": 2,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W6929480010",
+          "source_record_title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2506.18088",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "status": "conference",
+        "source": "https://github.com/RoboTwin-Platform/RoboTwin",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "joint",
+        "organizations": [
+          "Shanghai AI Lab",
+          "Shenzhen University",
+          "Nanjing University",
+          "SJTU",
+          "HKU",
+          "TeleAI",
+          "D-Robotics"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2506.18088"
+        ]
+      },
+      "repo": "https://github.com/RoboTwin-Platform/RoboTwin",
+      "first_publication_date": "2025/06/22",
+      "recommended_reading": "Start with released data for training and evaluation, then study task generation and randomization.",
+      "stars": {
+        "value": 3032,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/RoboTwin-Platform/RoboTwin",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
+    },
+    {
+      "id": "E102",
+      "name": "RDT-1B",
+      "category": "robotics",
+      "kind": "Paper",
+      "year": 2024,
+      "summary": "A diffusion base for bimanual manipulation with a unified action representation and a lighter 170M variant.",
+      "paper_url": "https://arxiv.org/abs/2410.07864",
+      "paper_title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+      "authors": [
+        "Liu, Songming",
+        "Wu, Lingxuan",
+        "Li, Bangguo",
+        "Tan, Hengkai",
+        "Chen, Huayu",
+        "Wang, Zhengyi",
+        "Xu, Ke",
+        "Su, Hang",
+        "Zhu, Jun"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2410.07864",
+        "https://github.com/thu-ml/RoboticsDiffusionTransformer"
+      ],
+      "citation_counts": [
+        {
+          "value": 5,
+          "source": "OpenAlex",
+          "url": "https://openalex.org/W4403364995",
+          "source_record_title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+          "source_record_doi": "https://doi.org/10.48550/arxiv.2410.07864",
+          "checked_at": "2026-11-03",
+          "match": "DOI or exact normalized title"
+        }
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2025,
+        "status": "conference",
+        "source": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+        "checked_at": "2026-11-03"
+      },
+      "origin": {
+        "kind": "academic",
+        "organizations": [
+          "Tsinghua University"
+        ],
+        "sources": [
+          "https://arxiv.org/html/2410.07864"
+        ]
+      },
+      "repo": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+      "first_publication_date": "2024/10/10",
+      "stars": {
+        "value": 1816,
+        "source": "GitHub REST API",
+        "url": "https://api.github.com/repos/thu-ml/RoboticsDiffusionTransformer",
+        "checked_at": "2026-11-03",
+        "scope": "whole repository",
+        "license_spdx": "MIT"
+      }
     }
   ],
   "surveys": [

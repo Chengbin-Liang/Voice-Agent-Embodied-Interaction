@@ -4,6 +4,15 @@
 
 [Home](README.en.md) · [Catalog](CATALOG.en.md) · [Surveys](SURVEYS.en.md)
 
+## 🦾 Open robot bases and tools
+
+| Project | Type | Useful reading and implementation resources |
+|---|---|---|
+| ⭐ [openpi / π0 · π0.5](CATALOG.en.md#e91) | Industry · weights and training code | Custom robot data, action spaces, and fine-tuning. |
+| ⭐ [Isaac GR00T N1.7](CATALOG.en.md#e92) | Industry · weights and training code | New embodiments, data specifications, and pretrained-policy adaptation. |
+| ⭐ [Unitree SDK2 / MuJoCo](CATALOG.en.md#e97) · [RL mjlab](CATALOG.en.md#e98) | Industry · interfaces and training tools | Communication, state, simulation, locomotion policies, and deployment. |
+| [Qwen-RobotNav](CATALOG.en.md#e96) | Industry · report and demonstrations | Navigation system and waypoint interface; weights are currently unavailable. |
+
 ## 🤖 Robotics and embodied interaction
 
 | Project | Organization and type | Capabilities to study | Availability and scope |
@@ -14,7 +23,7 @@
 | [Figure Helix 02](CATALOG.en.md#e28) | [![Technical Demo 2026](https://img.shields.io/badge/Technical%20Demo%202026-475569?style=flat-square)](https://www.figure.ai/news/helix-02) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://www.figure.ai/news/helix-02) Figure | A hierarchy of semantic planning, visuomotor behavior, and whole-body control. | Technical demonstration; access to an equivalent training system should not be assumed. |
 | [Hi Robot](CATALOG.en.md#e25) | [![ICML 2025](https://img.shields.io/badge/ICML%202025-475569?style=flat-square)](https://proceedings.mlr.press/v267/shi25d.html) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2502.19417) Author team includes Physical Intelligence | High-level language reasoning accepts feedback while a low-level policy executes. | Research paper; useful for studying hierarchical interfaces and feedback experiments. |
 
-For voice and edge infrastructure, see [FireRedChat](CATALOG.en.md#e29), [Qwen Audio Agent](CATALOG.en.md#e30), [MiniCPM-o 4.5](CATALOG.en.md#e01), and [MNN](CATALOG.en.md#e18). Check availability of models, code, data, and service APIs separately.
+For voice and edge infrastructure, see [FireRedChat](CATALOG.en.md#e29), [Qwen Audio Agent](CATALOG.en.md#e30), [MiniCPM-o 4.5](CATALOG.en.md#e01), and [MNN](CATALOG.en.md#e18).
 
 ## 🎙️ Real-time Voice Agent technical papers
 

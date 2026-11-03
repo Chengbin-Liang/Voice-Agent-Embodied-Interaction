@@ -2,15 +2,101 @@
 
 [中文](CATALOG.md) | **English**
 
-[Home](README.en.md) · [Catalog](CATALOG.en.md) · [Surveys](SURVEYS.en.md) · [Benchmarks](05-Voice-Agent-Benchmarks.en.md)
+[Home](README.en.md) · [Survey](SURVEYS.en.md) · [Benchmarks](05-Voice-Agent-Benchmarks.en.md)
 
-Browse by technical topic. ⭐ marks suggested first readings. See the [label guide](README.en.md#labels) for counting conventions.
+⭐ Suggested first readings include a reason. See the [label guide](README.en.md#labels).
 
-[🎧 Omni and speech models](#omni) · [💬 Voice agents and interaction systems](#voice) · [🤖 Embodied interaction and language feedback](#embodied) · [🦾 Actions, data, and deployment](#robotics) · [📏 Evaluation](#evaluation) · [🏭 Industry demonstrations](#industry)
+[🧠 LLM post-training and reinforcement learning](#llm) · [🎧 ALM / Omni and speech models](#omni) · [💬 Voice agents and interaction systems](#voice) · [🤖 Embodied interaction and language feedback](#embodied) · [🦾 Actions, data, and deployment](#robotics) · [📏 Evaluation](#evaluation) · [🏭 Industry demonstrations](#industry)
+
+<a id="llm"></a>
+
+## 🧠 LLM post-training and reinforcement learning
+
+<a id="e75"></a>
+
+### ⭐ PPO
+
+[![arXiv 2017](https://img.shields.io/badge/arXiv%202017-475569?style=flat-square)](https://arxiv.org/abs/1707.06347) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/1707.06347)
+
+[📄 Paper](https://arxiv.org/abs/1707.06347) · [💻 Repository](https://github.com/openai/baselines) · [![★ 16,775](https://img.shields.io/badge/%E2%98%85%2016%2C775-eab308?style=flat-square)](https://github.com/openai/baselines) [![Cite OA 10,618](https://img.shields.io/badge/Cite%20OA%2010%2C618-0284c7?style=flat-square)](https://openalex.org/W2736601468)
+
+Optimizes rewards on sampled trajectories while constraining policy updates; a foundation for subsequent RLHF methods.
+
+📌 Why read first: Learn policies, rewards, advantages, and the clipped objective before PPO for language models.
+
+Organizations / maintainers: OpenAI
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e76"></a>
+
+### ⭐ InstructGPT / RLHF
+
+[![NeurIPS 2022](https://img.shields.io/badge/NeurIPS%202022-475569?style=flat-square)](https://arxiv.org/abs/2203.02155) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2203.02155)
+
+[📄 Paper](https://arxiv.org/abs/2203.02155) · [![Cite OA 4,208](https://img.shields.io/badge/Cite%20OA%204%2C208-0284c7?style=flat-square)](https://openalex.org/W4226278401)
+
+Combines supervised demonstrations, a reward model trained on human rankings, and PPO optimization.
+
+📌 Why read first: Establish the SFT → preferences → reward model → RL pipeline.
+
+Organizations / maintainers: OpenAI
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e77"></a>
+
+### ⭐ DPO
+
+[![NeurIPS 2023](https://img.shields.io/badge/NeurIPS%202023-475569?style=flat-square)](https://arxiv.org/abs/2305.18290) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2305.18290)
+
+[📄 Paper](https://arxiv.org/abs/2305.18290) · [💻 Repository](https://github.com/eric-mitchell/direct-preference-optimization) · [![★ 2,922](https://img.shields.io/badge/%E2%98%85%202%2C922-eab308?style=flat-square)](https://github.com/eric-mitchell/direct-preference-optimization) Cite —
+
+Optimizes relative response probabilities from preference pairs, providing an offline alternative to online RL.
+
+📌 Why read first: Understand how the same preference data supports different post-training methods.
+
+DPO itself does not require online environment rollouts.
+
+Organizations / maintainers: Stanford University
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e78"></a>
+
+### ⭐ DeepSeekMath / GRPO
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2402.03300) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2402.03300)
+
+[📄 Paper](https://arxiv.org/abs/2402.03300) · [💻 Repository](https://github.com/deepseek-ai/DeepSeek-Math) · [![★ 3,478](https://img.shields.io/badge/%E2%98%85%203%2C478-eab308?style=flat-square)](https://github.com/deepseek-ai/DeepSeek-Math) [![Cite OA 101](https://img.shields.io/badge/Cite%20OA%20101-0284c7?style=flat-square)](https://openalex.org/W4391631327)
+
+Introduces GRPO for mathematical reasoning, deriving relative advantages from groups of sampled answers.
+
+📌 Why read first: Study group rewards, advantage estimation, and KL regularization for verifiable-reward training.
+
+Organizations / maintainers: DeepSeek-AI; Tsinghua University; Peking University
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e79"></a>
+
+### DeepSeek-R1
+
+[![Nature 2025](https://img.shields.io/badge/Nature%202025-475569?style=flat-square)](https://www.nature.com/articles/s41586-025-09422-z) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2501.12948)
+
+[📄 Paper](https://arxiv.org/abs/2501.12948) · [💻 Repository](https://github.com/deepseek-ai/DeepSeek-R1) · [![★ 91,995](https://img.shields.io/badge/%E2%98%85%2091%2C995-eab308?style=flat-square)](https://github.com/deepseek-ai/DeepSeek-R1) [![Cite OA 1,701](https://img.shields.io/badge/Cite%20OA%201%2C701-0284c7?style=flat-square)](https://openalex.org/W4414281281)
+
+Studies reasoning RL, cold starts, multistage post-training, and distillation into smaller models.
+
+Distilled checkpoints support adaptation; released weights and the complete original RL training pipeline are distinct resources.
+
+Organizations / maintainers: DeepSeek-AI
+
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="omni"></a>
 
-## 🎧 Omni and speech models
+## 🎧 ALM / Omni and speech models
 
 <a id="e01"></a>
 
@@ -24,11 +110,11 @@ Organizes continuous audio/video input and text/speech output on a shared timeli
 
 📌 Why read first: Study continuous audiovisual input, full-duplex output, and deployment requirements.
 
-Scope: Use the official requirements for each full-duplex mode; distinguish model memory from total system memory.
+Use the official requirements for each full-duplex mode; distinguish model memory from total system memory.
 
-Organizations / maintainers: Tsinghua University / THUNLP; ModelBest; OpenBMB.
+Organizations / maintainers: Tsinghua University / THUNLP; ModelBest; OpenBMB
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e02"></a>
 
@@ -42,11 +128,11 @@ Accepts audio, video, images, and text, and jointly generates text and speech; a
 
 📌 Why read first: Establish a reference for Thinker–Talker architecture, data, and staged training.
 
-Scope: Streaming speech output does not imply native simultaneous listening and speaking; MNN support depends on the deployment mode.
+Streaming speech output does not imply native simultaneous listening and speaking; MNN support depends on the deployment mode.
 
-Organizations / maintainers: Qwen Team / Alibaba.
+Organizations / maintainers: Qwen Team / Alibaba
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e03"></a>
 
@@ -58,9 +144,9 @@ Organizations / maintainers: Qwen Team / Alibaba.
 
 An MoE Thinker–Talker approach covering multimodal understanding and real-time speech generation.
 
-Organizations / maintainers: Qwen Team / Alibaba.
+Organizations / maintainers: Qwen Team / Alibaba
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e04"></a>
 
@@ -72,9 +158,9 @@ Organizations / maintainers: Qwen Team / Alibaba.
 
 Targets audiovisual multi-turn interaction, with 4B and 8B models and multi-turn evaluation.
 
-Organizations / maintainers: SenseTime Research.
+Organizations / maintainers: SenseTime Research
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e05"></a>
 
@@ -86,9 +172,9 @@ Organizations / maintainers: SenseTime Research.
 
 A multimodal model for real-time visual and speech interaction, with training and inference workflows.
 
-Organizations / maintainers: Nanjing University; Xiamen University; CASIA; Tencent Youtu Lab.
+Organizations / maintainers: Nanjing University; Xiamen University; CASIA; Tencent Youtu Lab
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e06"></a>
 
@@ -100,9 +186,9 @@ Organizations / maintainers: Nanjing University; Xiamen University; CASIA; Tence
 
 An early open experimental system supporting image, speech, and text inputs with real-time speech output.
 
-Organizations / maintainers: Tsinghua University; Inspirai.
+Organizations / maintainers: Tsinghua University; Inspirai
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e07"></a>
 
@@ -116,9 +202,9 @@ Models two-way speech streams together with text, providing an open research fou
 
 📌 Why read first: Understand bidirectional speech streams, text assistance, and low-latency generation.
 
-Organizations / maintainers: Kyutai.
+Organizations / maintainers: Kyutai
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e08"></a>
 
@@ -130,9 +216,185 @@ Organizations / maintainers: Kyutai.
 
 Combines a frozen language model with streaming speech encoding/decoding and chunk-level state prediction.
 
-Organizations / maintainers: Northwestern Polytechnical University; Nanjing University; Tencent Youtu Lab.
+Organizations / maintainers: Northwestern Polytechnical University; Nanjing University; Tencent Youtu Lab
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
+
+<a id="e80"></a>
+
+### ⭐ Qwen2-Audio
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2407.10759) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2407.10759)
+
+[📄 Paper](https://arxiv.org/abs/2407.10759) · [💻 Repository](https://github.com/QwenLM/Qwen2-Audio) · [![★ 2,101](https://img.shields.io/badge/%E2%98%85%202%2C101-eab308?style=flat-square)](https://github.com/QwenLM/Qwen2-Audio) [![Cite OA 8](https://img.shields.io/badge/Cite%20OA%208-0284c7?style=flat-square)](https://openalex.org/W4400717319)
+
+A 7B audio language model for speech, sound, and music understanding with text responses.
+
+📌 Why read first: Start with connecting an audio encoder to an LLM and establishing an audio-understanding baseline.
+
+Organizations / maintainers: Alibaba / Qwen Team
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e81"></a>
+
+### GLM-4-Voice
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2412.02612) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.02612)
+
+[📄 Paper](https://arxiv.org/abs/2412.02612) · [💻 Repository](https://github.com/zai-org/GLM-4-Voice) · [![★ 3,243](https://img.shields.io/badge/%E2%98%85%203%2C243-eab308?style=flat-square)](https://github.com/zai-org/GLM-4-Voice) [![Cite OA 4](https://img.shields.io/badge/Cite%20OA%204-0284c7?style=flat-square)](https://openalex.org/W4405057125)
+
+A 9B spoken-dialogue model with discrete speech tokens, interleaved speech/text modeling, and streaming decoding.
+
+Organizations / maintainers: Tsinghua University; Zhipu.AI
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e82"></a>
+
+### ⭐ Audio Flamingo 3
+
+[![NeurIPS Spotlight 2025](https://img.shields.io/badge/NeurIPS%20Spotlight%202025-475569?style=flat-square)](https://openreview.net/forum?id=FjByDpDVIO) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2507.08128)
+
+[📄 Paper](https://arxiv.org/abs/2507.08128) · [💻 Repository](https://github.com/NVIDIA/audio-flamingo) · [🔗 Training](https://github.com/NVIDIA/audio-flamingo/tree/audio_flamingo_3) · [![★ 1,219](https://img.shields.io/badge/%E2%98%85%201%2C219-eab308?style=flat-square)](https://github.com/NVIDIA/audio-flamingo) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W6929354950)
+
+A 7B audio language model for speech, sound, music, and audio reasoning, with training, data, and inference resources.
+
+📌 Why read first: Read data construction and staged training alongside the released training branch.
+
+Check model and data licenses separately; the weights use a noncommercial research license.
+
+Organizations / maintainers: NVIDIA; University of Maryland
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e83"></a>
+
+### Audio Flamingo Next
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2604.10905) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2604.10905)
+
+[📄 Paper](https://arxiv.org/abs/2604.10905) · [🔗 Weights](https://huggingface.co/nvidia/audio-flamingo-next-hf) · [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7154207876)
+
+Extends long-audio understanding, temporal grounding, speaker attribution, and multi-speaker reasoning.
+
+The released HF checkpoint takes audio/text and outputs text; streaming speech generation is not part of that checkpoint.
+
+Organizations / maintainers: NVIDIA; University of Maryland
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e84"></a>
+
+### ⭐ MiMo-Audio
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2512.23808) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2512.23808)
+
+[📄 Paper](https://arxiv.org/abs/2512.23808) · [💻 Repository](https://github.com/XiaomiMiMo/MiMo-Audio) · [🔗 Training](https://github.com/XiaomiMiMo/MiMo-Audio-Training) · [![★ 1,088](https://img.shields.io/badge/%E2%98%85%201%2C088-eab308?style=flat-square)](https://github.com/XiaomiMiMo/MiMo-Audio) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W7117988839)
+
+7B speech base and instruction models with an official fine-tuning toolkit for ASR, TTS, audio understanding, and spoken dialogue.
+
+📌 Why read first: Inspect task data formats and SFT scripts as an entry point to adapting an existing speech base.
+
+Organizations / maintainers: Xiaomi MiMo
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e85"></a>
+
+### Step-Audio 2
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2507.16632) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2507.16632)
+
+[📄 Paper](https://arxiv.org/abs/2507.16632) · [💻 Repository](https://github.com/stepfun-ai/Step-Audio2) · [![★ 1,526](https://img.shields.io/badge/%E2%98%85%201%2C526-eab308?style=flat-square)](https://github.com/stepfun-ai/Step-Audio2) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W4415202956)
+
+Targets multimodal speech interaction, audio reasoning, and tool use, with Mini-series checkpoints and inference code.
+
+Organizations / maintainers: StepFun
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e86"></a>
+
+### ⭐ SALMONN
+
+[![ICLR 2024](https://img.shields.io/badge/ICLR%202024-475569?style=flat-square)](https://github.com/bytedance/SALMONN/tree/salmonn) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2310.13289)
+
+[📄 Paper](https://arxiv.org/abs/2310.13289) · [💻 Repository](https://github.com/bytedance/SALMONN) · [🔗 Training](https://github.com/bytedance/SALMONN/tree/salmonn) · [![★ 1,564](https://img.shields.io/badge/%E2%98%85%201%2C564-eab308?style=flat-square)](https://github.com/bytedance/SALMONN) [![Cite OA 67](https://img.shields.io/badge/Cite%20OA%2067-0284c7?style=flat-square)](https://openalex.org/W4387891768)
+
+Combines speech and general-audio encoders with an adapter and an LLM for speech, sound, and music tasks.
+
+📌 Why read first: Understand how dual encoders, an adapter, and multitask training retain information beyond ASR.
+
+Organizations / maintainers: Tsinghua University; ByteDance
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e87"></a>
+
+### ⭐ SpeechGPT
+
+[![EMNLP Findings 2023](https://img.shields.io/badge/EMNLP%20Findings%202023-475569?style=flat-square)](https://aclanthology.org/2023.findings-emnlp.1055/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2305.11000)
+
+[📄 Paper](https://arxiv.org/abs/2305.11000) · [💻 Repository](https://github.com/0nutation/SpeechGPT) · [![★ 1,401](https://img.shields.io/badge/%E2%98%85%201%2C401-eab308?style=flat-square)](https://github.com/0nutation/SpeechGPT) [![Cite OA 189](https://img.shields.io/badge/Cite%20OA%20189-0284c7?style=flat-square)](https://openalex.org/W4389524500)
+
+Extends a text LLM to speech input/output using discrete speech units and SpeechInstruct.
+
+📌 Why read first: Follow modality adaptation, cross-modal instruction tuning, and chain-of-modality tuning.
+
+Organizations / maintainers: Fudan University
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e88"></a>
+
+### ⭐ BLSP
+
+[![arXiv 2023](https://img.shields.io/badge/arXiv%202023-475569?style=flat-square)](https://arxiv.org/abs/2309.00916) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2309.00916)
+
+[📄 Paper](https://arxiv.org/abs/2309.00916) · [💻 Repository](https://github.com/cwang621/blsp) · [![★ 59](https://img.shields.io/badge/%E2%98%85%2059-eab308?style=flat-square)](https://github.com/cwang621/blsp) [![Cite OA 9](https://img.shields.io/badge/Cite%20OA%209-0284c7?style=flat-square)](https://openalex.org/W4386552581)
+
+Trains a lightweight adapter between a frozen speech encoder and LLM by aligning continuations from speech and transcripts.
+
+📌 Why read first: A clear training objective and trainable module make it useful for understanding lightweight speech adaptation.
+
+Organizations / maintainers: CASIA; UCAS; Alibaba DAMO Academy
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e89"></a>
+
+### ⭐ LLaMA-Omni2
+
+[![ACL 2025](https://img.shields.io/badge/ACL%202025-475569?style=flat-square)](https://aclanthology.org/2025.acl-long.912/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.02625)
+
+[📄 Paper](https://arxiv.org/abs/2505.02625) · [💻 Repository](https://github.com/ictnlp/LLaMA-Omni2) · [![★ 281](https://img.shields.io/badge/%E2%98%85%20281-eab308?style=flat-square)](https://github.com/ictnlp/LLaMA-Omni2) [![Cite OA 11](https://img.shields.io/badge/Cite%20OA%2011-0284c7?style=flat-square)](https://openalex.org/W4412944968)
+
+Builds bilingual spoken dialogue and streaming speech generation on Qwen2.5, with multiple model sizes and inference code.
+
+📌 Why read first: Use the 0.5B–3B variants to study instruction data, alignment, and streaming output before scaling.
+
+Code and models have different licenses; models are for research use.
+
+Organizations / maintainers: Institute of Computing Technology, CAS; UCAS
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e90"></a>
+
+### PersonaPlex
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2602.06053) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2602.06053)
+
+[📄 Paper](https://arxiv.org/abs/2602.06053) · [💻 Repository](https://github.com/NVIDIA/personaplex) · [![★ 12,018](https://img.shields.io/badge/%E2%98%85%2012%2C018-eab308?style=flat-square)](https://github.com/NVIDIA/personaplex) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W7128377012)
+
+A Moshi-based 7B full-duplex model with voice and text prompts for speaker and role control.
+
+The official release provides weights and inference; read DuplexGen for a related training workflow.
+
+Organizations / maintainers: NVIDIA
+
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="voice"></a>
 
@@ -150,9 +412,9 @@ A full-duplex speech system covering turn control, target-speaker interruption, 
 
 📌 Why read first: Use the modular implementation to understand interruption control, dialogue state, and tool use.
 
-Organizations / maintainers: Xiaohongshu / FireRed Team.
+Organizations / maintainers: Xiaohongshu / FireRed Team
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e30"></a>
 
@@ -164,9 +426,9 @@ Organizations / maintainers: Xiaohongshu / FireRed Team.
 
 An engineering entry point for asynchronous task coordination and cancellation between a speech frontend and a backend agent.
 
-Organizations / maintainers: Qwen / Alibaba.
+Organizations / maintainers: Qwen / Alibaba
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e09"></a>
 
@@ -178,11 +440,11 @@ Organizations / maintainers: Qwen / Alibaba.
 
 Produces speech and a structured action channel on a shared timeline, studying planning and tool use during conversation.
 
-Scope: The action channel primarily represents structured planning and tool operations, not direct joint control.
+The action channel primarily represents structured planning and tool operations, not direct joint control.
 
-Organizations / maintainers: StepFun; Peking University; Nanyang Technological University; Shanghai Jiao Tong University; University of New South Wales; Imperial College London.
+Organizations / maintainers: StepFun; Peking University; Nanyang Technological University; Shanghai Jiao Tong University; University of New South Wales; Imperial College London
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e31"></a>
 
@@ -194,11 +456,11 @@ Organizations / maintainers: StepFun; Peking University; Nanyang Technological U
 
 Trains a coordinator between the interaction frontend and background tasks to manage switching, state, and stale results.
 
-Scope: Research on software-agent coordination does not by itself establish gains on physical robot tasks.
+Research on software-agent coordination does not by itself establish gains on physical robot tasks.
 
-Organizations / maintainers: CUHK Shenzhen; Tencent Hunyuan; Amphion Technology.
+Organizations / maintainers: CUHK Shenzhen; Tencent Hunyuan; Amphion Technology
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e36"></a>
 
@@ -210,11 +472,11 @@ Organizations / maintainers: CUHK Shenzhen; Tencent Hunyuan; Amphion Technology.
 
 A framework for engineering real-time audiovisual agents and applications.
 
-Scope: The LICENSE includes conditions beyond Apache-2.0, including provisions on endpoint-device hosting; read the official LICENSE before deployment.
+The LICENSE includes conditions beyond Apache-2.0, including provisions on endpoint-device hosting; read the official LICENSE before deployment.
 
-Organizations / maintainers: Agora; Contributor community.
+Organizations / maintainers: Agora; Contributor community
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e37"></a>
 
@@ -228,11 +490,11 @@ Uses AgentChat data, Think-before-Speak, and dynamic tool retrieval to learn a r
 
 📌 Why read first: Begin with AgentChat formats, training objectives, and tool-loop experiments to connect conversation with task execution.
 
-Scope: Benefits from asynchronous tool management do not establish simultaneous listening/speaking under every condition; inspect the experiments separately.
+Benefits from asynchronous tool management do not establish simultaneous listening/speaking under every condition; inspect the experiments separately.
 
-Organizations / maintainers: Zhejiang University; China University of Petroleum–Beijing at Karamay; Xiamen University.
+Organizations / maintainers: Zhejiang University; China University of Petroleum–Beijing at Karamay; Xiamen University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e38"></a>
 
@@ -246,9 +508,9 @@ Controls voice, topic, backchannels, interruptions, and conversation initiation 
 
 📌 Why read first: Learn how interaction behaviors become supervised, controllable instructions alongside speech-generation quality.
 
-Organizations / maintainers: Karlsruhe Institute of Technology; University of Edinburgh; NatWest.
+Organizations / maintainers: Karlsruhe Institute of Technology; University of Edinburgh; NatWest
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e39"></a>
 
@@ -262,9 +524,9 @@ Converts real multiparty recordings into temporally aligned two-channel training
 
 📌 Why read first: Study how real recordings become full-duplex training data, especially alignment, overlap, and filtering.
 
-Organizations / maintainers: KAIST; NAVER Cloud.
+Organizations / maintainers: KAIST; NAVER Cloud
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e40"></a>
 
@@ -276,9 +538,9 @@ Organizations / maintainers: KAIST; NAVER Cloud.
 
 Compares controlled fusion and cross-attention for routing the user audio stream into an actively generating model.
 
-Organizations / maintainers: The Chinese University of Hong Kong; Tsinghua University; SenseTime.
+Organizations / maintainers: The Chinese University of Hong Kong; Tsinghua University; SenseTime
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e41"></a>
 
@@ -292,9 +554,9 @@ Calibrates turn-taking predictions with a small amount of human preference data,
 
 📌 Why read first: Connect data construction to target interaction behaviors and trace human preferences through synthesis and fine-tuning.
 
-Organizations / maintainers: University of Illinois Urbana-Champaign; Seoul National University; University of California Berkeley; Georgia Institute of Technology; Columbia University.
+Organizations / maintainers: University of Illinois Urbana-Champaign; Seoul National University; University of California Berkeley; Georgia Institute of Technology; Columbia University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e42"></a>
 
@@ -306,9 +568,9 @@ Organizations / maintainers: University of Illinois Urbana-Champaign; Seoul Nati
 
 Uses a single autoregressive LLM and a small set of state tokens to jointly model listening, speaking, and stopping, with SFT and DPO.
 
-Organizations / maintainers: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences.
+Organizations / maintainers: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e43"></a>
 
@@ -320,11 +582,11 @@ Organizations / maintainers: Institute of Computing Technology, Chinese Academy 
 
 Extends full-duplex speech modeling to long, multiparty, bilingual conversations, releasing pretraining/fine-tuning data and a benchmark based on real recordings.
 
-Scope: NeurIPS 2026 is reported by the authors on arXiv. Keep MultiTalkBench separate from model training data.
+NeurIPS 2026 is reported by the authors on arXiv. Keep MultiTalkBench separate from model training data.
 
-Organizations / maintainers: The Chinese University of Hong Kong; Centre for Perceptual and Interactive Intelligence (InnoHK).
+Organizations / maintainers: The Chinese University of Hong Kong; Centre for Perceptual and Interactive Intelligence (InnoHK)
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e44"></a>
 
@@ -338,9 +600,9 @@ Adds actually played speech to the history, distinguishing intended speech from 
 
 📌 Why read first: Focus on how playback-grounded history changes subsequent responses and preserves state after interruption.
 
-Organizations / maintainers: Shenzhen Loop Area Institute; The Chinese University of Hong Kong, Shenzhen.
+Organizations / maintainers: Shenzhen Loop Area Institute; The Chinese University of Hong Kong, Shenzhen
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e45"></a>
 
@@ -352,11 +614,11 @@ Organizations / maintainers: Shenzhen Loop Area Institute; The Chinese Universit
 
 Adapts half-duplex speech backbones to full duplex, examining the quality, latency, and compute trade-offs of audio chunk intervals.
 
-Scope: The repository currently offers a Qwen3-Omni 80 ms checkpoint. Reported acoustic latency excludes some compute and service overhead.
+The repository currently offers a Qwen3-Omni 80 ms checkpoint. Reported acoustic latency excludes some compute and service overhead.
 
-Organizations / maintainers: MIT CSAIL; MIT–IBM Watson AI Lab.
+Organizations / maintainers: MIT CSAIL; MIT–IBM Watson AI Lab
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e46"></a>
 
@@ -368,9 +630,9 @@ Organizations / maintainers: MIT CSAIL; MIT–IBM Watson AI Lab.
 
 Combines text-aligned speech modeling with deployment design for full-duplex interaction, including paralinguistic signals and real-time operation.
 
-Organizations / maintainers: MediaTek Research; National Taiwan University; NVIDIA AI Technology Center.
+Organizations / maintainers: MediaTek Research; National Taiwan University; NVIDIA AI Technology Center
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e47"></a>
 
@@ -382,9 +644,9 @@ Organizations / maintainers: MediaTek Research; National Taiwan University; NVID
 
 Estimates target-speaker reliability frame by frame and adaptively fuses audio to improve full-duplex robustness against interfering speakers.
 
-Organizations / maintainers: The Chinese University of Hong Kong; Huawei Leibniz Research Center; Nanyang Technological University.
+Organizations / maintainers: The Chinese University of Hong Kong; Huawei Leibniz Research Center; Nanyang Technological University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e48"></a>
 
@@ -398,11 +660,11 @@ Triggers retrieval asynchronously and injects knowledge into ongoing full-duplex
 
 📌 Why read first: Study the interfaces, triggers, and result injection linking continuous speech interaction with slower retrieval.
 
-Scope: ICML 2026 acceptance is reported by the authors on arXiv. Retrieval tasks differ in scope from general tool execution.
+ICML 2026 acceptance is reported by the authors on arXiv. Retrieval tasks differ in scope from general tool execution.
 
-Organizations / maintainers: Toyota Technological Institute at Chicago; Kyutai; Gradium.
+Organizations / maintainers: Toyota Technological Institute at Chicago; Kyutai; Gradium
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e49"></a>
 
@@ -414,11 +676,11 @@ Organizations / maintainers: Toyota Technological Institute at Chicago; Kyutai; 
 
 Separates a real-time speech frontend from a text-based tool backend, connecting streaming transcription, tool execution, and prefill-and-repeat result delivery.
 
-Scope: Currently a preprint; an intention to submit to ICASSP 2027 is not an acceptance.
+Currently a preprint; an intention to submit to ICASSP 2027 is not an acceptance.
 
-Organizations / maintainers: NVIDIA.
+Organizations / maintainers: NVIDIA
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e50"></a>
 
@@ -430,11 +692,11 @@ Organizations / maintainers: NVIDIA.
 
 Uses rolling masked diffusion to predict interaction frames, reducing backbone calls while studying interaction quality.
 
-Scope: Distinct from NVIDIA's discrete-diffusion paper; use full titles to disambiguate the shared project name.
+Distinct from NVIDIA's discrete-diffusion paper; use full titles to disambiguate the shared project name.
 
-Organizations / maintainers: University of Seoul.
+Organizations / maintainers: University of Seoul
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e51"></a>
 
@@ -446,11 +708,11 @@ Organizations / maintainers: University of Seoul.
 
 Uses autoregression to decide when to speak and discrete diffusion to generate content in parallel, studying full-duplex generation efficiency.
 
-Scope: The paper announces future code and checkpoint releases; an announcement is not treated as an available release.
+The paper announces future code and checkpoint releases; an announcement is not treated as an available release.
 
-Organizations / maintainers: NVIDIA.
+Organizations / maintainers: NVIDIA
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e52"></a>
 
@@ -462,11 +724,11 @@ Organizations / maintainers: NVIDIA.
 
 A cascaded system with causal turn-taking, speculative generation, and reversible playback; playback acknowledgments update durable conversation history.
 
-Scope: Online evidence consists of three operator runs totaling 36 turns. Treat it as an engineering case, not a large user study. Institutional affiliation is unverified.
+Online evidence consists of three operator runs totaling 36 turns. Treat it as an engineering case, not a large user study. Institutional affiliation is unverified.
 
-Organizations / maintainers: Bertil Braun.
+Organizations / maintainers: Bertil Braun
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e53"></a>
 
@@ -478,11 +740,11 @@ Organizations / maintainers: Bertil Braun.
 
 Combines adaptive perception windows, non-blocking cognitive consolidation, and external reasoning for dynamic full-duplex interaction and staged post-training.
 
-Scope: This entry links a technical paper and does not assume that weights or a complete training pipeline are available.
+This entry links a technical paper and does not assume that weights or a complete training pipeline are available.
 
-Organizations / maintainers: Zuoyebang Education Technology.
+Organizations / maintainers: Zuoyebang Education Technology
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e54"></a>
 
@@ -494,9 +756,9 @@ Organizations / maintainers: Zuoyebang Education Technology.
 
 A real-time interaction layer delegates background tasks asynchronously and incorporates returned results, connecting multimodal input, trained policies, and runtime design.
 
-Organizations / maintainers: Ant Group; Tsinghua University.
+Organizations / maintainers: Ant Group; Tsinghua University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e55"></a>
 
@@ -508,11 +770,11 @@ Organizations / maintainers: Ant Group; Tsinghua University.
 
 An open full-duplex speech model using a separate tool channel for action calls and interruptible speech output.
 
-Scope: Code is linked to the nemotron-labs-voicechat branch of NVIDIA-NeMo/Speech. Stars refer to the entire Speech repository.
+Code is linked to the nemotron-labs-voicechat branch of NVIDIA-NeMo/Speech. Stars refer to the entire Speech repository.
 
-Organizations / maintainers: NVIDIA.
+Organizations / maintainers: NVIDIA
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e56"></a>
 
@@ -524,11 +786,11 @@ Organizations / maintainers: NVIDIA.
 
 Organizes real-time speech interaction around listening, conversing, thinking, and acting, with Think-While-Speaking and asynchronous tool execution.
 
-Scope: Links the paper and this version's demonstration; the StepAudio 2 repository is not treated as the complete implementation of this release.
+Links the paper and this version's demonstration; the StepAudio 2 repository is not treated as the complete implementation of this release.
 
-Organizations / maintainers: StepFun.
+Organizations / maintainers: StepFun
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e57"></a>
 
@@ -540,11 +802,11 @@ Organizations / maintainers: StepFun.
 
 Uses Agent GRPO in executable environments and multimodal policy distillation to study task reliability and interaction post-training.
 
-Scope: qwen-audio-agent is a companion runtime; its availability does not imply release of all model weights or training code.
+qwen-audio-agent is a companion runtime; its availability does not imply release of all model weights or training code.
 
-Organizations / maintainers: Alibaba / Qwen.
+Organizations / maintainers: Alibaba / Qwen
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e58"></a>
 
@@ -558,9 +820,9 @@ Coordinates real-time interaction with asynchronous reasoning, using a Writer–
 
 📌 Why read first: Trace the relationship between real-time interaction, asynchronous reasoning, and synthetic data as a reference for end-to-end design.
 
-Organizations / maintainers: Xi’an Jiaotong University; Peking University; Meituan.
+Organizations / maintainers: Xi’an Jiaotong University; Peking University; Meituan
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="embodied"></a>
 
@@ -576,9 +838,9 @@ Organizations / maintainers: Xi’an Jiaotong University; Peking University; Mei
 
 Uses real-time language guidance to steer visuomotor policies, allowing people to adjust a robot's behavior during a task.
 
-Organizations / maintainers: Robotics at Google.
+Organizations / maintainers: Robotics at Google
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e25"></a>
 
@@ -592,11 +854,11 @@ High-level vision-language reasoning converts complex requests and execution-tim
 
 📌 Why read first: Understand the division between high-level language reasoning and low-level action policies.
 
-Scope: Feedback reaches the action policy through high-level planning; this alone does not establish an advantage from raw speech information.
+Feedback reaches the action policy through high-level planning; this alone does not establish an advantage from raw speech information.
 
-Organizations / maintainers: Physical Intelligence; Stanford University; UC Berkeley.
+Organizations / maintainers: Physical Intelligence; Stanford University; UC Berkeley
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e26"></a>
 
@@ -610,11 +872,11 @@ Uses spoken corrections during long robot tasks for immediate adjustment and sub
 
 📌 Why read first: Understand how execution-time corrections support both current control and later learning.
 
-Scope: Spoken corrections primarily enter control and learning through language representations.
+Spoken corrections primarily enter control and learning through language representations.
 
-Organizations / maintainers: Stanford University; UC Berkeley.
+Organizations / maintainers: Stanford University; UC Berkeley
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e24"></a>
 
@@ -626,11 +888,11 @@ Organizations / maintainers: Stanford University; UC Berkeley.
 
 Conditions visuomotor action on raw speech and retrieves speaker-specific information for personalized manipulation.
 
-Scope: Raw speech and speaker-based personalization are distinct from full-duplex speech/action control.
+Raw speech and speaker-based personalization are distinct from full-duplex speech/action control.
 
-Organizations / maintainers: Westlake University; Zhejiang University; Xi’an Jiaotong University.
+Organizations / maintainers: Westlake University; Zhejiang University; Xi’an Jiaotong University
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e21"></a>
 
@@ -644,11 +906,11 @@ Infers intent from dialogue, environmental sound, and vision, then produces mani
 
 📌 Why read first: Understand how environmental sounds and implicit intent enter manipulation tasks.
 
-Scope: This entry refers to OpenMOSS's RoboOmni; distinguish it from other papers with the same name.
+This entry refers to OpenMOSS's RoboOmni; distinguish it from other papers with the same name.
 
-Organizations / maintainers: Fudan University; Shanghai Innovation Institute; National University of Singapore.
+Organizations / maintainers: Fudan University; Shanghai Innovation Institute; National University of Singapore
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e22"></a>
 
@@ -662,11 +924,11 @@ Processes vision, text, speech, and action in a unified architecture, supporting
 
 📌 Why read first: Study joint speech/action modeling and experiments on concurrent speaking, acting, and interruption.
 
-Scope: SALMONN is a shared repository. Its stars are not ELLSA-specific; consult official releases for weights and training resources.
+SALMONN is a shared repository. Its stars are not ELLSA-specific; consult official releases for weights and training resources.
 
-Organizations / maintainers: Tsinghua University; ByteDance.
+Organizations / maintainers: Tsinghua University; ByteDance
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e23"></a>
 
@@ -678,9 +940,25 @@ Organizations / maintainers: Tsinghua University; ByteDance.
 
 Uses parallel active/listening models and control tokens to schedule speech and action, supporting interruption, task switching, and concurrent speech/action.
 
-Organizations / maintainers: Nanjing University; CASIA; Tencent Youtu Lab; Fourier Intelligence.
+Organizations / maintainers: Nanjing University; CASIA; Tencent Youtu Lab; Fourier Intelligence
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
+
+<a id="e95"></a>
+
+### ⭐ NaVILA
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://navila-bot.github.io/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2412.04453)
+
+[📄 Paper](https://arxiv.org/abs/2412.04453) · [💻 Repository](https://github.com/AnjieCheng/NaVILA) · [🔗 Locomotion](https://github.com/yang-zj1026/legged-loco) · [![★ 731](https://img.shields.io/badge/%E2%98%85%20731-eab308?style=flat-square)](https://github.com/AnjieCheng/NaVILA) [![Cite OA 55](https://img.shields.io/badge/Cite%20OA%2055-0284c7?style=flat-square)](https://openalex.org/W4414050442)
+
+A high-level VLA emits spatial-language commands for a low-level visual locomotion policy, with experiments on Go2 and other platforms.
+
+📌 Why read first: Study how language tasks reach a mobile robot through the high/low-level interface and closed-loop feedback.
+
+Organizations / maintainers: UC San Diego; University of Southern California; NVIDIA
+
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e11"></a>
 
@@ -692,11 +970,11 @@ Organizations / maintainers: Nanjing University; CASIA; Tencent Youtu Lab; Fouri
 
 Connects real-time speech, camera tools, and robot motion within a conversation application.
 
-Scope: Primarily head/antenna expression and visual tool use, rather than an arm manipulation platform.
+Primarily head/antenna expression and visual tool use, rather than an arm manipulation platform.
 
-Organizations / maintainers: Pollen Robotics / Hugging Face.
+Organizations / maintainers: Pollen Robotics / Hugging Face
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e12"></a>
 
@@ -708,11 +986,11 @@ Organizations / maintainers: Pollen Robotics / Hugging Face.
 
 Generates coordinated body and facial motion from speech and text, connecting co-speech gesture methods with expressive motion data.
 
-Scope: Targets co-speech gestures and character expression; it does not directly establish physical robot manipulation capability.
+Targets co-speech gestures and character expression; it does not directly establish physical robot manipulation capability.
 
-Organizations / maintainers: The University of Tokyo; Keio University; Max Planck Institute for Intelligent Systems; JAIST; Tsinghua University.
+Organizations / maintainers: The University of Tokyo; Keio University; Max Planck Institute for Intelligent Systems; JAIST; Tsinghua University
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="robotics"></a>
 
@@ -730,9 +1008,9 @@ An open toolkit for robot datasets, policy training, hardware control, and evalu
 
 📌 Why read first: Connect demonstration collection, data inspection, policy training, and real-robot execution.
 
-Organizations / maintainers: Hugging Face; University of Oxford.
+Organizations / maintainers: Hugging Face; University of Oxford
 
-<sub>Count snapshot: 2026-11-02 / 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-02 / 2026-11-03</sub>
 
 <a id="e32"></a>
 
@@ -746,11 +1024,11 @@ Learns action chunks from teleoperated demonstrations, establishing a visuomotor
 
 📌 Why read first: Build intuition for imitation learning from observations, demonstrated actions, and action-chunk prediction.
 
-Scope: Standard ACT is not language-conditioned; choosing between goals requires a skill selector or additional goal conditioning.
+Standard ACT is not language-conditioned; choosing between goals requires a skill selector or additional goal conditioning.
 
-Organizations / maintainers: Stanford University; Meta; UC Berkeley.
+Organizations / maintainers: Stanford University; Meta; UC Berkeley
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e33"></a>
 
@@ -762,11 +1040,11 @@ Organizations / maintainers: Stanford University; Meta; UC Berkeley.
 
 Models conditional action distributions through denoising to generate continuous action sequences.
 
-Scope: The linked paper is the RSS 2023 version; IJRR 2024 is an extension. Citation counts refer to the linked database record.
+The linked paper is the RSS 2023 version; IJRR 2024 is an extension. Citation counts refer to the linked database record.
 
-Organizations / maintainers: Columbia University; Toyota Research Institute; MIT.
+Organizations / maintainers: Columbia University; Toyota Research Institute; MIT
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e34"></a>
 
@@ -780,11 +1058,11 @@ An efficient pretrained VLA reference for adapting language-conditioned actions 
 
 📌 Why read first: Follow the official tutorial to adapt a pretrained VLA to a robot dataset.
 
-Scope: Inputs include text instructions, not native speech. Stars refer to all of LeRobot; a small model alone does not ensure real-time whole-system operation.
+Inputs include text instructions, not native speech. Stars refer to all of LeRobot; a small model alone does not ensure real-time whole-system operation.
 
-Organizations / maintainers: Hugging Face; Sorbonne University; valeo.ai; ENS Paris-Saclay.
+Organizations / maintainers: Hugging Face; Sorbonne University; valeo.ai; ENS Paris-Saclay
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e20"></a>
 
@@ -796,11 +1074,173 @@ Organizations / maintainers: Hugging Face; Sorbonne University; valeo.ai; ENS Pa
 
 A vision-language-conditioned robot action model, providing a foundation for connecting interaction layers with action policies.
 
-Scope: A vision/language-to-action foundation; native speech and real-time interruption need additional system design.
+A vision/language-to-action foundation; native speech and real-time interruption need additional system design.
 
-Organizations / maintainers: Stanford University; UC Berkeley; MIT; Toyota Research Institute; Google DeepMind; Physical Intelligence.
+Organizations / maintainers: Stanford University; UC Berkeley; MIT; Toyota Research Institute; Google DeepMind; Physical Intelligence
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
+
+<a id="e91"></a>
+
+### ⭐ openpi / π0 · π0.5
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2504.16054) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2504.16054)
+
+[📄 Paper](https://arxiv.org/abs/2504.16054) · [💻 Repository](https://github.com/Physical-Intelligence/openpi) · [🔗 π0 paper](https://arxiv.org/abs/2410.24164) · [🔗 π0.5 blog](https://www.physicalintelligence.company/blog/pi05) · [![★ 14,510](https://img.shields.io/badge/%E2%98%85%2014%2C510-eab308?style=flat-square)](https://github.com/Physical-Intelligence/openpi) [![Cite OA 3](https://img.shields.io/badge/Cite%20OA%203-0284c7?style=flat-square)](https://openalex.org/W4414674749)
+
+Releases π0, π0-FAST, and π0.5 weights, inference, and adaptation code, connecting VLMs to continuous actions and multi-robot data.
+
+📌 Why read first: A direct industrial-base selection and adaptation entry point: focus on action formats, normalization, and fine-tuning.
+
+The linked paper is π0.5; the original π0 paper is listed separately. LoRA uses the JAX path; the current PyTorch path does not support LoRA.
+
+Organizations / maintainers: Physical Intelligence
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e92"></a>
+
+### ⭐ Isaac GR00T N1.7
+
+[![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
+
+[💻 Repository](https://github.com/NVIDIA/Isaac-GR00T) · [🔗 N1 background paper](https://arxiv.org/abs/2503.14734) · [![★ 8,308](https://img.shields.io/badge/%E2%98%85%208%2C308-eab308?style=flat-square)](https://github.com/NVIDIA/Isaac-GR00T)
+
+A 3B vision-language-action base with pretrained weights, new-embodiment data adaptation, and fine-tuning workflows.
+
+📌 Why read first: Read embodiment configuration, action spaces, and custom-data fine-tuning to compare industrial adaptation costs.
+
+The current repository is N1.7; the background paper describes the earlier N1. Read configurations and results by version.
+
+Organizations / maintainers: NVIDIA
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e93"></a>
+
+### ⭐ OpenVLA-OFT
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://roboticsproceedings.org/rss21/p017.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2502.19645)
+
+[📄 Paper](https://arxiv.org/abs/2502.19645) · [💻 Repository](https://github.com/moojink/openvla-oft) · [🔗 Project](https://openvla-oft.github.io/) · [![★ 1,440](https://img.shields.io/badge/%E2%98%85%201%2C440-eab308?style=flat-square)](https://github.com/moojink/openvla-oft) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W6948104436)
+
+Builds on OpenVLA with parallel decoding, action chunks, continuous actions, L1 training, and FiLM for language control.
+
+📌 Why read first: A clear base, open training, and explicit compute requirements make it useful for studying adaptation methods.
+
+Organizations / maintainers: Stanford University
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e94"></a>
+
+### ⭐ SimpleVLA-RL
+
+[![ICLR 2026](https://img.shields.io/badge/ICLR%202026-475569?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbfbcb4da14235bd69b134070898ae9d-Abstract-Conference.html) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2509.09674)
+
+[📄 Paper](https://arxiv.org/abs/2509.09674) · [💻 Repository](https://github.com/PRIME-RL/SimpleVLA-RL) · [![★ 1,903](https://img.shields.io/badge/%E2%98%85%201%2C903-eab308?style=flat-square)](https://github.com/PRIME-RL/SimpleVLA-RL) [![Cite OA 1](https://img.shields.io/badge/Cite%20OA%201-0284c7?style=flat-square)](https://openalex.org/W7081569152)
+
+Applies RL to VLAs including OpenVLA-OFT, with training, rollout, and evaluation workflows for LIBERO and RoboTwin.
+
+📌 Why read first: Read after SFT to examine environment rewards, rollout cost, and generalization evaluation.
+
+Organizations / maintainers: Tsinghua University; Shanghai AI Lab; Shanghai Jiao Tong University; Peking University; University of Hong Kong
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e97"></a>
+
+### ⭐ Unitree SDK2 / MuJoCo
+
+[![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
+
+[💻 Repository](https://github.com/unitreerobotics/unitree_sdk2) · [🔗 Python SDK](https://github.com/unitreerobotics/unitree_sdk2_python) · [🔗 MuJoCo](https://github.com/unitreerobotics/unitree_mujoco) · [![★ 1,431](https://img.shields.io/badge/%E2%98%85%201%2C431-eab308?style=flat-square)](https://github.com/unitreerobotics/unitree_sdk2)
+
+Unitree communication/control interfaces and a MuJoCo simulation entry point based on SDK2.
+
+📌 Why read first: Understand state, commands, and device interfaces before connecting the task layer to executable skills.
+
+unitree_mujoco primarily targets low-level control; check interface support for the specific robot and firmware.
+
+Organizations / maintainers: Unitree Robotics
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e98"></a>
+
+### ⭐ Unitree RL mjlab
+
+[![Project 2026](https://img.shields.io/badge/Project%202026-475569?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
+
+[💻 Repository](https://github.com/unitreerobotics/unitree_rl_mjlab) · [![★ 719](https://img.shields.io/badge/%E2%98%85%20719-eab308?style=flat-square)](https://github.com/unitreerobotics/unitree_rl_mjlab)
+
+MuJoCo/mjlab locomotion-policy training and deployment tools, including Go2 configurations.
+
+📌 Why read first: Use official configurations to understand training, simulation playback, and deployment.
+
+Organizations / maintainers: Unitree Robotics
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e99"></a>
+
+### ASAP
+
+[![RSS 2025](https://img.shields.io/badge/RSS%202025-475569?style=flat-square)](https://agile.human2humanoid.com/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2502.01143)
+
+[📄 Paper](https://arxiv.org/abs/2502.01143) · [💻 Repository](https://github.com/LeCAR-Lab/ASAP) · [![★ 2,138](https://img.shields.io/badge/%E2%98%85%202%2C138-eab308?style=flat-square)](https://github.com/LeCAR-Lab/ASAP) [![Cite OA 58](https://img.shields.io/badge/Cite%20OA%2058-0284c7?style=flat-square)](https://openalex.org/W4414051111)
+
+Learns discrepancies between simulated and real dynamics from robot data to adapt whole-body motion policies.
+
+Organizations / maintainers: Carnegie Mellon University; NVIDIA
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e100"></a>
+
+### TWIST2
+
+[![ICRA 2026](https://img.shields.io/badge/ICRA%202026-475569?style=flat-square)](https://yanjieze.com/projects/TWIST2/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2511.02832)
+
+[📄 Paper](https://arxiv.org/abs/2511.02832) · [💻 Repository](https://github.com/amazon-far/TWIST2) · [🔗 TWIST](https://yanjieze.com/projects/TWIST/) · [![★ 894](https://img.shields.io/badge/%E2%98%85%20894-eab308?style=flat-square)](https://github.com/amazon-far/TWIST2) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7103984447)
+
+Whole-body teleoperation and motion tracking for collecting humanoid data with contact and bimanual coordination.
+
+Controller training and teleoperation are released; check the separate release status of the high-level visuomotor policy.
+
+Organizations / maintainers: Amazon FAR; Stanford University; University of Southern California; UC Berkeley; Carnegie Mellon University
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e101"></a>
+
+### ⭐ RoboTwin 2.0
+
+[![ICML 2026](https://img.shields.io/badge/ICML%202026-475569?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2506.18088)
+
+[📄 Paper](https://arxiv.org/abs/2506.18088) · [💻 Repository](https://github.com/RoboTwin-Platform/RoboTwin) · [![★ 3,032](https://img.shields.io/badge/%E2%98%85%203%2C032-eab308?style=flat-square)](https://github.com/RoboTwin-Platform/RoboTwin) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W6929480010)
+
+Builds bimanual tasks through automated simulation data generation and domain randomization, with pre-collected trajectories.
+
+📌 Why read first: Start with released data for training and evaluation, then study task generation and randomization.
+
+Organizations / maintainers: Shanghai AI Lab; Shenzhen University; Nanjing University; SJTU; HKU; TeleAI; D-Robotics
+
+<sub>Count snapshot: 2026-11-03</sub>
+
+<a id="e102"></a>
+
+### RDT-1B
+
+[![ICLR 2025](https://img.shields.io/badge/ICLR%202025-475569?style=flat-square)](https://github.com/thu-ml/RoboticsDiffusionTransformer) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2410.07864)
+
+[📄 Paper](https://arxiv.org/abs/2410.07864) · [💻 Repository](https://github.com/thu-ml/RoboticsDiffusionTransformer) · [![★ 1,816](https://img.shields.io/badge/%E2%98%85%201%2C816-eab308?style=flat-square)](https://github.com/thu-ml/RoboticsDiffusionTransformer) [![Cite OA 5](https://img.shields.io/badge/Cite%20OA%205-0284c7?style=flat-square)](https://openalex.org/W4403364995)
+
+A diffusion base for bimanual manipulation with a unified action representation and a lighter 170M variant.
+
+Organizations / maintainers: Tsinghua University
+
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e17"></a>
 
@@ -812,11 +1252,11 @@ Organizations / maintainers: Stanford University; UC Berkeley; MIT; Toyota Resea
 
 A local inference toolchain offering quantization and execution across platforms.
 
-Scope: Complete Omni modes may require a dedicated branch such as OpenBMB/llama.cpp-omni.
+Complete Omni modes may require a dedicated branch such as OpenBMB/llama.cpp-omni.
 
-Organizations / maintainers: ggml.ai / Hugging Face; llama.cpp contributor community.
+Organizations / maintainers: ggml.ai / Hugging Face; llama.cpp contributor community
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e18"></a>
 
@@ -828,9 +1268,9 @@ Organizations / maintainers: ggml.ai / Hugging Face; llama.cpp contributor commu
 
 An inference framework for mobile and edge devices, with an official integration entry point for Qwen2.5-Omni.
 
-Organizations / maintainers: Alibaba.
+Organizations / maintainers: Alibaba
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="evaluation"></a>
 
@@ -842,13 +1282,13 @@ Organizations / maintainers: Alibaba.
 
 [![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2505.17862) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.17862)
 
-[📄 Paper](https://arxiv.org/abs/2505.17862) · [💻 Repository](https://github.com/Lliar-liar/Daily-Omni) · [![★ 53](https://img.shields.io/badge/%E2%98%85%2053-eab308?style=flat-square)](https://github.com/Lliar-liar/Daily-Omni) Citation count —
+[📄 Paper](https://arxiv.org/abs/2505.17862) · [💻 Repository](https://github.com/Lliar-liar/Daily-Omni) · [![★ 53](https://img.shields.io/badge/%E2%98%85%2053-eab308?style=flat-square)](https://github.com/Lliar-liar/Daily-Omni) Cite —
 
 A benchmark for temporally aligned audiovisual reasoning in everyday video.
 
-Organizations / maintainers: Fudan University.
+Organizations / maintainers: Fudan University
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e15"></a>
 
@@ -860,9 +1300,9 @@ Organizations / maintainers: Fudan University.
 
 A benchmark for joint image, audio, and text understanding, accompanied by OmniInstruct.
 
-Organizations / maintainers: M-A-P; University of Manchester; Queen Mary University of London; 01.ai; HKUST; Nanjing University; Dartmouth College.
+Organizations / maintainers: M-A-P; University of Manchester; Queen Mary University of London; 01.ai; HKUST; Nanjing University; Dartmouth College
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<sub>Count snapshot: 2026-11-02</sub>
 
 <a id="e16"></a>
 
@@ -876,9 +1316,9 @@ Evaluates pauses, backchannels, turn transitions, and interruptions; later versi
 
 📌 Why read first: Translate interruptions, turn transitions, and interaction timing into measurable outcomes.
 
-Organizations / maintainers: National Taiwan University; UC Berkeley; University of Washington; MIT CSAIL.
+Organizations / maintainers: National Taiwan University; UC Berkeley; University of Washington; MIT CSAIL
 
-<sub>Count snapshot: 2026-11-02 / 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-02 / 2026-11-03</sub>
 
 <a id="e35"></a>
 
@@ -890,11 +1330,11 @@ Organizations / maintainers: National Taiwan University; UC Berkeley; University
 
 A simulation benchmark for language-conditioned robot manipulation and lifelong learning.
 
-Scope: Primarily evaluates language-conditioned manipulation, rather than speech interaction or collaboration with real participants.
+Primarily evaluates language-conditioned manipulation, rather than speech interaction or collaboration with real participants.
 
-Organizations / maintainers: UT Austin; Tsinghua University; Sony AI.
+Organizations / maintainers: UT Austin; Tsinghua University; Sony AI
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e59"></a>
 
@@ -908,11 +1348,11 @@ Evaluates voice-assistant knowledge, instruction following, safety, and response
 
 📌 Why read first: Establish a basic voice-assistant reference before comparing interaction and task outcomes separately.
 
-Scope: Primarily evaluates responses to spoken input; it does not replace continuous full-duplex or tool-task evaluation.
+Primarily evaluates responses to spoken input; it does not replace continuous full-duplex or tool-task evaluation.
 
-Organizations / maintainers: National University of Singapore.
+Organizations / maintainers: National University of Singapore
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e60"></a>
 
@@ -924,11 +1364,11 @@ Organizations / maintainers: National University of Singapore.
 
 Covers semantic, acoustic, conversational, and robustness dimensions across single-turn and multi-turn speech interaction.
 
-Scope: Check each subset, language, and extension separately. Publication of one subset does not assign that venue to the entire benchmark.
+Check each subset, language, and extension separately. Publication of one subset does not assign that venue to the entire benchmark.
 
-Organizations / maintainers: Shanghai Jiao Tong University; Ant Group.
+Organizations / maintainers: Shanghai Jiao Tong University; Ant Group
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e61"></a>
 
@@ -940,11 +1380,11 @@ Organizations / maintainers: Shanghai Jiao Tong University; Ant Group.
 
 Uses real Chinese speech to evaluate instruction following, knowledge understanding, and robustness to acoustic and content perturbations.
 
-Scope: The core contribution concerns real Chinese speech; report later language extensions separately from the original protocol.
+The core contribution concerns real Chinese speech; report later language extensions separately from the original protocol.
 
-Organizations / maintainers: Wuhan University; Tencent.
+Organizations / maintainers: Wuhan University; Tencent
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e62"></a>
 
@@ -958,11 +1398,11 @@ Connects multilingual speech input to single, parallel, sequential, and multi-tu
 
 📌 Why read first: Understand speech-conditioned function selection, arguments, and multi-step structure before interpreting real-world task success.
 
-Scope: Focuses on tool structure and arguments; it does not directly establish natural timing of continuous speech output.
+Focuses on tool structure and arguments; it does not directly establish natural timing of continuous speech output.
 
-Organizations / maintainers: OLA Electric / Krutrim AI.
+Organizations / maintainers: OLA Electric / Krutrim AI
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e63"></a>
 
@@ -976,11 +1416,11 @@ Uses domain policies and environment state to evaluate multi-turn tool use and f
 
 📌 Why read first: Judge completion from final environment state and compare text agents with voice agents.
 
-Scope: The tau2-bench repository continues to evolve, including later τ³ development. Pin the paper's version, environment, and user simulator.
+The tau2-bench repository continues to evolve, including later τ³ development. Pin the paper's version, environment, and user simulator.
 
-Organizations / maintainers: Sierra; Princeton University.
+Organizations / maintainers: Sierra; Princeton University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e64"></a>
 
@@ -994,11 +1434,11 @@ Combines real spoken hesitations, repetitions, and corrections with multi-step t
 
 📌 Why read first: Test whether spoken corrections and other interaction disturbances cause tool-task errors.
 
-Scope: Shares a repository with v1, v1.5, and v2 but evaluates a different task. The v3 paper is a preprint, not the ASRU 2025 publication of v1.
+Shares a repository with v1, v1.5, and v2 but evaluates a different task. The v3 paper is a preprint, not the ASRU 2025 publication of v1.
 
-Organizations / maintainers: National Taiwan University; NVIDIA.
+Organizations / maintainers: National Taiwan University; NVIDIA
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e65"></a>
 
@@ -1012,9 +1452,9 @@ Analyzes full-duplex conversations turn by turn, combining interaction dynamics,
 
 📌 Why read first: Cover cumulative multi-turn problems that short isolated clips can miss.
 
-Organizations / maintainers: Tsinghua University; The Chinese University of Hong Kong; Huawei.
+Organizations / maintainers: Tsinghua University; The Chinese University of Hong Kong; Huawei
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e66"></a>
 
@@ -1026,11 +1466,11 @@ Organizations / maintainers: Tsinghua University; The Chinese University of Hong
 
 Uses real two-channel human dialogue to evaluate overlap, interruption, and backchannels, with a HumDial challenge and leaderboard.
 
-Scope: The paper discusses the ICASSP 2026 HumDial challenge. The event name does not establish proceedings publication of this preprint.
+The paper discusses the ICASSP 2026 HumDial challenge. The event name does not establish proceedings publication of this preprint.
 
-Organizations / maintainers: Northwestern Polytechnical University / ASLP Lab; Nanjing University; AISHELL.
+Organizations / maintainers: Northwestern Polytechnical University / ASLP Lab; Nanjing University; AISHELL
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e67"></a>
 
@@ -1042,9 +1482,9 @@ Organizations / maintainers: Northwestern Polytechnical University / ASLP Lab; N
 
 Evaluates a voice agent as a multiparty conversation participant, including comprehension, turn timing, and response appropriateness.
 
-Organizations / maintainers: The University of Texas at Austin; National Taiwan University; MIT; Carnegie Mellon University; Meta AI.
+Organizations / maintainers: The University of Texas at Austin; National Taiwan University; MIT; Carnegie Mellon University; Meta AI
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e68"></a>
 
@@ -1056,9 +1496,9 @@ Organizations / maintainers: The University of Texas at Austin; National Taiwan 
 
 Tests participation decisions in multiparty scenes, including explicit address, implicit requests, proactive responses, and appropriate silence.
 
-Organizations / maintainers: Peking University; Renmin University of China; Tsinghua University; National Taiwan University; Xiamen University; Fudan University.
+Organizations / maintainers: Peking University; Renmin University of China; Tsinghua University; National Taiwan University; Xiamen University; Fudan University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e69"></a>
 
@@ -1070,9 +1510,9 @@ Organizations / maintainers: Peking University; Renmin University of China; Tsin
 
 Tests whether full-duplex systems can follow instructions governing turn-taking, interruption, backchannels, and proactivity.
 
-Organizations / maintainers: Boson AI.
+Organizations / maintainers: Boson AI
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e70"></a>
 
@@ -1080,15 +1520,15 @@ Organizations / maintainers: Boson AI.
 
 [![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2609.39446) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2609.39446)
 
-[📄 Paper](https://arxiv.org/abs/2609.39446) · [💻 Repository](https://github.com/Alita-xky/DuplexAct-Bench) · [🔗 Project](https://alitaxky.icu/DuplexAct-Bench/) · [![★ 1](https://img.shields.io/badge/%E2%98%85%201-eab308?style=flat-square)](https://github.com/Alita-xky/DuplexAct-Bench) Citation count —
+[📄 Paper](https://arxiv.org/abs/2609.39446) · [💻 Repository](https://github.com/Alita-xky/DuplexAct-Bench) · [🔗 Project](https://alitaxky.icu/DuplexAct-Bench/) · [![★ 1](https://img.shields.io/badge/%E2%98%85%201-eab308?style=flat-square)](https://github.com/Alita-xky/DuplexAct-Bench) Cite —
 
 Covers interruption, yielding, resisting interruption, active silence, proactive initiation, and backchannels, evaluating timing and content separately.
 
-Scope: The linked repository primarily contains the project website. Check the project release for complete evaluators and data.
+The linked repository primarily contains the project website. Check the project release for complete evaluators and data.
 
-Organizations / maintainers: Beijing Institute for General Artificial Intelligence; Peking University; Shanghai Jiao Tong University.
+Organizations / maintainers: Beijing Institute for General Artificial Intelligence; Peking University; Shanghai Jiao Tong University
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e71"></a>
 
@@ -1102,9 +1542,9 @@ Uses dynamic bot-to-bot simulation to evaluate complete tasks and interaction ex
 
 📌 Why read first: Learn to evaluate task correctness and experience separately, and inspect the validity of the simulated user.
 
-Organizations / maintainers: ServiceNow AI Research.
+Organizations / maintainers: ServiceNow AI Research
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e72"></a>
 
@@ -1116,11 +1556,11 @@ Organizations / maintainers: ServiceNow AI Research.
 
 Simulates voice agents in financial-service scenarios, checking complete dialogues, tool traces, and domain facts.
 
-Scope: Domain-specific to financial services; riley-agent is a reference agent implementation, not necessarily the complete benchmark grader.
+Domain-specific to financial services; riley-agent is a reference agent implementation, not necessarily the complete benchmark grader.
 
-Organizations / maintainers: Veris AI.
+Organizations / maintainers: Veris AI
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e73"></a>
 
@@ -1132,11 +1572,11 @@ Organizations / maintainers: Veris AI.
 
 A full-duplex evaluation pipeline with multi-turn interaction, interruptions, and noise, measuring generation quality and latency.
 
-Scope: A different project from DanielLin94144/Full-Duplex-Bench; scores and versions are not interchangeable.
+A different project from DanielLin94144/Full-Duplex-Bench; scores and versions are not interchangeable.
 
-Organizations / maintainers: Nanyang Technological University; Alibaba.
+Organizations / maintainers: Nanyang Technological University; Alibaba
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="e74"></a>
 
@@ -1148,11 +1588,11 @@ Organizations / maintainers: Nanyang Technological University; Alibaba.
 
 Evaluates end-of-turn and interruption detectors through recall and latency at specified false-positive budgets.
 
-Scope: Primarily a component-level turn-decision benchmark, not a direct test of response content, tool use, or final task completion.
+Primarily a component-level turn-decision benchmark, not a direct test of response content, tool use, or final task completion.
 
-Organizations / maintainers: Sesame AI; Mundo AI; Oto; Carnegie Mellon University; National Taiwan University; Academia Sinica; Brno University of Technology.
+Organizations / maintainers: Sesame AI; Mundo AI; Oto; Carnegie Mellon University; National Taiwan University; Academia Sinica; Brno University of Technology
 
-<sub>Count snapshot: 2026-11-03.</sub>
+<sub>Count snapshot: 2026-11-03</sub>
 
 <a id="industry"></a>
 
@@ -1168,11 +1608,9 @@ Organizations / maintainers: Sesame AI; Mundo AI; Oto; Carnegie Mellon Universit
 
 AGIBOT's embodied interaction demonstration combines scene understanding, speech, and bodily expression.
 
-Scope: An industry demonstration does not establish that the action model, training data, or complete system is open.
+An industry demonstration does not establish that the action model, training data, or complete system is open.
 
-Organizations / maintainers: AGIBOT.
-
-<sub>Count snapshot: 2026-11-02.</sub>
+Organizations / maintainers: AGIBOT
 
 <a id="e27"></a>
 
@@ -1184,11 +1622,9 @@ Organizations / maintainers: AGIBOT.
 
 An official Google example feeds speech and robot-camera input into the Live API, then connects function calls to robot control interfaces.
 
-Scope: The Live API example and Gemini Robotics models are separate resources. The example does not provide a standardized controlled robot success-rate study.
+The Live API example and Gemini Robotics models are separate resources. The example does not provide a standardized controlled robot success-rate study.
 
-Organizations / maintainers: Google / Google DeepMind.
-
-<sub>Count snapshot: 2026-11-02.</sub>
+Organizations / maintainers: Google / Google DeepMind
 
 <a id="e28"></a>
 
@@ -1200,8 +1636,22 @@ Organizations / maintainers: Google / Google DeepMind.
 
 Figure connects language goals with mobile manipulation through S2 semantic planning, S1 visuomotor policies, and S0 whole-body control.
 
-Scope: A company technical demonstration; public videos do not replace reproducible experiments or open training code.
+A company technical demonstration; public videos do not replace reproducible experiments or open training code.
 
-Organizations / maintainers: Figure AI.
+Organizations / maintainers: Figure AI
 
-<sub>Count snapshot: 2026-11-02.</sub>
+<a id="e96"></a>
+
+### Qwen-RobotNav
+
+[![arXiv 2026](https://img.shields.io/badge/arXiv%202026-475569?style=flat-square)](https://arxiv.org/abs/2606.18112) [![Industry](https://img.shields.io/badge/Industry-0f766e?style=flat-square)](https://arxiv.org/html/2606.18112)
+
+[📄 Paper](https://arxiv.org/abs/2606.18112) · [💻 Repository](https://github.com/QwenLM/Qwen-RobotNav) · [![★ 198](https://img.shields.io/badge/%E2%98%85%20198-eab308?style=flat-square)](https://github.com/QwenLM/Qwen-RobotNav) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7165037828)
+
+A Qwen3-VL navigation-system report covering task modes, context, waypoint interfaces, and Go2 deployment.
+
+The official repository currently states that weights will not be released; use it as a system-design reference, not a fine-tunable base.
+
+Organizations / maintainers: Alibaba / Qwen Team
+
+<sub>Count snapshot: 2026-11-03</sub>

@@ -12,14 +12,14 @@ A reading guide from language models, Omni models, and voice interaction to robo
 
 | Order | Start here | Topics | Representative resources |
 |---|---|---|---|
-| 01 | [LLM Foundations](01-LLM-Foundations.en.md) | Principles, model use, data, training, and evaluation | Happy-LLM · HF LLM Course · Illustrated Transformer · FineWeb |
-| 02 | [Omni Foundations](02-Omni-Foundations.en.md) | Multimodal inputs, speech generation, streaming, and full duplex | Qwen2.5-Omni · Qwen3-Omni · MiniCPM-o · Moshi |
+| 01 | [LLM Foundations](01-LLM-Foundations.en.md) | Principles, data, training, reinforcement learning, and evaluation | Happy-LLM · HF LLM Course · PPO · DPO · GRPO |
+| 02 | [ALM / Omni Foundations](02-Omni-Foundations.en.md) | Multimodal inputs, speech generation, streaming, and full duplex | Qwen2-Audio · MiMo-Audio · SALMONN · Moshi |
 | 03 | [Voice Agents](03-Voice-Agent.en.md) | Data, turn taking, interruptions, tool use, and task coordination | VoxMind · F-Actor · DuplexGen · MoshiRAG · Jarvis |
-| 04 | [Edge and Embodied Interaction](04-Edge-Embodied-Interaction.en.md) | Data collection, action learning, language feedback, real-robot evaluation, and deployment | LeRobot · ACT · SmolVLA · Hi Robot · YAY Robot · ELLSA |
+| 04 | [Edge and Embodied Interaction](04-Edge-Embodied-Interaction.en.md) | Data collection, action learning, language feedback, real-robot evaluation, and deployment | LeRobot · openpi · OpenVLA-OFT · NaVILA · ELLSA |
 
 ## 📚 Resource navigation
 
-- [Paper and project catalog](CATALOG.en.md): 74 entries with papers, code, publication venues, affiliation labels, stars, and citation counts.
+- [Paper and project catalog](CATALOG.en.md): 102 entries with papers, code, publication venues, affiliation labels, stars, and citation counts.
 - [Survey comparison](SURVEYS.en.md): 10 surveys and overviews organized by coverage, plus [LLM teaching references](SURVEYS.en.md#llm-learning).
 - [Voice Agent Benchmarks](05-Voice-Agent-Benchmarks.en.md): 18 evaluation entry points covering basic abilities, turn taking, multi-turn and multi-party dialogue, behavioral instructions, and tool/task completion.
 - [Industry practice](INDUSTRY.en.md): runnable applications and system demonstrations, with capabilities and availability recorded separately.
