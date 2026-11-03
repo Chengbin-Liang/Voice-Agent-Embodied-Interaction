@@ -1,8 +1,8 @@
 # Surveys and Overviews
 
-[中文](SURVEYS.md) | **English**
+[中文](../zh/SURVEYS.md) | **English**
 
-[Home](README.en.md) · [Catalog](CATALOG.en.md) · [Surveys](SURVEYS.en.md)
+[Home](../../README.en.md) · [Catalog](CATALOG.md) · [Surveys](SURVEYS.md)
 
 Choose a survey by question, then follow it to representative papers and code. Taxonomies, arguments, and original collections belong to their authors; the table summarizes coverage.
 
@@ -154,23 +154,24 @@ Traditional and modern HRI dialogue management, context, multimodality, and eval
 <a id="llm-learning"></a>
 ## 🎓 LLM surveys and teaching references
 
-These resources support [LLM Foundations](01-LLM-Foundations.en.md) and are separate from the ten speech, Omni, and HRI survey entries above.
+These resources support [LLM Foundations](../../docs/en/01-LLM-Foundations.md) and are separate from the ten speech, Omni, and HRI survey entries above.
 
 | Source | Language / role | Contribution to the reading route |
 |---|---|---|
 | [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) · [Author repository](https://github.com/RUCAIBox/LLMSurvey) | English survey | A topic map of pretraining, adaptation, utilization, and capability evaluation; follow its references to original papers. |
 | [LLM textbook](https://llmbook-zh.github.io/) | Chinese textbook | A systematic reference for architecture, data, training, alignment, evaluation, and inference. |
-| [Happy-LLM](https://github.com/datawhalechina/happy-llm) | Chinese teaching material | Progressive explanations and practice, especially Chapters 2–6. |
+| [Happy-LLM](https://github.com/datawhalechina/happy-llm) | Chinese teaching material | Core LLM reading: Chapters 2–7; consult Chapter 8 for post-training questions. |
 | [HF LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) · [Chinese edition](https://huggingface.co/learn/llm-course/zh-CN/chapter1/1) | English course and Chinese translation | Tokenizers, model use, fine-tuning, and hands-on exercises. Coverage differs across language versions. |
 | [Stanford CS336](https://cs336.stanford.edu/) | English university course | An implementation-based view of language-model components, data, training, and alignment. Use selected assignments as extensions. |
 
+Agent introductions: [Hello-Agents](https://github.com/datawhalechina/hello-agents) (Chinese) and [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) (English). See [Agent fundamentals](../../docs/en/01-LLM-Foundations.md#agents) for selected reading.
 
 <a id="embodied-learning"></a>
 ## 🤖 Embodied AI guides and teaching resources
 
 | Source | Coverage | Reading entry point |
 |---|---|---|
-| ⭐ [Lumina embodied AI guide](https://lumina-embodied.ai/blog/eai-guide/) · Chinese | Control, MPC, RL, imitation learning, VLAs, navigation, hardware, and tools | [Core concepts](04-Edge-Embodied-Interaction.en.md#concepts) → original papers and code |
-| ⭐ [ScaleLab guide](https://scalelab-sjtu.github.io/embodied_guide.html) · Chinese | Representative VLAs, simulation/data systems, and whole-body control | [Bases](04-Edge-Embodied-Interaction.en.md#bases) → [Academic follow-ups](04-Edge-Embodied-Interaction.en.md#research) |
+| ⭐ [Lumina embodied AI guide](https://lumina-embodied.ai/blog/eai-guide/) · Chinese | Control, MPC, RL, imitation learning, VLAs, navigation, hardware, and tools | [Core concepts](../../docs/en/04-Edge-Embodied-Interaction.md#concepts) → original papers and code |
+| ⭐ [ScaleLab guide](https://scalelab-sjtu.github.io/embodied_guide.html) · Chinese | Representative VLAs, simulation/data systems, and whole-body control | [Bases](../../docs/en/04-Edge-Embodied-Interaction.md#bases) → [Academic follow-ups](../../docs/en/04-Edge-Embodied-Interaction.md#research) |
 | [MIT Underactuated Robotics](https://underactuated.mit.edu/) | Dynamics, control, trajectory optimization, and RL | Read control and MPC chapters as needed |
 | [LeRobot documentation](https://huggingface.co/docs/lerobot/en/il_robots) | Teleoperation, recording, training, evaluation, and hardware adaptation | Start with one demonstration-learning workflow |
