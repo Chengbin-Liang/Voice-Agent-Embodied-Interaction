@@ -1,10 +1,10 @@
 # 论文与项目索引
 
-**中文** | [English](CATALOG.en.md)
+**中文** | [English](../en/CATALOG.md)
 
-[返回首页](README.md) · [Survey](SURVEYS.md) · [Benchmarks](05-Voice-Agent-Benchmarks.md)
+[返回首页](../../README.md) · [Survey](SURVEYS.md) · [Benchmarks](../../docs/zh/05-Voice-Agent-Benchmarks.md)
 
-⭐ 优先阅读条目附具体理由。计数口径见[标签说明](README.md#labels)。
+⭐ 优先阅读条目附具体理由。计数口径见[标签说明](../../README.md#labels)。
 
 [🧠 LLM 后训练与强化学习](#llm) · [🎧 ALM / Omni 与语音模型](#omni) · [💬 Voice Agent 与交互系统](#voice) · [🤖 具身交互与语言反馈](#embodied) · [🦾 动作、数据与部署](#robotics) · [📏 评测](#evaluation) · [🏭 工业展示](#industry)
 
