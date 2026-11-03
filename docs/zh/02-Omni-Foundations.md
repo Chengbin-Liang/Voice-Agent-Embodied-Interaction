@@ -9,13 +9,13 @@
 [阅读路线](#route) · [工业与联合基座](#bases) · [学术方法与适配](#methods) · [实时与音视频](#realtime) · [数据与训练](#training) · [评测](#evaluation)
 
 <a id="route"></a>
-## 🧭 先建立四个概念
+## 🧭 四项基础概念
 
-| 问题 | 优先阅读 | 读完应能解释 |
+| 问题 | 优先阅读 | 核心概念 |
 |---|---|---|
 | 音频怎样进入 LLM？ | ⭐ [Qwen2-Audio](../../resources/zh/CATALOG.md#e80) → [SALMONN](../../resources/zh/CATALOG.md#e86) / [BLSP](../../resources/zh/CATALOG.md#e88) | 音频编码器、适配器、连续表示，以及转写遗漏的声音信息。 |
 | LLM 怎样生成语音？ | ⭐ [SpeechGPT](../../resources/zh/CATALOG.md#e87) → [GLM-4-Voice](../../resources/zh/CATALOG.md#e81) / [LLaMA-Omni2](../../resources/zh/CATALOG.md#e89) | 离散单元、语音 codec、文本与语音的预测顺序、波形解码。 |
-| 怎样边听边说？ | ⭐ [Moshi](../../resources/zh/CATALOG.md#e07) → [PersonaPlex](../../resources/zh/CATALOG.md#e90) → [全双工训练](03-Voice-Agent.md#academic) | 输入和输出音频流、轮次、时间对齐、打断与角色控制。 |
+| 全双工语音交互如何建模？ | ⭐ [Moshi](../../resources/zh/CATALOG.md#e07) → [PersonaPlex](../../resources/zh/CATALOG.md#e90) → [全双工训练](03-Voice-Agent.md#academic) | 输入和输出音频流、轮次、时间对齐、打断与角色控制。 |
 | 怎样接入视觉与持续视频？ | ⭐ [Qwen2.5-Omni](../../resources/zh/CATALOG.md#e02) → [MiniCPM-o](../../resources/zh/CATALOG.md#e01) / [Qwen3-Omni](../../resources/zh/CATALOG.md#e03) | 模态编码、共享时间轴、Thinker–Talker 与并发推理。 |
 
 组件入口：[Whisper](https://github.com/openai/whisper)（语音编码/识别）· [SpeechTokenizer](https://github.com/ZhangXInFD/SpeechTokenizer)（语音 token）· [Moshi / Mimi](https://github.com/kyutai-labs/moshi)（流式 codec）· [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)（语音生成）。
@@ -47,7 +47,7 @@
 | ⭐ [BLSP](../../resources/zh/CATALOG.md#e88) | [![arXiv 2023](https://img.shields.io/badge/arXiv%202023-475569?style=flat-square)](https://arxiv.org/abs/2309.00916) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2309.00916) | 通过语音和转写的续写行为对齐，训练冻结语音编码器与 LLM 之间的轻量适配器。<br>[📄 论文](https://arxiv.org/abs/2309.00916) · [💻 仓库](https://github.com/cwang621/blsp) |
 | ⭐ [LLaMA-Omni2](../../resources/zh/CATALOG.md#e89) | [![ACL 2025](https://img.shields.io/badge/ACL%202025-475569?style=flat-square)](https://aclanthology.org/2025.acl-long.912/) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.02625) | 在 Qwen2.5 上构建双语语音对话与流式语音生成，公开多种模型规模与推理代码。<br>[📄 论文](https://arxiv.org/abs/2505.02625) · [💻 仓库](https://github.com/ictnlp/LLaMA-Omni2) |
 
-| 方法线索 | 初始化与改动 | 适合复现的最小问题 |
+| 方法线索 | 初始化与改动 | 可复现的研究问题 |
 |---|---|---|
 | BLSP | 现有语音编码器 + LLM，训练轻量适配器 | 语音输入和文本输入是否产生一致的任务行为？ |
 | SALMONN | 语音与通用音频编码器 + LLM | 加入非语音声音信息，哪些任务因此改善？ |
@@ -67,7 +67,7 @@
 扩展阅读：[Freeze-Omni](../../resources/zh/CATALOG.md#e08) · [Mini-Omni2](../../resources/zh/CATALOG.md#e06) · [VITA-1.5](../../resources/zh/CATALOG.md#e05) · [InteractiveOmni](../../resources/zh/CATALOG.md#e04)。交互策略、数据合成与工具使用继续见 [Voice Agent](03-Voice-Agent.md)。
 
 <a id="training"></a>
-## 🗂️ 数据、模型与训练怎样对应
+## 🗂️ 数据、模型与训练目标
 
 | 环节 | 需要读清的问题 | 代表入口 |
 |---|---|---|
@@ -78,7 +78,7 @@
 | 实时部署 | 首个音频包、持续吞吐、打断响应和多模态输入开销分别是多少？ | [MiniCPM-o](../../resources/zh/CATALOG.md#e01)、[Moshi](../../resources/zh/CATALOG.md#e07)、[端侧部署](04-Edge-Embodied-Interaction.md#evaluation) |
 
 <a id="evaluation"></a>
-## 📏 把能力和交互分开测量
+## 📏 模型能力与交互评测
 
 | 评测对象 | 入口 |
 |---|---|
