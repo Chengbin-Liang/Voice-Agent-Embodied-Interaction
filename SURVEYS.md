@@ -1,0 +1,144 @@
+# Survey 与总结入口
+
+[返回首页](README.md) · [完整索引](CATALOG.md) · [Survey 对照](SURVEYS.md)
+
+按问题选择综述，再到代表论文与代码。各综述的分类、论点和原始条目归其作者；下表仅概括覆盖范围。
+
+| 资源 | 覆盖范围 | 对应阅读阶段 |
+|---|---|---|
+| ⭐ [WavChat](#s01) | 语音对话模型、表征、训练、流式与交互。 | 02–03 |
+| [Recent Advances in Speech Language Models](#s02) | SpeechLM，以及更新后的双工模型、控制组件与评测清单。 | 02–03 |
+| [From Turn-Taking to Synchronous Dialogue](#s03) | 全双工模型、同步机制与评价。 | 03 |
+| [Speaking While Listening / DuplexSurvey](#s04) | 架构层次、时间关系×用户意图×系统回应，以及对话决策状态。 | 03 |
+| [A Survey on Audio–Visual Large Language Models](#s05) | 模态范围、骨干来源、生成目标、数据与应用。 | 02 |
+| [Omni-Modal LLMs: Architecture, Training, Evaluation](#s06) | 仓库中的综述稿以 Build → Assess → Apply 组织 Omni 研究。 | 02 |
+| ⭐ [MLLM-HRC-Survey](#s07) | 人机协作、空间智能与感知—认知—执行循环。 | 04 |
+| [LLM-Based Human-Agent Collaboration and Interaction Systems](#s08) | 反馈类型、粒度、阶段、协作与通信。 | 03–04 |
+| ⭐ [How Do We Research HRI in the Age of LLMs?](#s09) | 以人为中心的 HRI 系统、实验设计与评价。 | 04 |
+| [Dialogue Management in HRI](#s10) | 传统与现代 HRI 对话管理、情境、多模态及评价。 | 04 |
+
+<a id="s01"></a>
+
+## WavChat
+
+[![arXiv 2024](https://img.shields.io/badge/arXiv%202024-475569?style=flat-square)](https://arxiv.org/abs/2411.13577) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2411.13577)
+
+[📄 论文](https://arxiv.org/abs/2411.13577) · [💻 仓库](https://github.com/jishengpeng/WavChat) · [![★ 317](https://img.shields.io/badge/%E2%98%85%20317-eab308?style=flat-square)](https://github.com/jishengpeng/WavChat) [![Cite OA 3](https://img.shields.io/badge/Cite%20OA%203-0284c7?style=flat-square)](https://openalex.org/W4404649925)
+
+语音对话模型、表征、训练、流式与交互。
+
+📌 优先阅读理由：先建立语音对话模型、训练与交互的整体分类。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s02"></a>
+
+## Recent Advances in Speech Language Models
+
+[![ACL 2025](https://img.shields.io/badge/ACL%202025-475569?style=flat-square)](https://aclanthology.org/2025.acl-long.682/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2410.03751)
+
+[📄 论文](https://arxiv.org/abs/2410.03751) · [💻 仓库](https://github.com/dreamtheater123/Awesome-SpeechLM-Survey) · [![★ 226](https://img.shields.io/badge/%E2%98%85%20226-eab308?style=flat-square)](https://github.com/dreamtheater123/Awesome-SpeechLM-Survey) [![Cite OA 5](https://img.shields.io/badge/Cite%20OA%205-0284c7?style=flat-square)](https://openalex.org/W4403322156)
+
+SpeechLM，以及更新后的双工模型、控制组件与评测清单。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s03"></a>
+
+## From Turn-Taking to Synchronous Dialogue
+
+[![arXiv 2025](https://img.shields.io/badge/arXiv%202025-475569?style=flat-square)](https://arxiv.org/abs/2509.14515) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/pdf/2509.14515)
+
+[📄 论文](https://arxiv.org/abs/2509.14515) · [💻 仓库](https://github.com/elpsykongloo/FD-SLMs) · [![★ 34](https://img.shields.io/badge/%E2%98%85%2034-eab308?style=flat-square)](https://github.com/elpsykongloo/FD-SLMs) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W4417081448)
+
+全双工模型、同步机制与评价。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s04"></a>
+
+## Speaking While Listening / DuplexSurvey
+
+[![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-475569?style=flat-square)](https://aclanthology.org/2026.emnlp-main.1126/) [![Academic + Industry](https://img.shields.io/badge/Academic%20%2B%20Industry-7c3aed?style=flat-square)](https://arxiv.org/html/2606.19453)
+
+[📄 论文](https://arxiv.org/abs/2606.19453) · [💻 仓库](https://github.com/MM-Speech/DuplexSurvey) · [![★ 109](https://img.shields.io/badge/%E2%98%85%20109-eab308?style=flat-square)](https://github.com/MM-Speech/DuplexSurvey) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7165367522)
+
+架构层次、时间关系×用户意图×系统回应，以及对话决策状态。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s05"></a>
+
+## A Survey on Audio–Visual Large Language Models
+
+[![Knowledge-Based Systems 2026](https://img.shields.io/badge/Knowledge--Based%20Systems%202026-475569?style=flat-square)](https://doi.org/10.1016/j.knosys.2026.116569)
+
+[📄 论文](https://doi.org/10.1016/j.knosys.2026.116569) · [💻 仓库](https://github.com/AiX-Lab-UWO/Audio-Visual-LLMs-Survey) · [![★ 0](https://img.shields.io/badge/%E2%98%85%200-eab308?style=flat-square)](https://github.com/AiX-Lab-UWO/Audio-Visual-LLMs-Survey) [![Cite OA 0](https://img.shields.io/badge/Cite%20OA%200-0284c7?style=flat-square)](https://openalex.org/W7166807819) [![Cite S2 0](https://img.shields.io/badge/Cite%20S2%200-0284c7?style=flat-square)](https://www.semanticscholar.org/paper/599f04505243db7ceaca5446325182b708a7b1cb)
+
+模态范围、骨干来源、生成目标、数据与应用。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s06"></a>
+
+## Omni-Modal LLMs: Architecture, Training, Evaluation
+
+[![Project](https://img.shields.io/badge/Project-475569?style=flat-square)](https://github.com/Abillinaire/omni-model-survey)
+
+[💻 仓库](https://github.com/Abillinaire/omni-model-survey) · [![★ 2](https://img.shields.io/badge/%E2%98%85%202-eab308?style=flat-square)](https://github.com/Abillinaire/omni-model-survey)
+
+仓库中的综述稿以 Build → Assess → Apply 组织 Omni 研究。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s07"></a>
+
+## MLLM-HRC-Survey
+
+[![RCIM 2026](https://img.shields.io/badge/RCIM%202026-475569?style=flat-square)](https://doi.org/10.1016/j.rcim.2025.103064) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://github.com/WuDuidi/MLLM-HRC-Survey)
+
+[📄 论文](https://doi.org/10.1016/j.rcim.2025.103064) · [💻 仓库](https://github.com/WuDuidi/MLLM-HRC-Survey) · [![★ 8](https://img.shields.io/badge/%E2%98%85%208-eab308?style=flat-square)](https://github.com/WuDuidi/MLLM-HRC-Survey) [![Cite OA 32](https://img.shields.io/badge/Cite%20OA%2032-0284c7?style=flat-square)](https://openalex.org/W4411206891) [![Cite S2 33](https://img.shields.io/badge/Cite%20S2%2033-0284c7?style=flat-square)](https://www.semanticscholar.org/paper/4ddd6e44b7f1f3b349d7ea6756f39175a5b96f0e)
+
+人机协作、空间智能与感知—认知—执行循环。
+
+📌 优先阅读理由：补齐人机协作与感知、认知、执行之间的关系。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s08"></a>
+
+## LLM-Based Human-Agent Collaboration and Interaction Systems
+
+[![ACL Findings 2026](https://img.shields.io/badge/ACL%20Findings%202026-475569?style=flat-square)](https://arxiv.org/abs/2505.00753) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2505.00753)
+
+[📄 论文](https://arxiv.org/abs/2505.00753) · [💻 仓库](https://github.com/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems) · [![★ 242](https://img.shields.io/badge/%E2%98%85%20242-eab308?style=flat-square)](https://github.com/HenryPengZou/Awesome-Human-Agent-Collaboration-Interaction-Systems) [![Cite OA 2](https://img.shields.io/badge/Cite%20OA%202-0284c7?style=flat-square)](https://openalex.org/W4415164160)
+
+反馈类型、粒度、阶段、协作与通信。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s09"></a>
+
+## How Do We Research HRI in the Age of LLMs?
+
+[![CHI 2026](https://img.shields.io/badge/CHI%202026-475569?style=flat-square)](https://doi.org/10.1145/3772318.3790920) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2602.15063)
+
+[📄 论文](https://arxiv.org/abs/2602.15063) · [![Cite OA 6](https://img.shields.io/badge/Cite%20OA%206-0284c7?style=flat-square)](https://openalex.org/W7130383196)
+
+以人为中心的 HRI 系统、实验设计与评价。
+
+📌 优先阅读理由：了解真人实验与系统评测分别回答什么问题。
+
+<sub>计数快照：2026-11-02。</sub>
+
+<a id="s10"></a>
+
+## Dialogue Management in HRI
+
+[![ACM THRI 2024](https://img.shields.io/badge/ACM%20THRI%202024-475569?style=flat-square)](https://arxiv.org/abs/2307.10897) [![Academic](https://img.shields.io/badge/Academic-2563eb?style=flat-square)](https://arxiv.org/html/2307.10897)
+
+[📄 论文](https://arxiv.org/abs/2307.10897) · [![Cite OA 34](https://img.shields.io/badge/Cite%20OA%2034-0284c7?style=flat-square)](https://openalex.org/W4392386515)
+
+传统与现代 HRI 对话管理、情境、多模态及评价。
+
+<sub>计数快照：2026-11-02。</sub>
